@@ -8,7 +8,7 @@ description: "Transforms a proven pattern or debugging solution into a standalon
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/self-improving-agent/agents/skill-extractor.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/self-improving-agent/agents/skill-extractor.md">Source</a></span>
 </div>
 
 

@@ -8,7 +8,7 @@ description: "Production-grade Playwright testing toolkit. Use when the user men
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `pw`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/playwright-pro/skills/pw/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/playwright-pro/skills/pw/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

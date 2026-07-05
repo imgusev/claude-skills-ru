@@ -8,7 +8,7 @@ description: "Audit and manage dependencies across multi-language projects. Iden
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `dependency-auditor`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/dependency-auditor/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/dependency-auditor/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -93,4 +93,4 @@ python3 scripts/license_checker.py . --policy strict --format json
 3. **Cadence**: security scans per commit; license audits monthly; full audit quarterly.
 4. **False positives**: whitelist with documentation; contact maintainers for license ambiguity.
 
-See [README.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/dependency-auditor/README.md) for detailed usage and `references/` for the vulnerability/license knowledge bases.
+See [README.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/dependency-auditor/README.md) for detailed usage and `references/` for the vulnerability/license knowledge bases.

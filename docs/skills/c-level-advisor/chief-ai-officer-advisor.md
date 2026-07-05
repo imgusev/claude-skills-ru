@@ -8,7 +8,7 @@ description: "Chief AI Officer advisory for startups: model build-vs-buy decisio
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `chief-ai-officer-advisor`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -226,10 +226,10 @@ python scripts/ai_cost_economics.py workload.json
 
 ## References
 
-- [model_buildvsbuy_strategy.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/references/model_buildvsbuy_strategy.md) — Full decision tree + 3-year TCO components + when each path fails
-- [ai_risk_governance.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/references/ai_risk_governance.md) — EU AI Act + NIST AI RMF + US state patchwork + industry overlays + governance program
-- [ai_cost_economics.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/references/ai_cost_economics.md) — API pricing 2026 + GPU rental economics + utilization realities + migration cost
-- [ai_team_org_evolution.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/references/ai_team_org_evolution.md) — Stage-to-role map + role definitions (AI engineer ≠ ML engineer ≠ scientist) + anti-patterns
+- [model_buildvsbuy_strategy.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/references/model_buildvsbuy_strategy.md) — Full decision tree + 3-year TCO components + when each path fails
+- [ai_risk_governance.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/references/ai_risk_governance.md) — EU AI Act + NIST AI RMF + US state patchwork + industry overlays + governance program
+- [ai_cost_economics.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/references/ai_cost_economics.md) — API pricing 2026 + GPU rental economics + utilization realities + migration cost
+- [ai_team_org_evolution.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/references/ai_team_org_evolution.md) — Stage-to-role map + role definitions (AI engineer ≠ ML engineer ≠ scientist) + anti-patterns
 
 ---
 

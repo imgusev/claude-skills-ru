@@ -8,7 +8,7 @@ description: "Use when a Head of Ops, Knowledge Manager, or TPM-Internal needs t
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-cog-outline: Business Operations</span>
 <span class="meta-badge">:material-identifier: `knowledge-ops`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/business-operations/skills/knowledge-ops/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/business-operations/skills/knowledge-ops/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

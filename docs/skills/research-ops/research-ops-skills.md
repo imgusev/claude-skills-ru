@@ -8,7 +8,7 @@ description: "Use when planning, funding, scoping, or synthesizing enterprise re
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-flask-outline: Research Operations</span>
 <span class="meta-badge">:material-identifier: `research-ops-skills`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research-ops/skills/research-ops-skills/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research-ops/skills/research-ops-skills/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

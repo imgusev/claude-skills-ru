@@ -8,7 +8,7 @@ description: "Use when hunting for threats in an environment, analyzing IOCs, or
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `threat-detection`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/threat-detection/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/threat-detection/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -304,7 +304,7 @@ fi
 
 | Skill | Relationship |
 |-------|-------------|
-| [incident-response](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/incident-response/SKILL.md) | Confirmed threats from hunting escalate to incident-response for triage and containment |
-| [red-team](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/red-team/SKILL.md) | Red team exercises generate realistic TTPs that inform hunt hypothesis prioritization |
-| [cloud-security](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/cloud-security/SKILL.md) | Cloud posture findings (open S3, IAM wildcards) create hunting targets for data exfiltration TTPs |
-| [security-pen-testing](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/security-pen-testing/SKILL.md) | Pen test findings identify attack surfaces that threat hunting should monitor post-remediation |
+| [incident-response](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/incident-response/SKILL.md) | Confirmed threats from hunting escalate to incident-response for triage and containment |
+| [red-team](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/red-team/SKILL.md) | Red team exercises generate realistic TTPs that inform hunt hypothesis prioritization |
+| [cloud-security](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/cloud-security/SKILL.md) | Cloud posture findings (open S3, IAM wildcards) create hunting targets for data exfiltration TTPs |
+| [security-pen-testing](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/security-pen-testing/SKILL.md) | Pen test findings identify attack surfaces that threat hunting should monitor post-remediation |

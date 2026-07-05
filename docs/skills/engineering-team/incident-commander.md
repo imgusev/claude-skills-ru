@@ -8,7 +8,7 @@ description: "Comprehensive incident response framework from detection through r
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `incident-commander`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/incident-commander/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/incident-commander/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

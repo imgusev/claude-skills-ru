@@ -7,7 +7,7 @@ description: "/cs:notebooklm — NotebookLM browser automation. Action-routing i
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/commands/cs-notebooklm.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/commands/cs-notebooklm.md">Source</a></span>
 </div>
 
 
@@ -147,9 +147,9 @@ python ../skills/notebooklm/scripts/async_action_classifier.py --action audio_ov
 
 ## Related
 
-- Agent: [`cs-notebooklm`](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/agents/cs-notebooklm.md)
-- Skill: [`notebooklm`](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/skills/notebooklm/SKILL.md)
-- Source spec: [`megaprompts/03-notebooklm-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/03-notebooklm-megaprompt.md)
+- Agent: [`cs-notebooklm`](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/agents/cs-notebooklm.md)
+- Skill: [`notebooklm`](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/skills/notebooklm/SKILL.md)
+- Source spec: [`megaprompts/03-notebooklm-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/03-notebooklm-megaprompt.md)
 - Research-domain siblings (different shape): `/cs:pulse`, `/cs:litreview`, `/cs:grants`, `/cs:dossier`, `/cs:patent`, `/cs:syllabus`
 
 ---

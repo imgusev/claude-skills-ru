@@ -375,9 +375,9 @@ python3 product-team/landing-page-generator/scripts/landing_page_scaffolder.py c
 
 ---
 
-## Сборка сайта документации и переводов (для мейнтейнеров)
+## Сборка сайта документации (для мейнтейнеров)
 
-Этот форк добавляет двуязычный (en/ru) сайт документации поверх оригинального контента. Установка и запуск:
+Этот форк добавляет двуязычный (en/ru) сайт документации поверх оригинального контента — `SKILL.ru.md` лежит рядом с каждым английским `SKILL.md`. Установка и запуск:
 
 ```bash
 # 1. Создаём venv (uv, Python 3.12+) и ставим зависимости
@@ -390,28 +390,23 @@ uv pip install -r requirements-docs.txt -r requirements-dev.txt
 # 3. Собираем (или запускаем локально) двуязычный сайт — mkdocs-static-i18n
 #    собирает обе версии ('en' в site/, 'ru' в site/ru/) из одного mkdocs.yml
 .venv/bin/mkdocs build      # или: .venv/bin/mkdocs serve
-
-# 4. Переводим ещё контента на русский (пишет <stem>.ru.md рядом с
-#    английским оригиналом — оригинал никогда не трогается). Нужны
-#    YANDEX_TRANSLATE_API_KEY / YANDEX_FOLDER_ID (см. .env.example).
-.venv/bin/python scripts/translate.py --domain markdown-html --dry-run
-.venv/bin/python scripts/translate.py --domain markdown-html
-
-# 5. Гейт качества — линтер, форматтер, тесты, структурная целостность
-.venv/bin/ruff check .
-.venv/bin/ruff format --check .
-.venv/bin/pytest -q
-.venv/bin/python scripts/check_translation_integrity.py
-.venv/bin/python scripts/check_dual_publish.py
 ```
 
-Перед публикацией этого форка замените плейсхолдеры `<GH_USER>/<REPO>` в `mkdocs.yml`, `scripts/generate-docs.py` (`GITHUB_BASE`) и `docs/overrides/main.html` на реальные имя пользователя/организации и репозитория GitHub.
+Сам пайплайн перевода (интеграция с Yandex Translate, проверки структурной целостности) — внутренний инструментарий и не входит в этот публикуемый репозиторий.
+
+---
+
+## Мейнтейнеры и атрибуция
+
+**RU-мейнтейнер:** [Ilya Gusev](https://imgusev.ru) — [imgusev.ru](https://imgusev.ru) · [@imgusev](https://t.me/imgusev) в Telegram · [github.com/imgusev](https://github.com/imgusev).
+
+Это русский перевод/адаптация [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills), лицензия MIT, © Alireza Rezvani. Полная атрибуция — в [LICENSE](LICENSE) и [NOTICE](NOTICE).
 
 ---
 
 ## Лицензия
 
-MIT — подробности в [LICENSE](LICENSE).
+MIT — подробности в [LICENSE](LICENSE). См. также [NOTICE](NOTICE) — атрибуция русского перевода.
 
 ---
 
@@ -422,13 +417,3 @@ MIT — подробности в [LICENSE](LICENSE).
 ---
 
 **Создано [Alireza Rezvani](https://alirezarezvani.com)** · [Medium](https://alirezarezvani.medium.com) · [Twitter](https://twitter.com/nginitycloud)
-
----
-
-## Об этом переводе
-
-Русский перевод контента claude-skills подготовлен независимо от оригинального автора. Оригинал распространяется по лицензии MIT, © 2025 Alireza Rezvani — см. [LICENSE](LICENSE), copyright не меняется. Исходный репозиторий: <https://github.com/alirezarezvani/claude-skills>.
-
-Перевод недеструктивен: английские `SKILL.md`/`README.md` и все остальные оригинальные файлы остаются нетронутыми; русские версии лежат рядом с суффиксом `.ru.md` (например `SKILL.ru.md`). Сайт документации собирается двуязычным через `mkdocs-static-i18n` — переключатель языка в шапке сайта.
-
-**Перед публикацией форка:** замените плейсхолдеры `<GH_USER>/<REPO>` в `mkdocs.yml`, `scripts/generate-docs.py` (`GITHUB_BASE`) и `docs/overrides/main.html` на реальные имя пользователя/организации и репозитория GitHub, под которыми размещён этот форк.

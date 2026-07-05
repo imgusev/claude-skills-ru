@@ -7,7 +7,7 @@ description: "Run financial ratio analysis, DCF valuation, budget variance analy
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/financial-health.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/financial-health.md">Source</a></span>
 </div>
 
 

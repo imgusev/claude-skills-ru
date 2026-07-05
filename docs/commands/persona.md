@@ -7,7 +7,7 @@ description: "Generate data-driven user personas for UX research and product des
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/persona.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/persona.md">Source</a></span>
 </div>
 
 

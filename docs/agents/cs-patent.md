@@ -8,7 +8,7 @@ description: "Patent prior-art + landscape intelligence persona. Walks 6 forcing
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Research</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/agents/cs-patent.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/agents/cs-patent.md">Source</a></span>
 </div>
 
 
@@ -52,7 +52,7 @@ The cs-patent agent orchestrates the `patent` skill across prior-art + landscape
 
 ## Skill Integration
 
-**Skill Location:** [`skills/patent`](https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/skills/patent)
+**Skill Location:** [`skills/patent`](https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/skills/patent)
 
 ### Python Tools (Stdlib)
 
@@ -68,9 +68,9 @@ The cs-patent agent orchestrates the `patent` skill across prior-art + landscape
 
 ## Related Agents
 
-- [cs-litreview](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/agents/cs-litreview.md) — sibling, academic literature
-- [cs-grants](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/agents/cs-grants.md) — sibling, NIH funding
-- [cs-dossier](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/agents/cs-dossier.md) — sibling, hypothesis-tested entity research
+- [cs-litreview](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/agents/cs-litreview.md) — sibling, academic literature
+- [cs-grants](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/agents/cs-grants.md) — sibling, NIH funding
+- [cs-dossier](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/agents/cs-dossier.md) — sibling, hypothesis-tested entity research
 - Future: cs-syllabus (course readings)
 
 ---

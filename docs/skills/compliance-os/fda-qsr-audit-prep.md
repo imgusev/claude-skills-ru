@@ -8,7 +8,7 @@ description: "/cs:fda-qsr-audit-prep <scope> — FDA 21 CFR 820 (QSR / QMSR) aud
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
 <span class="meta-badge">:material-identifier: `fda-qsr-audit-prep`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/fda-qsr-audit-prep/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/fda-qsr-audit-prep/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -158,9 +158,9 @@ python ../../skills/compliance-os/scripts/audit_simulator.py fda_qsr_scope.json
 
 ## Related
 
-- Agent: [`cs-fda-qsr-auditor`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/agents/cs-fda-qsr-auditor.md)
-- Skill: [`fda-consultant-specialist`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/fda-consultant-specialist/SKILL.md)
-- Adjacent: [`skills/iso13485-audit-prep`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/iso13485-audit-prep), [`skills/compliance-readiness`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-readiness)
+- Agent: [`cs-fda-qsr-auditor`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/agents/cs-fda-qsr-auditor.md)
+- Skill: [`fda-consultant-specialist`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/fda-consultant-specialist/SKILL.md)
+- Adjacent: [`skills/iso13485-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/iso13485-audit-prep), [`skills/compliance-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-readiness)
 
 ---
 

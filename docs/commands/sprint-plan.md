@@ -7,7 +7,7 @@ description: "Capacity-gated sprint planning — runs capacity math, carry-over 
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/sprint-plan.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/sprint-plan.md">Source</a></span>
 </div>
 
 

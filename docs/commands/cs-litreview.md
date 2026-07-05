@@ -7,7 +7,7 @@ description: "/cs:litreview <research-question> — Academic literature orientat
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/commands/cs-litreview.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/commands/cs-litreview.md">Source</a></span>
 </div>
 
 
@@ -139,9 +139,9 @@ python ../skills/litreview/scripts/citation_tracker.py --action close --session 
 
 ## Related
 
-- Agent: [`cs-litreview`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/agents/cs-litreview.md)
-- Skill: [`litreview`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/SKILL.md)
-- Source spec: [`megaprompts/09-litreview-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/09-litreview-megaprompt.md)
+- Agent: [`cs-litreview`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/agents/cs-litreview.md)
+- Skill: [`litreview`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/SKILL.md)
+- Source spec: [`megaprompts/09-litreview-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/09-litreview-megaprompt.md)
 - Sibling: `/cs:pulse` (research pack)
 - Future siblings: `/cs:grants`, `/cs:patent`, `/cs:dossier`, `/cs:syllabus`
 

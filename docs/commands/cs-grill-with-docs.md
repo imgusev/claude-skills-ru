@@ -7,7 +7,7 @@ description: "/cs:grill-with-docs <path-to-plan> — Start a docs-anchored grill
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/commands/cs-grill-with-docs.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/commands/cs-grill-with-docs.md">Source</a></span>
 </div>
 
 
@@ -94,9 +94,9 @@ Recommended: [position] because [rationale grounded in the anchor]
 
 ## Related
 
-- Agent: [`cs-grill-with-docs`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/agents/cs-grill-with-docs.md)
-- Skill: [`grill-with-docs`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/skills/grill-with-docs/SKILL.md)
-- Format specs: [ADR-FORMAT](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/skills/grill-with-docs/ADR-FORMAT.md), [CONTEXT-FORMAT](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/skills/grill-with-docs/CONTEXT-FORMAT.md)
+- Agent: [`cs-grill-with-docs`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/agents/cs-grill-with-docs.md)
+- Skill: [`grill-with-docs`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/SKILL.md)
+- Format specs: [ADR-FORMAT](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/ADR-FORMAT.md), [CONTEXT-FORMAT](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/CONTEXT-FORMAT.md)
 - Sibling skill: `/cs:grill-me` (plan-only grill)
 - Adjacent: `/cs:caveman`, `/cs:handoff`, `/cs:write-a-skill`
 

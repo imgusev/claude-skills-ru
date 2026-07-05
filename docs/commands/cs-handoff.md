@@ -7,7 +7,7 @@ description: "/cs:handoff <next-session-focus> — Compact the current conversat
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/commands/cs-handoff.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/commands/cs-handoff.md">Source</a></span>
 </div>
 
 
@@ -75,8 +75,8 @@ python ../skills/handoff/scripts/skill_recommender.py path/to/draft.md
 
 ## Related
 
-- Agent: [`cs-handoff-author`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/agents/cs-handoff-author.md)
-- Skill: [`handoff`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff/SKILL.md)
+- Agent: [`cs-handoff-author`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/agents/cs-handoff-author.md)
+- Skill: [`handoff`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/SKILL.md)
 - Adjacent: `/cs:caveman`, `/cs:grill-me`, `/cs:write-a-skill`
 
 ---

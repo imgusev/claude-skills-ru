@@ -8,7 +8,7 @@ description: "When the user wants to optimize any form that is NOT signup/regist
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
 <span class="meta-badge">:material-identifier: `form-cro`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/form-cro/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/form-cro/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

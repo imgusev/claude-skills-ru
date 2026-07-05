@@ -7,7 +7,7 @@ description: "/cs:syllabus <syllabus-file-or-paste> — Generate curated supplem
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/commands/cs-syllabus.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/commands/cs-syllabus.md">Source</a></span>
 </div>
 
 
@@ -138,9 +138,9 @@ python ../skills/syllabus/scripts/citation_tracker.py --action close --session N
 
 ## Related
 
-- Agent: [`cs-syllabus`](https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/agents/cs-syllabus.md)
-- Skill: [`syllabus`](https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/skills/syllabus/SKILL.md)
-- Source spec: [`megaprompts/10-syllabus-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/10-syllabus-megaprompt.md)
+- Agent: [`cs-syllabus`](https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/agents/cs-syllabus.md)
+- Skill: [`syllabus`](https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/skills/syllabus/SKILL.md)
+- Source spec: [`megaprompts/10-syllabus-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/10-syllabus-megaprompt.md)
 - Siblings: `/cs:litreview`, `/cs:grants`, `/cs:patent`, `/cs:dossier`, `/cs:pulse`
 
 ---

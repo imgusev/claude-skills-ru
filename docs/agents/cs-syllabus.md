@@ -8,7 +8,7 @@ description: "Course supplementary reading list persona. Walks 3 forcing intake 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Research</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/agents/cs-syllabus.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/agents/cs-syllabus.md">Source</a></span>
 </div>
 
 
@@ -56,7 +56,7 @@ The cs-syllabus agent orchestrates the `syllabus` skill across course-reading-li
 
 ## Skill Integration
 
-**Skill Location:** [`skills/syllabus`](https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/skills/syllabus)
+**Skill Location:** [`skills/syllabus`](https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/skills/syllabus)
 
 ### Python Tools (Stdlib)
 
@@ -76,10 +76,10 @@ The cs-syllabus agent orchestrates the `syllabus` skill across course-reading-li
 
 ## Related Agents
 
-- [cs-litreview](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/agents/cs-litreview.md) — sibling, academic literature
-- [cs-grants](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/agents/cs-grants.md) — sibling, NIH funding
-- [cs-patent](https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/agents/cs-patent.md) — sibling, patent prior-art
-- [cs-dossier](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/agents/cs-dossier.md) — sibling, entity research
+- [cs-litreview](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/agents/cs-litreview.md) — sibling, academic literature
+- [cs-grants](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/agents/cs-grants.md) — sibling, NIH funding
+- [cs-patent](https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/agents/cs-patent.md) — sibling, patent prior-art
+- [cs-dossier](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/agents/cs-dossier.md) — sibling, entity research
 
 ---
 

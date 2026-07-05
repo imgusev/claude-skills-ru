@@ -8,7 +8,7 @@ description: "Ultra-compressed communication mode. Cuts token usage ~75% by drop
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `caveman`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -16,7 +16,7 @@ description: "Ultra-compressed communication mode. Cuts token usage ~75% by drop
 </div>
 
 
-> Derived from [Matt Pocock's caveman](https://github.com/mattpocock/skills/tree/main/skills/productivity/caveman) (MIT). Matt's voice preserved verbatim. Additions: compression tools + references + cs-* wrapper (see [references/companion_tooling.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/references/companion_tooling.md)).
+> Derived from [Matt Pocock's caveman](https://github.com/mattpocock/skills/tree/main/skills/productivity/caveman) (MIT). Matt's voice preserved verbatim. Additions: compression tools + references + cs-* wrapper (see [references/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/references/companion_tooling.md)).
 
 Respond terse like smart caveman. All technical substance stay. Only fluff die.
 
@@ -61,7 +61,7 @@ Example -- destructive op:
 
 ## Tooling
 
-See [references/companion_tooling.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/references/companion_tooling.md). Tools: compressor + estimator + lint. Agent: `cs-caveman-mode`. Command: `/cs:caveman`.
+See [references/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/references/companion_tooling.md). Tools: compressor + estimator + lint. Agent: `cs-caveman-mode`. Command: `/cs:caveman`.
 
 ---
 

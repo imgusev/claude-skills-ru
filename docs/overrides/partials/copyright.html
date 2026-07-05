@@ -17,6 +17,14 @@
         {{ config.copyright }}
       </div>
     {% endif %}
+    {#- Compact maintainer links (§_meta/docs/BRANDING.md) — GitHub + site,
+        shown on every page footer regardless of locale. -#}
+    <div class="md-copyright__maintainer">
+      {% if locale == 'ru' %}RU-мейнтейнер:{% else %}RU maintainer:{% endif %}
+      <a href="https://github.com/imgusev" target="_blank" rel="noopener">github.com/imgusev</a>
+      ·
+      <a href="https://imgusev.ru" target="_blank" rel="noopener">imgusev.ru</a>
+    </div>
     {#- trim('/') strips a trailing slash from site_url so the join stays
         correct whether or not site_url ends in "/" (defensive against future
         config edits). It only strips '/' from the ends, so "https://" is safe. -#}

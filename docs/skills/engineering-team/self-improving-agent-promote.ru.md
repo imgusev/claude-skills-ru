@@ -1,0 +1,155 @@
+---
+title: "/si:продвижение — обучение выпускников правилам { #sipromote--graduate-learnings-to-rules } — Агентский скилл и плагин Codex"
+description: "Извлеките проверенный шаблон из автоматической памяти (MEMORY.md ) к CLAUDE.md или .claude/правила/ для постоянного применения. Используйте, когда. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+---
+
+# /si:продвижение — обучение выпускников правилам { #sipromote--graduate-learnings-to-rules }
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-code-braces: Инженерия — базовый уровень</span>
+<span class="meta-badge">:material-identifier: `promote`</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/self-improving-agent/skills/promote/SKILL.md">Источник</a></span>
+</div>
+
+<div class="install-banner" markdown>
+<span class="install-label">Установить:</span> <code>claude /plugin install engineering-skills</code>
+</div>
+
+
+Перемещает проверенный шаблон из автоматической памяти Claude в систему правил проекта, где он становится принудительной инструкцией, а не справочной информацией.
+
+## Использование { #usage }
+
+```
+/si:promote <pattern description>                    # Auto-detect best target
+/si:promote <pattern> --target claude.md             # Promote to CLAUDE.md
+/si:promote <pattern> --target rules/testing.md      # Promote to scoped rule
+/si:promote <pattern> --target rules/api.md --paths "src/api/**/*.ts"  # Scoped with paths
+```
+
+## Воркфлоу { #workflow }
+
+### Шаг 1: Поймите закономерность { #step-1-understand-the-pattern }
+
+Проанализируйте описание пользователя. Если что-то неясно, задайте один уточняющий вопрос:
+- "Какому конкретному поведению должен следовать Клод?"
+- "Это относится ко всем файлам или к определенным путям?"
+
+### Шаг 2: Найдите шаблон в автоматической памяти { #step-2-find-the-pattern-in-auto-memory }
+
+```bash
+# Search MEMORY.md for related entries
+MEMORY_DIR="$HOME/.claude/projects/$(pwd | sed 's|/|%2F|g; s|%2F|/|; s|^/||')/memory"
+grep -ni "<keywords>" "$MEMORY_DIR/MEMORY.md"
+```
+
+Покажите совпадающие записи и подтвердите, что это именно то, что имеет в виду пользователь.
+
+### Шаг 3: Определите правильную цель { #step-3-determine-the-right-target }
+
+| Область действия шаблона | Цель | Пример |
+|---|---|---|
+| Применяется ко всему проекту | `./CLAUDE.md` | "Используйте pnpm, а не npm" |
+| Применяется к определенным типам файлов | `.claude/rules/<topic>.md` | "Обработчики API нуждаются в проверке" |
+| Применимо ко всем вашим проектам | `~/.claude/CLAUDE.md` | "Предпочитаю явную обработку ошибок" |
+
+Если пользователь не указал цель, порекомендуйте ее в зависимости от области применения.
+
+### Шаг 4: Сформулируйте краткое правило { #step-4-distill-into-a-concise-rule }
+
+Преобразуйте процесс обучения из формата заметок автоматической памяти в CLAUDE.md формат инструкции:
+
+**До** (MEMORY.md — описательный):
+> В проекте используются рабочие пространства pnpm. Когда я попытался установить npm, это не удалось. Файлом блокировки является pnpm-lock.yaml. Необходимо использовать pnpm install для зависимостей.
+
+**После** (CLAUDE.md — предписывающий):
+```markdown
+## Build & Dependencies
+- Package manager: pnpm (not npm). Use `pnpm install`.
+```
+
+**Правила дистилляции:**
+- По одной строке на правило, когда это возможно
+- Повелительный голос ("Используй X", "Всегда Y", "Никогда Z")
+- Включите команду или пример, а не только концепцию
+- Никакой предыстории — только инструкция
+
+### Шаг 5: Запись в target { #step-5-write-to-target }
+
+**Для CLAUDE.md:**
+1. Читать существующие CLAUDE.md
+2. Найдите соответствующий раздел (или создайте его)
+3. Добавьте новое правило под правильным заголовком
+4. Если размер файла превышает 200 строк, предложите использовать `.claude/rules/` вместо этого
+
+**Для `.claude/rules/`:**
+1. Создайте файл, если он не существует
+2. Добавьте YAML frontmatter с помощью `paths` если область действия ограничена
+3. Напишите содержание правила
+
+```markdown
+---
+paths:
+  - "src/api/**/*.ts"
+  - "tests/api/**/*"
+---
+
+# API Development Rules
+
+- All endpoints must validate input with Zod schemas
+- Use `ApiError` class for error responses (not raw Error)
+- Include OpenAPI JSDoc comments on handler functions
+```
+
+### Шаг 6: Очистите автоматическую память { #step-6-clean-up-auto-memory }
+
+После продвижения удалите или отметьте исходную запись в MEMORY.md:
+
+```bash
+# Show what will be removed
+grep -n "<pattern>" "$MEMORY_DIR/MEMORY.md"
+```
+
+Попросите пользователя подтвердить удаление. Затем отредактируйте MEMORY.md чтобы удалить продвигаемую запись. Это освобождает пространство для новых знаний.
+
+### Шаг 7: Подтвердите { #step-7-confirm }
+
+```
+✅ Promoted to {{target}}
+
+Rule: "{{distilled rule}}"
+Source: MEMORY.md line {{n}} (removed)
+MEMORY.md: {{lines}}/200 lines remaining
+
+The pattern is now an enforced instruction. Claude will follow it in all future sessions.
+```
+
+## Руководство по принятию решений о продвижении { #promotion-decision-guide }
+
+### Продвигать, когда: { #promote-when }
+- Шаблон появлялся более 3 раз в автоматической памяти
+- Ты не раз поправлял Клода по этому поводу
+- Это соглашение о проекте, которое должен знать любой участник
+- Это предотвращает повторение ошибки
+
+### Не продвигайте, когда: { #dont-promote-when }
+- Это одноразовая заметка для отладки (оставьте в автоматической памяти)
+- Это контекст, зависящий от сеанса (память сеанса обрабатывает это)
+- Это может измениться в ближайшее время (например, во время миграции).
+- Это уже предусмотрено существующими правилами
+
+### CLAUDE.md против Клода/правила/ { #claudemd-vs-clauderules }
+
+| Использование CLAUDE.md для | Используйте .claude/правила/ для |
+|---|---|
+| Правила глобального проекта | Шаблоны, зависящие от типа файла |
+| Создавать команды | Соглашения о тестировании |
+| Архитектурные решения | Правила проектирования API |
+| Командные соглашения | Ошибки, характерные для фреймворка |
+
+## Советы { #tips }
+
+- Держать CLAUDE.md менее 200 строк — используйте правила/ для переполнения
+- Поддерживать одно правило на строку проще, чем абзацы
+- Включите конкретную команду, а не только концепцию
+- Ежеквартально ревью продвигаемые правила — удаляйте то, что больше не актуально

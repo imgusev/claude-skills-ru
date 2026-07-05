@@ -8,7 +8,7 @@ description: "Manage local SEO for service-area businesses — appliance repair,
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
 <span class="meta-badge">:material-identifier: `local-seo-manager`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/local-seo-manager/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/local-seo-manager/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -113,7 +113,7 @@ You control relevance and prominence. Proximity is fixed.
 
 ### Review Response Templates
 
-See [references/review-response-templates.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/local-seo-manager/references/review-response-templates.md) for full templates by scenario.
+See [references/review-response-templates.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/local-seo-manager/references/review-response-templates.md) for full templates by scenario.
 
 **Positive review response framework:**
 > Thank [customer name if available]. [Acknowledge the specific service they mentioned]. [Add one sentence about your commitment/value]. [Invite them back or refer]. — [Your name], [Business name]
@@ -243,7 +243,7 @@ Generate with `scripts/schema_generator.py`. The script produces JSON-LD ready t
 | `FAQPage` | Pages with FAQ sections | High — rich results + AI citation |
 | `Review` / `AggregateRating` | Pages showing review stars | High — CTR lift from star snippets |
 
-See [references/local-schema-types.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/local-seo-manager/references/local-schema-types.md) for full schema examples.
+See [references/local-schema-types.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/local-seo-manager/references/local-schema-types.md) for full schema examples.
 
 ### Technical Local SEO Checklist
 
@@ -295,9 +295,9 @@ Flag these without being asked:
 
 ## References
 
-- [Local SEO Checklist](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/local-seo-manager/references/local-seo-checklist.md) — Full 80-point checklist covering GBP, citations, on-page, technical
-- [Local Schema Types](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/local-seo-manager/references/local-schema-types.md) — Schema.org types for local service businesses with examples
-- [Review Response Templates](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/local-seo-manager/references/review-response-templates.md) — Response templates by scenario (5-star to 1-star, review-request flows)
+- [Local SEO Checklist](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/local-seo-manager/references/local-seo-checklist.md) — Full 80-point checklist covering GBP, citations, on-page, technical
+- [Local Schema Types](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/local-seo-manager/references/local-schema-types.md) — Schema.org types for local service businesses with examples
+- [Review Response Templates](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/local-seo-manager/references/review-response-templates.md) — Response templates by scenario (5-star to 1-star, review-request flows)
 
 ---
 

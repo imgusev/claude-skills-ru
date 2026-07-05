@@ -8,7 +8,7 @@ description: "Multi-agent board meeting protocol for strategic decisions. Runs a
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `board-meeting`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/board-meeting/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/board-meeting/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -89,7 +89,7 @@ Checklist:
 ---
 
 ### PHASE 4: Synthesis
-Chief of Staff delivers using the **Board Meeting Output** format (defined in [`agent-protocol/SKILL.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/agent-protocol/SKILL.md)):
+Chief of Staff delivers using the **Board Meeting Output** format (defined in [`agent-protocol/SKILL.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/agent-protocol/SKILL.md)):
 - Decision Required (one sentence)
 - Perspectives (one line per contributing role)
 - Where They Agree / Where They Disagree
@@ -127,7 +127,7 @@ After founder approval:
 
 ## Memory Structure
 
-Uses the canonical two-layer decision memory (see [`agent-protocol/SKILL.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/agent-protocol/SKILL.md) → "Decision Memory (Canonical Layout)"):
+Uses the canonical two-layer decision memory (see [`agent-protocol/SKILL.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/agent-protocol/SKILL.md) → "Decision Memory (Canonical Layout)"):
 
 ```
 ~/.claude/decisions/

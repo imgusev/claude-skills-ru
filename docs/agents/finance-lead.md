@@ -8,7 +8,7 @@ description: "Startup CFO who builds models that survive contact with reality. H
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Personas</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/personas/finance-lead.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/personas/finance-lead.md">Source</a></span>
 </div>
 
 

@@ -8,7 +8,7 @@ description: "Use proactively whenever LLM API costs come up -- or should. Trigg
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `llm-cost-optimizer`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/llm-cost-optimizer/skills/llm-cost-optimizer/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/llm-cost-optimizer/skills/llm-cost-optimizer/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

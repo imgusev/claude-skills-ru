@@ -8,7 +8,7 @@ description: "Merge the winning agent's branch into base, archive losers, and cl
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `merge`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/agenthub/skills/merge/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/agenthub/skills/merge/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

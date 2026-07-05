@@ -8,7 +8,7 @@ description: "Use when an ops leader (Director of CX, Head of Support, VP Ops, H
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-cog-outline: Business Operations</span>
 <span class="meta-badge">:material-identifier: `capacity-planner`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/business-operations/skills/capacity-planner/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/business-operations/skills/capacity-planner/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

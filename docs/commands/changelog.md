@@ -7,7 +7,7 @@ description: "Generate changelogs from git history and validate conventional com
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/changelog.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/changelog.md">Source</a></span>
 </div>
 
 

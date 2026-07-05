@@ -8,7 +8,7 @@ description: "/cs:aims-audit <scope> — ISO/IEC 42001 AIMS internal-audit 6-que
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
 <span class="meta-badge">:material-identifier: `aims-audit`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/aims-audit/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/aims-audit/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -134,9 +134,9 @@ python ../../skills/compliance-os/scripts/cross_framework_mapper.py program.json
 
 ## Related
 
-- Agent: [`cs-aims-iso42001`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/agents/cs-aims-iso42001.md)
-- Skill: [`iso42001-specialist`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/iso42001-specialist/SKILL.md)
-- Adjacent: [`skills/compliance-os`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os), [`skills/ai-act-readiness`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/ai-act-readiness), [`skills/compliance-readiness`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-readiness)
+- Agent: [`cs-aims-iso42001`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/agents/cs-aims-iso42001.md)
+- Skill: [`iso42001-specialist`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/iso42001-specialist/SKILL.md)
+- Adjacent: [`skills/compliance-os`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os), [`skills/ai-act-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/ai-act-readiness), [`skills/compliance-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-readiness)
 
 ---
 

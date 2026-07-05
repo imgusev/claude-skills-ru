@@ -7,7 +7,7 @@ description: "Convert long-form markdown (specs, RFCs, reports, plans, explainer
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/markdown-html/commands/cs-md-document.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/commands/cs-md-document.md">Source</a></span>
 </div>
 
 

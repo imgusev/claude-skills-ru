@@ -7,7 +7,7 @@ description: "/cs:dossier <entity> — Decision-grade entity research with manda
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/commands/cs-dossier.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/commands/cs-dossier.md">Source</a></span>
 </div>
 
 
@@ -135,9 +135,9 @@ Every fact in the DOCX tagged with tier (primary / secondary / tertiary):
 
 ## Related
 
-- Agent: [`cs-dossier`](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/agents/cs-dossier.md)
-- Skill: [`dossier`](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/skills/dossier/SKILL.md)
-- Source spec: [`megaprompts/12-dossier-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/12-dossier-megaprompt.md)
+- Agent: [`cs-dossier`](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/agents/cs-dossier.md)
+- Skill: [`dossier`](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/skills/dossier/SKILL.md)
+- Source spec: [`megaprompts/12-dossier-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/12-dossier-megaprompt.md)
 - Siblings: `/cs:litreview`, `/cs:grants`, `/cs:pulse`
 - Future: `/cs:patent`, `/cs:syllabus`
 

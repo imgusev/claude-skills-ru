@@ -8,7 +8,7 @@ description: "ISO/IEC 42001:2023 AI Management System (AIMS) specialist for comp
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-check-outline: Regulatory & Quality</span>
 <span class="meta-badge">:material-identifier: `iso42001-specialist`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -186,10 +186,10 @@ python scripts/aims_audit_scheduler.py audit_scope.json
 
 ## References
 
-- [iso42001_clauses.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist/references/iso42001_clauses.md) — Clauses 4–10 walkthrough with audit evidence expectations, common gaps, and reusable artifacts from ISO 27001/13485
-- [aims_controls_annex_a.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist/references/aims_controls_annex_a.md) — All 38 Annex A controls (A.2–A.10) with implementation guidance, audit evidence, and severity of failure
-- [aims_implementation_guide.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist/references/aims_implementation_guide.md) — 3-year maturity model (establish → certify → continually improve), rollout sequencing, integration with existing ISMS/QMS programs
-- [cross_framework_mapping_ai.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist/references/cross_framework_mapping_ai.md) — ISO 42001 ↔ EU AI Act ↔ NIST AI RMF ↔ ISO 23894 ↔ ISO 38507 ↔ ISO 27001 control-level mapping with mapping-confidence ratings
+- [iso42001_clauses.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist/references/iso42001_clauses.md) — Clauses 4–10 walkthrough with audit evidence expectations, common gaps, and reusable artifacts from ISO 27001/13485
+- [aims_controls_annex_a.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist/references/aims_controls_annex_a.md) — All 38 Annex A controls (A.2–A.10) with implementation guidance, audit evidence, and severity of failure
+- [aims_implementation_guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist/references/aims_implementation_guide.md) — 3-year maturity model (establish → certify → continually improve), rollout sequencing, integration with existing ISMS/QMS programs
+- [cross_framework_mapping_ai.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/compliance-team-iso42001/skills/iso42001-specialist/references/cross_framework_mapping_ai.md) — ISO 42001 ↔ EU AI Act ↔ NIST AI RMF ↔ ISO 23894 ↔ ISO 38507 ↔ ISO 27001 control-level mapping with mapping-confidence ratings
 
 ---
 

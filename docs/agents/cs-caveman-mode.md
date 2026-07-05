@@ -8,7 +8,7 @@ description: "Caveman-mode operator. Persistent ultra-compressed communication m
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/agents/cs-caveman-mode.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/agents/cs-caveman-mode.md">Source</a></span>
 </div>
 
 
@@ -35,30 +35,30 @@ Differentiates clearly:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/caveman`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman)
+**Skill Location:** [`skills/caveman`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman)
 
 ### Python Tools (Stdlib)
 
 1. **Compressor**
-   - Path: [`scripts/caveman_compressor.py`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/scripts/caveman_compressor.py)
+   - Path: [`scripts/caveman_compressor.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/scripts/caveman_compressor.py)
    - Usage: `python caveman_compressor.py "text to compress"`
    - Applies Matt's rules deterministically (drop articles/filler/pleasantries/hedging, abbreviate technical terms, causality arrows)
 
 2. **Token Savings Estimator**
-   - Path: [`scripts/token_savings_estimator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/scripts/token_savings_estimator.py)
+   - Path: [`scripts/token_savings_estimator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/scripts/token_savings_estimator.py)
    - Usage: `python token_savings_estimator.py "text" --price-per-mtok 3.00`
    - Estimates token reduction + cost savings at given $/Mtok price
 
 3. **Lint**
-   - Path: [`scripts/caveman_lint.py`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/scripts/caveman_lint.py)
+   - Path: [`scripts/caveman_lint.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/scripts/caveman_lint.py)
    - Usage: `python caveman_lint.py "response to check"`
    - Detects banned vocab; whitelists exception zones (security warnings, destructive ops)
 
 ### Knowledge Bases
 
-- [`references/companion_tooling.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/references/companion_tooling.md) — tool catalogue + heuristic
-- [`references/compression_principles.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/references/compression_principles.md) — what to cut + what to keep (8 sources)
-- [`references/when_caveman_backfires.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/references/when_caveman_backfires.md) — 5 failure modes + auto-clarity exception (7 sources)
+- [`references/companion_tooling.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/references/companion_tooling.md) — tool catalogue + heuristic
+- [`references/compression_principles.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/references/compression_principles.md) — what to cut + what to keep (8 sources)
+- [`references/when_caveman_backfires.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/references/when_caveman_backfires.md) — 5 failure modes + auto-clarity exception (7 sources)
 
 ## Workflows
 
@@ -108,14 +108,14 @@ No headers. No preamble. No bullets unless list semantics required.
 
 ## Related Agents
 
-- [cs-skill-author](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/write-a-skill/agents/cs-skill-author.md) — meta-skill for skill authoring (NOT caveman)
-- [cs-grill-master](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-me/agents/cs-grill-master.md) — forcing-questions mode (also terse, different purpose)
+- [cs-skill-author](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/agents/cs-skill-author.md) — meta-skill for skill authoring (NOT caveman)
+- [cs-grill-master](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/agents/cs-grill-master.md) — forcing-questions mode (also terse, different purpose)
 
 ## References
 
-- Skill: [../skills/caveman/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/SKILL.md)
-- Companion tooling: [../skills/caveman/references/companion_tooling.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/references/companion_tooling.md)
-- Sibling command: [`/cs:caveman`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/commands/cs-caveman.md)
+- Skill: [../skills/caveman/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/SKILL.md)
+- Companion tooling: [../skills/caveman/references/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/references/companion_tooling.md)
+- Sibling command: [`/cs:caveman`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/commands/cs-caveman.md)
 
 ---
 

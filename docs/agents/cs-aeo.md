@@ -8,7 +8,7 @@ description: "Answer Engine Optimization (AEO) specialist agent. Use when conten
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/marketing/cs-aeo.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/marketing/cs-aeo.md">Source</a></span>
 </div>
 
 
@@ -82,7 +82,7 @@ Differentiates from siblings:
 ## Related Agents
 
 - [cs-content-creator](cs-content-creator.md) — marketing-domain content writer
-- [seo-audit skill](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/seo-audit/SKILL.md) — companion SEO audit (often run together)
+- [seo-audit skill](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/seo-audit/SKILL.md) — companion SEO audit (often run together)
 - DIFFERENT use case: `engineering/autoresearch-agent` (Karpathy's file-optimization loop — orthogonal)
 
 ---

@@ -1,0 +1,195 @@
+---
+title: "Оценщик технологического стека { #technology-stack-evaluator } — Агентский скилл и плагин Codex"
+description: "Оценка технологического стека и сравнение с анализом совокупной стоимости владения, оценкой безопасности и оценкой состояния экосистемы. Используйте. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+---
+
+# Оценщик технологического стека { #technology-stack-evaluator }
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-code-braces: Инженерия — базовый уровень</span>
+<span class="meta-badge">:material-identifier: `tech-stack-evaluator`</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/tech-stack-evaluator/SKILL.md">Источник</a></span>
+</div>
+
+<div class="install-banner" markdown>
+<span class="install-label">Установить:</span> <code>claude /plugin install engineering-skills</code>
+</div>
+
+
+Оценивайте и сравнивайте технологии, фреймворки и облачных провайдеров с помощью анализа данных и практических рекомендаций.
+
+## Оглавление { #table-of-contents }
+
+- [Возможности](#capabilities)
+- [Быстрый старт](#quick-start)
+- [Форматы ввода](#input-formats)
+- [Типы анализа](#analysis-types)
+- [Сценарии](#scripts)
+- [Ссылки](#references)
+
+---
+
+## Возможности { #capabilities }
+
+| Способность | Описание |
+|------------|-------------|
+| Сравнение технологий | Сравните фреймворки и библиотеки со взвешенной оценкой |
+| Анализ совокупной стоимости владения | Рассчитайте общую стоимость за 5 лет, включая скрытые затраты |
+| Здоровье экосистемы | Оцените показатели GitHub, внедрение npm, силу сообщества |
+| Оценка безопасности | Оценка уязвимостей и готовности к соблюдению требований |
+| Миграционный анализ | Оцените усилия, риски и сроки миграции |
+| Сравнение облаков | Сравните AWS, Azure, GCP для конкретных рабочих нагрузок |
+
+---
+
+## Быстрый старт { #quick-start }
+
+### Сравните две технологии { #compare-two-technologies }
+
+```
+Compare React vs Vue for a SaaS dashboard.
+Priorities: developer productivity (40%), ecosystem (30%), performance (30%).
+```
+
+### Рассчитать совокупную стоимость владения { #calculate-tco }
+
+```
+Calculate 5-year TCO for Next.js on Vercel.
+Team: 8 developers. Hosting: $2500/month. Growth: 40%/year.
+```
+
+### Оценка миграции { #assess-migration }
+
+```
+Evaluate migrating from Angular.js to React.
+Codebase: 50,000 lines, 200 components. Team: 6 developers.
+```
+
+---
+
+## Форматы ввода { #input-formats }
+
+Оценщик принимает три формата ввода:
+
+**Текст** - запросы на естественном языке
+```
+Compare PostgreSQL vs MongoDB for our e-commerce platform.
+```
+
+**YAML** - Структурированный ввод для автоматизации
+```yaml
+comparison:
+  technologies: ["React", "Vue"]
+  use_case: "SaaS dashboard"
+  weights:
+    ecosystem: 30
+    performance: 25
+    developer_experience: 45
+```
+
+**JSON** - Программная интеграция
+```json
+{
+  "technologies": ["React", "Vue"],
+  "use_case": "SaaS dashboard"
+}
+```
+
+---
+
+## Типы анализа { #analysis-types }
+
+### Быстрое сравнение (200-300 токенов) { #quick-comparison-200-300-tokens }
+- Взвешенные баллы и рекомендации
+- Топ-3 фактора принятия решений
+- Уровень достоверности
+
+### Стандартный анализ (500-800 токенов) { #standard-analysis-500-800-tokens }
+- Матрица сравнения
+- Обзор совокупной стоимости владения
+- Краткое описание системы безопасности
+
+### Полный отчет (1200-1500 токенов) { #full-report-1200-1500-tokens }
+- Все показатели и расчеты
+- Миграционный анализ
+- Подробные рекомендации
+
+---
+
+## Сценарии { #scripts }
+
+### stack_comparator.py { #stack_comparatorpy }
+
+Сравнивайте технологии с помощью настраиваемых взвешенных критериев.
+
+```bash
+python scripts/stack_comparator.py --help
+```
+
+### tco_calculator.py { #tco_calculatorpy }
+
+Рассчитайте общую стоимость владения на основе многолетних прогнозов.
+
+```bash
+python scripts/tco_calculator.py --input assets/sample_input_tco.json
+```
+
+### ecosystem_analyzer.py { #ecosystem_analyzerpy }
+
+Анализируйте состояние экосистемы с помощью GitHub, npm и показателей сообщества.
+
+```bash
+python scripts/ecosystem_analyzer.py --technology react
+```
+
+### security_assessor.py { #security_assessorpy }
+
+Оцените состояние безопасности и готовность к соблюдению требований.
+
+```bash
+python scripts/security_assessor.py --technology express --compliance soc2,gdpr
+```
+
+### migration_analyzer.py { #migration_analyzerpy }
+
+Оцените сложность миграции, затраченные усилия и риски.
+
+```bash
+python scripts/migration_analyzer.py --from angular-1.x --to react
+```
+
+---
+
+## Ссылки { #references }
+
+| Документ | Содержание |
+|----------|---------|
+| `references/metrics.md` | Подробные алгоритмы подсчета очков и формулы расчета |
+| `references/examples.md` | Примеры ввода/вывода для всех типов анализа |
+| `references/workflows.md` | Пошаговый воркфлоу-процесс оценки |
+
+---
+
+## Доверительные уровни { #confidence-levels }
+
+| Уровень | Оценка | Интерпретация |
+|-------|-------|----------------|
+| Высокий | 80-100% | Явный победитель, надежные данные |
+| Средний | 50-79% | Присутствуют компромиссы, умеренная неопределенность |
+| Низкий | < 50% | Близкий вызов, ограниченные данные |
+
+---
+
+## Когда использовать { #when-to-use }
+
+- Сравнение фреймворков frontend/backend для новых проектов
+- Оценка поставщиков облачных услуг для конкретных рабочих нагрузок
+- Планирование миграции технологий с оценкой рисков
+- Расчет решений о строительстве и покупке с учетом общей стоимости владения
+- Оценка жизнеспособности библиотеки с открытым исходным кодом
+
+## Когда не следует использовать { #when-not-to-use }
+
+- Тривиальные решения между аналогичными инструментами (используйте командные предпочтения)
+- Обязательный выбор технологии (решение уже принято)
+- Аварийные производственные проблемы (используйте инструменты мониторинга)

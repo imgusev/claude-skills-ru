@@ -8,7 +8,7 @@ description: "Recurring email-triage execution persona. Reads the 7-file KB prod
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Productivity</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/agents/cs-inbox-triage.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/agents/cs-inbox-triage.md">Source</a></span>
 </div>
 
 
@@ -61,30 +61,30 @@ Differentiates clearly:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/inbox-triage`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage)
+**Skill Location:** [`skills/inbox-triage`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage)
 
 ### Python Tools (Stdlib)
 
 1. **KB Reader**
-   - Path: [`scripts/kb_reader.py`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/scripts/kb_reader.py)
+   - Path: [`scripts/kb_reader.py`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/scripts/kb_reader.py)
    - Usage: `python kb_reader.py --workspace ${WORKSPACE}`
    - Reads + validates the 7 KB files. Returns parsed structure (categories, voice patterns, blocklist, tracker entries). Halts with explicit error if required files missing.
 
 2. **Search Window Calculator**
-   - Path: [`scripts/search_window_calculator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/scripts/search_window_calculator.py)
+   - Path: [`scripts/search_window_calculator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/scripts/search_window_calculator.py)
    - Usage: `python search_window_calculator.py --cadence 2x-daily --now 2026-05-15T14:00`
    - Computes window_start from cadence + current time. Default 9h for 2x/day (slight overlap prevents missed emails). Returns run_label (Morning/Afternoon/Evening) based on hour-of-day.
 
 3. **Draft Safety Validator**
-   - Path: [`scripts/draft_safety_validator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/scripts/draft_safety_validator.py)
+   - Path: [`scripts/draft_safety_validator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/scripts/draft_safety_validator.py)
    - Usage: `python draft_safety_validator.py --action-log /path/to/triage-log.md`
    - Scans the triage log for any send-shaped action (`send_email`, `gmail.send`, `outlook.send`, etc.). FAILs if any are detected. The non-negotiable NEVER-SEND check in tool form.
 
 ### Knowledge Bases
 
-- [`references/kb_file_contract.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/references/kb_file_contract.md) — canonical 7-file contract (read perspective; mirrors the setup-side version)
-- [`references/triage_decision_framework.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/references/triage_decision_framework.md) — TAKE IT / WORTH CONSIDERING / PASS / FLAG FOR REVIEW taxonomy
-- [`references/drafts_only_safety.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/references/drafts_only_safety.md) — the NEVER-SEND discipline canon
+- [`references/kb_file_contract.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/references/kb_file_contract.md) — canonical 7-file contract (read perspective; mirrors the setup-side version)
+- [`references/triage_decision_framework.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/references/triage_decision_framework.md) — TAKE IT / WORTH CONSIDERING / PASS / FLAG FOR REVIEW taxonomy
+- [`references/drafts_only_safety.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/references/drafts_only_safety.md) — the NEVER-SEND discipline canon
 
 ## Workflows
 
@@ -197,14 +197,14 @@ Generated at <timestamp>. KB updated: {N blocklist, M tracker}.
 ## Related Agents
 
 - [cs-inbox-setup](./cs-inbox-setup.md) — companion skill, writes the KB this skill reads
-- [cs-pulse](https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/agents/cs-pulse.md) — external research (different domain)
-- [cs-capture](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/agents/cs-capture.md) — brain-dump organizer (different mode)
+- [cs-pulse](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/agents/cs-pulse.md) — external research (different domain)
+- [cs-capture](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/agents/cs-capture.md) — brain-dump organizer (different mode)
 
 ## References
 
-- Skill: [../skills/inbox-triage/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/SKILL.md)
-- Source spec: [`megaprompts/07-inbox-triage-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/../megaprompts/07-inbox-triage-megaprompt.md)
-- Sibling command: [`/cs:inbox-triage`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/commands/cs-inbox-triage.md)
+- Skill: [../skills/inbox-triage/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/SKILL.md)
+- Source spec: [`megaprompts/07-inbox-triage-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/../megaprompts/07-inbox-triage-megaprompt.md)
+- Sibling command: [`/cs:inbox-triage`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/commands/cs-inbox-triage.md)
 
 ---
 

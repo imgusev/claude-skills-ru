@@ -8,7 +8,7 @@ description: "Launch N parallel subagents in isolated git worktrees to compete o
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `spawn`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/agenthub/skills/spawn/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/agenthub/skills/spawn/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -29,7 +29,7 @@ Spawn N subagents that work on the same task in parallel, each in an isolated gi
 
 ## Templates
 
-When `--template <name>` is provided, use the dispatch prompt from [`references/agent-templates.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/agenthub/skills/agenthub/references/agent-templates.md) instead of the default prompt below. Available templates:
+When `--template <name>` is provided, use the dispatch prompt from [`references/agent-templates.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/agenthub/skills/agenthub/references/agent-templates.md) instead of the default prompt below. Available templates:
 
 | Template | Pattern | Use Case |
 |----------|---------|----------|

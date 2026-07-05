@@ -1,0 +1,218 @@
+---
+title: "Инженерия — базовый уровень Skills — Agent Skills & Codex Plugins"
+description: "52 инженерия — базовый уровень skills — инженерный агентский скилл и плагин Claude Code для генерации кода, DevOps, архитектуры и тестирования. Работает с Claude Code, Codex CLI, Gemini CLI, and OpenClaw."
+---
+
+<div class="domain-header" markdown>
+
+# :material-code-braces: Инженерия — базовый уровень
+
+<p class="domain-count">52 скиллов в этом домене</p>
+
+</div>
+
+<div class="install-banner" markdown>
+<span class="install-label">Установить все:</span> <code>claude /plugin install engineering-skills</code>
+</div>
+
+<div class="grid cards" markdown>
+
+-   **[Состязательный рецензент кода { #adversarial-code-reviewer }](adversarial-reviewer.md)**
+
+    ---
+
+    Скилл состязательной ревью кода, который заставляет по-настоящему менять точку зрения с помощью трех враждебных персо...
+
+-   **[Безопасность с помощью искусственного интеллекта { #ai-security }](ai-security.md)**
+
+    ---
+
+    Скиллы оценки безопасности AI и LLM для обнаружения промптов, уязвимостей джейлбрейка, риска инверсии модели, заражен...
+
+-   **[AWS Solution Architect](aws-solution-architect.md)**
+
+    ---
+
+    Design scalable, cost-effective AWS architectures for startups with infrastructure-as-code templates.
+
+-   **[Azure Cloud Architect](azure-cloud-architect.md)**
+
+    ---
+
+    Design scalable, cost-effective Azure architectures for startups and enterprises with Bicep infrastructure-as-code te...
+
+-   **[Облачная безопасность { #cloud-security }](cloud-security.md)**
+
+    ---
+
+    Скилл оценки состояния облачной безопасности для обнаружения эскалации привилегий IAM, уязвимости общедоступного хран...
+
+-   **[Рецензент кода { #code-reviewer }](code-reviewer.md)**
+
+    ---
+
+    Автоматизированные инструменты ревью кода для анализа запросов на извлечение, выявления проблем с качеством кода и со...
+
+-   **[Создатель шаблонов электронной почты { #email-template-builder }](email-template-builder.md)**
+
+    ---
+
+    Уровень: МОЩНЫЙ
+
+-   **[Скиллы инженерной команды { #engineering-team-skills }](engineering-skills.md)**
+
+    ---
+
+    32 готовых к производству инженерных скилла, объединенных в основные инженерные области, безопасность, AI /ML / данны...
+
+-   **[Скилл эпического дизайна { #epic-design-skill }](epic-design.md)**
+
+    ---
+
+    Теперь вы  эксперт по эпическому дизайну мирового класса . Вы создаете кинематографичные, захватывающие веб—сайты, ко...
+
+-   **[GCP Cloud Architect](gcp-cloud-architect.md)**
+
+    ---
+
+    Design scalable, cost-effective Google Cloud architectures for startups and enterprises with infrastructure-as-code t...
+
+-   **[Скилл командира инцидента { #incident-commander-skill }](incident-commander.md)**
+
+    ---
+
+    Категория: Инженерная команда
+
+-   **[Реагирование на инцидент { #incident-response }](incident-response.md)**
+
+    ---
+
+    Скиллы реагирования на инциденты для полного жизненного цикла - от первоначальной сортировки до сбора криминалистичес...
+
+-   **[Менеджер клиентов Microsoft 365 { #microsoft-365-tenant-manager }](ms365-tenant-manager.md)**
+
+    ---
+
+    Экспертное руководство и автоматизация для глобальных администраторов Microsoft 365, управляющих настройкой клиента, ...
+
+-   **[Названный-Состязательный ревью персоны { #named-persona-adversarial-review }](named-persona-adversarial-review.md)**
+
+    ---
+
+    > TL;DR: Абстрактные роли находят абстрактные проблемы. Именитые инженеры с документированной, исходной философией на...
+
+-   **[Красная команда { #red-team }](red-team.md)**
+
+    ---
+
+    Скиллы Red team по планированию взаимодействия и анализу траектории атаки для авторизованного моделирования наступате...
+
+-   **[Тестирование на проникновение в систему безопасности { #security-penetration-testing }](security-pen-testing.md)**
+
+    ---
+
+    Практический скилл для тестирования атакующей безопасности, позволяющий находить уязвимости до того, как это сделают ...
+
+-   **[Старший архитектор { #senior-architect }](senior-architect.md)**
+
+    ---
+
+    Инструменты проектирования архитектуры и анализа для принятия обоснованных технических решений.
+
+-   **[Старший серверный инженер { #senior-backend-engineer }](senior-backend.md)**
+
+    ---
+
+    Шаблоны разработки серверной части, дизайн API, оптимизация баз данных и методы обеспечения безопасности.
+
+-   **[Старший инженер по компьютерному зрению { #senior-computer-vision-engineer }](senior-computer-vision.md)**
+
+    ---
+
+    Производственный инженерный скилл по компьютерному зрению для обнаружения объектов, сегментации изображений и разверт...
+
+-   **[Старший инженер по обработке данных { #senior-data-engineer }](senior-data-engineer.md)**
+
+    ---
+
+    Скиллы производственного уровня для разработки данных для создания масштабируемых и надежных систем обработки данных.
+
+-   **[Старший специалист по обработке данных { #senior-data-scientist }](senior-data-scientist.md)**
+
+    ---
+
+    Скилл старшего специалиста по обработке данных мирового класса для производственных систем искусственного интеллекта/...
+
+-   **[Старший разработчик { #senior-devops }](senior-devops.md)**
+
+    ---
+
+    Полный набор инструментов для старших разработчиков с современными инструментами и лучшими практиками.
+
+-   **[Senior Frontend](senior-frontend.md)**
+
+    ---
+
+    Frontend development patterns, performance optimization, and automation tools for React/Next.js applications.
+
+-   **[Старший полный состав { #senior-fullstack }](senior-fullstack.md)**
+
+    ---
+
+    Скиллы разработки Fullstack с использованием проектных лесов и инструментов анализа качества кода.
+
+-   **[Старший инженер ML { #senior-ml-engineer }](senior-ml-engineer.md)**
+
+    ---
+
+    Производственные шаблоны разработки ML для развертывания моделей, инфраструктуры MLOps и интеграции LLM.
+
+-   **[Senior Prompt Engineer](senior-prompt-engineer.md)**
+
+    ---
+
+    Eval-driven prompt engineering, RAG quality measurement, and agent workflow validation. Everything here is model-agno...
+
+-   **[Старший инженер по контролю качества { #senior-qa-engineer }](senior-qa.md)**
+
+    ---
+
+    Автоматизация тестирования, анализ покрытия и шаблоны обеспечения качества для React и Next.js приложения.
+
+-   **[Старший инженер SecOps { #senior-secops-engineer }](senior-secops.md)**
+
+    ---
+
+    Полный набор инструментов для обеспечения безопасности, включая управление уязвимостями, проверку соответствия требов...
+
+-   **[Senior Security Engineer — Threat Modeling + Security Router](senior-security.md)**
+
+    ---
+
+    This skill does exactly one job itself — STRIDE/DREAD threat modeling (plus a quick secret scan) — and routes every o...
+
+-   **[Эксперт по интеграции Stripe { #stripe-integration-expert }](stripe-integration-expert.md)**
+
+    ---
+
+    Уровень: МОЩНЫЙ
+
+-   **[Руководство по TDD { #tdd-guide }](tdd-guide.md)**
+
+    ---
+
+    Скилл разработки на основе тестирования для создания тестов, анализа покрытия и управления воркфлоу с красно-зеленым ...
+
+-   **[Оценщик технологического стека { #technology-stack-evaluator }](tech-stack-evaluator.md)**
+
+    ---
+
+    Оценивайте и сравнивайте технологии, фреймворки и облачных провайдеров с помощью анализа данных и практических рекоме...
+
+-   **[Обнаружение угроз { #threat-detection }](threat-detection.md)**
+
+    ---
+
+    Скилл обнаружения угроз для упреждающего обнаружения активности злоумышленника с помощью поиска на основе гипотез, ан...
+
+</div>

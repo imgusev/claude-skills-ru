@@ -8,7 +8,7 @@ description: "/cs:post-mortem <decision> — Honest retrospective on an executed
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `post-mortem`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/skills/post-mortem/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/post-mortem/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -117,9 +117,9 @@ The dissent column from `/cs:boardroom` is the single most useful piece of organ
 
 ## Related
 
-- Skill: [`decision-logger`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/decision-logger/SKILL.md)
-- Agent: [`cs-chief-of-staff`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-chief-of-staff.md)
-- Sibling: [`/em:postmortem`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/executive-mentor/skills/postmortem/SKILL.md) — adversarial single-decision post-mortem
+- Skill: [`decision-logger`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/decision-logger/SKILL.md)
+- Agent: [`cs-chief-of-staff`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-chief-of-staff.md)
+- Sibling: [`/em:postmortem`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/executive-mentor/skills/postmortem/SKILL.md) — adversarial single-decision post-mortem
 
 ---
 

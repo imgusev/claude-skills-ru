@@ -7,7 +7,7 @@ description: "Activate the claude-coach skill — personal Claude power-user coa
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/claude-coach/commands/cs-claude-coach.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/claude-coach/commands/cs-claude-coach.md">Source</a></span>
 </div>
 
 

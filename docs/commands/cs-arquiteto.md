@@ -7,7 +7,7 @@ description: "/cs:arquiteto — Constrói uma empresa do zero como bundle OKF (�
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/arquiteto-de-empresa/commands/cs-arquiteto.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/arquiteto-de-empresa/commands/cs-arquiteto.md">Source</a></span>
 </div>
 
 

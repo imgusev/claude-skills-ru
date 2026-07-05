@@ -8,7 +8,7 @@ description: "Index and router for the C-level advisory bundle: 33 skills coveri
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `c-level-skills`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/c-level-skills/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/c-level-skills/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -23,7 +23,7 @@ This is the bundle index, not an advisor. It tells you what exists and where to 
 1. **Onboard** — the `cs-onboard` skill runs the founder interview (`/cs:setup`, 7 dimensions, ~45 min) and writes `~/.claude/company-context.md`. Refresh quarterly with `/cs:update`. This is the canonical context schema every advisor reads.
 2. **Ask** — the `chief-of-staff` skill routes any question to the right advisor(s). See its routing matrix for all 14 roles.
 3. **Big decisions** — the `board-meeting` skill runs a **6-phase** deliberation: (1) context gathering → (2) independent contributions (isolated) → (3) critic analysis → (4) synthesis → (5) founder review (full stop) → (6) decision extraction. Invoked via `/cs:boardroom` in the c-level-agents plugin.
-4. **Memory** — decisions land in the canonical two-layer layout `~/.claude/decisions/{raw,approved}/` (see [`agent-protocol/SKILL.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/agent-protocol/SKILL.md) → "Decision Memory (Canonical Layout)").
+4. **Memory** — decisions land in the canonical two-layer layout `~/.claude/decisions/{raw,approved}/` (see [`agent-protocol/SKILL.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/agent-protocol/SKILL.md) → "Decision Memory (Canonical Layout)").
 
 ## What's in the Bundle (33 skills)
 
@@ -39,10 +39,10 @@ Plus this index (1). 37 stdlib-only Python tools and 68 reference docs across th
 
 ## Routing Quick Reference
 
-Full matrix in [`chief-of-staff/SKILL.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-of-staff/SKILL.md) and [`references/routing-matrix.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-of-staff/references/routing-matrix.md). Primary roles: CFO (capital/burn), CRO (pipeline/sales), CMO (positioning), CPO (roadmap/PMF), CTO (architecture), COO (ops/OKRs), CHRO (people), CISO (security), GC (contracts/term sheets), CDO (data strategy/training-data rights), CAIO (AI strategy/evals), CCO (retention/GRR), VPE (delivery/DORA), CEO (direction). Multi-domain or irreversible → board meeting.
+Full matrix in [`chief-of-staff/SKILL.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-of-staff/SKILL.md) and [`references/routing-matrix.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-of-staff/references/routing-matrix.md). Primary roles: CFO (capital/burn), CRO (pipeline/sales), CMO (positioning), CPO (roadmap/PMF), CTO (architecture), COO (ops/OKRs), CHRO (people), CISO (security), GC (contracts/term sheets), CDO (data strategy/training-data rights), CAIO (AI strategy/evals), CCO (retention/GRR), VPE (delivery/DORA), CEO (direction). Multi-domain or irreversible → board meeting.
 
 ## Related Layers
 
-- [`c-level-advisor/c-level-agents`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents) — 13 cs-* persona agents + 21 `/cs:*` slash commands on top of these skills
-- [`c-level-advisor/executive-mentor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/executive-mentor) — adversarial `/em:*` critic commands
-- [`c-level-advisor/CLAUDE.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/CLAUDE.md) — full architecture diagram and integration guide
+- [`c-level-advisor/c-level-agents`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents) — 13 cs-* persona agents + 21 `/cs:*` slash commands on top of these skills
+- [`c-level-advisor/executive-mentor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/executive-mentor) — adversarial `/em:*` critic commands
+- [`c-level-advisor/CLAUDE.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/CLAUDE.md) — full architecture diagram and integration guide

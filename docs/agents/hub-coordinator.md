@@ -8,7 +8,7 @@ description: "Coordinator for AgentHub multi-agent collaboration sessions. Dispa
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/agenthub/agents/hub-coordinator.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/agenthub/agents/hub-coordinator.md">Source</a></span>
 </div>
 
 

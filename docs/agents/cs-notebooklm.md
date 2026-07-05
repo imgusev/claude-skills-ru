@@ -8,7 +8,7 @@ description: "NotebookLM browser-automation persona. Walks 2-4 forcing intake qu
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Research</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/agents/cs-notebooklm.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/agents/cs-notebooklm.md">Source</a></span>
 </div>
 
 
@@ -60,7 +60,7 @@ The cs-notebooklm agent orchestrates the `notebooklm` skill across NotebookLM br
 
 ## Skill Integration
 
-**Skill Location:** [`skills/notebooklm`](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/skills/notebooklm)
+**Skill Location:** [`skills/notebooklm`](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/skills/notebooklm)
 
 ### Python Tools (Stdlib)
 
@@ -76,8 +76,8 @@ The cs-notebooklm agent orchestrates the `notebooklm` skill across NotebookLM br
 
 ## Related Agents
 
-- [cs-pulse](https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/agents/cs-pulse.md) — research domain, different shape (multi-source web)
-- [cs-litreview](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/agents/cs-litreview.md) — research domain, Consensus-based
+- [cs-pulse](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/agents/cs-pulse.md) — research domain, different shape (multi-source web)
+- [cs-litreview](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/agents/cs-litreview.md) — research domain, Consensus-based
 - Future: cs-research orchestrator (Slice 7)
 
 ---

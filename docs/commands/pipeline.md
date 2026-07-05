@@ -7,7 +7,7 @@ description: "Detect stack and generate CI/CD pipeline configs. Usage: /pipeline
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/pipeline.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/pipeline.md">Source</a></span>
 </div>
 
 

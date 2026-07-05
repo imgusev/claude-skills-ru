@@ -8,7 +8,7 @@ description: "Code review through the lens of real engineers' documented philoso
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `named-persona-adversarial-review`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/named-persona-adversarial-review/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/named-persona-adversarial-review/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -35,7 +35,7 @@ Verdict: CONCERNS — fix CRITICAL before merge.
 
 ## Problem
 
-Abstract adversarial review ("act as a saboteur") produces generic findings — the model imagines what a reviewer *might* say. This skill grounds each lens in a **real, sourced engineering philosophy** documented in [`references/persona_principles.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/named-persona-adversarial-review/references/persona_principles.md): what Ken Thompson actually argued about trust, what Linus actually demonstrated about good taste — not what an AI imagines.
+Abstract adversarial review ("act as a saboteur") produces generic findings — the model imagines what a reviewer *might* say. This skill grounds each lens in a **real, sourced engineering philosophy** documented in [`references/persona_principles.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/named-persona-adversarial-review/references/persona_principles.md): what Ken Thompson actually argued about trust, what Linus actually demonstrated about good taste — not what an AI imagines.
 
 **How it differs from `adversarial-reviewer`:** abstract roles → surface-level findings; named, sourced personas → findings anchored to a documented principle you can cite and defend.
 
@@ -60,7 +60,7 @@ This skill puts named, real people's *principles* to work. That power is also it
 
 ## Persona Pools
 
-Each persona's documented principles + sources + confidence live in [`references/persona_principles.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/named-persona-adversarial-review/references/persona_principles.md).
+Each persona's documented principles + sources + confidence live in [`references/persona_principles.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/named-persona-adversarial-review/references/persona_principles.md).
 
 **Product** (pick 1 per round — mandatory):
 
@@ -162,10 +162,10 @@ Inherits all from `adversarial-reviewer`. Plus:
 
 ## Cross-References
 
-- **Extends:** [`engineering-team/adversarial-reviewer`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/adversarial-reviewer/SKILL.md) — abstract-role adversarial review (simpler, faster, no grounding needed)
-- **Related:** [`engineering-team/code-reviewer`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/code-reviewer/SKILL.md), [`engineering-team/senior-security`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/senior-security/SKILL.md)
-- **Sibling discipline:** [`productivity/andreessen`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/andreessen/skills/andreessen/SKILL.md) — the confidence-level / never-fabricate-a-citation pattern this skill adopts
-- **Sources & confidence per persona:** [`references/persona_principles.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/named-persona-adversarial-review/references/persona_principles.md)
+- **Extends:** [`engineering-team/adversarial-reviewer`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/adversarial-reviewer/SKILL.md) — abstract-role adversarial review (simpler, faster, no grounding needed)
+- **Related:** [`engineering-team/code-reviewer`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/code-reviewer/SKILL.md), [`engineering-team/senior-security`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/senior-security/SKILL.md)
+- **Sibling discipline:** [`productivity/andreessen`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/andreessen/skills/andreessen/SKILL.md) — the confidence-level / never-fabricate-a-citation pattern this skill adopts
+- **Sources & confidence per persona:** [`references/persona_principles.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/named-persona-adversarial-review/references/persona_principles.md)
 - **Theory:** Edward de Bono, *Six Thinking Hats* (1985); Daniel Kahneman, *Thinking, Fast and Slow* (2011) — System-2 forcing via role switching
 
 ---

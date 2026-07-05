@@ -8,7 +8,7 @@ description: "Use when running an annual SaaS audit, doing category-level spend 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-cog-outline: Business Operations</span>
 <span class="meta-badge">:material-identifier: `procurement-optimizer`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/business-operations/skills/procurement-optimizer/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/business-operations/skills/procurement-optimizer/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

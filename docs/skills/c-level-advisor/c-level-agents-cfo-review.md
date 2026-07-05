@@ -8,7 +8,7 @@ description: "/cs:cfo-review <plan> — Numerate-skeptic interrogation of any pl
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `cfo-review`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/skills/cfo-review/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/cfo-review/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -108,8 +108,8 @@ The numerate skeptic stress-tests anything that touches money. Six questions bef
 
 ## Related
 
-- Agent: [`cs-cfo-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-cfo-advisor.md)
-- Skill: [`cfo-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cfo-advisor/SKILL.md)
+- Agent: [`cs-cfo-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-cfo-advisor.md)
+- Skill: [`cfo-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cfo-advisor/SKILL.md)
 
 ---
 

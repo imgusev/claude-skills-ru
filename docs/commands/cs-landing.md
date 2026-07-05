@@ -7,7 +7,7 @@ description: "/cs:landing <product-or-brief> — Generate a premium single-file 
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/commands/cs-landing.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/commands/cs-landing.md">Source</a></span>
 </div>
 
 
@@ -118,9 +118,9 @@ python ../skills/landing/scripts/html_validator.py \
 
 ## Related
 
-- Agent: [`cs-landing`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/agents/cs-landing.md)
-- Skill: [`landing`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/SKILL.md)
-- Source spec: [`megaprompts/04-landing-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/04-landing-megaprompt.md)
+- Agent: [`cs-landing`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/agents/cs-landing.md)
+- Skill: [`landing`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/SKILL.md)
+- Source spec: [`megaprompts/04-landing-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/04-landing-megaprompt.md)
 - Sibling (different optimization): `product-team/skills/landing-page-generator/`
 - Adjacent v2 commands: `/cs:capture`, `/cs:pulse`, `/cs:inbox-setup`, `/cs:inbox-triage`
 

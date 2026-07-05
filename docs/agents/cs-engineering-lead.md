@@ -8,7 +8,7 @@ description: "Engineering Team Lead agent for coordinating QA, security, data en
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/engineering-team/cs-engineering-lead.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/engineering-team/cs-engineering-lead.md">Source</a></span>
 </div>
 
 
@@ -85,5 +85,5 @@ Engineering team lead coordinating across specializations: frontend, backend, QA
 
 ## Related Agents
 
-- [cs-senior-engineer](https://github.com/<GH_USER>/<REPO>/tree/main/agents/engineering/cs-senior-engineer.md) -- Architecture decisions, code review, and CI/CD pipeline setup
-- [cs-product-manager](https://github.com/<GH_USER>/<REPO>/tree/main/agents/product/cs-product-manager.md) -- Feature prioritization and requirements alignment
+- [cs-senior-engineer](https://github.com/imgusev/claude-skills-ru/tree/main/agents/engineering/cs-senior-engineer.md) -- Architecture decisions, code review, and CI/CD pipeline setup
+- [cs-product-manager](https://github.com/imgusev/claude-skills-ru/tree/main/agents/product/cs-product-manager.md) -- Feature prioritization and requirements alignment

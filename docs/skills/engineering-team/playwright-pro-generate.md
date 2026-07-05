@@ -8,7 +8,7 @@ description: "Generate Playwright tests. Use when user says 'write tests', 'gene
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `generate`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/playwright-pro/skills/generate/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/playwright-pro/skills/generate/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -53,7 +53,7 @@ Check `templates/` in this plugin for matching patterns:
 
 | If testing... | Load template from |
 |---|---|
-| Login/auth flow | [`auth/login.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/playwright-pro/skills/pw/templates/auth/login.md) |
+| Login/auth flow | [`auth/login.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/playwright-pro/skills/pw/templates/auth/login.md) |
 | CRUD operations | `templates/crud/` |
 | Checkout/payment | `templates/checkout/` |
 | Search/filter UI | `templates/search/` |

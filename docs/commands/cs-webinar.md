@@ -7,7 +7,7 @@ description: "/cs:webinar — Webinar & virtual-event marketing workflow. Plan a
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/cs-webinar.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/cs-webinar.md">Source</a></span>
 </div>
 
 
@@ -143,8 +143,8 @@ The scorer calibrates per audience temperature (warmer audiences convert better 
 
 ## Related
 
-- Agent: [`cs-webinar-marketer`](https://github.com/<GH_USER>/<REPO>/tree/main/agents/marketing/cs-webinar-marketer.md)
-- Skill: [`webinar-marketing`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/webinar-marketing/SKILL.md)
+- Agent: [`cs-webinar-marketer`](https://github.com/imgusev/claude-skills-ru/tree/main/agents/marketing/cs-webinar-marketer.md)
+- Skill: [`webinar-marketing`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/webinar-marketing/SKILL.md)
 - Companion: `/cs:aeo` (get supporting content cited by AI search), launch-strategy (full launches)
 
 ---

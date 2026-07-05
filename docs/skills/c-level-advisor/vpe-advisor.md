@@ -8,7 +8,7 @@ description: "VP of Engineering advisory for startups: delivery throughput (DORA
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `vpe-advisor`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/vpe-advisor/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -221,10 +221,10 @@ python ../../skills/vpe-advisor/scripts/eng_team_structure_designer.py team.json
 
 ## References
 
-- [delivery_throughput.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/vpe-advisor/references/delivery_throughput.md) — Full DORA framework + 4 common bottlenecks + what to fix first + anti-patterns
-- [engineering_hiring_funnel.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/vpe-advisor/references/engineering_hiring_funnel.md) — 7-stage funnel + conversion benchmarks + common leakage + sourcing channel diversification + technical interview design
-- [eng_team_structure.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/vpe-advisor/references/eng_team_structure.md) — Squad/chapter/tribe model + headcount-to-structure map + Conway's Law + EM-vs-tech-lead split + span-of-control
-- [production_discipline.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/vpe-advisor/references/production_discipline.md) — On-call rotation design + incident response + blameless postmortem culture + deployment cadence + SLO discipline integration
+- [delivery_throughput.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/references/delivery_throughput.md) — Full DORA framework + 4 common bottlenecks + what to fix first + anti-patterns
+- [engineering_hiring_funnel.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/references/engineering_hiring_funnel.md) — 7-stage funnel + conversion benchmarks + common leakage + sourcing channel diversification + technical interview design
+- [eng_team_structure.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/references/eng_team_structure.md) — Squad/chapter/tribe model + headcount-to-structure map + Conway's Law + EM-vs-tech-lead split + span-of-control
+- [production_discipline.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/references/production_discipline.md) — On-call rotation design + incident response + blameless postmortem culture + deployment cadence + SLO discipline integration
 
 ---
 

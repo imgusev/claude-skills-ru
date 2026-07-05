@@ -8,7 +8,7 @@ description: "/cs:execute <decision> — Generate a 90-day execution plan with w
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `execute`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/skills/execute/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/execute/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -102,8 +102,8 @@ Saved to `~/.claude/execution/YYYY-MM-DD-<slug>.md`:
 
 ## Related
 
-- Skills: [`coo-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/coo-advisor/SKILL.md), [`strategic-alignment`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/strategic-alignment/SKILL.md), [`change-management`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/change-management/SKILL.md)
-- Agent: [`cs-coo-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-coo-advisor.md)
+- Skills: [`coo-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/coo-advisor/SKILL.md), [`strategic-alignment`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/strategic-alignment/SKILL.md), [`change-management`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/change-management/SKILL.md)
+- Agent: [`cs-coo-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-coo-advisor.md)
 
 ---
 

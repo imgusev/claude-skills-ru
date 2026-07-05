@@ -8,7 +8,7 @@ description: "Hybrid research router + fallback persona. Walks 2-4 minimal intak
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Research</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/research/agents/cs-research.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/research/agents/cs-research.md">Source</a></span>
 </div>
 
 
@@ -68,7 +68,7 @@ Differentiates from siblings:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/research`](https://github.com/<GH_USER>/<REPO>/tree/main/research/research/skills/research)
+**Skill Location:** [`skills/research`](https://github.com/imgusev/claude-skills-ru/tree/main/research/research/skills/research)
 
 ### Python Tools (Stdlib)
 
@@ -85,7 +85,7 @@ Differentiates from siblings:
 ## Related Agents
 
 - All 6 routing targets (research/): cs-pulse, cs-litreview, cs-grants, cs-dossier, cs-patent, cs-syllabus
-- [cs-notebooklm](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/agents/cs-notebooklm.md) — research-domain sibling, browser-automation shape (NOT a routing target — different mode)
+- [cs-notebooklm](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/agents/cs-notebooklm.md) — research-domain sibling, browser-automation shape (NOT a routing target — different mode)
 - DIFFERENT use case: `engineering/autoresearch-agent` (Karpathy's file-optimization experiment loop)
 
 ---

@@ -7,7 +7,7 @@ description: "/cs:patent <invention> — Patent prior-art + landscape intelligen
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/commands/cs-patent.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/commands/cs-patent.md">Source</a></span>
 </div>
 
 
@@ -95,9 +95,9 @@ patent_<invention-slug>_<sub-use-case>_<YYYY-MM-DD>.docx
 
 ## Related
 
-- Agent: [`cs-patent`](https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/agents/cs-patent.md)
-- Skill: [`patent`](https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/skills/patent/SKILL.md)
-- Source spec: [`megaprompts/11-patent-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/11-patent-megaprompt.md)
+- Agent: [`cs-patent`](https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/agents/cs-patent.md)
+- Skill: [`patent`](https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/skills/patent/SKILL.md)
+- Source spec: [`megaprompts/11-patent-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/11-patent-megaprompt.md)
 - Siblings: `/cs:litreview`, `/cs:grants`, `/cs:dossier`, `/cs:pulse`
 - Future: `/cs:syllabus`
 

@@ -7,7 +7,7 @@ description: "Company SOP + runbook authoring with 5W2H completeness checks. NOT
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/business-operations/commands/cs-knowledge-ops.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/business-operations/commands/cs-knowledge-ops.md">Source</a></span>
 </div>
 
 

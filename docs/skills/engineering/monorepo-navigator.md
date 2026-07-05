@@ -8,7 +8,7 @@ description: "Navigate, manage, and optimize monorepos. Covers Turborepo, Nx, pn
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `monorepo-navigator`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/monorepo-navigator/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/monorepo-navigator/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

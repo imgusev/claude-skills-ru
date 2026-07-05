@@ -8,7 +8,7 @@ description: "When the user wants help with paid advertising campaigns on Google
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
 <span class="meta-badge">:material-identifier: `paid-ads`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/paid-ads/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/paid-ads/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -113,7 +113,7 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_{MonYY}
 **Social Proof Lead:**
 > [Impressive stat or testimonial] → [What you do] → [CTA]
 
-**For detailed templates and headline formulas**: See [references/ad-copy-templates.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/paid-ads/references/ad-copy-templates.md)
+**For detailed templates and headline formulas**: See [references/ad-copy-templates.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/paid-ads/references/ad-copy-templates.md)
 
 ---
 
@@ -133,7 +133,7 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_{MonYY}
 - **Retargeting**: Segment by funnel stage (visitors vs. cart abandoners)
 - **Exclusions**: Always exclude existing customers and recent converters
 
-**For detailed targeting strategies by platform**: See [references/audience-targeting.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/paid-ads/references/audience-targeting.md)
+**For detailed targeting strategies by platform**: See [references/audience-targeting.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/paid-ads/references/audience-targeting.md)
 
 ---
 
@@ -237,7 +237,7 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_{MonYY}
 | Tool | Invocation | Output |
 |---|---|---|
 | ROAS calculator | `python3 scripts/roas_calculator.py --spend 5000 --revenue 18000 --conversions 120 --clicks 2400 --margin 0.7` (or `--file metrics.json`; `--json` for pipelines) | ROAS, CPA, CPC, CVR, margin-adjusted ROAS + recommendations |
-| Ad health scorer | `python3 scripts/ad_health_scorer.py --checks checks.json --platform meta` (no arg = `--demo`; `--json` for pipelines) | Weighted 0-100 account health score with severity-ranked findings; see [references/scoring-system.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/paid-ads/references/scoring-system.md) for the scoring model |
+| Ad health scorer | `python3 scripts/ad_health_scorer.py --checks checks.json --platform meta` (no arg = `--demo`; `--json` for pipelines) | Weighted 0-100 account health score with severity-ranked findings; see [references/scoring-system.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/paid-ads/references/scoring-system.md) for the scoring model |
 
 ### Weekly Review
 
@@ -262,7 +262,7 @@ Run both tools on the week's numbers, then review:
 
 Before launching campaigns, ensure proper tracking and account setup.
 
-**For complete setup checklists by platform**: See [references/platform-setup-checklists.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/paid-ads/references/platform-setup-checklists.md)
+**For complete setup checklists by platform**: See [references/platform-setup-checklists.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/paid-ads/references/platform-setup-checklists.md)
 
 ### Universal Pre-Launch Checklist
 - [ ] Conversion tracking tested with real conversion

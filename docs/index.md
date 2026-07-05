@@ -418,3 +418,7 @@ Tool-specific walkthroughs for getting the most out of the library:
 - **[Gemini CLI Skills & Plugins Guide](guides/gemini-cli-skills-guide.md)** — setup, indexing, and usage for Gemini CLI
 - **[Cursor Agent Skills & Rules Guide](guides/cursor-skills-guide.md)** — convert skills to Cursor's rules format
 - **[OpenClaw Skills Guide](guides/openclaw-skills-guide.md)** — one-line install for OpenClaw workspaces
+
+---
+
+**RU maintainer:** Ilya Gusev — [imgusev.ru](https://imgusev.ru) · [@imgusev](https://t.me/imgusev) · [github.com/imgusev](https://github.com/imgusev). Based on [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) (MIT).

@@ -8,7 +8,7 @@ description: "Mid-conversation reflection persona. Halts the current thread, re-
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Productivity</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/agents/cs-reflect.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/agents/cs-reflect.md">Source</a></span>
 </div>
 
 
@@ -63,7 +63,7 @@ Differentiates from siblings:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/reflect`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/skills/reflect)
+**Skill Location:** [`skills/reflect`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/skills/reflect)
 
 ### Python Tools (Stdlib)
 
@@ -79,9 +79,9 @@ Differentiates from siblings:
 
 ## Related Agents
 
-- [cs-capture](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/agents/cs-capture.md) — productivity sibling, brain-dump organizer
-- [cs-grill-master](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-me/agents/cs-grill-master.md) — engineering, plan-only grill
-- [cs-grill-with-docs](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/agents/cs-grill-with-docs.md) — engineering, docs-anchored grill
+- [cs-capture](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/agents/cs-capture.md) — productivity sibling, brain-dump organizer
+- [cs-grill-master](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/agents/cs-grill-master.md) — engineering, plan-only grill
+- [cs-grill-with-docs](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/agents/cs-grill-with-docs.md) — engineering, docs-anchored grill
 
 ---
 

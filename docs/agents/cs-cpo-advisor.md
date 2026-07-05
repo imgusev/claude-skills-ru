@@ -8,7 +8,7 @@ description: "JTBD-driven CPO advisor for product vision, portfolio strategy, PM
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-cpo-advisor.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-cpo-advisor.md">Source</a></span>
 </div>
 
 
@@ -28,27 +28,27 @@ Pairs with `cs-cmo-advisor` (positioning ↔ product), `cs-cro-advisor` (win/los
 
 ## Skill Integration
 
-**Skill Location:** [`skills/cpo-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cpo-advisor)
+**Skill Location:** [`skills/cpo-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cpo-advisor)
 
 ### Python Tools
 
 1. **PMF Scorer**
-   - Path: [`scripts/pmf_scorer.py`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cpo-advisor/scripts/pmf_scorer.py)
+   - Path: [`scripts/pmf_scorer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cpo-advisor/scripts/pmf_scorer.py)
    - Sean Ellis test, retention cohort score, organic-pull score → composite PMF rating
 
 2. **Portfolio Analyzer**
-   - Path: [`scripts/portfolio_analyzer.py`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cpo-advisor/scripts/portfolio_analyzer.py)
+   - Path: [`scripts/portfolio_analyzer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cpo-advisor/scripts/portfolio_analyzer.py)
    - 3-horizon analysis, kill candidates, double-down candidates, resource allocation
 
 ### Knowledge Bases
 
-- [`references/product_strategy.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cpo-advisor/references/product_strategy.md) — vision design, North Star metrics, opportunity solution tree
-- [`references/product_org_design.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cpo-advisor/references/product_org_design.md) — 3-horizon, ROI vs strategic fit, kill criteria
-- [`references/pmf_playbook.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cpo-advisor/references/pmf_playbook.md) — Sean Ellis, retention, organic pull, what PMF actually looks like
+- [`references/product_strategy.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cpo-advisor/references/product_strategy.md) — vision design, North Star metrics, opportunity solution tree
+- [`references/product_org_design.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cpo-advisor/references/product_org_design.md) — 3-horizon, ROI vs strategic fit, kill criteria
+- [`references/pmf_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cpo-advisor/references/pmf_playbook.md) — Sean Ellis, retention, organic pull, what PMF actually looks like
 
 ### Adjacent Execution
 
-- [`skills/product-manager-toolkit`](https://github.com/<GH_USER>/<REPO>/tree/main/product-team/skills/product-manager-toolkit) — RICE, OKR cascade, user stories
+- [`skills/product-manager-toolkit`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-manager-toolkit) — RICE, OKR cascade, user stories
 
 ## Workflows
 
@@ -114,13 +114,13 @@ echo "Pair with RICE: python ../../../product-team/skills/product-manager-toolki
 
 - [cs-cmo-advisor](cs-cmo-advisor.md) — positioning alignment
 - [cs-cro-advisor](cs-cro-advisor.md) — win/loss feedback
-- [cs-product-manager](https://github.com/<GH_USER>/<REPO>/tree/main/agents/product/cs-product-manager.md) — execution
-- [cs-product-strategist](https://github.com/<GH_USER>/<REPO>/tree/main/agents/product/cs-product-strategist.md) — OKR cascade
+- [cs-product-manager](https://github.com/imgusev/claude-skills-ru/tree/main/agents/product/cs-product-manager.md) — execution
+- [cs-product-strategist](https://github.com/imgusev/claude-skills-ru/tree/main/agents/product/cs-product-strategist.md) — OKR cascade
 
 ## References
 
-- Skill: [../../skills/cpo-advisor/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cpo-advisor/SKILL.md)
-- Voice spec: [../references/persona-voices.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Skill: [../../skills/cpo-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cpo-advisor/SKILL.md)
+- Voice spec: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 
 ---
 

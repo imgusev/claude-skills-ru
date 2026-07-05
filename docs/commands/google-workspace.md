@@ -7,7 +7,7 @@ description: "Google Workspace CLI operations: setup diagnostics, security audit
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/google-workspace.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/google-workspace.md">Source</a></span>
 </div>
 
 

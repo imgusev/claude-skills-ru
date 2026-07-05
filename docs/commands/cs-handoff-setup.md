@@ -7,7 +7,7 @@ description: "First-run setup for the handoff skill. Walks 5 questions (save loc
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/handoff/commands/cs-handoff-setup.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/handoff/commands/cs-handoff-setup.md">Source</a></span>
 </div>
 
 

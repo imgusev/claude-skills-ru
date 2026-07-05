@@ -8,7 +8,7 @@ description: "Create new agent skills with proper structure, progressive disclos
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `write-a-skill`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/write-a-skill/skills/write-a-skill/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/skills/write-a-skill/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -67,7 +67,7 @@ description: Brief description of capability. Use when [specific triggers].
 
 ## Advanced features
 
-[Link to separate files: See [REFERENCE.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/write-a-skill/skills/write-a-skill/REFERENCE.md)]
+[Link to separate files: See [REFERENCE.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/skills/write-a-skill/REFERENCE.md)]
 ```
 
 ## Description Requirements
@@ -137,7 +137,7 @@ Validation tools + cs-* wrapper sit alongside this skill. Run all 6 review-check
 python scripts/skill_review_checklist_runner.py path/to/skill-folder
 ```
 
-See [references/companion_tooling.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/write-a-skill/skills/write-a-skill/references/companion_tooling.md) for the tool catalogue, cs-skill-author persona agent, and `/cs:write-a-skill` slash command.
+See [references/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/skills/write-a-skill/references/companion_tooling.md) for the tool catalogue, cs-skill-author persona agent, and `/cs:write-a-skill` slash command.
 
 ---
 

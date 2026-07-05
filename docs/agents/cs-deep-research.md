@@ -8,7 +8,7 @@ description: "Rigor-first meta-research persona for high-stakes questions. Refra
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Research</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/deep-research/agents/cs-deep-research.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/deep-research/agents/cs-deep-research.md">Source</a></span>
 </div>
 
 
@@ -50,7 +50,7 @@ The `cs-deep-research` agent orchestrates the `deep-research` skill to turn "res
 
 ## Skill Integration
 
-**Skill Location:** [`skills/deep-research`](https://github.com/<GH_USER>/<REPO>/tree/main/research/deep-research/skills/deep-research)
+**Skill Location:** [`skills/deep-research`](https://github.com/imgusev/claude-skills-ru/tree/main/research/deep-research/skills/deep-research)
 
 ### Knowledge Bases
 
@@ -58,8 +58,8 @@ The `cs-deep-research` agent orchestrates the `deep-research` skill to turn "res
 
 ## Related Agents
 
-- [cs-pulse](https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/agents/cs-pulse.md) — recency/sentiment research sibling
-- [cs-research](https://github.com/<GH_USER>/<REPO>/tree/main/research/research/agents/cs-research.md) — the fast router/orchestrator
+- [cs-pulse](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/agents/cs-pulse.md) — recency/sentiment research sibling
+- [cs-research](https://github.com/imgusev/claude-skills-ru/tree/main/research/research/agents/cs-research.md) — the fast router/orchestrator
 
 ---
 

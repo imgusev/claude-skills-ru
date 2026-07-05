@@ -8,7 +8,7 @@ description: "Academic literature orientation persona. Walks 3 forcing intake qu
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Research</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/agents/cs-litreview.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/agents/cs-litreview.md">Source</a></span>
 </div>
 
 
@@ -60,35 +60,35 @@ Differentiates from siblings:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/litreview`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview)
+**Skill Location:** [`skills/litreview`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview)
 
 ### Python Tools (Stdlib)
 
 0. **Free Search (default lane)**
-   - Path: [`scripts/free_search.py`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/scripts/free_search.py)
+   - Path: [`scripts/free_search.py`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/scripts/free_search.py)
    - Usage: `python free_search.py --query "<query>" --source {pubmed,openalex,both} --max N [--json] [--mailto you@example.com]`
    - Keyless PubMed E-utilities + OpenAlex search via stdlib urllib (15s timeout, polite headers). Exits 2 with a clear message when offline.
 
 1. **Citation Tracker**
-   - Path: [`scripts/citation_tracker.py`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/scripts/citation_tracker.py)
+   - Path: [`scripts/citation_tracker.py`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/scripts/citation_tracker.py)
    - Usage: `python citation_tracker.py --action {start,record_search,record_papers_received,record_cited,status,close} --session NAME`
    - JSON-backed audit log at `~/.litreview_sessions/<session>.json`. Same shape as pulse's citation_tracker (research-pack convention).
 
 2. **Framework Recommender**
-   - Path: [`scripts/framework_recommender.py`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/scripts/framework_recommender.py)
+   - Path: [`scripts/framework_recommender.py`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/scripts/framework_recommender.py)
    - Usage: `python framework_recommender.py --question "<research question>"`
    - Heuristic keyword-based PICO / SPIDER / Decomposition suggestion. Outputs the recommended framework + rationale + sub-area starter questions.
 
 3. **Cross-Search Aggregator**
-   - Path: [`scripts/cross_search_aggregator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/scripts/cross_search_aggregator.py)
+   - Path: [`scripts/cross_search_aggregator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/scripts/cross_search_aggregator.py)
    - Usage: `python cross_search_aggregator.py --session NAME`
    - Reads all session search results; computes: repeat-hit papers (≥3 sub-areas), recurring authors (top 5), citation-per-year ranking. Feeds the "Key Research Groups" + "Start Here" DOCX sections.
 
 ### Knowledge Bases
 
-- [`references/framework_selection.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/references/framework_selection.md) — PICO / SPIDER / Decomposition canon (7+ sources)
-- [`references/search_budget_allocation.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/references/search_budget_allocation.md) — 5/10/20 depth tiers + cross-search intelligence (7+ sources)
-- [`references/docx_8_sections.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/references/docx_8_sections.md) — Research guide DOCX spec + technical requirements (7+ sources)
+- [`references/framework_selection.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/references/framework_selection.md) — PICO / SPIDER / Decomposition canon (7+ sources)
+- [`references/search_budget_allocation.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/references/search_budget_allocation.md) — 5/10/20 depth tiers + cross-search intelligence (7+ sources)
+- [`references/docx_8_sections.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/references/docx_8_sections.md) — Research guide DOCX spec + technical requirements (7+ sources)
 
 ## Workflows
 
@@ -163,15 +163,15 @@ research_guide_{topic-slug}_{date}.docx
 
 ## Related Agents
 
-- [cs-pulse](https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/agents/cs-pulse.md) — research-pack sibling
-- [cs-grill-master](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-me/agents/cs-grill-master.md) — plan-only grill (different domain)
+- [cs-pulse](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/agents/cs-pulse.md) — research-pack sibling
+- [cs-grill-master](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/agents/cs-grill-master.md) — plan-only grill (different domain)
 - Future research-pack siblings: cs-grants, cs-patent, cs-dossier, cs-syllabus
 
 ## References
 
-- Skill: [../skills/litreview/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/SKILL.md)
-- Source spec: [`megaprompts/09-litreview-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/09-litreview-megaprompt.md)
-- Sibling command: [`/cs:litreview`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/commands/cs-litreview.md)
+- Skill: [../skills/litreview/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/SKILL.md)
+- Source spec: [`megaprompts/09-litreview-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/09-litreview-megaprompt.md)
+- Sibling command: [`/cs:litreview`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/commands/cs-litreview.md)
 
 ---
 

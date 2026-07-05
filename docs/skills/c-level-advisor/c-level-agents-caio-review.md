@@ -8,7 +8,7 @@ description: "/cs:caio-review <plan> — Eval-demanding Chief AI Officer interro
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `caio-review`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/skills/caio-review/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/caio-review/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -142,9 +142,9 @@ python ../../../skills/chief-ai-officer-advisor/scripts/ai_cost_economics.py wor
 
 ## Related
 
-- Agent: [`cs-caio-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-caio-advisor.md)
-- Skill: [`chief-ai-officer-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/SKILL.md)
-- Adjacent: [`skills/chief-data-officer-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-data-officer-advisor) (training data rights, data strategy)
+- Agent: [`cs-caio-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-caio-advisor.md)
+- Skill: [`chief-ai-officer-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-ai-officer-advisor/SKILL.md)
+- Adjacent: [`skills/chief-data-officer-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-data-officer-advisor) (training data rights, data strategy)
 
 ---
 

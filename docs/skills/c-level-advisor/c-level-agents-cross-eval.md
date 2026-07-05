@@ -8,7 +8,7 @@ description: "/cs:cross-eval <memo> — Multi-model consensus on a board memo or
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `cross-eval`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/skills/cross-eval/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/cross-eval/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -118,7 +118,7 @@ This is weaker than true multi-model. Treat the result as suggestive, not conclu
 
 ## Related
 
-- Skills: [`board-meeting`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/board-meeting/SKILL.md), [`executive-mentor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/executive-mentor)
+- Skills: [`board-meeting`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/board-meeting/SKILL.md), [`executive-mentor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/executive-mentor)
 - Inspiration: gstack's `/codex` cross-review pattern (adapted to business memos)
 
 ---

@@ -1,11 +1,11 @@
 site_name: Скиллы и плагины агентов Claude Code (RU)
 site_url: https://imgusev.github.io/claude-skills-ru/
 site_description: "Русскоязычный перевод библиотеки из 345+ готовых к использованию агентских скиллов, 78 устанавливаемых плагинов и 90+ слэш-команд в 17 доменах — инженерия, продукт, маркетинг, комплаенс, финансы и исследования. Работает с Claude Code, OpenAI Codex, Gemini CLI, Cursor, Hermes Agent, Mistral Vibe, OpenClaw и ещё 6 инструментами. Открытый исходный код, лицензия MIT, без зависимостей."
-site_author: Alireza Rezvani
+site_author: Ilya Gusev
 repo_url: https://github.com/imgusev/claude-skills-ru
 repo_name: imgusev/claude-skills-ru
 edit_uri: edit/main/docs/
-copyright: "Русский перевод — сообщество. Оригинал — Alireza Rezvani"
+copyright: "© 2026 Ilya Gusev · русский перевод. Оригинал © Alireza Rezvani (MIT)"
 
 theme:
   name: material
@@ -100,17 +100,18 @@ plugins:
 
 extra:
   social:
+    # RU-maintainer contacts (github.com/imgusev, imgusev.ru, @imgusev) —
+    # see _meta/docs/BRANDING.md. The upstream repo is still credited via
+    # repo_url above and the NOTICE/README attribution blocks.
     - icon: fontawesome/brands/github
-      link: https://github.com/imgusev/claude-skills-ru
+      link: https://github.com/imgusev
       name: GitHub
-    # Twitter/Medium kept pointing at the original author's accounts —
-    # attribution for the upstream English content (ARCH-4).
-    - icon: fontawesome/brands/x-twitter
-      link: https://twitter.com/nginitycloud
-      name: Twitter
-    - icon: fontawesome/brands/medium
-      link: https://alirezarezvani.medium.com
-      name: Medium
+    - icon: fontawesome/solid/globe
+      link: https://imgusev.ru
+      name: Сайт
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/imgusev
+      name: Telegram
   generator: false
 
 extra_css:

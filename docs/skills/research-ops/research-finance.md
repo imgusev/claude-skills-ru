@@ -8,7 +8,7 @@ description: "Use when managing the money for an internal R&D program or portfol
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-flask-outline: Research Operations</span>
 <span class="meta-badge">:material-identifier: `research-finance`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research-ops/skills/research-finance/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research-ops/skills/research-finance/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

@@ -7,7 +7,7 @@ description: "Query the LLM Wiki — reads index.md first, drills into 3-10 rele
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/wiki-query.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/wiki-query.md">Source</a></span>
 </div>
 
 <!-- canonical copy: engineering/llm-wiki/commands/wiki-query.md — keep in sync (root copy uses repo-root-relative script paths) -->

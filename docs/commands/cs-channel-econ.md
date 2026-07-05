@@ -7,7 +7,7 @@ description: "Direct vs partner-led channel economics — fully-loaded cost-to-s
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commercial/commands/cs-channel-econ.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commercial/commands/cs-channel-econ.md">Source</a></span>
 </div>
 
 

@@ -8,7 +8,7 @@ description: "Design and ship production-ready MCP (Model Context Protocol) serv
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `mcp-server-builder`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/mcp-server-builder/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -89,7 +89,7 @@ Key items before publishing:
 - Prefer outbound host allowlists over open proxies
 - Use additive-only changes; never rename tool names in-place
 
-Full hardening guidance: [references/production-hardening-guide.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/mcp-server-builder/references/production-hardening-guide.md).
+Full hardening guidance: [references/production-hardening-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/production-hardening-guide.md).
 
 ## Script Interfaces
 
@@ -103,9 +103,9 @@ Full hardening guidance: [references/production-hardening-guide.md](https://gith
 
 ## Reference Material
 
-- [references/production-hardening-guide.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/mcp-server-builder/references/production-hardening-guide.md) — auth & safety design, versioning strategy, common pitfalls, best practices, architecture decisions, contract quality gates, testing strategy, deployment practices, security controls
-- [references/openapi-extraction-guide.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/mcp-server-builder/references/openapi-extraction-guide.md)
-- [references/python-server-template.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/mcp-server-builder/references/python-server-template.md)
-- [references/typescript-server-template.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/mcp-server-builder/references/typescript-server-template.md)
-- [references/validation-checklist.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/mcp-server-builder/references/validation-checklist.md)
-- [README.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/mcp-server-builder/README.md)
+- [references/production-hardening-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/production-hardening-guide.md) — auth & safety design, versioning strategy, common pitfalls, best practices, architecture decisions, contract quality gates, testing strategy, deployment practices, security controls
+- [references/openapi-extraction-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/openapi-extraction-guide.md)
+- [references/python-server-template.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/python-server-template.md)
+- [references/typescript-server-template.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/typescript-server-template.md)
+- [references/validation-checklist.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/validation-checklist.md)
+- [README.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/README.md)

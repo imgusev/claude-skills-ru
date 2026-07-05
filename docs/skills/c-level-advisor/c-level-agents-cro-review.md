@@ -8,7 +8,7 @@ description: "/cs:cro-review <plan> — Pipeline-paranoid interrogation of reven
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `cro-review`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/skills/cro-review/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/cro-review/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -112,9 +112,9 @@ python ../../../skills/cro-advisor/scripts/churn_analyzer.py
 
 ## Related
 
-- Agent: [`cs-cro-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-cro-advisor.md)
-- Skill: [`cro-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cro-advisor/SKILL.md)
-- Execution: [`business-growth`](https://github.com/<GH_USER>/<REPO>/tree/main/business-growth)
+- Agent: [`cs-cro-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-cro-advisor.md)
+- Skill: [`cro-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cro-advisor/SKILL.md)
+- Execution: [`business-growth`](https://github.com/imgusev/claude-skills-ru/tree/main/business-growth)
 
 ---
 

@@ -8,7 +8,7 @@ description: "Medical device risk management specialist implementing ISO 14971 t
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-check-outline: Regulatory & Quality</span>
 <span class="meta-badge">:material-identifier: `risk-management-specialist`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/risk-management-specialist/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/risk-management-specialist/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -170,7 +170,7 @@ Identify hazards and estimate risks systematically.
 | S2 | Minor | Temporary discomfort | No treatment needed |
 | S1 | Negligible | Inconvenience | No injury |
 
-See: [references/risk-analysis-methods.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/risk-management-specialist/references/risk-analysis-methods.md)
+See: [references/risk-analysis-methods.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/risk-management-specialist/references/risk-analysis-methods.md)
 
 ---
 
@@ -427,7 +427,7 @@ What is the risk level?
 
 | Tool | Purpose | Usage |
 |------|---------|-------|
-| [risk_matrix_calculator.py](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/risk-management-specialist/scripts/risk_matrix_calculator.py) | Calculate risk levels and FMEA RPN | `python risk_matrix_calculator.py --help` |
+| [risk_matrix_calculator.py](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/risk-management-specialist/scripts/risk_matrix_calculator.py) | Calculate risk levels and FMEA RPN | `python risk_matrix_calculator.py --help` |
 
 **Risk Matrix Calculator Features:**
 - ISO 14971 5x5 risk matrix calculation
@@ -440,8 +440,8 @@ What is the risk level?
 
 | Document | Content |
 |----------|---------|
-| [iso14971-implementation-guide.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/risk-management-specialist/references/iso14971-implementation-guide.md) | Complete ISO 14971:2019 implementation with templates |
-| [risk-analysis-methods.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/risk-management-specialist/references/risk-analysis-methods.md) | FMEA, FTA, HAZOP, Use Error Analysis methods |
+| [iso14971-implementation-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/risk-management-specialist/references/iso14971-implementation-guide.md) | Complete ISO 14971:2019 implementation with templates |
+| [risk-analysis-methods.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/risk-management-specialist/references/risk-analysis-methods.md) | FMEA, FTA, HAZOP, Use Error Analysis methods |
 
 ### Quick Reference: ISO 14971 Process
 
@@ -460,7 +460,7 @@ What is the risk level?
 
 | Skill | Integration Point |
 |-------|-------------------|
-| [quality-manager-qms-iso13485](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/quality-manager-qms-iso13485) | QMS integration |
-| [capa-officer](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/capa-officer) | Risk-based CAPA |
-| [regulatory-affairs-head](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/regulatory-affairs-head) | Regulatory submissions |
-| [quality-documentation-manager](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/quality-documentation-manager) | Risk file management |
+| [quality-manager-qms-iso13485](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/quality-manager-qms-iso13485) | QMS integration |
+| [capa-officer](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/capa-officer) | Risk-based CAPA |
+| [regulatory-affairs-head](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/regulatory-affairs-head) | Regulatory submissions |
+| [quality-documentation-manager](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/quality-documentation-manager) | Risk file management |

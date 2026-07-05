@@ -8,7 +8,7 @@ description: "Use when the user asks for STRIDE threat modeling, DREAD risk scor
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `senior-security`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/senior-security/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/senior-security/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -22,16 +22,16 @@ This skill does exactly one job itself — **STRIDE/DREAD threat modeling** (plu
 
 | The user wants... | Route to | Why that skill owns it |
 |---|---|---|
-| Vulnerability assessment, pen-test methodology, OWASP Top 10 testing | [`skills/security-pen-testing`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/security-pen-testing) | Ships `vulnerability_scanner.py` + `dependency_auditor.py` with exit-code contracts |
-| Incident triage, SEV classification, forensics, containment | [`skills/incident-response`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/incident-response) | SEV1–SEV4 taxonomy, NIST SP 800-61 phases, `incident_triage.py` |
-| Production outage command (non-security incidents) | [`skills/incident-commander`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/incident-commander) | Severity classifier + timeline + postmortem tools |
-| Security monitoring, CVE triage SLAs, compliance checks (SOC 2 etc.), security headers | [`skills/senior-secops`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/senior-secops) | `security_scanner.py` + `compliance_checker.py`, CVE SLA table |
-| Hostile/adversarial code review | [`skills/adversarial-reviewer`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/adversarial-reviewer) | 3-persona review with BLOCK/CONCERNS/CLEAN verdict |
-| Secure code review as part of general review | [`skills/code-reviewer`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/code-reviewer) | Language dispatch + regression fixtures |
-| Cloud IAM escalation paths, S3 exposure, security groups | [`skills/cloud-security`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/cloud-security) | `cloud_posture_check.py` with per-check exit codes |
-| Threat hunting, IOC sweeps, anomaly detection | [`skills/threat-detection`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/threat-detection) | z-score anomaly + IOC staleness tooling |
-| Red-team engagement planning, ATT&CK kill chains | [`skills/red-team`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/red-team) | `engagement_planner.py` with authorization gate |
-| LLM/AI attack surface (prompt injection, poisoning) | [`skills/ai-security`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/ai-security) | ATLAS-mapped `ai_threat_scanner.py` |
+| Vulnerability assessment, pen-test methodology, OWASP Top 10 testing | [`skills/security-pen-testing`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/security-pen-testing) | Ships `vulnerability_scanner.py` + `dependency_auditor.py` with exit-code contracts |
+| Incident triage, SEV classification, forensics, containment | [`skills/incident-response`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/incident-response) | SEV1–SEV4 taxonomy, NIST SP 800-61 phases, `incident_triage.py` |
+| Production outage command (non-security incidents) | [`skills/incident-commander`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/incident-commander) | Severity classifier + timeline + postmortem tools |
+| Security monitoring, CVE triage SLAs, compliance checks (SOC 2 etc.), security headers | [`skills/senior-secops`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/senior-secops) | `security_scanner.py` + `compliance_checker.py`, CVE SLA table |
+| Hostile/adversarial code review | [`skills/adversarial-reviewer`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/adversarial-reviewer) | 3-persona review with BLOCK/CONCERNS/CLEAN verdict |
+| Secure code review as part of general review | [`skills/code-reviewer`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/code-reviewer) | Language dispatch + regression fixtures |
+| Cloud IAM escalation paths, S3 exposure, security groups | [`skills/cloud-security`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/cloud-security) | `cloud_posture_check.py` with per-check exit codes |
+| Threat hunting, IOC sweeps, anomaly detection | [`skills/threat-detection`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/threat-detection) | z-score anomaly + IOC staleness tooling |
+| Red-team engagement planning, ATT&CK kill chains | [`skills/red-team`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/red-team) | `engagement_planner.py` with authorization gate |
+| LLM/AI attack surface (prompt injection, poisoning) | [`skills/ai-security`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/ai-security) | ATLAS-mapped `ai_threat_scanner.py` |
 
 If the request spans lanes (e.g., "secure this new architecture"), do the threat model here first — its output (prioritized threats + mitigations) tells you which siblings to load next. Never bulk-load multiple security skills speculatively.
 
@@ -68,8 +68,8 @@ If the request spans lanes (e.g., "secure this new architecture"), do the threat
 
 | Document | Content |
 |----------|---------|
-| [references/threat-modeling-guide.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/senior-security/references/threat-modeling-guide.md) | STRIDE methodology, attack trees, DREAD scoring, DFD creation |
-| [references/security-architecture-patterns.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/senior-security/references/security-architecture-patterns.md) | Zero Trust, defense-in-depth, authentication patterns, API security |
-| [references/cryptography-implementation.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/senior-security/references/cryptography-implementation.md) | AES-GCM, Ed25519, password hashing (Argon2id), key management |
+| [references/threat-modeling-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/senior-security/references/threat-modeling-guide.md) | STRIDE methodology, attack trees, DREAD scoring, DFD creation |
+| [references/security-architecture-patterns.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/senior-security/references/security-architecture-patterns.md) | Zero Trust, defense-in-depth, authentication patterns, API security |
+| [references/cryptography-implementation.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/senior-security/references/cryptography-implementation.md) | AES-GCM, Ed25519, password hashing (Argon2id), key management |
 
 The architecture and crypto references are kept because no sibling ships them; for *operating* those controls (scanning, compliance, monitoring) still route to `senior-secops`.

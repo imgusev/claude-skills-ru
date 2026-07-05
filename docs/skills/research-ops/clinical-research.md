@@ -8,7 +8,7 @@ description: "Use when designing a prospective clinical study before submission 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-flask-outline: Research Operations</span>
 <span class="meta-badge">:material-identifier: `clinical-research`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research-ops/skills/clinical-research/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research-ops/skills/clinical-research/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

@@ -8,7 +8,7 @@ description: "Margin-protective Commercial lead. Routes per-deal-and-packaging i
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Commercial</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commercial/agents/cs-commercial-orchestrator.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commercial/agents/cs-commercial-orchestrator.md">Source</a></span>
 </div>
 
 

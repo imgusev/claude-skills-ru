@@ -8,7 +8,7 @@ description: "Document control system management for medical device QMS. Covers 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-check-outline: Regulatory & Quality</span>
 <span class="meta-badge">:material-identifier: `quality-documentation-manager`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/quality-documentation-manager/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/quality-documentation-manager/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

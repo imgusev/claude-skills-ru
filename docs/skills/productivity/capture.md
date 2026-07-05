@@ -8,7 +8,7 @@ description: "Captures and organizes chaotic brain dumps into a structured, acti
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-lightning-bolt-outline: Productivity</span>
 <span class="meta-badge">:material-identifier: `capture`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/skills/capture/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -214,5 +214,5 @@ After the four (or compressed) sections are delivered:
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/05-capture-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/05-capture-megaprompt.md)
+**Source spec:** [`megaprompts/05-capture-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/05-capture-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Re-grill with `/cs:grill-with-docs` if drift between spec and implementation surfaces.

@@ -8,7 +8,7 @@ description: "Mid-conversation reflection skill that pauses execution and zooms 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-lightning-bolt-outline: Productivity</span>
 <span class="meta-badge">:material-identifier: `reflect`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/skills/reflect/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/skills/reflect/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -114,7 +114,7 @@ Five biases — recognize each through specific conversation patterns:
 
 For each detected bias: name it, cite the specific evidence, suggest a corrective move.
 
-See [`references/cognitive_bias_canon.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/skills/reflect/references/cognitive_bias_canon.md) for the full canon.
+See [`references/cognitive_bias_canon.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/skills/reflect/references/cognitive_bias_canon.md) for the full canon.
 
 ### 5. Contextual Alignment
 
@@ -134,7 +134,7 @@ The skill must produce:
 - **No vague reassurance** — "looks good!" without reasoning is rejected
 - **No manufactured problems** — when the path is genuinely solid, say so with specific reasons; don't invent issues
 
-See [`references/honest_output_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/skills/reflect/references/honest_output_discipline.md) for the anti-manufactured-problems framing.
+See [`references/honest_output_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/skills/reflect/references/honest_output_discipline.md) for the anti-manufactured-problems framing.
 
 ## Closing Recommendation (Mandatory)
 
@@ -167,9 +167,9 @@ The closing is always specific — never "you should think more about this" or "
 
 ## References
 
-- [`references/cognitive_bias_canon.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/skills/reflect/references/cognitive_bias_canon.md) — 5 biases + recognition cues (7+ sources)
-- [`references/honest_output_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/skills/reflect/references/honest_output_discipline.md) — anti-manufactured-problems framing (7+ sources)
-- [`references/conversation_reflection_practice.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/skills/reflect/references/conversation_reflection_practice.md) — Schön reflective-practice canon (7+ sources)
+- [`references/cognitive_bias_canon.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/skills/reflect/references/cognitive_bias_canon.md) — 5 biases + recognition cues (7+ sources)
+- [`references/honest_output_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/skills/reflect/references/honest_output_discipline.md) — anti-manufactured-problems framing (7+ sources)
+- [`references/conversation_reflection_practice.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/skills/reflect/references/conversation_reflection_practice.md) — Schön reflective-practice canon (7+ sources)
 
 ## Anti-Patterns To Reject
 
@@ -184,5 +184,5 @@ The closing is always specific — never "you should think more about this" or "
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/02-reflect-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/02-reflect-megaprompt.md)
+**Source spec:** [`megaprompts/02-reflect-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/02-reflect-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Productivity light-prompt-flow sibling of capture.

@@ -8,7 +8,7 @@ description: "Growth Strategist agent for revenue operations, sales engineering,
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-trending-up: Business & Growth</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/business-growth/cs-growth-strategist.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/business-growth/cs-growth-strategist.md">Source</a></span>
 </div>
 
 
@@ -65,5 +65,5 @@ Growth-focused operator covering the full revenue lifecycle: pipeline management
 
 ## Related Agents
 
-- [cs-product-manager](https://github.com/<GH_USER>/<REPO>/tree/main/agents/product/cs-product-manager.md) -- Product roadmap alignment for sales positioning and feature prioritization
-- [cs-financial-analyst](https://github.com/<GH_USER>/<REPO>/tree/main/agents/finance/cs-financial-analyst.md) -- Revenue forecasting validation and financial modeling support
+- [cs-product-manager](https://github.com/imgusev/claude-skills-ru/tree/main/agents/product/cs-product-manager.md) -- Product roadmap alignment for sales positioning and feature prioritization
+- [cs-financial-analyst](https://github.com/imgusev/claude-skills-ru/tree/main/agents/finance/cs-financial-analyst.md) -- Revenue forecasting validation and financial modeling support

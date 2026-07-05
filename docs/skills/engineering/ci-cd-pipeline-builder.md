@@ -8,7 +8,7 @@ description: "Generate pragmatic CI/CD pipelines from detected project stack sig
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `ci-cd-pipeline-builder`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/ci-cd-pipeline-builder/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -93,8 +93,8 @@ python3 scripts/pipeline_generator.py --repo . --platform gitlab --output .gitla
 
 ## References
 
-- [references/pipeline-design-notes.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/ci-cd-pipeline-builder/references/pipeline-design-notes.md) — common pitfalls, best practices, detection heuristics, generation strategy, platform decision notes, pre-merge validation checklist, and scaling guidance
-- [references/github-actions-templates.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/ci-cd-pipeline-builder/references/github-actions-templates.md)
-- [references/gitlab-ci-templates.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/ci-cd-pipeline-builder/references/gitlab-ci-templates.md)
-- [references/deployment-gates.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/ci-cd-pipeline-builder/references/deployment-gates.md)
-- [README.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/ci-cd-pipeline-builder/README.md)
+- [references/pipeline-design-notes.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/pipeline-design-notes.md) — common pitfalls, best practices, detection heuristics, generation strategy, platform decision notes, pre-merge validation checklist, and scaling guidance
+- [references/github-actions-templates.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/github-actions-templates.md)
+- [references/gitlab-ci-templates.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/gitlab-ci-templates.md)
+- [references/deployment-gates.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/deployment-gates.md)
+- [README.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/README.md)

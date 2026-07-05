@@ -8,7 +8,7 @@ description: "Generates a curated supplementary reading list from any course syl
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-magnify: Research</span>
 <span class="meta-badge">:material-identifier: `syllabus`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/skills/syllabus/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/skills/syllabus/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -67,7 +67,7 @@ Forcing choice. Refuse to start without a syllabus.
 >
 > *Why I'm asking:* Audience dictates summary jargon level and discussion-question complexity. Undergrad summaries define every term; grad summaries assume technical fluency. Discussion questions for undergrads test analysis; for grads test critique and extension.
 
-See [`references/audience_calibration.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/skills/syllabus/references/audience_calibration.md) for the canon.
+See [`references/audience_calibration.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/skills/syllabus/references/audience_calibration.md) for the canon.
 
 ### Q3 (depends on Q1) — Year range
 
@@ -136,7 +136,7 @@ Don't just search the topic — **search the topic + applied domain**:
 | "thermodynamics" | "thermodynamics renewable energy systems" |
 | "social network analysis" | "social network analysis public health interventions" |
 
-Boosts paper relevance dramatically. See [`references/applied_domain_weaving.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/skills/syllabus/references/applied_domain_weaving.md) for the canon.
+Boosts paper relevance dramatically. See [`references/applied_domain_weaving.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/skills/syllabus/references/applied_domain_weaving.md) for the canon.
 
 ### Per-Section Pattern
 
@@ -245,7 +245,7 @@ The script handles:
 - Footer with generation metadata
 - Input validation (missing fields → graceful error)
 
-See [`references/bundled_script_pattern.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/skills/syllabus/references/bundled_script_pattern.md) for why bundled vs inline.
+See [`references/bundled_script_pattern.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/skills/syllabus/references/bundled_script_pattern.md) for why bundled vs inline.
 
 ## Phase 6: Deliver
 
@@ -264,9 +264,9 @@ See [`references/bundled_script_pattern.md`](https://github.com/<GH_USER>/<REPO>
 
 ## References
 
-- [`references/applied_domain_weaving.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/skills/syllabus/references/applied_domain_weaving.md) — search-quality canon (7+ sources)
-- [`references/audience_calibration.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/skills/syllabus/references/audience_calibration.md) — undergrad vs grad summary jargon (7+ sources)
-- [`references/bundled_script_pattern.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/syllabus/skills/syllabus/references/bundled_script_pattern.md) — why bundle vs inline (7+ sources)
+- [`references/applied_domain_weaving.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/skills/syllabus/references/applied_domain_weaving.md) — search-quality canon (7+ sources)
+- [`references/audience_calibration.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/skills/syllabus/references/audience_calibration.md) — undergrad vs grad summary jargon (7+ sources)
+- [`references/bundled_script_pattern.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/syllabus/skills/syllabus/references/bundled_script_pattern.md) — why bundle vs inline (7+ sources)
 
 ## Error Handling
 
@@ -294,5 +294,5 @@ See [`references/bundled_script_pattern.md`](https://github.com/<GH_USER>/<REPO>
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/10-syllabus-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/10-syllabus-megaprompt.md)
+**Source spec:** [`megaprompts/10-syllabus-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/10-syllabus-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Bundled-JS-DOCX-generator variant.

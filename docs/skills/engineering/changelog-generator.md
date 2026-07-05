@@ -8,7 +8,7 @@ description: "Produce consistent, auditable release notes from Conventional Comm
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `changelog-generator`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/changelog-generator/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -143,7 +143,7 @@ SemVer mapping:
 
 ## Hotfix Severity & SLAs
 
-When a release goes wrong, classify before acting (full procedures in [references/hotfix-procedures.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md)):
+When a release goes wrong, classify before acting (full procedures in [references/hotfix-procedures.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md)):
 
 | Severity | Definition | SLA | Approval |
 |---|---|---|---|
@@ -165,15 +165,15 @@ Pre-commit to these thresholds before tagging; roll back when any fires:
 | Security incident | Vulnerability being exploited |
 | Data corruption | Database integrity compromised |
 
-Prefer feature-flag disable over code rollback; database rollbacks only for non-destructive migrations (forward-only migrations preferred). See [references/hotfix-procedures.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md).
+Prefer feature-flag disable over code rollback; database rollbacks only for non-destructive migrations (forward-only migrations preferred). See [references/hotfix-procedures.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md).
 
 ## References
 
-- [references/ci-integration.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/changelog-generator/references/ci-integration.md)
-- [references/changelog-formatting-guide.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/changelog-generator/references/changelog-formatting-guide.md)
-- [references/monorepo-strategy.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/changelog-generator/references/monorepo-strategy.md)
-- [references/hotfix-procedures.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md)
-- [README.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/changelog-generator/README.md)
+- [references/ci-integration.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/ci-integration.md)
+- [references/changelog-formatting-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/changelog-formatting-guide.md)
+- [references/monorepo-strategy.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/monorepo-strategy.md)
+- [references/hotfix-procedures.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md)
+- [README.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/README.md)
 
 ## Release Governance
 

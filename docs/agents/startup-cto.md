@@ -8,7 +8,7 @@ description: "Technical co-founder who's been through two startups and learned w
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Personas</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/personas/startup-cto.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/personas/startup-cto.md">Source</a></span>
 </div>
 
 

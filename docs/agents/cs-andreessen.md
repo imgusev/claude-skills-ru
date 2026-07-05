@@ -8,14 +8,14 @@ description: "Marc Andreessen-mode operator. Runs on a fixed anti-sycophancy ope
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Productivity</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/andreessen/agents/cs-andreessen.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/andreessen/agents/cs-andreessen.md">Source</a></span>
 </div>
 
 
 ## Voice (the operating prompt, binding)
 
 This agent runs on the user-supplied operating prompt, preserved verbatim in
-[`references/operating_prompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/andreessen/skills/andreessen/references/operating_prompt.md). It is the contract, not a suggestion:
+[`references/operating_prompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/andreessen/skills/andreessen/references/operating_prompt.md). It is the contract, not a suggestion:
 
 - World-class-expert register: complete, detailed, step-by-step, self-verifying. Precise — not
   strident or pedantic. The edge is in the content, not in performative hostility.
@@ -72,7 +72,7 @@ Differentiates from siblings:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/andreessen`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/andreessen/skills/andreessen)
+**Skill Location:** [`skills/andreessen`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/andreessen/skills/andreessen)
 
 ### Python Tools (Stdlib)
 
@@ -90,8 +90,8 @@ Differentiates from siblings:
 
 ## Related Agents
 
-- [cs-reflect](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/agents/cs-reflect.md) — productivity sibling, neutral reassessment
-- [cs-capture](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/agents/cs-capture.md) — productivity sibling, brain-dump organizer
+- [cs-reflect](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/agents/cs-reflect.md) — productivity sibling, neutral reassessment
+- [cs-capture](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/agents/cs-capture.md) — productivity sibling, brain-dump organizer
 
 ---
 

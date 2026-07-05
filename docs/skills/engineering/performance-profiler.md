@@ -8,7 +8,7 @@ description: "Systematic performance profiling for Node.js, Python, and Go appli
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `performance-profiler`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/performance-profiler/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/performance-profiler/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -80,6 +80,6 @@ python3 scripts/performance_profiler.py /path/to/project --large-file-threshold-
 
 ## References
 
-- [references/profiling-recipes.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/performance-profiler/references/profiling-recipes.md) — Node.js/Python/Go profiling commands, flamegraph generation, heap snapshots
-- [references/optimization-playbook.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/performance-profiler/references/optimization-playbook.md) — before/after measurement template, quick-win optimization checklist (DB/Node/bundle/API), common pitfalls, best practices
+- [references/profiling-recipes.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/performance-profiler/references/profiling-recipes.md) — Node.js/Python/Go profiling commands, flamegraph generation, heap snapshots
+- [references/optimization-playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/performance-profiler/references/optimization-playbook.md) — before/after measurement template, quick-win optimization checklist (DB/Node/bundle/API), common pitfalls, best practices
 

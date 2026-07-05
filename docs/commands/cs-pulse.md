@@ -7,7 +7,7 @@ description: "/cs:pulse <topic> — Multi-source recency research. Grill-me inta
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/commands/cs-pulse.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/commands/cs-pulse.md">Source</a></span>
 </div>
 
 
@@ -124,9 +124,9 @@ python ../skills/pulse/scripts/citation_tracker.py --action close --session NAME
 
 ## Related
 
-- Agent: [`cs-pulse`](https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/agents/cs-pulse.md)
-- Skill: [`pulse`](https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/skills/pulse/SKILL.md)
-- Source spec: [`megaprompts/01-pulse-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/01-pulse-megaprompt.md)
+- Agent: [`cs-pulse`](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/agents/cs-pulse.md)
+- Skill: [`pulse`](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/skills/pulse/SKILL.md)
+- Source spec: [`megaprompts/01-pulse-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/01-pulse-megaprompt.md)
 - Sibling research skills (after build): `/cs:litreview`, `/cs:grants`, `/cs:syllabus`, `/cs:patent`, `/cs:dossier`, `/cs:research` (router)
 
 ---

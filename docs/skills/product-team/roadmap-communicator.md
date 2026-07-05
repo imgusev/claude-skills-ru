@@ -8,7 +8,7 @@ description: "Use when preparing roadmap narratives, release notes, changelogs, 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-lightbulb-outline: Product</span>
 <span class="meta-badge">:material-identifier: `roadmap-communicator`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/product-team/skills/roadmap-communicator/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/roadmap-communicator/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

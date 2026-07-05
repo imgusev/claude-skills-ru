@@ -8,7 +8,7 @@ description: "Use for web scraping, crawling, document extraction, API parsing, 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `universal-scraping-architect`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/universal-scraping-architect/skills/universal-scraping-architect/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/universal-scraping-architect/skills/universal-scraping-architect/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

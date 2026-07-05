@@ -8,7 +8,7 @@ description: "Default entry point for any research request — a hybrid router t
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-magnify: Research</span>
 <span class="meta-badge">:material-identifier: `research`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/research/skills/research/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/research/skills/research/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -256,5 +256,5 @@ All routing decisions + overrides also logged to `~/.research_sessions/<session>
 ---
 
 **Version:** 1.1.0
-**Source spec:** [`megaprompts/13-research-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/13-research-megaprompt.md)
+**Source spec:** [`megaprompts/13-research-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/13-research-megaprompt.md)
 **Build pattern:** Path B (direct conversion). v1.1.0: bare-noun signals now ask instead of silent-routing; 5s auto-proceed affordance removed; context-economy trim per the 2026-06 newgen audit.

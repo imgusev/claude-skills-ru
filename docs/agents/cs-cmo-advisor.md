@@ -8,7 +8,7 @@ description: "Narrative-first CMO advisor for ICP definition, positioning, messa
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-cmo-advisor.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-cmo-advisor.md">Source</a></span>
 </div>
 
 
@@ -28,27 +28,27 @@ Pairs with `cs-cpo-advisor` (positioning ↔ product), `cs-cro-advisor` (positio
 
 ## Skill Integration
 
-**Skill Location:** [`skills/cmo-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cmo-advisor)
+**Skill Location:** [`skills/cmo-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor)
 
 ### Python Tools
 
 1. **Marketing Budget Modeler**
-   - Path: [`scripts/marketing_budget_modeler.py`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cmo-advisor/scripts/marketing_budget_modeler.py)
+   - Path: [`scripts/marketing_budget_modeler.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/scripts/marketing_budget_modeler.py)
    - Allocates budget across paid/content/events/partnerships with payback by channel
 
 2. **Growth Model Simulator**
-   - Path: [`scripts/growth_model_simulator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cmo-advisor/scripts/growth_model_simulator.py)
+   - Path: [`scripts/growth_model_simulator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/scripts/growth_model_simulator.py)
    - Simulates funnel: impressions → leads → opportunities → wins, with assumption sensitivity
 
 ### Knowledge Bases
 
-- [`references/brand_positioning.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cmo-advisor/references/brand_positioning.md) — category design, message house, narrative arcs
-- [`references/growth_frameworks.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cmo-advisor/references/growth_frameworks.md) — channel-specific motions, PLG vs sales-led
-- [`references/marketing_org.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cmo-advisor/references/marketing_org.md) — attribution, cadence, content ops
+- [`references/brand_positioning.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/references/brand_positioning.md) — category design, message house, narrative arcs
+- [`references/growth_frameworks.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/references/growth_frameworks.md) — channel-specific motions, PLG vs sales-led
+- [`references/marketing_org.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/references/marketing_org.md) — attribution, cadence, content ops
 
 ### Adjacent Execution
 
-- [`marketing-skill`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill) — full content/SEO/CRO/demand-gen pods for tactical execution
+- [`marketing-skill`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill) — full content/SEO/CRO/demand-gen pods for tactical execution
 
 ## Workflows
 
@@ -114,13 +114,13 @@ echo "📚 Reference: positioning + playbooks"
 
 - [cs-cpo-advisor](cs-cpo-advisor.md) — positioning ↔ product alignment
 - [cs-cro-advisor](cs-cro-advisor.md) — pipeline contribution
-- [cs-content-creator](https://github.com/<GH_USER>/<REPO>/tree/main/agents/marketing/cs-content-creator.md) — execution
-- [cs-demand-gen-specialist](https://github.com/<GH_USER>/<REPO>/tree/main/agents/marketing/cs-demand-gen-specialist.md) — execution
+- [cs-content-creator](https://github.com/imgusev/claude-skills-ru/tree/main/agents/marketing/cs-content-creator.md) — execution
+- [cs-demand-gen-specialist](https://github.com/imgusev/claude-skills-ru/tree/main/agents/marketing/cs-demand-gen-specialist.md) — execution
 
 ## References
 
-- Skill: [../../skills/cmo-advisor/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cmo-advisor/SKILL.md)
-- Voice spec: [../references/persona-voices.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Skill: [../../skills/cmo-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/SKILL.md)
+- Voice spec: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 
 ---
 

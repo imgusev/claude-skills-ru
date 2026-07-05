@@ -15,9 +15,8 @@ import re
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS_DIR = os.path.join(REPO_ROOT, "docs")
 
-# Placeholder for this fork's GitHub identity — replace before publishing
-# (see README.md / README.ru.md "before you publish" section, ARCH-1).
-GITHUB_BASE = "https://github.com/<GH_USER>/<REPO>/tree/main"
+# This fork's GitHub identity (ARCH-1, closed — see _meta/docs/BRANDING.md).
+GITHUB_BASE = "https://github.com/imgusev/claude-skills-ru/tree/main"
 
 LANGS = ("en", "ru")
 

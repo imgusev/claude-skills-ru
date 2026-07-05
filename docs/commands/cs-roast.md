@@ -7,7 +7,7 @@ description: "/cs:roast — Convene a 5-angle adversarial panel (Critic, Champio
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/commands/cs-roast.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/commands/cs-roast.md">Source</a></span>
 </div>
 
 
@@ -81,8 +81,8 @@ python ../skills/roast/scripts/cheapest_test_designer.py --risk price --price 99
 
 ## Related
 
-- Agent: [`cs-roast-judge`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/agents/cs-roast-judge.md)
-- Skill: [`roast`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/skills/roast/SKILL.md)
+- Agent: [`cs-roast-judge`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/agents/cs-roast-judge.md)
+- Skill: [`roast`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/skills/roast/SKILL.md)
 - Siblings: `/cs:andreessen` (single market-first lens), `/cs:boardroom` (enterprise C-suite)
 
 ---

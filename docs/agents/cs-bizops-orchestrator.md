@@ -8,7 +8,7 @@ description: "Process-obsessed BizOps lead. Routes internal-operations inquiries
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Business Operations</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/business-operations/agents/cs-bizops-orchestrator.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/business-operations/agents/cs-bizops-orchestrator.md">Source</a></span>
 </div>
 
 

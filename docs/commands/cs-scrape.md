@@ -7,7 +7,7 @@ description: "Route, extract, and validate a scraping job (URL or local file) vi
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/universal-scraping-architect/commands/cs-scrape.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/universal-scraping-architect/commands/cs-scrape.md">Source</a></span>
 </div>
 
 

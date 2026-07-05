@@ -8,7 +8,7 @@ description: "/cs:cto-review <plan> — Architecture and scaling interrogation. 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `cto-review`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/skills/cto-review/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/cto-review/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -119,9 +119,9 @@ python ../../../skills/cto-advisor/scripts/team_scaling_calculator.py
 
 ## Related
 
-- Agent: [`cs-cto-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/agents/c-level/cs-cto-advisor.md)
-- Skill: [`cto-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cto-advisor/SKILL.md)
-- SLO: [`engineering/slo-architect`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/slo-architect)
+- Agent: [`cs-cto-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/agents/c-level/cs-cto-advisor.md)
+- Skill: [`cto-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cto-advisor/SKILL.md)
+- SLO: [`engineering/slo-architect`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/slo-architect)
 
 ---
 

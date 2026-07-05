@@ -8,7 +8,7 @@ description: "Captures the user's brand identity once via a 10-question onboardi
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-language-html5: Markdown to HTML</span>
 <span class="meta-badge">:material-identifier: `design-system`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/markdown-html/skills/design-system/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/skills/design-system/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

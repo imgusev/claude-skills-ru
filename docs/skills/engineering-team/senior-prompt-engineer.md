@@ -8,7 +8,7 @@ description: "Use when the user asks to optimize prompts, design prompt template
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `senior-prompt-engineer`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/senior-prompt-engineer/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/senior-prompt-engineer/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

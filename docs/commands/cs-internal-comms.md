@@ -7,7 +7,7 @@ description: "Internal-only change-management comms using ADKAR (Prosci) + Kotte
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/business-operations/commands/cs-internal-comms.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/business-operations/commands/cs-internal-comms.md">Source</a></span>
 </div>
 
 

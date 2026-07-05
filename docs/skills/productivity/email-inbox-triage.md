@@ -8,7 +8,7 @@ description: "Runs a full inbox triage using the knowledge base created by the '
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-lightning-bolt-outline: Productivity</span>
 <span class="meta-badge">:material-identifier: `inbox-triage`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -16,7 +16,7 @@ description: "Runs a full inbox triage using the knowledge base created by the '
 </div>
 
 
-> **Paired with `inbox-setup`.** This skill consumes the 7-file knowledge base that `inbox-setup` writes at `${WORKSPACE}/Email/`. The file contracts MUST match exactly. See [`references/kb_file_contract.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/references/kb_file_contract.md) — this is the mirror of the setup-side contract, viewed from the read side.
+> **Paired with `inbox-setup`.** This skill consumes the 7-file knowledge base that `inbox-setup` writes at `${WORKSPACE}/Email/`. The file contracts MUST match exactly. See [`references/kb_file_contract.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/references/kb_file_contract.md) — this is the mirror of the setup-side contract, viewed from the read side.
 
 Run on a recurring schedule (1–3x daily) or on demand. Classify recent emails, research new senders, generate decision recommendations, draft replies (**NEVER SEND**), deliver a clean report, and update the knowledge base with what was learned this run.
 
@@ -58,7 +58,7 @@ If any core required file is missing → **halt**, direct user to run `inbox-set
 
 This is the safety property that makes the skill safe to run automatically. Stated multiple times in this skill body. Non-negotiable.
 
-The `scripts/draft_safety_validator.py` enforces it post-run. Any send-shaped tool call in the action log fails validation. See [`references/drafts_only_safety.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/references/drafts_only_safety.md) for the full discipline canon.
+The `scripts/draft_safety_validator.py` enforces it post-run. Any send-shaped tool call in the action log fails validation. See [`references/drafts_only_safety.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/references/drafts_only_safety.md) for the full discipline canon.
 
 ## Step 0: Grill-Me Intake (Light — 0–2 Optional Override Questions)
 
@@ -150,7 +150,7 @@ Each: brief "why", relevant context, pricing/timeline comparison if applicable.
 
 **Skip Step 5 entirely if no `evaluation-framework.md` exists.**
 
-See [`references/triage_decision_framework.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/references/triage_decision_framework.md) for the framework canon.
+See [`references/triage_decision_framework.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/references/triage_decision_framework.md) for the framework canon.
 
 ## Step 6: Drafts
 
@@ -294,9 +294,9 @@ Skip Steps 3–6 entirely on empty inbox.
 
 ## References
 
-- [`references/kb_file_contract.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/references/kb_file_contract.md) — canonical 7-file contract (read perspective; mirrors [`references/kb_file_contract.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/references/kb_file_contract.md))
-- [`references/triage_decision_framework.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/references/triage_decision_framework.md) — TAKE IT / WORTH / PASS / FLAG taxonomy
-- [`references/drafts_only_safety.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/references/drafts_only_safety.md) — the NEVER-SEND discipline canon
+- [`references/kb_file_contract.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/references/kb_file_contract.md) — canonical 7-file contract (read perspective; mirrors [`references/kb_file_contract.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/references/kb_file_contract.md))
+- [`references/triage_decision_framework.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/references/triage_decision_framework.md) — TAKE IT / WORTH / PASS / FLAG taxonomy
+- [`references/drafts_only_safety.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/references/drafts_only_safety.md) — the NEVER-SEND discipline canon
 
 ## Anti-Patterns To Reject
 
@@ -313,5 +313,5 @@ Skip Steps 3–6 entirely on empty inbox.
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/07-inbox-triage-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/07-inbox-triage-megaprompt.md)
+**Source spec:** [`megaprompts/07-inbox-triage-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/07-inbox-triage-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Paired with `inbox-setup`.

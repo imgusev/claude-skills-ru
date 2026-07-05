@@ -8,7 +8,7 @@ description: "Generate professional, jurisdiction-aware business documents: free
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-trending-up: Business & Growth</span>
 <span class="meta-badge">:material-identifier: `contract-and-proposal-writer`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/business-growth/skills/contract-and-proposal-writer/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/business-growth/skills/contract-and-proposal-writer/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

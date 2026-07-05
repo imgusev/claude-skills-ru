@@ -8,7 +8,7 @@ description: "Compliance OS — meta-orchestrator that lets compliance teams CON
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
 <span class="meta-badge">:material-identifier: `compliance-os`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -196,12 +196,12 @@ python scripts/evidence_pool_generator.py program.json
 
 ## References
 
-- [compliance_os_pattern.md](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os/references/compliance_os_pattern.md) — The meta-framework architecture (configure → map → simulate → consolidate → review); when to use vs not
-- [cross_framework_overlap.md](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os/references/cross_framework_overlap.md) — The 9-framework × control-family overlap table with mapping confidence (Phase 3 expands to 12 frameworks via `cross_framework_mapper.py`)
-- [audit_simulation_methodology.md](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os/references/audit_simulation_methodology.md) — ISO 19011 + IIA IPPF + AICPA AT-C audit-simulation principles + severity distribution heuristics
-- [evidence_management.md](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os/references/evidence_management.md) — Evidence pool design + retention + freshness + reuse-leverage scoring
-- [multi_framework_audit_playbook.md](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os/references/multi_framework_audit_playbook.md) — Integrated audit programme for 2+ frameworks (Phase 2)
-- [evidence_artifact_reuse_index.md](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os/references/evidence_artifact_reuse_index.md) — Empirically-derived reuse-leverage ranking across all 12 frameworks (Phase 3)
+- [compliance_os_pattern.md](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/references/compliance_os_pattern.md) — The meta-framework architecture (configure → map → simulate → consolidate → review); when to use vs not
+- [cross_framework_overlap.md](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/references/cross_framework_overlap.md) — The 9-framework × control-family overlap table with mapping confidence (Phase 3 expands to 12 frameworks via `cross_framework_mapper.py`)
+- [audit_simulation_methodology.md](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/references/audit_simulation_methodology.md) — ISO 19011 + IIA IPPF + AICPA AT-C audit-simulation principles + severity distribution heuristics
+- [evidence_management.md](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/references/evidence_management.md) — Evidence pool design + retention + freshness + reuse-leverage scoring
+- [multi_framework_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/references/multi_framework_audit_playbook.md) — Integrated audit programme for 2+ frameworks (Phase 2)
+- [evidence_artifact_reuse_index.md](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/references/evidence_artifact_reuse_index.md) — Empirically-derived reuse-leverage ranking across all 12 frameworks (Phase 3)
 
 ## Phase 3 Asset: Mock Audit Scenario Library
 

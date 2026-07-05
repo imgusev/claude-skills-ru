@@ -7,7 +7,7 @@ description: "/cs:grants <research-idea> — NIH funding intelligence. 6-Q grill
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/commands/cs-grants.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/commands/cs-grants.md">Source</a></span>
 </div>
 
 
@@ -123,9 +123,9 @@ grants_<topic-slug>_<YYYY-MM-DD>.docx
 
 ## Related
 
-- Agent: [`cs-grants`](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/agents/cs-grants.md)
-- Skill: [`grants`](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/skills/grants/SKILL.md)
-- Source spec: [`megaprompts/08-grants-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/08-grants-megaprompt.md)
+- Agent: [`cs-grants`](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/agents/cs-grants.md)
+- Skill: [`grants`](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/skills/grants/SKILL.md)
+- Source spec: [`megaprompts/08-grants-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/08-grants-megaprompt.md)
 - Sibling: `/cs:litreview` (academic literature, no RePORTER)
 
 ---

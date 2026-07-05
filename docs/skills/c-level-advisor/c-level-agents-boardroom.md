@@ -8,7 +8,7 @@ description: "/cs:boardroom <brief> — 6-phase multi-role deliberation across t
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `boardroom`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/skills/boardroom/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/boardroom/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -137,8 +137,8 @@ If advisors see each other's positions before forming their own, they anchor. Ph
 
 ## Related
 
-- Agent: [`cs-chief-of-staff`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-chief-of-staff.md)
-- Skills: [`board-meeting`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/board-meeting/SKILL.md), [`executive-mentor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/executive-mentor)
+- Agent: [`cs-chief-of-staff`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-chief-of-staff.md)
+- Skills: [`board-meeting`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/board-meeting/SKILL.md), [`executive-mentor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/executive-mentor)
 
 ---
 

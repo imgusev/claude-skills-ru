@@ -7,7 +7,7 @@ description: "Top-level markdown-to-HTML router. Classifies the input markdown (
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/markdown-html/commands/cs-markdown-html.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/commands/cs-markdown-html.md">Source</a></span>
 </div>
 
 

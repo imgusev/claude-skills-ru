@@ -8,7 +8,7 @@ description: "Arquiteto de Empresa: constrói um negócio do zero como bundle OK
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `arquiteto-de-empresa`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -24,11 +24,11 @@ Você **não despeja a empresa de uma vez**. Você **entrevista, valida e constr
 
 ## O que você produz: um bundle OKF conformante
 
-Regras de conformidade que você **nunca** quebra (detalhe completo em [`references/okf_conformance.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/okf_conformance.md)):
+Regras de conformidade que você **nunca** quebra (detalhe completo em [`references/okf_conformance.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/okf_conformance.md)):
 
 1. **Bundle = diretório de `.md`.** Cada arquivo é **um conceito**; a identidade é o caminho sem `.md`.
-2. **Frontmatter YAML com `type` obrigatório** em todo conceito (vocabulário em [`references/type_vocabulary.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/type_vocabulary.md)).
-3. **Relações = links markdown no corpo** (`[Identidade](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/00-fundacao/identidade.md)`), formando um grafo — não arrays no frontmatter.
+2. **Frontmatter YAML com `type` obrigatório** em todo conceito (vocabulário em [`references/type_vocabulary.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/type_vocabulary.md)).
+3. **Relações = links markdown no corpo** (`[Identidade](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/00-fundacao/identidade.md)`), formando um grafo — não arrays no frontmatter.
 4. **`index.md` e `log.md` são reservados** (listagem da pasta / histórico de decisões) e **não** carregam `type`.
 5. **Tudo legível por humano e máquina** — markdown puro, sem runtime, sem SDK.
 
@@ -47,7 +47,7 @@ Regras de conformidade que você **nunca** quebra (detalhe completo em [`referen
 
 ## Roteiro de 12 fases
 
-Conduza nesta ordem; o detalhe de objetivo, perguntas e arquivos gerados de cada fase está em [`references/phase_playbook.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/phase_playbook.md):
+Conduza nesta ordem; o detalhe de objetivo, perguntas e arquivos gerados de cada fase está em [`references/phase_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/phase_playbook.md):
 
 `00-fundacao` → `01-estrategia` → `02-mercado` → `03-financeiro` → `04-comercial` → `05-marketing` → `06-produto` (pular se serviço puro) → `07-operacoes` → `08-tech` (só se houver infra digital) → `09-pessoas` → `10-juridico` → `11-governanca`.
 
@@ -80,15 +80,15 @@ Fluxo recomendado: **scaffold → entrevista por fase → escreve conceitos → 
 
 ## Referências
 
-- [`references/okf_conformance.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/okf_conformance.md) — spec OKF v0.1, regras de bundle, frontmatter, arquivos reservados (com fontes)
-- [`references/type_vocabulary.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/type_vocabulary.md) — vocabulário de `type` por pasta e conceito + nomenclatura
-- [`references/phase_playbook.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/phase_playbook.md) — as 12 fases: objetivo, perguntas (3-5/bloco) e arquivos gerados
+- [`references/okf_conformance.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/okf_conformance.md) — spec OKF v0.1, regras de bundle, frontmatter, arquivos reservados (com fontes)
+- [`references/type_vocabulary.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/type_vocabulary.md) — vocabulário de `type` por pasta e conceito + nomenclatura
+- [`references/phase_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/phase_playbook.md) — as 12 fases: objetivo, perguntas (3-5/bloco) e arquivos gerados
 
 ## Assets
 
-- [`assets/frontmatter_template.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/assets/frontmatter_template.md) — template de frontmatter de conceito
-- [`assets/index_template.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/assets/index_template.md) / [`assets/log_template.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/assets/log_template.md) — modelos dos arquivos reservados
-- [`assets/exemplo-bundle/`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/arquiteto-de-empresa/assets/exemplo-bundle/) — mini bundle de exemplo (`00-fundacao` + `index.md` + `log.md`)
+- [`assets/frontmatter_template.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/assets/frontmatter_template.md) — template de frontmatter de conceito
+- [`assets/index_template.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/assets/index_template.md) / [`assets/log_template.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/assets/log_template.md) — modelos dos arquivos reservados
+- [`assets/exemplo-bundle/`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/assets/exemplo-bundle/) — mini bundle de exemplo (`00-fundacao` + `index.md` + `log.md`)
 
 ---
 

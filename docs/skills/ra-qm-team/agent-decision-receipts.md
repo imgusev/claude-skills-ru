@@ -8,7 +8,7 @@ description: "Mint a tamper-evident, post-quantum-signed receipt for a consequen
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-check-outline: Regulatory & Quality</span>
 <span class="meta-badge">:material-identifier: `agent-decision-receipts`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/agent-decision-receipts/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/agent-decision-receipts/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -89,7 +89,7 @@ The action manifest is any ASCII-safe dict describing what the agent did. Four k
 
 `mint_receipt(manifest, decision=...)` hashes the full manifest into the receipt evidence, signs the canonical body, and returns a receipt that carries: `evidence_hash`, `signature_b64` (Ed25519), and — when `[pq]` is installed — `ml_dsa_signature_b64` + `slh_dsa_signature_b64`. Each leg signs the same bytes; any one verifying proves authenticity.
 
-> See [references/receipt-fields.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/agent-decision-receipts/references/receipt-fields.md) for the full receipt schema and the post-quantum rationale.
+> See [references/receipt-fields.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/agent-decision-receipts/references/receipt-fields.md) for the full receipt schema and the post-quantum rationale.
 
 ## Decision 3: Verify it
 

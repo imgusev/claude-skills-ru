@@ -7,7 +7,7 @@ description: "Matt Pocock-style docs-anchored grilling for a Research Operations
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research-ops/commands/cs-grill-research-ops.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research-ops/commands/cs-grill-research-ops.md">Source</a></span>
 </div>
 
 

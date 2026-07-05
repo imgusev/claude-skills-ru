@@ -8,7 +8,7 @@ description: "Use when a security incident has been detected or declared and nee
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `incident-response`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/incident-response/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/incident-response/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -327,7 +327,7 @@ done
 
 | Skill | Relationship |
 |-------|-------------|
-| [threat-detection](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/threat-detection/SKILL.md) | Confirmed hunting findings escalate to incident-response for triage and classification |
-| [cloud-security](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/cloud-security/SKILL.md) | Cloud posture findings (IAM compromise, S3 exposure) may trigger incident classification |
-| [red-team](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/red-team/SKILL.md) | Red team findings validate detection coverage; confirmed gaps become hunting hypotheses |
-| [security-pen-testing](https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/skills/security-pen-testing/SKILL.md) | Pen test vulnerabilities exploited in the wild escalate to incident-response for active incident handling |
+| [threat-detection](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/threat-detection/SKILL.md) | Confirmed hunting findings escalate to incident-response for triage and classification |
+| [cloud-security](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/cloud-security/SKILL.md) | Cloud posture findings (IAM compromise, S3 exposure) may trigger incident classification |
+| [red-team](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/red-team/SKILL.md) | Red team findings validate detection coverage; confirmed gaps become hunting hypotheses |
+| [security-pen-testing](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/skills/security-pen-testing/SKILL.md) | Pen test vulnerabilities exploited in the wild escalate to incident-response for active incident handling |

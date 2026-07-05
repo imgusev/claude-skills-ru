@@ -7,7 +7,7 @@ description: "/cs:inbox-setup — Interactive 8-section interview that builds a 
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/commands/cs-inbox-setup.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/commands/cs-inbox-setup.md">Source</a></span>
 </div>
 
 
@@ -31,7 +31,7 @@ This is one half of a pair:
 - `/cs:inbox-setup` (this command) — **writes** the KB (run once)
 - `/cs:inbox-triage` — **reads + appends** the KB (run recurringly)
 
-Both share a strict 7-file contract. See [`kb_file_contract.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/references/kb_file_contract.md) for the spec.
+Both share a strict 7-file contract. See [`kb_file_contract.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/references/kb_file_contract.md) for the spec.
 
 ## What You'll Get
 
@@ -127,9 +127,9 @@ python ../skills/inbox-setup/scripts/section_progress_tracker.py --action close 
 ## Related
 
 - Companion: [`/cs:inbox-triage`](./cs-inbox-triage.md) — runs after setup is complete
-- Agent: [`cs-inbox-setup`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/agents/cs-inbox-setup.md)
-- Skill: [`inbox-setup`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/SKILL.md)
-- Source spec: [`megaprompts/06-inbox-setup-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/06-inbox-setup-megaprompt.md)
+- Agent: [`cs-inbox-setup`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/agents/cs-inbox-setup.md)
+- Skill: [`inbox-setup`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/SKILL.md)
+- Source spec: [`megaprompts/06-inbox-setup-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/06-inbox-setup-megaprompt.md)
 
 ---
 

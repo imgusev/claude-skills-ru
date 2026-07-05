@@ -8,7 +8,7 @@ description: "Design production-grade multi-agent workflows with clear pattern c
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `agent-workflow-designer`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/agent-workflow-designer/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/agent-workflow-designer/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

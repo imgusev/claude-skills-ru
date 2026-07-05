@@ -8,7 +8,7 @@ description: "Arquiteto de Empresa — chief of staff sênior que constrói um n
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/arquiteto-de-empresa/agents/cs-arquiteto.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/arquiteto-de-empresa/agents/cs-arquiteto.md">Source</a></span>
 </div>
 
 

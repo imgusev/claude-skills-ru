@@ -8,7 +8,7 @@ description: "/cs:soc2-audit-prep <scope> — SOC 2 Type II readiness 6-question
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
 <span class="meta-badge">:material-identifier: `soc2-audit-prep`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/soc2-audit-prep/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/soc2-audit-prep/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -153,10 +153,10 @@ python ../../skills/compliance-os/scripts/audit_simulator.py soc2_scope.json
 
 ## Related
 
-- Agent: [`cs-soc2-auditor`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/agents/cs-soc2-auditor.md)
-- Skill: [`soc2-compliance`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/soc2-compliance/SKILL.md)
-- Playbook: [soc2_audit_playbook.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/soc2-compliance/references/soc2_audit_playbook.md)
-- Adjacent: [`skills/iso27001-audit-prep`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/iso27001-audit-prep), [`skills/gdpr-audit-prep`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/gdpr-audit-prep), [`skills/compliance-readiness`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-readiness)
+- Agent: [`cs-soc2-auditor`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/agents/cs-soc2-auditor.md)
+- Skill: [`soc2-compliance`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/soc2-compliance/SKILL.md)
+- Playbook: [soc2_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/soc2-compliance/references/soc2_audit_playbook.md)
+- Adjacent: [`skills/iso27001-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/iso27001-audit-prep), [`skills/gdpr-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/gdpr-audit-prep), [`skills/compliance-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-readiness)
 
 ---
 

@@ -8,7 +8,7 @@ description: "One-shot lifecycle command that chains init → baseline → spawn
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `run`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/agenthub/skills/run/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/agenthub/skills/run/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -76,7 +76,7 @@ If no `--eval` was provided, skip this step.
 
 Run `/hub:spawn` with the session ID.
 
-If `--template` was provided, use the template dispatch prompt from [`references/agent-templates.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/agenthub/skills/agenthub/references/agent-templates.md) instead of the default dispatch prompt. Pass the eval command, metric, and baseline to the template variables.
+If `--template` was provided, use the template dispatch prompt from [`references/agent-templates.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/agenthub/skills/agenthub/references/agent-templates.md) instead of the default dispatch prompt. Pass the eval command, metric, and baseline to the template variables.
 
 Launch all agents in a single message with multiple Agent tool calls (true parallelism).
 

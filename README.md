@@ -375,9 +375,9 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
-## Building the Docs Site & Translations (Maintainers)
+## Building the Docs Site (Maintainers)
 
-This fork adds a bilingual (en/ru) documentation site on top of the upstream content. Setup and run:
+This fork adds a bilingual (en/ru) documentation site on top of the upstream content — `SKILL.ru.md` files live right next to each English `SKILL.md`. Setup and run:
 
 ```bash
 # 1. Create the venv (uv, Python 3.12+) and install dependencies
@@ -390,28 +390,23 @@ uv pip install -r requirements-docs.txt -r requirements-dev.txt
 # 3. Build (or serve) the bilingual site — mkdocs-static-i18n builds both
 #    'en' (site/) and 'ru' (site/ru/) from the same mkdocs.yml
 .venv/bin/mkdocs build      # or: .venv/bin/mkdocs serve
-
-# 4. Translate more content to Russian (writes <stem>.ru.md next to the
-#    English source — never touches the English original). Requires
-#    YANDEX_TRANSLATE_API_KEY / YANDEX_FOLDER_ID (see .env.example).
-.venv/bin/python scripts/translate.py --domain markdown-html --dry-run
-.venv/bin/python scripts/translate.py --domain markdown-html
-
-# 5. Quality gate — lint, format, tests, structural integrity
-.venv/bin/ruff check .
-.venv/bin/ruff format --check .
-.venv/bin/pytest -q
-.venv/bin/python scripts/check_translation_integrity.py
-.venv/bin/python scripts/check_dual_publish.py
 ```
 
-Before publishing this fork, replace the `<GH_USER>/<REPO>` placeholders in `mkdocs.yml`, `scripts/generate-docs.py` (`GITHUB_BASE`), and `docs/overrides/main.html` with your actual GitHub username/org and repository name.
+The translation pipeline itself (Yandex Translate integration, structural integrity checks) is internal tooling and isn't part of this published repository.
+
+---
+
+## Maintainers & Attribution
+
+**RU maintainer:** [Ilya Gusev](https://imgusev.ru) — [imgusev.ru](https://imgusev.ru) · [@imgusev](https://t.me/imgusev) on Telegram · [github.com/imgusev](https://github.com/imgusev).
+
+This is a Russian translation/adaptation of [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills), MIT licensed, © Alireza Rezvani. See [LICENSE](LICENSE) and [NOTICE](NOTICE) for the full attribution.
 
 ---
 
 ## License
 
-MIT — see [LICENSE](LICENSE) for details.
+MIT — see [LICENSE](LICENSE) for details. See also [NOTICE](NOTICE) for the Russian-translation attribution.
 
 ---
 

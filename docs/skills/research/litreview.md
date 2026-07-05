@@ -8,7 +8,7 @@ description: "Academic literature orientation skill that searches papers via fre
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-magnify: Research</span>
 <span class="meta-badge">:material-identifier: `litreview`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -59,7 +59,7 @@ Inherited from the research-pack convention; locked verbatim per PR #657's cross
 - **Retry policy.** On failure → wait 3s → retry once → log. After 3 consecutive failures: stop, alert user, share what was collected.
 - **Lane check.** One runtime check at session start: Consensus MCP tools available or not. No tier detection, ever.
 
-See [`references/search_budget_allocation.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/references/search_budget_allocation.md) for the sequential-execution rationale + budget ceilings.
+See [`references/search_budget_allocation.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/references/search_budget_allocation.md) for the sequential-execution rationale + budget ceilings.
 
 ## Error Handling
 
@@ -99,7 +99,7 @@ Each question carries explicit "why I'm asking". Stop condition: max 3 before Ph
 
 Forcing choice with default ("you pick"). The skill surfaces its own framework recommendation after the recon search so user can override. Use `scripts/framework_recommender.py` for the heuristic.
 
-See [`references/framework_selection.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/references/framework_selection.md) for PICO / SPIDER / Decomposition canon.
+See [`references/framework_selection.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/references/framework_selection.md) for PICO / SPIDER / Decomposition canon.
 
 ### Q3 (depends on Q1) — Tentative depth
 
@@ -184,7 +184,7 @@ Surface the **practical constraint**: search lane in use (free / free+Consensus)
 
 ## Phase 3: Targeted Searches
 
-Sequential (1 query/sec), budget per depth tier. Every search runs on the free lane (`free_search.py` or the URL templates); **if Consensus is available, additionally** run the same query there and merge. See [`references/search_budget_allocation.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/references/search_budget_allocation.md) for full canon.
+Sequential (1 query/sec), budget per depth tier. Every search runs on the free lane (`free_search.py` or the URL templates); **if Consensus is available, additionally** run the same query there and merge. See [`references/search_budget_allocation.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/references/search_budget_allocation.md) for full canon.
 
 ### Quick scan (5 searches)
 - 5 sub-area searches (one per sub-area)
@@ -217,7 +217,7 @@ These feed the "Start Here" + "Key Research Groups" + "Bibliography" DOCX sectio
 
 ## Phase 4: DOCX Research Guide
 
-Generate via Node.js + `docx` library. 8 sections (see [`references/docx_8_sections.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/references/docx_8_sections.md) for full spec):
+Generate via Node.js + `docx` library. 8 sections (see [`references/docx_8_sections.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/references/docx_8_sections.md) for full spec):
 
 1. **Topic Overview** — single tight paragraph (4-6 sentences)
 2. **Start Here — Priority Reading Order** — 5-7 papers ordered: best recent review → foundational → 2-3 frontier → gap/controversy. Each: hyperlinked title + authors/year + 1-sentence contribution + 1-sentence "what to look for"
@@ -265,9 +265,9 @@ Plus:
 
 ## References
 
-- [`references/framework_selection.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/references/framework_selection.md) — PICO / SPIDER / Decomposition canon (7+ sources)
-- [`references/search_budget_allocation.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/references/search_budget_allocation.md) — depth tiers + cross-search intelligence + sequential execution rationale (7+ sources)
-- [`references/docx_8_sections.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/skills/litreview/references/docx_8_sections.md) — research guide DOCX spec + technical requirements (7+ sources)
+- [`references/framework_selection.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/references/framework_selection.md) — PICO / SPIDER / Decomposition canon (7+ sources)
+- [`references/search_budget_allocation.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/references/search_budget_allocation.md) — depth tiers + cross-search intelligence + sequential execution rationale (7+ sources)
+- [`references/docx_8_sections.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/skills/litreview/references/docx_8_sections.md) — research guide DOCX spec + technical requirements (7+ sources)
 
 ## Anti-Patterns To Reject
 
@@ -285,5 +285,5 @@ Plus:
 ---
 
 **Version:** 1.1.0
-**Source spec:** [`megaprompts/09-litreview-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/09-litreview-megaprompt.md)
+**Source spec:** [`megaprompts/09-litreview-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/09-litreview-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Sibling of `pulse` (research-pack shape). v1.1.0: free keyless APIs (PubMed + OpenAlex) became the default search lane; Consensus demoted to optional enhancement; plan-tier detection deleted per the 2026-06 newgen audit + ClawHub rule #3 (no paid-service dependencies).

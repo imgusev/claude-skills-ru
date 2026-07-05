@@ -8,7 +8,7 @@ description: "Directory and router for the marketing skills library. Use when yo
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
 <span class="meta-badge">:material-identifier: `marketing-skills`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/marketing-skills/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/marketing-skills/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -16,7 +16,7 @@ description: "Directory and router for the marketing skills library. Use when yo
 </div>
 
 
-This is the index skill for the marketing plugin. It does one job: route you to the right specialist skill, then get out of the way. For request-by-request routing logic, [../marketing-ops/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/marketing-ops/SKILL.md) is the canonical router — this file is the map.
+This is the index skill for the marketing plugin. It does one job: route you to the right specialist skill, then get out of the way. For request-by-request routing logic, [../marketing-ops/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/marketing-ops/SKILL.md) is the canonical router — this file is the map.
 
 **Counts (kept honest):** 44 specialist skills in `skills/` (plus this index and the deprecated `content-creator` redirect), 1 video skill in `video-content-strategist/`, 59 stdlib-only Python tools. No pip installs needed.
 

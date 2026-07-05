@@ -8,7 +8,7 @@ description: "Answer Engine Optimization (AEO) skill — optimize content to be 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
 <span class="meta-badge">:material-identifier: `aeo`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/aeo/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/aeo/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

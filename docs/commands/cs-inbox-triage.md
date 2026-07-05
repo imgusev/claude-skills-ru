@@ -7,7 +7,7 @@ description: "/cs:inbox-triage — Recurring email triage execution. Reads 7-fil
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/commands/cs-inbox-triage.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/commands/cs-inbox-triage.md">Source</a></span>
 </div>
 
 
@@ -126,9 +126,9 @@ python ../skills/inbox-triage/scripts/draft_safety_validator.py \
 ## Related
 
 - Companion: [`/cs:inbox-setup`](./cs-inbox-setup.md) — must run first
-- Agent: [`cs-inbox-triage`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/agents/cs-inbox-triage.md)
-- Skill: [`inbox-triage`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-triage/SKILL.md)
-- Source spec: [`megaprompts/07-inbox-triage-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/07-inbox-triage-megaprompt.md)
+- Agent: [`cs-inbox-triage`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/agents/cs-inbox-triage.md)
+- Skill: [`inbox-triage`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/SKILL.md)
+- Source spec: [`megaprompts/07-inbox-triage-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/07-inbox-triage-megaprompt.md)
 
 ---
 

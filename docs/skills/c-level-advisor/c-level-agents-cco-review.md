@@ -8,7 +8,7 @@ description: "/cs:cco-review <plan> — Retention-obsessed Chief Customer Office
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `cco-review`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/skills/cco-review/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/cco-review/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -132,9 +132,9 @@ python ../../../skills/chief-customer-officer-advisor/scripts/cs_coverage_calcul
 
 ## Related
 
-- Agent: [`cs-cco-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-cco-advisor.md)
-- Skill: [`chief-customer-officer-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/SKILL.md)
-- Adjacent: [`business-growth`](https://github.com/<GH_USER>/<REPO>/tree/main/business-growth) (tactical CS execution)
+- Agent: [`cs-cco-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-cco-advisor.md)
+- Skill: [`chief-customer-officer-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/SKILL.md)
+- Adjacent: [`business-growth`](https://github.com/imgusev/claude-skills-ru/tree/main/business-growth) (tactical CS execution)
 
 ---
 

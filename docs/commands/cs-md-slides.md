@@ -7,7 +7,7 @@ description: "Convert a markdown deck (slides separated by --- HR boundaries or 
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/markdown-html/commands/cs-md-slides.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/commands/cs-md-slides.md">Source</a></span>
 </div>
 
 

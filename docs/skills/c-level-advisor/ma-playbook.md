@@ -8,7 +8,7 @@ description: "M&A strategy for acquiring companies or being acquired. Due dilige
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `ma-playbook`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/ma-playbook/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/ma-playbook/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -95,8 +95,8 @@ See `references/integration-playbook.md` for the 100-day integration plan.
 
 This skill frames the deal; two sibling skills verify it. Hand off — don't duplicate:
 
-1. **Legal terms** → `general-counsel-advisor`: run the LOI/term sheet through [`scripts/term_sheet_analyzer.py`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/general-counsel-advisor/scripts/term_sheet_analyzer.py) (12-dimension 0-100 score) and the definitive docs through [`scripts/contract_risk_scanner.py`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/general-counsel-advisor/scripts/contract_risk_scanner.py) (12 founder-killer patterns: earnout traps, uncapped indemnity, vague IP, etc.). Any 🔴 finding goes to outside counsel before signing.
-2. **Data diligence** → `chief-data-officer-advisor`: run [`scripts/ai_training_data_audit.py`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-data-officer-advisor/scripts/ai_training_data_audit.py) (training-data rights, GDPR Art. 6 basis) and [`scripts/data_asset_valuator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-data-officer-advisor/scripts/data_asset_valuator.py) (data-asset value, M&A multiplier with carve-out penalties) on the target's data estate. Undocumented consent provenance is a price-reduction or walk-away item.
+1. **Legal terms** → `general-counsel-advisor`: run the LOI/term sheet through [`scripts/term_sheet_analyzer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor/scripts/term_sheet_analyzer.py) (12-dimension 0-100 score) and the definitive docs through [`scripts/contract_risk_scanner.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor/scripts/contract_risk_scanner.py) (12 founder-killer patterns: earnout traps, uncapped indemnity, vague IP, etc.). Any 🔴 finding goes to outside counsel before signing.
+2. **Data diligence** → `chief-data-officer-advisor`: run [`scripts/ai_training_data_audit.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-data-officer-advisor/scripts/ai_training_data_audit.py) (training-data rights, GDPR Art. 6 basis) and [`scripts/data_asset_valuator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-data-officer-advisor/scripts/data_asset_valuator.py) (data-asset value, M&A multiplier with carve-out penalties) on the target's data estate. Undocumented consent provenance is a price-reduction or walk-away item.
 3. **Valuation math** → `cfo-advisor` tools for the quantitative model; this playbook stays qualitative.
 
 Loop the findings back into the negotiation-points table above before the next counter.
@@ -117,5 +117,5 @@ Loop the findings back into the negotiation-points table above before the next c
 ## Resources
 - `references/integration-playbook.md` — 100-day post-acquisition integration plan
 - `references/due-diligence-checklist.md` — comprehensive DD checklist by domain
-- [`general-counsel-advisor/SKILL.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/general-counsel-advisor/SKILL.md) — term sheet analyzer + contract risk scanner
-- [`chief-data-officer-advisor/SKILL.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-data-officer-advisor/SKILL.md) — data diligence + data-asset valuation
+- [`general-counsel-advisor/SKILL.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor/SKILL.md) — term sheet analyzer + contract risk scanner
+- [`chief-data-officer-advisor/SKILL.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-data-officer-advisor/SKILL.md) — data diligence + data-asset valuation

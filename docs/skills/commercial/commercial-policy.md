@@ -8,7 +8,7 @@ description: "Use when designing or revising a company's commercial policy — t
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-handshake-outline: Commercial</span>
 <span class="meta-badge">:material-identifier: `commercial-policy`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commercial/skills/commercial-policy/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commercial/skills/commercial-policy/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

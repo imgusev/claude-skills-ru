@@ -1,0 +1,111 @@
+---
+title: "md-document — Markdown с расширенной формой для преобразования в HTML { #md-document--long-form-markdown-to-html } — Агентский скилл для HTML-вывода"
+description: "Преобразует Markdown в длинной форме (спецификации, RFC, отчеты, планы, пояснения) в однофайловый, легко интерактивный HTML-документ с помощью sticky. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+---
+
+# md-document — Markdown с расширенной формой для преобразования в HTML { #md-document--long-form-markdown-to-html }
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-language-html5: Markdown → HTML</span>
+<span class="meta-badge">:material-identifier: `md-document`</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/skills/md-document/SKILL.md">Источник</a></span>
+</div>
+
+<div class="install-banner" markdown>
+<span class="install-label">Установить:</span> <code>claude /plugin install markdown-html-skills</code>
+</div>
+
+
+Конвертер общего назначения - обрабатывает 90% случаев, описанных Shihipar (спецификации, планы, RFC, отчеты, пояснения). Три инструмента stdlib объединяются в пайплайн:
+
+```
+markdown_parser.py  →  html_renderer.py  →  interactivity_injector.py
+   (md → JSON AST)    (AST + tokens → HTML)    (HTML + JS behavior)
+```
+
+Выход один `.html` файл с прикрепленным заголовком, фильтром поиска, scrollspy, кнопками копирования кода и 12 производными фирменными токенами пользователя. Внешние возможности ограничены Google Fonts CSS + Prism.js CDN.
+
+## Когда вызывать { #when-to-invoke }
+
+| Симптом | Действие |
+|---|---|
+| `markdown-html-orchestrator` маршруты, вводимые в виде ДОКУМЕНТА | Используйте этот скилл |
+| Пользователь запускает `/cs:md-document <path>.md` непосредственно | Используйте этот скилл |
+| Пользователь говорит: "преобразуйте эту спецификацию/отчет/RFC/план в HTML". | Используйте этот скилл |
+| Ввод - это ревью кода (имеет ` ```diff ` блоки) | Маршрут к `md-review` вместо этого |
+| Входные данные - это слайд-дека (прозрачная `---` границы) | Маршрут к `md-slides` вместо этого |
+| Ввод составляет < 100 строк | Отказаться (порог Shihipar — Markdown по-прежнему выигрывает) |
+| Дизайн-система, не онбординг | Мусор, поверхность `/cs:design-system` |
+
+## Пайплайн { #pipeline }
+
+```bash
+# 1. Parse markdown → JSON AST
+python3 markdown-html/skills/md-document/scripts/markdown_parser.py \
+    --input <path>.md --output sections.json
+
+# 2. Render AST + design-system config → single-file HTML
+python3 markdown-html/skills/md-document/scripts/html_renderer.py \
+    --sections sections.json --output document.html
+
+# 3. Inject lightweight JS (search, copycode, smoothscroll, scrollspy)
+python3 markdown-html/skills/md-document/scripts/interactivity_injector.py \
+    --file document.html \
+    --features search,copycode,smoothscroll,scrollspy
+```
+
+Или все-в-одном (пример рендеринга):
+
+```bash
+python3 markdown-html/skills/md-document/scripts/html_renderer.py --sample \
+  | python3 markdown-html/skills/md-document/scripts/interactivity_injector.py \
+      --file /dev/stdin --output document.html
+```
+
+## Что визуализируется { #what-gets-rendered }
+
+Подмножество CommonMark, достаточное для артефактов, сгенерированных агентом:
+- Заголовки H1-H6 (каждый H2+ получает идентификатор привязки и запись TOC)
+- Абзацы, выделенные встроенным ** жирным шрифтом** / *курсивом* / `code` / [ссылки](url) / ![изображения](url)
+- Огороженные кодовые блоки (` ```python `) с Prism.js подсветка по запросу
+- Таблицы GFM с выравниванием по столбцам
+- Выноски GFM (`> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, `> [!CAUTION]`)
+- Блок-цитаты, упорядоченные + неупорядоченные списки (одноуровневые), горизонтальные правила
+
+Вне области видимости: вложенные списки, встроенные строки в HTML-формате, сноски, списки определений, флажки списка задач (отображаемые в виде обычного текста), ссылки в справочном стиле.
+
+## Жесткие правила { #hard-rules }
+
+1. **Отклоняет ввод < 100 строк.** Markdown выигрывает при значении ниже порогового значения (Shihipar).
+2. **Отказывается без онбординга.** `config_loader.setup_completed()` должен вернуться `True`. В противном случае поверхность `/cs:design-system`.
+3. ** Вывод в виде одного файла.** Все встроенные CSS + JS. Только внешние факторы являются `fonts.googleapis.com` и `cdn.jsdelivr.net` (Призма). Все остальное - это регресс.
+4. **Настройка должна изменить поведение.** `design_style=editorial` создает макет шириной 720 пикселей с высотой строки 1,75; `playful` округляет выноски и добавляет тень; `technical` является плотным с кодом 0,875бэр. Проверено на дым.
+5. **Токены, совместимые с WCAG.** Наследует палитру WCAG AA системы проектирования - контрастность основного текста ≥ 4,5:1, ссылки итеративно переходят к 4,5:1.
+6. ** Идемпотентная инъекция.** Повторная инъекция интерактивности невозможна (проверка маркера). Повторный рендеринг с другим design_style работает чисто.
+
+## Библиотека принудительных вопросов (дисциплина Matt Pocock grill) { #forcing-question-library-matt-pocock-grill-discipline }
+
+1. ** Для чего предназначен документ — для беглого просмотра, принятия решения или углубленного чтения?** Рекомендуется: назовите его; плотность зависит от объема. Канон: Шихипар; Туфте *Представление информации*.
+2. ** Sticky-боковая панель с заголовком или складывающийся верх?** Рекомендуется: sticky-боковая панель для более 800 слов / 4 + H2s; складной верх для более коротких документов для мобильных устройств. Канон: NN/g *Лучшие практики TOC* (2023).
+3. ** Все четыре интерактивные функции или их подмножество?** Рекомендуется: все четыре — ни одна из них не стоит больше ~ 1 КБАЙТ. Канон: Ваттенбергер * Почему React не подходит для создания веб-сайтов на самом деле *.
+4. ** Тема кода — светлая, темная или автоматическая? ** Рекомендуется: автоматическая (соответствует операционной системе `prefers-color-scheme`). Канон: WCAG 2.2 §1.4.3.
+5. **Имеет ли документ четкий заголовок H1?** Рекомендуется: да — H1 становится страницей `<title>` и исключается из оглавления.
+
+## Отличный от { #distinct-from }
+
+- **`md-review`** — этот конвертер отображает блоки diff + аннотации полей с тегами серьезности. Этот рендерит прозу + таблицы + код + выноски.
+- **`md-slides`** — этот преобразователь разделяется на `---` границы на слайдах. Этот файл отображает один непрерывный документ.
+- **`marketing/landing/`** — который генерирует целевые страницы с нуля (без ввода Markdown). Это преобразует существующий Markdown.
+
+## Выходной артефакт { #output-artifact }
+
+`{default_output_dir}/doc-{slug}.html` (путь, разрешенный с помощью оркестратора `output_path_resolver.py`; суффикс столкновения `-2`, `-3`, ... по умолчанию).
+
+## Ссылки { #references }
+
+- Шихипар — *Вывод HTML кода Клода* (Средний, 2026)
+- Tufte — *Представление информации* (1990), ч. 2 "Микро/макро показания"
+- NN/g — *Оглавление лучших практик* (2023)
+- WCAG 2.2 — §1.4.3 контраст, §2.4.5 множественные способы
+- Ваттенбергер — * Почему React не подходит для создания веб-сайтов*
+- Видишь `references/` для получения полных цитат

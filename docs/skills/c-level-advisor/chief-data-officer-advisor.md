@@ -8,7 +8,7 @@ description: "Chief Data Officer advisory for startups: AI training data rights 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `chief-data-officer-advisor`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-data-officer-advisor/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-data-officer-advisor/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -195,10 +195,10 @@ python scripts/data_product_strategy_picker.py profile.json
 
 ## References
 
-- [ai_training_data_rights.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-data-officer-advisor/references/ai_training_data_rights.md) — The training-rights matrix + GDPR Art. 6 / EU AI Act decision tree
-- [data_product_strategy.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-data-officer-advisor/references/data_product_strategy.md) — Warehouse / lakehouse / mesh kill criteria + build-vs-buy decision tree
-- [customer_data_as_asset.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-data-officer-advisor/references/customer_data_as_asset.md) — Valuation framework + M&A diligence prep + productization paths
-- [data_team_org_evolution.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-data-officer-advisor/references/data_team_org_evolution.md) — Stage-to-role map + centralize-vs-embed trigger
+- [ai_training_data_rights.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-data-officer-advisor/references/ai_training_data_rights.md) — The training-rights matrix + GDPR Art. 6 / EU AI Act decision tree
+- [data_product_strategy.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-data-officer-advisor/references/data_product_strategy.md) — Warehouse / lakehouse / mesh kill criteria + build-vs-buy decision tree
+- [customer_data_as_asset.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-data-officer-advisor/references/customer_data_as_asset.md) — Valuation framework + M&A diligence prep + productization paths
+- [data_team_org_evolution.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-data-officer-advisor/references/data_team_org_evolution.md) — Stage-to-role map + centralize-vs-embed trigger
 
 ---
 

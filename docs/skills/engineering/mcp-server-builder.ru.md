@@ -1,0 +1,111 @@
+---
+title: "Конструктор MCP-серверов { #mcp-server-builder } — Агентский скилл для Codex и OpenClaw"
+description: "Разрабатывайте и отправляйте готовые к производству серверы MCP (Model Context Protocol) на основе контрактов OpenAPI вместо написанных от руки."
+---
+
+# Конструктор MCP-серверов { #mcp-server-builder }
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-rocket-launch: Инженерия — уровень POWERFUL</span>
+<span class="meta-badge">:material-identifier: `mcp-server-builder`</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/SKILL.md">Источник</a></span>
+</div>
+
+<div class="install-banner" markdown>
+<span class="install-label">Установить:</span> <code>claude /plugin install engineering-advanced-skills</code>
+</div>
+
+
+**Уровень:** МОЩНЫЙ · ** Категория:** Инженерия · **Домен:** Интеграция AI / API
+
+## Обзор { #overview }
+
+Используйте этот скилл для проектирования и отправки готовых к производству MCP-серверов на основе контрактов API вместо написанных вручную одноразовых оболочек инструментов. Он фокусируется на быстром построении каркасов, качестве схемы, валидации и безопасной эволюции.
+
+Воркфлоу поддерживает реализации MCP как на Python, так и на TypeScript и рассматривает OpenAPI как источник истины.
+
+## Основные возможности { #core-capabilities }
+
+- Преобразуйте пути/операции OpenAPI в определения инструментов MCP
+- Генерировать стартовые серверные каркасы (Python или TypeScript)
+- Обеспечение согласованности имен, описаний и схем
+- Проверка манифестов инструментов MCP на наличие распространенных производственных сбоев
+- Применяйте проверку версий и обратной совместимости
+- Отделять решения о транспортировке/времени выполнения от разработки контракта на инструмент
+
+## Когда использовать { #when-to-use }
+
+- Вам нужно предоставить доступ к внутреннему/внешнему REST API агенту LLM
+- Вы заменяете хрупкую автоматизацию браузера типизированными инструментами
+- Вы хотите, чтобы один сервер MCP был общим для всех команд и помощников
+- Вам нужны повторяющиеся проверки качества перед публикацией MCP tools
+- Вы хотите загрузить MCP-сервер из существующих спецификаций OpenAPI
+
+## Ключевые Воркфлоу { #key-workflows }
+
+### 1. Подключите OpenAPI к каркасу MCP { #1-openapi-to-mcp-scaffold }
+
+1. Начните с действующей спецификации OpenAPI.
+2. Сгенерируйте манифест инструмента + стартовый серверный код.
+3. Ревью стратегию присвоения имен и аутентификации.
+4. Добавьте логику выполнения, зависящую от конечной точки.
+
+```bash
+python3 scripts/openapi_to_mcp.py \
+  --input openapi.json \
+  --server-name billing-mcp \
+  --language python \
+  --output-dir ./out \
+  --format text
+```
+
+Также поддерживает стандартный ввод:
+
+```bash
+cat openapi.json | python3 scripts/openapi_to_mcp.py --server-name billing-mcp --language typescript
+```
+
+### 2. Проверьте правильность определений инструментов MCP { #2-validate-mcp-tool-definitions }
+
+Запустите валидатор перед интеграционными тестами:
+
+```bash
+python3 scripts/mcp_validator.py --input out/tool_manifest.json --strict --format text
+```
+
+Проверки включают повторяющиеся имена, недопустимую форму схемы, отсутствующие описания, пустые обязательные поля и соблюдение правил именования.
+
+### 3. Выбор времени выполнения { #3-runtime-selection }
+
+- Выберите ** Python** для быстрой итерации и бэкэндов с большим объемом данных.
+- Выберите ** TypeScript** для унифицированных стеков JS и более плотного повторного использования контрактов frontend/backend.
+- Поддерживайте стабильность контрактов с инструментами даже при изменении транспорта/времени выполнения.
+
+### 4. Затвердеть для производства { #4-harden-for-production }
+
+Ключевые элементы перед публикацией:
+
+- Храните секреты в переменных env, а не в схемах инструментов
+- Предпочитайте исходящие списки разрешений хостинга открытым прокси
+- Используйте изменения только для добавления; никогда не переименовывайте названия инструментов на месте
+
+Полное руководство по упрочнению: [список литературы/производство-упрочнение-руководство.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/production-hardening-guide.md).
+
+## Интерфейсы сценариев { #script-interfaces }
+
+- `python3 scripts/openapi_to_mcp.py --help`
+  - Считывает OpenAPI из stdin или `--input`
+  - Создает манифест + серверный каркас
+  - Отправляет сводный или текстовый отчет в формате JSON
+- `python3 scripts/mcp_validator.py --help`
+  - Проверяет манифесты и необязательную конфигурацию среды выполнения
+  - Возвращает ненулевой выход в строгом режиме при наличии ошибок
+
+## Справочный материал { #reference-material }
+
+- [список литературы/производство-упрочнение-руководство.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/production-hardening-guide.md) — дизайн аутентификации и безопасности, стратегия управления версиями, распространенные ошибки, лучшие практики, архитектурные решения, гейты качества контрактов, стратегия тестирования, методы развертывания, средства контроля безопасности
+- [ссылки/openapi-извлечение-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/openapi-extraction-guide.md)
+- [ссылки/python-server-шаблон.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/python-server-template.md)
+- [ссылки/typescript-сервер-шаблон.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/typescript-server-template.md)
+- [ссылки/проверка-чек-лист.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/validation-checklist.md)
+- [README.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/README.md)

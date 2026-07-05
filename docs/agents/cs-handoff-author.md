@@ -8,7 +8,7 @@ description: "Conversation-handoff author. Compacts the current session into a m
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/agents/cs-handoff-author.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/agents/cs-handoff-author.md">Source</a></span>
 </div>
 
 
@@ -44,31 +44,31 @@ Differentiates clearly:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/handoff`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff)
+**Skill Location:** [`skills/handoff`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff)
 
 ### Python Tools (Stdlib)
 
 1. **Template Generator**
-   - Path: [`scripts/handoff_template_generator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff/scripts/handoff_template_generator.py)
+   - Path: [`scripts/handoff_template_generator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/scripts/handoff_template_generator.py)
    - Usage: `python handoff_template_generator.py --next-focus "ship PR" --mktemp`
    - Generates scaffold tailored to next-session emphasis (deployment / review / debug / design / test / default)
 
 2. **Artifact Deduplicator**
-   - Path: [`scripts/artifact_deduplicator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff/scripts/artifact_deduplicator.py)
+   - Path: [`scripts/artifact_deduplicator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/scripts/artifact_deduplicator.py)
    - Usage: `python artifact_deduplicator.py path/to/handoff-draft.md`
    - Detects PRD/ADR/issue/commit/long-code-block content; suggests reference replacements
 
 3. **Skill Recommender**
-   - Path: [`scripts/skill_recommender.py`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff/scripts/skill_recommender.py)
+   - Path: [`scripts/skill_recommender.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/scripts/skill_recommender.py)
    - Usage: `python skill_recommender.py path/to/handoff.md`
    - Matches handoff content to 14 skill signals; ranked recommendations
 
 ### Knowledge Bases
 
-- [`references/companion_tooling.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff/references/companion_tooling.md) — tool catalogue + mktemp convention
-- [`references/handoff_structure.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff/references/handoff_structure.md) — 5-section structure + tailoring (7 sources)
-- [`references/deduplication_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff/references/deduplication_discipline.md) — 5 categories of common duplication + fixes (7 sources)
-- [`references/next_session_skill_matching.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff/references/next_session_skill_matching.md) — recommender logic + pattern-match rationale (7 sources)
+- [`references/companion_tooling.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/references/companion_tooling.md) — tool catalogue + mktemp convention
+- [`references/handoff_structure.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/references/handoff_structure.md) — 5-section structure + tailoring (7 sources)
+- [`references/deduplication_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/references/deduplication_discipline.md) — 5 categories of common duplication + fixes (7 sources)
+- [`references/next_session_skill_matching.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/references/next_session_skill_matching.md) — recommender logic + pattern-match rationale (7 sources)
 
 ## Workflows
 
@@ -163,15 +163,15 @@ Length target: 50-100 lines. Anything longer suggests duplication.
 
 ## Related Agents
 
-- [cs-skill-author](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/write-a-skill/agents/cs-skill-author.md) — skill authoring (consumes handoffs that mention "new skill")
-- [cs-grill-master](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-me/agents/cs-grill-master.md) — plan interrogation (different mode)
-- [cs-caveman-mode](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/agents/cs-caveman-mode.md) — compression (handoffs are usually NOT caveman — full prose for next-agent clarity)
+- [cs-skill-author](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/agents/cs-skill-author.md) — skill authoring (consumes handoffs that mention "new skill")
+- [cs-grill-master](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/agents/cs-grill-master.md) — plan interrogation (different mode)
+- [cs-caveman-mode](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/agents/cs-caveman-mode.md) — compression (handoffs are usually NOT caveman — full prose for next-agent clarity)
 
 ## References
 
-- Skill: [../skills/handoff/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff/SKILL.md)
-- Companion tooling: [../skills/handoff/references/companion_tooling.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/skills/handoff/references/companion_tooling.md)
-- Sibling command: [`/cs:handoff`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/handoff/commands/cs-handoff.md)
+- Skill: [../skills/handoff/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/SKILL.md)
+- Companion tooling: [../skills/handoff/references/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/references/companion_tooling.md)
+- Sibling command: [`/cs:handoff`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/commands/cs-handoff.md)
 
 ---
 

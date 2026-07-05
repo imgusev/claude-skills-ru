@@ -8,7 +8,7 @@ description: "ISO 13485:2016 QMS audit persona — Design Control + CAPA + Proce
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Compliance Os</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/agents/cs-cqm-iso13485.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/agents/cs-cqm-iso13485.md">Source</a></span>
 </div>
 
 
@@ -39,30 +39,30 @@ Differentiates clearly:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/qms-audit-expert`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/qms-audit-expert)
+**Skill Location:** [`skills/qms-audit-expert`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert)
 
 ### Python Tools
 
 1. **Audit Schedule Optimizer**
-   - Path: [`scripts/audit_schedule_optimizer.py`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/qms-audit-expert/scripts/audit_schedule_optimizer.py)
+   - Path: [`scripts/audit_schedule_optimizer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/scripts/audit_schedule_optimizer.py)
    - Usage: `python audit_schedule_optimizer.py audit_scope.json`
    - Returns: optimized audit plan with prioritization on design controls + CAPA + post-market; auditor independence checks
 
 ### Knowledge Bases
 
-- [`references/iso13485-audit-guide.md`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/qms-audit-expert/references/iso13485-audit-guide.md) — ISO 13485 audit guide
-- [`references/nonconformity-classification.md`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/qms-audit-expert/references/nonconformity-classification.md) — Nonconformity classification
-- [`references/iso13485_audit_playbook.md`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md) — Full 7-phase audit playbook (NEW in Phase 2)
+- [`references/iso13485-audit-guide.md`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/references/iso13485-audit-guide.md) — ISO 13485 audit guide
+- [`references/nonconformity-classification.md`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/references/nonconformity-classification.md) — Nonconformity classification
+- [`references/iso13485_audit_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md) — Full 7-phase audit playbook (NEW in Phase 2)
 
 ### Adjacent Skills
 
-- [`skills/quality-manager-qms-iso13485`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/quality-manager-qms-iso13485) — QMS implementation depth
-- [`skills/capa-officer`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/capa-officer) — CAPA closure + root cause + effectiveness verification
-- [`skills/risk-management-specialist`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/risk-management-specialist) — ISO 14971 risk file
-- [`skills/mdr-745-specialist`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/mdr-745-specialist) — EU MDR technical documentation
-- [`skills/fda-consultant-specialist`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/fda-consultant-specialist) — FDA QSR + 510(k) / PMA submissions
-- [`skills/quality-documentation-manager`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/quality-documentation-manager) — DHF / DMR / DHR management
-- [`skills/compliance-os`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os) — Meta-orchestrator
+- [`skills/quality-manager-qms-iso13485`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/quality-manager-qms-iso13485) — QMS implementation depth
+- [`skills/capa-officer`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/capa-officer) — CAPA closure + root cause + effectiveness verification
+- [`skills/risk-management-specialist`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/risk-management-specialist) — ISO 14971 risk file
+- [`skills/mdr-745-specialist`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/mdr-745-specialist) — EU MDR technical documentation
+- [`skills/fda-consultant-specialist`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/fda-consultant-specialist) — FDA QSR + 510(k) / PMA submissions
+- [`skills/quality-documentation-manager`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/quality-documentation-manager) — DHF / DMR / DHR management
+- [`skills/compliance-os`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os) — Meta-orchestrator
 
 ## Workflows
 
@@ -133,14 +133,14 @@ python audit_schedule_optimizer.py audit_scope.json
 - [cs-compliance-officer](cs-compliance-officer.md) — Multi-framework orchestrator (routes here for ISO 13485 audit)
 - [cs-fda-qsr-auditor](cs-fda-qsr-auditor.md) — FDA QSR auditor (substantially harmonized post-Feb 2026)
 - [cs-aims-iso42001](cs-aims-iso42001.md) — ISO 42001 AIMS (for AI-enabled medical devices, layer on top of 13485)
-- [cs-cpo-advisor](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-cpo-advisor.md) — Executive product strategy
-- [cs-quality-regulatory](https://github.com/<GH_USER>/<REPO>/tree/main/agents/ra-qm-team/cs-quality-regulatory.md) — Medical-device orchestrator (routes here for audit work)
+- [cs-cpo-advisor](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-cpo-advisor.md) — Executive product strategy
+- [cs-quality-regulatory](https://github.com/imgusev/claude-skills-ru/tree/main/agents/ra-qm-team/cs-quality-regulatory.md) — Medical-device orchestrator (routes here for audit work)
 
 ## References
 
-- Skill: [../../ra-qm-team/skills/qms-audit-expert/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/qms-audit-expert/SKILL.md)
-- Playbook: [../../ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md)
-- Sibling command: [`/cs:iso13485-audit-prep`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/iso13485-audit-prep/SKILL.md)
+- Skill: [../../ra-qm-team/skills/qms-audit-expert/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/SKILL.md)
+- Playbook: [../../ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md)
+- Sibling command: [`/cs:iso13485-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/iso13485-audit-prep/SKILL.md)
 
 ---
 

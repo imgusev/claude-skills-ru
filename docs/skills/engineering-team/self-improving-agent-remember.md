@@ -8,7 +8,7 @@ description: "Explicitly save important knowledge to auto-memory with timestamp 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `remember`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/self-improving-agent/skills/remember/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/self-improving-agent/skills/remember/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

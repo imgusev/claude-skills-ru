@@ -8,7 +8,7 @@ description: "/cs:gdpr-audit-prep <scope> — GDPR audit 6-question Article-cite
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
 <span class="meta-badge">:material-identifier: `gdpr-audit-prep`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/gdpr-audit-prep/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/gdpr-audit-prep/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -166,10 +166,10 @@ python ../../skills/compliance-os/scripts/cross_framework_mapper.py program.json
 
 ## Related
 
-- Agent: [`cs-dpo-gdpr`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/agents/cs-dpo-gdpr.md)
-- Skill: [`gdpr-dsgvo-expert`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/gdpr-dsgvo-expert/SKILL.md)
-- Playbook: [gdpr_audit_playbook.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/gdpr-dsgvo-expert/references/gdpr_audit_playbook.md)
-- Adjacent: [`skills/iso27001-audit-prep`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/iso27001-audit-prep), [`skills/ai-act-readiness`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/ai-act-readiness), [`skills/soc2-audit-prep`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/soc2-audit-prep), [`skills/compliance-readiness`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-readiness)
+- Agent: [`cs-dpo-gdpr`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/agents/cs-dpo-gdpr.md)
+- Skill: [`gdpr-dsgvo-expert`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/gdpr-dsgvo-expert/SKILL.md)
+- Playbook: [gdpr_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/gdpr-dsgvo-expert/references/gdpr_audit_playbook.md)
+- Adjacent: [`skills/iso27001-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/iso27001-audit-prep), [`skills/ai-act-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/ai-act-readiness), [`skills/soc2-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/soc2-audit-prep), [`skills/compliance-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-readiness)
 
 ---
 

@@ -8,7 +8,7 @@ description: "Generates a premium single-page HTML landing page with 3D CSS anim
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-web: Marketing (Top-Level)</span>
 <span class="meta-badge">:material-identifier: `landing`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -128,7 +128,7 @@ Brand override:
 
 If only primary provided, derive accent algorithmically (lighten 15% for accent; darken 8% for navy-mid; convert to rgba at 0.12 alpha for glow). Use `scripts/brand_palette_validator.py` for the deterministic derivation.
 
-See [`references/brand_system_design.md`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/references/brand_system_design.md) for color theory + WCAG + algorithmic palette derivation canon.
+See [`references/brand_system_design.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/references/brand_system_design.md) for color theory + WCAG + algorithmic palette derivation canon.
 
 ### Typography
 
@@ -189,7 +189,7 @@ See [`references/brand_system_design.md`](https://github.com/<GH_USER>/<REPO>/tr
 
 ## Animation Patterns
 
-See [`references/gsap_animation_patterns.md`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/references/gsap_animation_patterns.md) for the canon. Five patterns required:
+See [`references/gsap_animation_patterns.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/references/gsap_animation_patterns.md) for the canon. Five patterns required:
 
 ### 1. Hero Entrance (GSAP timeline)
 
@@ -272,7 +272,7 @@ CSS handles ambient continuous motion (smoother, cheaper than GSAP for indefinit
 
 NO other external CSS or JS files. All custom CSS in `<style>`, all custom JS in `<script>` blocks within the same HTML file.
 
-See [`references/single_file_html_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/references/single_file_html_discipline.md) for the inline-only rationale.
+See [`references/single_file_html_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/references/single_file_html_discipline.md) for the inline-only rationale.
 
 ## Layout Rules
 
@@ -330,9 +330,9 @@ Run `scripts/html_validator.py --file ${OUTPUT_DIR}/<slug>.html` after generatio
 
 ## References
 
-- [`references/brand_system_design.md`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/references/brand_system_design.md) — color theory + WCAG + algorithmic palette derivation (7+ sources)
-- [`references/gsap_animation_patterns.md`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/references/gsap_animation_patterns.md) — entrance timeline + ScrollTrigger reveals + mouse parallax + CSS floats + scroll indicator (7+ sources)
-- [`references/single_file_html_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/references/single_file_html_discipline.md) — why inline + CDN-only externals + accessibility minimums + no-build rationale (7+ sources)
+- [`references/brand_system_design.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/references/brand_system_design.md) — color theory + WCAG + algorithmic palette derivation (7+ sources)
+- [`references/gsap_animation_patterns.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/references/gsap_animation_patterns.md) — entrance timeline + ScrollTrigger reveals + mouse parallax + CSS floats + scroll indicator (7+ sources)
+- [`references/single_file_html_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/references/single_file_html_discipline.md) — why inline + CDN-only externals + accessibility minimums + no-build rationale (7+ sources)
 
 ## Anti-Patterns To Reject
 
@@ -347,5 +347,5 @@ Run `scripts/html_validator.py --file ${OUTPUT_DIR}/<slug>.html` after generatio
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/04-landing-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/04-landing-megaprompt.md)
+**Source spec:** [`megaprompts/04-landing-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/04-landing-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Distinct from `product-team/skills/landing-page-generator/`.

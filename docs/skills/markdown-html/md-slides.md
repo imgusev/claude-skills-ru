@@ -8,7 +8,7 @@ description: "Converts a markdown deck (slides separated by `---` HR boundaries 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-language-html5: Markdown to HTML</span>
 <span class="meta-badge">:material-identifier: `md-slides`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/markdown-html/skills/md-slides/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/skills/md-slides/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

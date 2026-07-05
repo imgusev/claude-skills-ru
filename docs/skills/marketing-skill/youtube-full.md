@@ -8,7 +8,7 @@ description: "Use when the user needs YouTube transcripts, video search, channel
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
 <span class="meta-badge">:material-identifier: `youtube-full`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/youtube-full/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/youtube-full/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

@@ -8,7 +8,7 @@ description: "Validate, test, and score the quality of skills within the claude-
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `skill-tester`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/skill-tester/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/skill-tester/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

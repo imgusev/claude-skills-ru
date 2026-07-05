@@ -7,7 +7,7 @@ description: "Run a red-green-refactor TDD workflow — generate failing tests f
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/tdd.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/tdd.md">Source</a></span>
 </div>
 
 

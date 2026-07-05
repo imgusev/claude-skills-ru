@@ -8,7 +8,7 @@ description: "Analyzes RFP/RFI responses for coverage gaps, builds competitive f
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-trending-up: Business & Growth</span>
 <span class="meta-badge">:material-identifier: `sales-engineer`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/business-growth/skills/sales-engineer/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/business-growth/skills/sales-engineer/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -225,7 +225,7 @@ python scripts/poc_planner.py poc_data.json --format json  # JSON output
 - **Marketing Skills** - Leverage competitive intelligence and messaging frameworks from `marketing-skill/`
 - **Product Team** - Coordinate on roadmap items flagged as "Planned" in RFP analysis from `product-team/`
 - **C-Level Advisory** - Escalate strategic deals requiring executive engagement from `c-level-advisor/`
-- **Customer Success** - Hand off POC results and success criteria to CSM from [`skills/customer-success-manager`](https://github.com/<GH_USER>/<REPO>/tree/main/business-growth/skills/customer-success-manager)
+- **Customer Success** - Hand off POC results and success criteria to CSM from [`skills/customer-success-manager`](https://github.com/imgusev/claude-skills-ru/tree/main/business-growth/skills/customer-success-manager)
 
 ---
 

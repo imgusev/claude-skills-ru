@@ -8,7 +8,7 @@ description: "Browser automation skill for controlling Google's NotebookLM. Use 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-magnify: Research</span>
 <span class="meta-badge">:material-identifier: `notebooklm`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/skills/notebooklm/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/skills/notebooklm/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -91,7 +91,7 @@ For action 4 (create new): replace with "What's the title for the new notebook?"
 
 **Stop condition:** After Q4 (or earlier with dependency skips), commit and start the action sequence.
 
-See [`references/studio_output_custom_prompts.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/skills/notebooklm/references/studio_output_custom_prompts.md) for the canon.
+See [`references/studio_output_custom_prompts.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/skills/notebooklm/references/studio_output_custom_prompts.md) for the canon.
 
 ## Notebook Discovery
 
@@ -162,7 +162,7 @@ Sub-flows per source type:
 **Slides (slide deck):**
 > "12 slides max. 1-2 sentences per slide body. Presenter notes per slide with: one concrete example + one likely audience objection + how to address it. No bullet points in slide bodies — prose only. End with one-slide call-to-action."
 
-See [`references/studio_output_custom_prompts.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/skills/notebooklm/references/studio_output_custom_prompts.md) for more.
+See [`references/studio_output_custom_prompts.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/skills/notebooklm/references/studio_output_custom_prompts.md) for more.
 
 ## Action 4: Create New Notebook
 
@@ -200,7 +200,7 @@ python3 scripts/async_action_classifier.py --action "video overview"
 #    "NOT waiting in this session" message to relay to the user
 ```
 
-See [`references/async_action_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/skills/notebooklm/references/async_action_discipline.md) for the canon.
+See [`references/async_action_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/skills/notebooklm/references/async_action_discipline.md) for the canon.
 
 ## Screenshot-First Discipline
 
@@ -218,7 +218,7 @@ NotebookLM is a **dynamic SPA** where UI varies by:
 
 Use `screenshot()` (or equivalent in your browser-automation tool) before every meaningful UI interaction.
 
-See [`references/browser_automation_canon.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/skills/notebooklm/references/browser_automation_canon.md) for the discipline.
+See [`references/browser_automation_canon.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/skills/notebooklm/references/browser_automation_canon.md) for the discipline.
 
 ## find()-Before-Click
 
@@ -282,9 +282,9 @@ After completing any action:
 
 ## References
 
-- [`references/browser_automation_canon.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/skills/notebooklm/references/browser_automation_canon.md) — screenshot-first + find-before-click + tool-agnostic patterns (7+ sources)
-- [`references/studio_output_custom_prompts.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/skills/notebooklm/references/studio_output_custom_prompts.md) — why defaults are mediocre + per-output-type templates (7+ sources)
-- [`references/async_action_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/notebooklm/skills/notebooklm/references/async_action_discipline.md) — fire-and-notify pattern for slow UI ops (7+ sources)
+- [`references/browser_automation_canon.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/skills/notebooklm/references/browser_automation_canon.md) — screenshot-first + find-before-click + tool-agnostic patterns (7+ sources)
+- [`references/studio_output_custom_prompts.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/skills/notebooklm/references/studio_output_custom_prompts.md) — why defaults are mediocre + per-output-type templates (7+ sources)
+- [`references/async_action_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/notebooklm/skills/notebooklm/references/async_action_discipline.md) — fire-and-notify pattern for slow UI ops (7+ sources)
 
 ## Anti-Patterns To Reject
 
@@ -299,5 +299,5 @@ After completing any action:
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/03-notebooklm-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/03-notebooklm-megaprompt.md)
+**Source spec:** [`megaprompts/03-notebooklm-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/03-notebooklm-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Browser-automation shape — distinct from research-pack convention.

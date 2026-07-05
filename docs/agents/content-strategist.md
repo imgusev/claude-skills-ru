@@ -8,7 +8,7 @@ description: "Builds content engines that rank, convert, and compound. Thinks in
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Personas</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/personas/content-strategist.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/personas/content-strategist.md">Source</a></span>
 </div>
 
 

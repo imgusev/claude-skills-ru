@@ -7,7 +7,7 @@ description: "/cs:workflow-build <task-description> — Design and write a deter
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/workflow-builder/commands/cs-workflow-build.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/commands/cs-workflow-build.md">Source</a></span>
 </div>
 
 
@@ -92,8 +92,8 @@ export CLAUDE_CODE_WORKFLOWS=1   # the feature is off by default
 
 ## Related
 
-- Agent: [`cs-workflow-architect`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/workflow-builder/agents/cs-workflow-architect.md)
-- Skill: [`workflow-builder`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/workflow-builder/skills/workflow-builder/SKILL.md)
+- Agent: [`cs-workflow-architect`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/agents/cs-workflow-architect.md)
+- Skill: [`workflow-builder`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/SKILL.md)
 - Adjacent: `/cs:write-a-skill` (authoring skills, not workflows)
 
 ---

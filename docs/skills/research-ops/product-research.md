@@ -8,7 +8,7 @@ description: "Use when planning and synthesizing product/user research as a meth
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-flask-outline: Research Operations</span>
 <span class="meta-badge">:material-identifier: `product-research`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research-ops/skills/product-research/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research-ops/skills/product-research/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

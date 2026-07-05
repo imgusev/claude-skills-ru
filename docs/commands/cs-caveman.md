@@ -7,7 +7,7 @@ description: "/cs:caveman — Activate persistent caveman-mode. Ultra-compressed
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/commands/cs-caveman.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/commands/cs-caveman.md">Source</a></span>
 </div>
 
 
@@ -64,8 +64,8 @@ python ../skills/caveman/scripts/caveman_lint.py "response"
 
 ## Related
 
-- Agent: [`cs-caveman-mode`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/agents/cs-caveman-mode.md)
-- Skill: [`caveman`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/caveman/skills/caveman/SKILL.md)
+- Agent: [`cs-caveman-mode`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/agents/cs-caveman-mode.md)
+- Skill: [`caveman`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/SKILL.md)
 - Adjacent: `/cs:grill-me`, `/cs:handoff` (other Pocock-derived skills)
 
 ---

@@ -8,7 +8,7 @@ description: "Design and write deterministic multi-agent workflow scripts (.js f
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `workflow-builder`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/workflow-builder/skills/workflow-builder/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -39,7 +39,7 @@ Before proposing or writing any workflow, run the intake. Do not skip to code.
 
 3. **Confirm the shape with the user** (topology + phases + parallel-vs-pipeline) before writing the file. This is the only approval gate.
 
-See [references/decision_and_intake_guide.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/workflow-builder/skills/workflow-builder/references/decision_and_intake_guide.md) for the full question framework, the vague-input playbook, and worked recommendation examples.
+See [references/decision_and_intake_guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/references/decision_and_intake_guide.md) for the full question framework, the vague-input playbook, and worked recommendation examples.
 
 ## Decide if a workflow is even the right tool
 
@@ -58,7 +58,7 @@ Workflows earn their cost when work is parallel or multi-stage, must be reproduc
    python scripts/scaffold_workflow.py --topology pipeline --name pr-triage \
      --description "Triage open PRs" > .claude/workflows/pr-triage.js
    ```
-2. **Edit** the file: `meta` block first (pure literal, first statement), then the async body using the injected globals — `agent()`, `pipeline()`, `parallel()`, `phase()`, `log()`, `budget`, `args`, `workflow()`. Full surface in [references/api_reference.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/workflow-builder/skills/workflow-builder/references/api_reference.md); copy-paste shapes in [references/orchestration_patterns.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/workflow-builder/skills/workflow-builder/references/orchestration_patterns.md).
+2. **Edit** the file: `meta` block first (pure literal, first statement), then the async body using the injected globals — `agent()`, `pipeline()`, `parallel()`, `phase()`, `log()`, `budget`, `args`, `workflow()`. Full surface in [references/api_reference.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/references/api_reference.md); copy-paste shapes in [references/orchestration_patterns.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/references/orchestration_patterns.md).
 3. **Validate** before running — catches the parser-fatal mistakes:
    ```bash
    python scripts/validate_workflow.py .claude/workflows/pr-triage.js

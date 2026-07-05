@@ -7,7 +7,7 @@ description: "Matt-Pocock-style forcing-question grill for markdown-html convers
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/markdown-html/commands/cs-grill-markdown-html.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/commands/cs-grill-markdown-html.md">Source</a></span>
 </div>
 
 

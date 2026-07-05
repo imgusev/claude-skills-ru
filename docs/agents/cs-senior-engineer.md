@@ -8,7 +8,7 @@ description: "Senior Engineer agent for architecture decisions, code review, Dev
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/engineering/cs-senior-engineer.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/engineering/cs-senior-engineer.md">Source</a></span>
 </div>
 
 
@@ -96,5 +96,5 @@ Cross-cutting senior engineer covering architecture, backend, DevOps, security, 
 
 ## Related Agents
 
-- [cs-engineering-lead](https://github.com/<GH_USER>/<REPO>/tree/main/agents/engineering-team/cs-engineering-lead.md) -- Team coordination, incident response, and cross-functional delivery
-- [cs-product-manager](https://github.com/<GH_USER>/<REPO>/tree/main/agents/product/cs-product-manager.md) -- Feature prioritization and requirements context
+- [cs-engineering-lead](https://github.com/imgusev/claude-skills-ru/tree/main/agents/engineering-team/cs-engineering-lead.md) -- Team coordination, incident response, and cross-functional delivery
+- [cs-product-manager](https://github.com/imgusev/claude-skills-ru/tree/main/agents/product/cs-product-manager.md) -- Feature prioritization and requirements context

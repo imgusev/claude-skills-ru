@@ -7,7 +7,7 @@ description: "/cs:grill-me <path-to-plan> — Start a relentless interrogation o
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-me/commands/cs-grill-me.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/commands/cs-grill-me.md">Source</a></span>
 </div>
 
 
@@ -80,8 +80,8 @@ Recommended: [position] because [1-sentence rationale]
 
 ## Related
 
-- Agent: [`cs-grill-master`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-me/agents/cs-grill-master.md)
-- Skill: [`grill-me`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-me/skills/grill-me/SKILL.md)
+- Agent: [`cs-grill-master`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/agents/cs-grill-master.md)
+- Skill: [`grill-me`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/skills/grill-me/SKILL.md)
 - Adjacent: `/cs:caveman`, `/cs:handoff`, `/cs:write-a-skill`
 
 ---

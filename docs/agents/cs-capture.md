@@ -8,7 +8,7 @@ description: "Brain-dump organizer persona. Catches unstructured streams of mixe
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Productivity</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/agents/cs-capture.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/agents/cs-capture.md">Source</a></span>
 </div>
 
 
@@ -61,30 +61,30 @@ Differentiates clearly:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/capture`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/skills/capture)
+**Skill Location:** [`skills/capture`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture)
 
 ### Python Tools (Stdlib)
 
 1. **Workspace Inventory**
-   - Path: [`scripts/workspace_inventory.py`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/skills/capture/scripts/workspace_inventory.py)
+   - Path: [`scripts/workspace_inventory.py`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/scripts/workspace_inventory.py)
    - Usage: `python workspace_inventory.py --root . --keywords "k1,k2,k3"`
    - Returns structured inventory: file matches by keyword + top-level folder structure. Use the matches as Section 3 candidates.
 
 2. **Dump Classifier**
-   - Path: [`scripts/dump_classifier.py`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/skills/capture/scripts/dump_classifier.py)
+   - Path: [`scripts/dump_classifier.py`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/scripts/dump_classifier.py)
    - Usage: `python dump_classifier.py path/to/dump.txt`
    - Heuristic regex classifier — labels each line as `task` / `decision` / `question` / `idea` / `project-component`. Use as a seed; override based on context.
 
 3. **Complexity Estimator**
-   - Path: [`scripts/complexity_estimator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/skills/capture/scripts/complexity_estimator.py)
+   - Path: [`scripts/complexity_estimator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/scripts/complexity_estimator.py)
    - Usage: `python complexity_estimator.py path/to/dump.txt`
    - Counts items, detects clustering signal, recommends full-4-section or compressed output.
 
 ### Knowledge Bases
 
-- [`references/workspace_detection.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/skills/capture/references/workspace_detection.md) — context-specific detection tactics (CLI / web / MCP / inaccessible)
-- [`references/voice_preservation.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/skills/capture/references/voice_preservation.md) — corporate-speak anti-patterns with concrete examples
-- [`references/complexity_matching.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/skills/capture/references/complexity_matching.md) — compressed vs full output, worked examples
+- [`references/workspace_detection.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/references/workspace_detection.md) — context-specific detection tactics (CLI / web / MCP / inaccessible)
+- [`references/voice_preservation.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/references/voice_preservation.md) — corporate-speak anti-patterns with concrete examples
+- [`references/complexity_matching.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/references/complexity_matching.md) — compressed vs full output, worked examples
 
 ## Workflows
 
@@ -196,15 +196,15 @@ Which should I tackle?
 
 ## Related Agents
 
-- [cs-grill-master](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-me/agents/cs-grill-master.md) — slow, deliberate plan interrogator (different mode)
-- [cs-grill-with-docs](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/agents/cs-grill-with-docs.md) — docs-anchored grill (different scope)
-- [cs-handoff-author](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/handoff/agents/cs-handoff-author.md) — different artifact (continuation prompt)
+- [cs-grill-master](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/agents/cs-grill-master.md) — slow, deliberate plan interrogator (different mode)
+- [cs-grill-with-docs](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/agents/cs-grill-with-docs.md) — docs-anchored grill (different scope)
+- [cs-handoff-author](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/handoff/agents/cs-handoff-author.md) — different artifact (continuation prompt)
 
 ## References
 
-- Skill: [../skills/capture/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/skills/capture/SKILL.md)
-- Source spec: [`megaprompts/05-capture-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/05-capture-megaprompt.md)
-- Sibling command: [`/cs:capture`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/commands/cs-capture.md)
+- Skill: [../skills/capture/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/SKILL.md)
+- Source spec: [`megaprompts/05-capture-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/05-capture-megaprompt.md)
+- Sibling command: [`/cs:capture`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/commands/cs-capture.md)
 
 ---
 

@@ -8,7 +8,7 @@ description: "Graduate a proven pattern from auto-memory (MEMORY.md) to CLAUDE.m
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `promote`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/self-improving-agent/skills/promote/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/self-improving-agent/skills/promote/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

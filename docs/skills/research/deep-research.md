@@ -8,7 +8,7 @@ description: "Run a disciplined, multi-source research investigation for a high-
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-magnify: Research</span>
 <span class="meta-badge">:material-identifier: `deep-research`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/deep-research/skills/deep-research/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/deep-research/skills/deep-research/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

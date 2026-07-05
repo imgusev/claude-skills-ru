@@ -8,7 +8,7 @@ description: "NIH grant research persona for clinical researchers. Walks 6 forci
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Research</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/agents/cs-grants.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/agents/cs-grants.md">Source</a></span>
 </div>
 
 
@@ -52,7 +52,7 @@ The cs-grants agent orchestrates the `grants` skill:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/grants`](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/skills/grants)
+**Skill Location:** [`skills/grants`](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/skills/grants)
 
 ### Python Tools (Stdlib)
 
@@ -68,8 +68,8 @@ The cs-grants agent orchestrates the `grants` skill:
 
 ## Related Agents
 
-- [cs-litreview](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/agents/cs-litreview.md) — sibling, academic literature (no RePORTER)
-- [cs-pulse](https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/agents/cs-pulse.md) — sibling, multi-platform recency
+- [cs-litreview](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/agents/cs-litreview.md) — sibling, academic literature (no RePORTER)
+- [cs-pulse](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/agents/cs-pulse.md) — sibling, multi-platform recency
 - Future: cs-patent, cs-dossier, cs-syllabus
 
 ---

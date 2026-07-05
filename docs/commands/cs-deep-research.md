@@ -7,7 +7,7 @@ description: "/cs:deep-research <question> — Disciplined multi-source investig
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/deep-research/commands/cs-deep-research.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/deep-research/commands/cs-deep-research.md">Source</a></span>
 </div>
 
 
@@ -58,8 +58,8 @@ The `cs-deep-research` persona turns "research this" into an auditable, reusable
 
 ## Related
 
-- Agent: [`cs-deep-research`](https://github.com/<GH_USER>/<REPO>/tree/main/research/deep-research/agents/cs-deep-research.md)
-- Skill: [`deep-research`](https://github.com/<GH_USER>/<REPO>/tree/main/research/deep-research/skills/deep-research/SKILL.md)
+- Agent: [`cs-deep-research`](https://github.com/imgusev/claude-skills-ru/tree/main/research/deep-research/agents/cs-deep-research.md)
+- Skill: [`deep-research`](https://github.com/imgusev/claude-skills-ru/tree/main/research/deep-research/skills/deep-research/SKILL.md)
 - Siblings: `/cs:pulse` (recency), the research router, `litreview` / `dossier` / `patent`
 
 ---

@@ -8,7 +8,7 @@ description: "/cs:iso13485-audit-prep <scope> — ISO 13485 QMS audit 6-question
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
 <span class="meta-badge">:material-identifier: `iso13485-audit-prep`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/iso13485-audit-prep/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/iso13485-audit-prep/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -158,10 +158,10 @@ python ../../skills/compliance-os/scripts/audit_simulator.py iso13485_scope.json
 
 ## Related
 
-- Agent: [`cs-cqm-iso13485`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/agents/cs-cqm-iso13485.md)
-- Skill: [`qms-audit-expert`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/qms-audit-expert/SKILL.md)
-- Playbook: [iso13485_audit_playbook.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md)
-- Adjacent: [`skills/fda-qsr-audit-prep`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/fda-qsr-audit-prep), [`skills/aims-audit`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/aims-audit), [`skills/compliance-readiness`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-readiness)
+- Agent: [`cs-cqm-iso13485`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/agents/cs-cqm-iso13485.md)
+- Skill: [`qms-audit-expert`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/SKILL.md)
+- Playbook: [iso13485_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md)
+- Adjacent: [`skills/fda-qsr-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/fda-qsr-audit-prep), [`skills/aims-audit`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/aims-audit), [`skills/compliance-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-readiness)
 
 ---
 

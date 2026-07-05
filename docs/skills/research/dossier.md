@@ -8,7 +8,7 @@ description: "Decision-grade entity research skill — produces a hypothesis-tes
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-magnify: Research</span>
 <span class="meta-badge">:material-identifier: `dossier`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/skills/dossier/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/skills/dossier/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -32,7 +32,7 @@ The use case shape:
 
 The forcing Q4 — the hypothesis question — is the non-generic anchor. Skip it and the skill produces a Wikipedia summary.
 
-See [`references/hypothesis_testing_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/skills/dossier/references/hypothesis_testing_discipline.md) for the canon.
+See [`references/hypothesis_testing_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/skills/dossier/references/hypothesis_testing_discipline.md) for the canon.
 
 ## Agent Integrity Rules (Research-Pack Convention)
 
@@ -126,7 +126,7 @@ If still ambiguous after Q1 push-back: **halt and re-ask Q1** with disambiguatin
 
 ## Phase 3: Source Matrix Selection
 
-Routed by Q2 subject type. See [`references/subject_type_source_matrix.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/skills/dossier/references/subject_type_source_matrix.md) for the full canon.
+Routed by Q2 subject type. See [`references/subject_type_source_matrix.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/skills/dossier/references/subject_type_source_matrix.md) for the full canon.
 
 ### Person
 
@@ -228,7 +228,7 @@ Surface but don't sensationalize:
 
 3-5 specific hooks tied to **actual findings**, not generic talking points.
 
-See [`references/conversation_hook_quality.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/skills/dossier/references/conversation_hook_quality.md) for the canon.
+See [`references/conversation_hook_quality.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/skills/dossier/references/conversation_hook_quality.md) for the canon.
 
 | ❌ Generic | ✅ Finding-tied |
 |---|---|
@@ -284,9 +284,9 @@ new ExternalHyperlink({
 
 ## References
 
-- [`references/hypothesis_testing_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/skills/dossier/references/hypothesis_testing_discipline.md) — ≥30% rule + decision-grade vs encyclopedic (7+ sources)
-- [`references/subject_type_source_matrix.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/skills/dossier/references/subject_type_source_matrix.md) — person/company/nonprofit/gov source matrices (7+ sources)
-- [`references/conversation_hook_quality.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/skills/dossier/references/conversation_hook_quality.md) — finding-tied hook discipline (7+ sources)
+- [`references/hypothesis_testing_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/skills/dossier/references/hypothesis_testing_discipline.md) — ≥30% rule + decision-grade vs encyclopedic (7+ sources)
+- [`references/subject_type_source_matrix.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/skills/dossier/references/subject_type_source_matrix.md) — person/company/nonprofit/gov source matrices (7+ sources)
+- [`references/conversation_hook_quality.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/skills/dossier/references/conversation_hook_quality.md) — finding-tied hook discipline (7+ sources)
 
 ## Error Handling
 
@@ -319,5 +319,5 @@ new ExternalHyperlink({
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/12-dossier-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/12-dossier-megaprompt.md)
+**Source spec:** [`megaprompts/12-dossier-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/12-dossier-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Research-pack sibling, hypothesis-testing variant.

@@ -8,7 +8,7 @@ description: "Convenes a 5-angle adversarial panel (Critic, Champion, Analyst, I
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Productivity</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/agents/cs-roast-judge.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/agents/cs-roast-judge.md">Source</a></span>
 </div>
 
 
@@ -52,7 +52,7 @@ opinion on an idea before they build it:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/roast`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/skills/roast)
+**Skill Location:** [`skills/roast`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/skills/roast)
 
 ### Python Tools (Stdlib)
 
@@ -79,7 +79,7 @@ opinion on an idea before they build it:
 
 ## Related Agents
 
-- [cs-andreessen](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/andreessen/agents/cs-andreessen.md) — productivity sibling, single market-first lens
+- [cs-andreessen](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/andreessen/agents/cs-andreessen.md) — productivity sibling, single market-first lens
 
 ---
 

@@ -8,7 +8,7 @@ description: "Use when a Head of People Ops, BizOps lead, or Internal Communicat
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-cog-outline: Business Operations</span>
 <span class="meta-badge">:material-identifier: `internal-comms`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/business-operations/skills/internal-comms/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/business-operations/skills/internal-comms/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

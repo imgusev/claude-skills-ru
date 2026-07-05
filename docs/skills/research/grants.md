@@ -8,7 +8,7 @@ description: "NIH grant research skill for clinical researchers. Grill-me intake
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-magnify: Research</span>
 <span class="meta-badge">:material-identifier: `grants`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/skills/grants/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/skills/grants/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -32,7 +32,7 @@ Inherited; locked verbatim per PR #657 audit.
 - **Error handling.** On failure → wait 3s → retry once → log. After 3 consecutive failures across tools: stop, alert researcher, explain what's missing. Never silently skip.
 - **Transparency.** Audit Log section in the DOCX. Same standards in chat summary as in document.
 
-See [`references/reporter_post_patterns.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/skills/grants/references/reporter_post_patterns.md) for the RePORTER POST canon + plan-tier detection.
+See [`references/reporter_post_patterns.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/skills/grants/references/reporter_post_patterns.md) for the RePORTER POST canon + plan-tier detection.
 
 ## Phase 1: Grill-Me Intake (6 forcing questions, one at a time)
 
@@ -199,11 +199,11 @@ python scripts/mechanism_matcher.py \
 # Returns mechanism shortlist with rationale
 ```
 
-See [`references/nih_mechanism_matching.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/skills/grants/references/nih_mechanism_matching.md) for the full matrix.
+See [`references/nih_mechanism_matching.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/skills/grants/references/nih_mechanism_matching.md) for the full matrix.
 
 ## Phase 3: DOCX Generation
 
-9 sections via Node.js + `docx` library. See [`references/docx_9_sections.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/skills/grants/references/docx_9_sections.md) for full spec.
+9 sections via Node.js + `docx` library. See [`references/docx_9_sections.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/skills/grants/references/docx_9_sections.md) for full spec.
 
 1. **Executive Summary** — title + career stage + environment + 3-4 key findings bullets
 2. **Research Positioning** — 3-5 gap quotes (italicized, inline Consensus citations) + 2-3 paragraph positioning narrative + supporting evidence table
@@ -255,9 +255,9 @@ This is the single most valuable advice for any applicant. Never skip.
 
 ## References
 
-- [`references/nih_mechanism_matching.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/skills/grants/references/nih_mechanism_matching.md) — career stage × scope × prelim → mechanism canon (7+ sources)
-- [`references/reporter_post_patterns.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/skills/grants/references/reporter_post_patterns.md) — RePORTER curl POST templates + plan-tier detection (7+ sources)
-- [`references/docx_9_sections.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/skills/grants/references/docx_9_sections.md) — 9-section .docx spec + technical requirements (7+ sources)
+- [`references/nih_mechanism_matching.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/skills/grants/references/nih_mechanism_matching.md) — career stage × scope × prelim → mechanism canon (7+ sources)
+- [`references/reporter_post_patterns.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/skills/grants/references/reporter_post_patterns.md) — RePORTER curl POST templates + plan-tier detection (7+ sources)
+- [`references/docx_9_sections.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/skills/grants/references/docx_9_sections.md) — 9-section .docx spec + technical requirements (7+ sources)
 
 ## Error Handling
 
@@ -287,5 +287,5 @@ This is the single most valuable advice for any applicant. Never skip.
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/08-grants-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/08-grants-megaprompt.md)
+**Source spec:** [`megaprompts/08-grants-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/08-grants-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Research-pack sibling of pulse + litreview.

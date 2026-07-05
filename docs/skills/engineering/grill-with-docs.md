@@ -8,7 +8,7 @@ description: "Docs-anchored grilling session — challenges a plan against the p
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `grill-with-docs`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/skills/grill-with-docs/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -86,7 +86,7 @@ When the user states how something works, check whether the code agrees. If you 
 
 ### Update CONTEXT.md inline
 
-When a term is resolved, update `CONTEXT.md` right there. Don't batch these up — capture them as they happen. Use the format in [CONTEXT-FORMAT.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/skills/grill-with-docs/CONTEXT-FORMAT.md).
+When a term is resolved, update `CONTEXT.md` right there. Don't batch these up — capture them as they happen. Use the format in [CONTEXT-FORMAT.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/CONTEXT-FORMAT.md).
 
 `CONTEXT.md` should be totally devoid of implementation details. Do not treat `CONTEXT.md` as a spec, a scratch pad, or a repository for implementation decisions. It is a glossary and nothing else.
 
@@ -98,7 +98,7 @@ Only offer to create an ADR when all three are true:
 2. **Surprising without context** — a future reader will wonder "why did they do it this way?"
 3. **The result of a real trade-off** — there were genuine alternatives and you picked one for specific reasons
 
-If any of the three is missing, skip the ADR. Use the format in [ADR-FORMAT.md](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/skills/grill-with-docs/ADR-FORMAT.md).
+If any of the three is missing, skip the ADR. Use the format in [ADR-FORMAT.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/ADR-FORMAT.md).
 
 </supporting-info>
 
@@ -132,14 +132,14 @@ The additions below are **not** part of Matt's upstream skill. They operationali
 
 ### References (citations behind each rule)
 
-- [`references/ubiquitous_language.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/skills/grill-with-docs/references/ubiquitous_language.md) — why a glossary belongs in source control (Evans, Vernon, Khononov, Wlaschin, Brandolini, Avram & Marinescu, Fowler)
-- [`references/adr_practice.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/skills/grill-with-docs/references/adr_practice.md) — when an ADR earns its keep (Nygard, Tyree & Akerman, Zimmermann Y-statements, MADR, ThoughtWorks Radar, adr-tools, Backstage)
-- [`references/context_md_as_artifact.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/skills/grill-with-docs/references/context_md_as_artifact.md) — CONTEXT.md as living artifact (Khononov on language drift, Kernighan on naming, BoundedContext bliki, Confluent on data contracts, Brandolini on EventStorming glossary)
+- [`references/ubiquitous_language.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/references/ubiquitous_language.md) — why a glossary belongs in source control (Evans, Vernon, Khononov, Wlaschin, Brandolini, Avram & Marinescu, Fowler)
+- [`references/adr_practice.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/references/adr_practice.md) — when an ADR earns its keep (Nygard, Tyree & Akerman, Zimmermann Y-statements, MADR, ThoughtWorks Radar, adr-tools, Backstage)
+- [`references/context_md_as_artifact.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/references/context_md_as_artifact.md) — CONTEXT.md as living artifact (Khononov on language drift, Kernighan on naming, BoundedContext bliki, Confluent on data contracts, Brandolini on EventStorming glossary)
 
 ### Companion
 
-- Agent: `cs-grill-with-docs` (see [`agents/cs-grill-with-docs.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/agents/cs-grill-with-docs.md))
-- Command: `/cs:grill-with-docs` (see [`commands/cs-grill-with-docs.md`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/grill-with-docs/commands/cs-grill-with-docs.md))
+- Agent: `cs-grill-with-docs` (see [`agents/cs-grill-with-docs.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/agents/cs-grill-with-docs.md))
+- Command: `/cs:grill-with-docs` (see [`commands/cs-grill-with-docs.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/commands/cs-grill-with-docs.md))
 
 ---
 

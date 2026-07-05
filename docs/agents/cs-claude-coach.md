@@ -8,7 +8,7 @@ description: "Use proactively after any user message in a Claude.ai or Claude Co
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/claude-coach/agents/cs-claude-coach.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/claude-coach/agents/cs-claude-coach.md">Source</a></span>
 </div>
 
 

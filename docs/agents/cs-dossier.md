@@ -8,7 +8,7 @@ description: "Decision-grade entity research persona. Walks 6 forcing intake que
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Research</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/agents/cs-dossier.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/agents/cs-dossier.md">Source</a></span>
 </div>
 
 
@@ -57,7 +57,7 @@ The cs-dossier agent orchestrates the `dossier` skill across hypothesis-tested e
 
 ## Skill Integration
 
-**Skill Location:** [`skills/dossier`](https://github.com/<GH_USER>/<REPO>/tree/main/research/dossier/skills/dossier)
+**Skill Location:** [`skills/dossier`](https://github.com/imgusev/claude-skills-ru/tree/main/research/dossier/skills/dossier)
 
 ### Python Tools (Stdlib)
 
@@ -73,9 +73,9 @@ The cs-dossier agent orchestrates the `dossier` skill across hypothesis-tested e
 
 ## Related Agents
 
-- [cs-litreview](https://github.com/<GH_USER>/<REPO>/tree/main/research/litreview/agents/cs-litreview.md) — sibling, academic literature
-- [cs-grants](https://github.com/<GH_USER>/<REPO>/tree/main/research/grants/agents/cs-grants.md) — sibling, NIH funding
-- [cs-pulse](https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/agents/cs-pulse.md) — sibling, multi-platform recency
+- [cs-litreview](https://github.com/imgusev/claude-skills-ru/tree/main/research/litreview/agents/cs-litreview.md) — sibling, academic literature
+- [cs-grants](https://github.com/imgusev/claude-skills-ru/tree/main/research/grants/agents/cs-grants.md) — sibling, NIH funding
+- [cs-pulse](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/agents/cs-pulse.md) — sibling, multi-platform recency
 - Future: cs-patent (patent prior-art), cs-syllabus (course readings)
 
 ---

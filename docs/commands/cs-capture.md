@@ -7,7 +7,7 @@ description: "/cs:capture <dump-text-or-path> — Explicit invocation of the bra
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/commands/cs-capture.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/commands/cs-capture.md">Source</a></span>
 </div>
 
 
@@ -103,9 +103,9 @@ python ../skills/capture/scripts/workspace_inventory.py \
 
 ## Related
 
-- Agent: [`cs-capture`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/agents/cs-capture.md)
-- Skill: [`capture`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/skills/capture/SKILL.md)
-- Source spec: [`megaprompts/05-capture-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/05-capture-megaprompt.md)
+- Agent: [`cs-capture`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/agents/cs-capture.md)
+- Skill: [`capture`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/SKILL.md)
+- Source spec: [`megaprompts/05-capture-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/05-capture-megaprompt.md)
 - Adjacent commands: `/cs:grill-me` (slow deliberate plan grill), `/cs:grill-with-docs` (docs-anchored grill), `/cs:handoff` (session continuation)
 
 ---

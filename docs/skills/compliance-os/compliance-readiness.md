@@ -8,7 +8,7 @@ description: "/cs:compliance-readiness <program> — Multi-framework compliance 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
 <span class="meta-badge">:material-identifier: `compliance-readiness`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-readiness/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-readiness/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -138,8 +138,8 @@ python ../../skills/compliance-os/scripts/audit_simulator.py scope.json
 
 ## Related
 
-- Agent: [`cs-compliance-officer`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/agents/cs-compliance-officer.md)
-- Skill: [`compliance-os`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os/SKILL.md)
+- Agent: [`cs-compliance-officer`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/agents/cs-compliance-officer.md)
+- Skill: [`compliance-os`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/SKILL.md)
 - Adjacent: `ra-qm-team/skills/iso42001-specialist/`, `ra-qm-team/skills/eu-ai-act-specialist/`, `ra-qm-team/skills/information-security-manager-iso27001/`, `ra-qm-team/skills/soc2-compliance/`, `ra-qm-team/skills/gdpr-dsgvo-expert/`
 
 ---

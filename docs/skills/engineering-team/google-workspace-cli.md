@@ -8,7 +8,7 @@ description: "Google Workspace administration via the gws CLI (github.com/google
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Engineering - Core</span>
 <span class="meta-badge">:material-identifier: `google-workspace-cli`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering-team/google-workspace-cli/skills/google-workspace-cli/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/google-workspace-cli/skills/google-workspace-cli/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

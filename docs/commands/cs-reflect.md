@@ -7,7 +7,7 @@ description: "/cs:reflect — Mid-conversation reflection: halts current thread,
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/commands/cs-reflect.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/commands/cs-reflect.md">Source</a></span>
 </div>
 
 
@@ -109,9 +109,9 @@ python ../skills/reflect/scripts/directional_recommendation_validator.py --outpu
 
 ## Related
 
-- Agent: [`cs-reflect`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/agents/cs-reflect.md)
-- Skill: [`reflect`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/reflect/skills/reflect/SKILL.md)
-- Source spec: [`megaprompts/02-reflect-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/02-reflect-megaprompt.md)
+- Agent: [`cs-reflect`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/agents/cs-reflect.md)
+- Skill: [`reflect`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/reflect/skills/reflect/SKILL.md)
+- Source spec: [`megaprompts/02-reflect-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/02-reflect-megaprompt.md)
 - Sibling: `/cs:capture` (productivity, brain-dump organizer)
 - Adjacent (different shape): `/cs:grill-me`, `/cs:grill-with-docs`
 

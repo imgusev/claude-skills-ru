@@ -8,7 +8,7 @@ description: "Pre-mortem plan analysis. Imagine the plan failed 12 months from n
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `challenge`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/executive-mentor/skills/challenge/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/executive-mentor/skills/challenge/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

@@ -8,7 +8,7 @@ description: "Premium HTML landing page generator persona. Walks 3-4 forcing int
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/agents/cs-landing.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/agents/cs-landing.md">Source</a></span>
 </div>
 
 
@@ -58,30 +58,30 @@ Differentiates clearly:
 
 ## Skill Integration
 
-**Skill Location:** [`skills/landing`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing)
+**Skill Location:** [`skills/landing`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing)
 
 ### Python Tools (Stdlib)
 
 1. **Brand Palette Validator**
-   - Path: [`scripts/brand_palette_validator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/scripts/brand_palette_validator.py)
+   - Path: [`scripts/brand_palette_validator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/scripts/brand_palette_validator.py)
    - Usage: `python brand_palette_validator.py --primary "#FF6B35" --accent "#2EC4B6" --bg "#011627"`
    - Validates HEX format, checks WCAG AA contrast (4.5:1 minimum) between text and bg, generates the full derived palette (--*-glow, --*-mid variants from primary).
 
 2. **Kebab Slug Generator**
-   - Path: [`scripts/kebab_slug_generator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/scripts/kebab_slug_generator.py)
+   - Path: [`scripts/kebab_slug_generator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/scripts/kebab_slug_generator.py)
    - Usage: `python kebab_slug_generator.py --product "Quill AI" --output-dir ./landing-pages`
    - Produces `quill-ai.html` filename. Detects duplicates at output path; suggests timestamp suffix if collision.
 
 3. **HTML Validator**
-   - Path: [`scripts/html_validator.py`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/scripts/html_validator.py)
+   - Path: [`scripts/html_validator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/scripts/html_validator.py)
    - Usage: `python html_validator.py --file ./landing-pages/quill-ai.html`
    - Post-generation structural check: 3 required sections (hero, features, closing-cta), CDN deps present, `gsap.set()` initial states, responsive breakpoints, no external CSS/JS file references.
 
 ### Knowledge Bases
 
-- [`references/brand_system_design.md`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/references/brand_system_design.md) — color theory + WCAG + algorithmic palette derivation + override patterns (7+ sources)
-- [`references/gsap_animation_patterns.md`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/references/gsap_animation_patterns.md) — entrance timeline + ScrollTrigger reveals + mouse parallax + CSS floats + scroll indicator (7+ sources)
-- [`references/single_file_html_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/references/single_file_html_discipline.md) — why inline + CDN-only externals + accessibility minimums + no-build rationale (7+ sources)
+- [`references/brand_system_design.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/references/brand_system_design.md) — color theory + WCAG + algorithmic palette derivation + override patterns (7+ sources)
+- [`references/gsap_animation_patterns.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/references/gsap_animation_patterns.md) — entrance timeline + ScrollTrigger reveals + mouse parallax + CSS floats + scroll indicator (7+ sources)
+- [`references/single_file_html_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/references/single_file_html_discipline.md) — why inline + CDN-only externals + accessibility minimums + no-build rationale (7+ sources)
 
 ## Workflows
 
@@ -166,14 +166,14 @@ Instead of writing to ./landing-pages/<slug>.html:
 ## Related Agents
 
 - `landing-page-generator` (product-team/) — sibling, Next.js TSX conversion-focused (different output target)
-- [cs-capture](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/capture/agents/cs-capture.md) — different domain (productivity)
-- [cs-pulse](https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/agents/cs-pulse.md) — different domain (research)
+- [cs-capture](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/agents/cs-capture.md) — different domain (productivity)
+- [cs-pulse](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/agents/cs-pulse.md) — different domain (research)
 
 ## References
 
-- Skill: [../skills/landing/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/skills/landing/SKILL.md)
-- Source spec: [`megaprompts/04-landing-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/04-landing-megaprompt.md)
-- Sibling command: [`/cs:landing`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing/landing/commands/cs-landing.md)
+- Skill: [../skills/landing/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/skills/landing/SKILL.md)
+- Source spec: [`megaprompts/04-landing-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/04-landing-megaprompt.md)
+- Sibling command: [`/cs:landing`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing/landing/commands/cs-landing.md)
 
 ---
 

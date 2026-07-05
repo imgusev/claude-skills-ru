@@ -8,7 +8,7 @@ description: "Chief Customer Officer advisory for startups: retention decomposit
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `chief-customer-officer-advisor`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -200,10 +200,10 @@ python scripts/cs_coverage_calculator.py book.json
 
 ## References
 
-- [retention_decomposition.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/retention_decomposition.md) — GRR vs NRR honest math + 7-category churn taxonomy + leading indicator playbook
-- [customer_segmentation_strategy.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/customer_segmentation_strategy.md) — 4-tier framework + ICP fit scoring + tier transition triggers + kill list criteria
-- [cs_coverage_model.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/cs_coverage_model.md) — Coverage model decision (tech-touch / pooled / named / named+exec) + ratio benchmarks + manager-trigger
-- [cs_team_org_evolution.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/cs_team_org_evolution.md) — Stage-to-role map + 6-role definition table (CSM ≠ Support ≠ AM ≠ IM ≠ CS Ops ≠ Customer Marketing) + AM-vs-CSM split decision + anti-patterns
+- [retention_decomposition.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/retention_decomposition.md) — GRR vs NRR honest math + 7-category churn taxonomy + leading indicator playbook
+- [customer_segmentation_strategy.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/customer_segmentation_strategy.md) — 4-tier framework + ICP fit scoring + tier transition triggers + kill list criteria
+- [cs_coverage_model.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/cs_coverage_model.md) — Coverage model decision (tech-touch / pooled / named / named+exec) + ratio benchmarks + manager-trigger
+- [cs_team_org_evolution.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/cs_team_org_evolution.md) — Stage-to-role map + 6-role definition table (CSM ≠ Support ≠ AM ≠ IM ≠ CS Ops ≠ Customer Marketing) + AM-vs-CSM split decision + anti-patterns
 
 ---
 

@@ -8,7 +8,7 @@ description: "Experiment Runner Agent — agent-native AI orchestrator for Engin
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/autoresearch-agent/agents/experiment-runner.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/autoresearch-agent/agents/experiment-runner.md">Source</a></span>
 </div>
 
 

@@ -1,0 +1,137 @@
+---
+title: "/cs:cdo-ревью — CDO форсирует вопросы { #cscdo-review--cdo-forcing-questions } — Агентский скилл для руководителей"
+description: "/cs:cdo-ревью <плана> — основанный на принятии решений опрос главного специалиста по обработке данных о любом плане, который касается данных. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+---
+
+# /cs:cdo-ревью — CDO форсирует вопросы { #cscdo-review--cdo-forcing-questions }
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-account-tie: C-level консультирование</span>
+<span class="meta-badge">:material-identifier: `cdo-review`</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/cdo-review/SKILL.md">Источник</a></span>
+</div>
+
+<div class="install-banner" markdown>
+<span class="install-label">Установить:</span> <code>claude /plugin install c-level-skills</code>
+</div>
+
+
+**Команда:** `/cs:cdo-review <plan>`
+
+CDO, ориентированный на принятие решений, подвергает испытанию любой план, касающийся стратегии обработки данных. Шесть вопросов, прежде чем принимать какие-либо обязательства по архитектуре данных, обучению ИИ, продуктизации данных или найму команды обработки данных.
+
+## Когда запускать { #when-to-run }
+
+- Перед утверждением любой новой модели ML запустите обучение, в котором используются данные клиентов
+- Перед подписанием многолетнего SaaS-контракта на инфраструктуру данных (Snowflake, Databricks, Fivetran)
+- Перед созданием каких-либо данных о клиентах (тестовый отчет, конечная точка внедрения, лицензия)
+- Перед наймом крупной команды по обработке данных (руководитель отдела обработки данных, CDO, менеджер по обработке данных, инженер ML)
+- До проведения проверки по слияниям и поглощениям — вашей или их
+- Когда основатель использует слово "монетизировать" рядом с "данными"
+
+## Шесть вопросов CDO { #the-six-cdo-questions }
+
+### 1. К какому решению приводят эти данные? { #1-what-decision-does-this-data-drive }
+**Если ни одно решение не разблокировано, зачем мы собираем информацию /проводим обучение по этому вопросу/внедряем его в производство?**
+- "Возможно, это понадобится нам позже" - это не решение.
+- "Это похоже на ров" - это не решение.
+- В реальном ответе указывается конкретный деловой звонок, для которого требуются эти данные.
+
+### 2. Каково происхождение согласия для каждого источника? { #2-whats-the-consent-provenance-for-every-source }
+**Для каждого источника данных: происхождение, поток согласия, класс данных, предполагаемое использование.**
+- разрешение только для 1-й стороны слабее, чем явный отказ 1-й стороны.
+- В комплект поставки TOS не входят материалы для новых целей (обучение по PII для базовых моделей).
+- Бежать `ai_training_data_audit.py` если в области применения есть какой-либо вариант использования искусственного интеллекта.
+
+### 3. Кто использует это внутри компании — и сколько различных функциональных областей? { #3-who-consumes-this-internally--and-how-many-distinct-functional-domains }
+**Управляет решениями "централизация против встраивания" и "склад против сетки".**
+- <5 потребителей: только для склада.
+- 5-25 потребителей: лейкхаус.
+- 25+ потребителей + федеративная культура: mesh.
+- Преждевременный выбор архитектуры - причина №1 выгорания команды обработки данных.
+
+### 4. Каково влияние тщательной проверки слияний и поглощений? { #4-whats-the-ma-diligence-impact }
+** Если покупатель спросит об этом корпусе данных завтра, готовы ли мы?**
+- Существует ли документированный процесс анонимизации?
+- У какого процента клиентов есть льготы по MSA?
+- Актуальны ли журналы происхождения обучающих данных?
+- Бежать `data_asset_valuator.py` ежеквартально.
+
+### 5. Можно ли переобучить/повторно запустить/переиздать модель/решение/отчет без этого источника? { #5-can-the-model--decision--report-be-retrained--re-run--re-published-without-this-source }
+** Проверяет, насколько сильно вы зависите от конкретного источника данных.**
+- Если да → низкий радиус поражения; вы можете изменить позу согласия позже.
+- Если нет → высокий радиус поражения; вы структурно привязаны к источнику. Проверяйте усерднее.
+
+### 6. Какая роль открывает это — и подходит ли это для следующего найма? { #6-what-role-unblocks-this--and-is-it-the-right-next-hire }
+** Неправильный наем (специалиста по обработке данных) при правильном ответе (инженера-аналитика) приводит к потере производительности на 12 месяцев.**
+- Сопоставьте разблокируемое решение с конкретной ролью.
+- Подтвердите наличие необходимых ролей (инженер по обработке данных перед инженером ML, аналитик перед специалистом по обработке данных).
+
+## Воркфлоу { #workflow }
+
+```bash
+# 1. AI training audit (if any ML / AI use case)
+python ../../../skills/chief-data-officer-advisor/scripts/ai_training_data_audit.py sources.json
+
+# 2. Architecture decision (if changing the stack)
+python ../../../skills/chief-data-officer-advisor/scripts/data_product_strategy_picker.py profile.json
+
+# 3. Data asset valuation (if productizing or pre-M&A)
+python ../../../skills/chief-data-officer-advisor/scripts/data_asset_valuator.py corpus.json
+```
+
+## Выходной формат { #output-format }
+
+```markdown
+# CDO Review: <plan>
+**Date:** YYYY-MM-DD
+
+## The Decision Being Made
+[one sentence — which of the four CDO decisions: training | architecture | asset | hire]
+
+## Training Audit (if applicable)
+- NO-GO sources: N
+- MITIGATE sources: N
+- GO sources: N
+- Top remediation: <one line>
+
+## Architecture (if applicable)
+- Recommended: WAREHOUSE / LAKEHOUSE / MESH
+- Build-vs-buy summary: <one line>
+- Kill criteria: <when to revisit>
+
+## Asset Value (if applicable)
+- Strategic value: X/10 | Moat: STRONG / MEDIUM / WEAK
+- M&A multiplier: X.Xx – X.Xx ARR
+- Recommended productization path: <name>
+
+## Org (if applicable)
+- Next hire: <role>
+- Why this, not that: <one line>
+- Prerequisite hires in place: yes/no
+
+## Verdict
+🟢 SHIP | 🟡 SHARPEN | 🔴 BLOCK
+
+## Next Steps
+[3 concrete actions]
+```
+
+## Маршрутизация { #routing }
+
+- `/cs:gc-review` — для любого способа производства или лицензирования
+- `/cs:ciso-review` — при любом изменении архитектуры, касающемся данных клиента
+- `/cs:cfo-review` — для расчета совокупной стоимости владения при строительстве и покупке и оценки слияний и поглощений
+- `cs-chro-advisor` агент — для найма сотрудников отдела обработки данных (комп, лестница, выравнивание)
+- `/cs:decide` — запишите вердикт в журнал
+- `/cs:freeze 90` — по многолетним контрактам на инфраструктуру
+
+## Связанный { #related }
+
+- Агент: [`cs-cdo-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-cdo-advisor.md)
+- Скилл: [`chief-data-officer-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-data-officer-advisor/SKILL.md)
+- Смежный: [`skills/general-counsel-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor) (контрактные ограничения), [`skills/cto-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cto-advisor) (архитектурный потенциал)
+
+---
+
+**Версия:** 1.0.0

@@ -7,7 +7,7 @@ description: "Run Karpathy's 4-principle review on staged changes or the last co
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/karpathy-check.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/karpathy-check.md">Source</a></span>
 </div>
 
 <!-- canonical copy: engineering/karpathy-coder/commands/karpathy-check.md — keep in sync (root copy uses repo-root-relative script paths) -->

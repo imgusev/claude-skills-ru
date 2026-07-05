@@ -7,7 +7,7 @@ description: "Discount matrix designer + T&C library + exception policy. New gro
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commercial/commands/cs-commercial-policy.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commercial/commands/cs-commercial-policy.md">Source</a></span>
 </div>
 
 

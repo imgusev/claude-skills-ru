@@ -8,7 +8,7 @@ description: "Density-first markdown-to-HTML converter. Routes long markdown fil
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-language-html5: Markdown to HTML</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/markdown-html/agents/cs-markdown-html-orchestrator.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/agents/cs-markdown-html-orchestrator.md">Source</a></span>
 </div>
 
 

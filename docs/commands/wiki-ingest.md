@@ -7,7 +7,7 @@ description: "Ingest a source file from raw/ into the LLM Wiki — read, discuss
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commands/wiki-ingest.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commands/wiki-ingest.md">Source</a></span>
 </div>
 
 <!-- canonical copy: engineering/llm-wiki/commands/wiki-ingest.md — keep in sync (root copy uses repo-root-relative script paths) -->

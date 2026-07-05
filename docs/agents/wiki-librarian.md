@@ -8,7 +8,7 @@ description: "Dispatched sub-agent that answers queries against an LLM Wiki vaul
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/llm-wiki/agents/wiki-librarian.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/llm-wiki/agents/wiki-librarian.md">Source</a></span>
 </div>
 
 

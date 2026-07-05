@@ -8,7 +8,7 @@ description: "/em:postmortem — Honest analysis of what went wrong. Use after a
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `postmortem`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/executive-mentor/skills/postmortem/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/executive-mentor/skills/postmortem/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

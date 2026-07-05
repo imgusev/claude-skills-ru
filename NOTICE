@@ -1,0 +1,35 @@
+NOTICE — claude-skills-ru
+==========================
+
+English
+-------
+This repository is a Russian translation/adaptation of
+alirezarezvani/claude-skills (https://github.com/alirezarezvani/claude-skills),
+licensed under the MIT License, Copyright (c) 2025 Alireza Rezvani. See
+LICENSE for the full license text.
+
+The Russian translation and its ongoing maintenance are provided by
+Ilya Gusev:
+  - GitHub:   https://github.com/imgusev
+  - Website:  https://imgusev.ru
+  - Telegram: https://t.me/imgusev (@imgusev)
+
+The `author:` field in each skill's SKILL.md frontmatter still credits
+Alireza Rezvani as the original author of that skill's content — this is
+intentional and is not changed by the translation.
+
+Русский
+-------
+Этот репозиторий — русский перевод/адаптация проекта
+alirezarezvani/claude-skills (https://github.com/alirezarezvani/claude-skills),
+распространяемого по лицензии MIT, © 2025 Alireza Rezvani. Полный текст
+лицензии — в файле LICENSE.
+
+Перевод на русский язык и его сопровождение — Ilya Gusev:
+  - GitHub:    https://github.com/imgusev
+  - Сайт:      https://imgusev.ru
+  - Telegram:  https://t.me/imgusev (@imgusev)
+
+Поле `author:` во frontmatter каждого SKILL.md по-прежнему указывает на
+Alireza Rezvani как автора исходного содержания скилла — это намеренно и
+переводом не меняется.

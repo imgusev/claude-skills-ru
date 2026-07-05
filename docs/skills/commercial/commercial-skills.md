@@ -8,7 +8,7 @@ description: "Use when reviewing, approving, or designing commercial motion — 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-handshake-outline: Commercial</span>
 <span class="meta-badge">:material-identifier: `commercial-skills`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/commercial/skills/commercial-skills/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/commercial/skills/commercial-skills/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

@@ -8,7 +8,7 @@ description: "Patent prior-art and landscape intelligence skill — not generic 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-magnify: Research</span>
 <span class="meta-badge">:material-identifier: `patent`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/skills/patent/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/skills/patent/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -34,7 +34,7 @@ This skill is **prior-art + landscape intelligence**. It **refuses to be a bucke
 | **Acquisition diligence** | Specific assignee + portfolio scope + assignment chain | Portfolio table + ownership verification |
 | **Litigation prior-art** | Specific target patent + adjacent art before priority date | Knock-out candidates ranked by relevance |
 
-See [`references/sub_use_case_routing.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/skills/patent/references/sub_use_case_routing.md) for the canon.
+See [`references/sub_use_case_routing.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/skills/patent/references/sub_use_case_routing.md) for the canon.
 
 ## Agent Integrity Rules (Research-Pack Convention)
 
@@ -192,7 +192,7 @@ python scripts/family_resolver.py --hits-file hits.json
 
 **Critical:** keyword search alone misses adjacent art. After initial search, extract the CPC/IPC classes from top 5 hits and run **one class-restricted query**. This consistently surfaces art that keyword search misses.
 
-See [`references/cpc_classification_canon.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/skills/patent/references/cpc_classification_canon.md) for the canon.
+See [`references/cpc_classification_canon.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/skills/patent/references/cpc_classification_canon.md) for the canon.
 
 ## Phase 6: DOCX Generation (8 Sections)
 
@@ -252,9 +252,9 @@ Surface the **legally-relevant date** per sub-use-case:
 
 ## References
 
-- [`references/sub_use_case_routing.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/skills/patent/references/sub_use_case_routing.md) — 5-sub-use-case canon (7+ sources)
-- [`references/cpc_classification_canon.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/skills/patent/references/cpc_classification_canon.md) — CPC/IPC class follow-up rationale (7+ sources)
-- [`references/legal_disclaimer_discipline.md`](https://github.com/<GH_USER>/<REPO>/tree/main/research/patent/skills/patent/references/legal_disclaimer_discipline.md) — when + why disclaimer mandatory (7+ sources)
+- [`references/sub_use_case_routing.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/skills/patent/references/sub_use_case_routing.md) — 5-sub-use-case canon (7+ sources)
+- [`references/cpc_classification_canon.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/skills/patent/references/cpc_classification_canon.md) — CPC/IPC class follow-up rationale (7+ sources)
+- [`references/legal_disclaimer_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/research/patent/skills/patent/references/legal_disclaimer_discipline.md) — when + why disclaimer mandatory (7+ sources)
 
 ## Error Handling
 
@@ -288,5 +288,5 @@ Surface the **legally-relevant date** per sub-use-case:
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/11-patent-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/11-patent-megaprompt.md)
+**Source spec:** [`megaprompts/11-patent-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/11-patent-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Research-pack sibling, sub-use-case routing variant.

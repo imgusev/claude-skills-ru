@@ -8,7 +8,7 @@ description: "/cs:ai-act-readiness <system> — EU AI Act 6-question forcing int
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
 <span class="meta-badge">:material-identifier: `ai-act-readiness`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/ai-act-readiness/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/ai-act-readiness/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -151,9 +151,9 @@ python ../../skills/compliance-os/scripts/cross_framework_mapper.py program.json
 
 ## Related
 
-- Agent: [`cs-ai-act-compliance`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/agents/cs-ai-act-compliance.md)
-- Skill: [`eu-ai-act-specialist`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/eu-ai-act-specialist/SKILL.md)
-- Adjacent: [`skills/compliance-os`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-os), [`skills/aims-audit`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/aims-audit), [`skills/compliance-readiness`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-readiness), [`skills/gdpr-dsgvo-expert`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/gdpr-dsgvo-expert)
+- Agent: [`cs-ai-act-compliance`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/agents/cs-ai-act-compliance.md)
+- Skill: [`eu-ai-act-specialist`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/eu-ai-act-specialist/SKILL.md)
+- Adjacent: [`skills/compliance-os`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os), [`skills/aims-audit`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/aims-audit), [`skills/compliance-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-readiness), [`skills/gdpr-dsgvo-expert`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/gdpr-dsgvo-expert)
 
 ---
 

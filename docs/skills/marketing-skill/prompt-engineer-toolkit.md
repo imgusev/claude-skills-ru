@@ -8,7 +8,7 @@ description: "Turns marketing prompts into tested, versioned production assets: 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
 <span class="meta-badge">:material-identifier: `prompt-engineer-toolkit`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/prompt-engineer-toolkit/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/prompt-engineer-toolkit/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -111,10 +111,10 @@ python3 scripts/prompt_versioner.py changelog --name support_classifier
 
 ## References
 
-- [references/prompt-templates.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/prompt-engineer-toolkit/references/prompt-templates.md) — 6 production marketing templates (ad copy, email sequence, social repurposing, landing sections, SEO meta, brand-voice rewrite) plus generic building blocks; each written to be graded by `prompt_tester.py`
-- [references/technique-guide.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/prompt-engineer-toolkit/references/technique-guide.md) — technique-selection table for marketing tasks + the LLM-governance stack for marketing teams (claim discipline, disclosure rules, data boundaries, human-review gates)
-- [references/evaluation-rubric.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/prompt-engineer-toolkit/references/evaluation-rubric.md) — mechanical scoring weights, acceptance gates, marketing quality dimensions, test-suite design, and eval anti-patterns
-- [README.md](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill/skills/prompt-engineer-toolkit/README.md)
+- [references/prompt-templates.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/prompt-engineer-toolkit/references/prompt-templates.md) — 6 production marketing templates (ad copy, email sequence, social repurposing, landing sections, SEO meta, brand-voice rewrite) plus generic building blocks; each written to be graded by `prompt_tester.py`
+- [references/technique-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/prompt-engineer-toolkit/references/technique-guide.md) — technique-selection table for marketing tasks + the LLM-governance stack for marketing teams (claim discipline, disclosure rules, data boundaries, human-review gates)
+- [references/evaluation-rubric.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/prompt-engineer-toolkit/references/evaluation-rubric.md) — mechanical scoring weights, acceptance gates, marketing quality dimensions, test-suite design, and eval anti-patterns
+- [README.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/prompt-engineer-toolkit/README.md)
 
 ## Evaluation Design
 

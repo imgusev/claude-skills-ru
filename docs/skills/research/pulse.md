@@ -8,7 +8,7 @@ description: "Multi-source recency research skill that takes the pulse of any to
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-magnify: Research</span>
 <span class="meta-badge">:material-identifier: `pulse`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research/pulse/skills/pulse/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/skills/pulse/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -259,5 +259,5 @@ Sources received: M. Sources cited: K. Training knowledge: 0 ([Background] exclu
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/01-pulse-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/01-pulse-megaprompt.md)
+**Source spec:** [`megaprompts/01-pulse-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/01-pulse-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Re-grill with `/cs:grill-with-docs` if drift between spec and implementation surfaces.

@@ -8,7 +8,7 @@ description: "Webinar & virtual-event marketing specialist agent. Use when plann
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/marketing/cs-webinar-marketer.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/marketing/cs-webinar-marketer.md">Source</a></span>
 </div>
 
 
@@ -124,4 +124,4 @@ Returns an overall 0-100 score, per-stage rate vs. benchmark, and the named bott
 
 ## Related Agents
 - [cs-aeo](cs-aeo.md) — get the webinar's supporting content cited by AI search engines
-- [cs-growth-strategist](https://github.com/<GH_USER>/<REPO>/tree/main/agents/business-growth/cs-growth-strategist.md) — pipeline impact and post-webinar revenue motion
+- [cs-growth-strategist](https://github.com/imgusev/claude-skills-ru/tree/main/agents/business-growth/cs-growth-strategist.md) — pipeline impact and post-webinar revenue motion

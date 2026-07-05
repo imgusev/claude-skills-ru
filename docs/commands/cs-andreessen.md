@@ -7,7 +7,7 @@ description: "/cs:andreessen — Marc Andreessen-mode verdict on a venture, idea
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-console: Slash Command</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/andreessen/commands/cs-andreessen.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/andreessen/commands/cs-andreessen.md">Source</a></span>
 </div>
 
 
@@ -89,8 +89,8 @@ python ../skills/andreessen/scripts/anti_todo_card.py --summary
 
 ## Related
 
-- Agent: [`cs-andreessen`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/andreessen/agents/cs-andreessen.md)
-- Skill: [`andreessen`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/andreessen/skills/andreessen/SKILL.md)
+- Agent: [`cs-andreessen`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/andreessen/agents/cs-andreessen.md)
+- Skill: [`andreessen`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/andreessen/skills/andreessen/SKILL.md)
 - Companion command: [`/cs:pmf-check`](./cs-pmf-check.md)
 - Siblings: `/cs:reflect`, `/cs:capture` (productivity)
 

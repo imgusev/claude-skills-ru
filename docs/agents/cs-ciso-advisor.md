@@ -8,7 +8,7 @@ description: "Risk-paranoid CISO advisor for threat modeling, compliance, incide
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-ciso-advisor.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-ciso-advisor.md">Source</a></span>
 </div>
 
 
@@ -28,27 +28,27 @@ Pairs with `cs-cto-advisor` (security architecture), `cs-cfo-advisor` (risk quan
 
 ## Skill Integration
 
-**Skill Location:** [`skills/ciso-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/ciso-advisor)
+**Skill Location:** [`skills/ciso-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/ciso-advisor)
 
 ### Python Tools
 
 1. **Risk Quantifier**
-   - Path: [`scripts/risk_quantifier.py`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/ciso-advisor/scripts/risk_quantifier.py)
+   - Path: [`scripts/risk_quantifier.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/ciso-advisor/scripts/risk_quantifier.py)
    - FAIR-based annualized loss expectancy, risk register, mitigation ROI
 
 2. **Compliance Tracker**
-   - Path: [`scripts/compliance_tracker.py`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/ciso-advisor/scripts/compliance_tracker.py)
+   - Path: [`scripts/compliance_tracker.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/ciso-advisor/scripts/compliance_tracker.py)
    - SOC 2 / ISO 27001 / HIPAA / GDPR control mapping, gap analysis, audit readiness
 
 ### Knowledge Bases
 
-- [`references/security_strategy.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/ciso-advisor/references/security_strategy.md) — STRIDE, PASTA, attacker journey
-- [`references/compliance_roadmap.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/ciso-advisor/references/compliance_roadmap.md) — SOC 2 Type 2, ISO 27001, GDPR sequencing
-- [`references/incident_response.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/ciso-advisor/references/incident_response.md) — IR runbooks, comms plan, regulator notification windows
+- [`references/security_strategy.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/ciso-advisor/references/security_strategy.md) — STRIDE, PASTA, attacker journey
+- [`references/compliance_roadmap.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/ciso-advisor/references/compliance_roadmap.md) — SOC 2 Type 2, ISO 27001, GDPR sequencing
+- [`references/incident_response.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/ciso-advisor/references/incident_response.md) — IR runbooks, comms plan, regulator notification windows
 
 ### Adjacent Skills
 
-- [`ra-qm-team`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team) — ISO 27001 ISMS, GDPR controls, audit prep
+- [`ra-qm-team`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team) — ISO 27001 ISMS, GDPR controls, audit prep
 
 ## Workflows
 
@@ -113,15 +113,15 @@ echo "IR runbook check: ../../skills/ciso-advisor/references/incident_response.m
 
 ## Related Agents
 
-- [cs-cto-advisor](https://github.com/<GH_USER>/<REPO>/tree/main/agents/c-level/cs-cto-advisor.md) — security architecture
+- [cs-cto-advisor](https://github.com/imgusev/claude-skills-ru/tree/main/agents/c-level/cs-cto-advisor.md) — security architecture
 - [cs-cfo-advisor](cs-cfo-advisor.md) — risk → insurance, audit budget
-- [cs-quality-regulatory](https://github.com/<GH_USER>/<REPO>/tree/main/agents/ra-qm-team/cs-quality-regulatory.md) — ISO 27001, GDPR execution
-- [cs-senior-engineer](https://github.com/<GH_USER>/<REPO>/tree/main/agents/engineering/cs-senior-engineer.md) — secure coding
+- [cs-quality-regulatory](https://github.com/imgusev/claude-skills-ru/tree/main/agents/ra-qm-team/cs-quality-regulatory.md) — ISO 27001, GDPR execution
+- [cs-senior-engineer](https://github.com/imgusev/claude-skills-ru/tree/main/agents/engineering/cs-senior-engineer.md) — secure coding
 
 ## References
 
-- Skill: [../../skills/ciso-advisor/SKILL.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/ciso-advisor/SKILL.md)
-- Voice spec: [../references/persona-voices.md](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Skill: [../../skills/ciso-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/ciso-advisor/SKILL.md)
+- Voice spec: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 
 ---
 

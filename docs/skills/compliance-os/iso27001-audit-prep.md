@@ -8,7 +8,7 @@ description: "/cs:iso27001-audit-prep <scope> — ISO 27001 ISMS audit readiness
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
 <span class="meta-badge">:material-identifier: `iso27001-audit-prep`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/iso27001-audit-prep/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/iso27001-audit-prep/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -139,10 +139,10 @@ python ../../skills/compliance-os/scripts/cross_framework_mapper.py program.json
 
 ## Related
 
-- Agent: [`cs-ciso-iso27001`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/agents/cs-ciso-iso27001.md)
-- Skill: [`isms-audit-expert`](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/isms-audit-expert/SKILL.md)
-- Playbook: [iso27001_audit_playbook.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/skills/isms-audit-expert/references/iso27001_audit_playbook.md)
-- Adjacent: [`skills/soc2-audit-prep`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/soc2-audit-prep), [`skills/aims-audit`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/aims-audit), [`skills/gdpr-audit-prep`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/gdpr-audit-prep), [`skills/compliance-readiness`](https://github.com/<GH_USER>/<REPO>/tree/main/compliance-os/skills/compliance-readiness)
+- Agent: [`cs-ciso-iso27001`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/agents/cs-ciso-iso27001.md)
+- Skill: [`isms-audit-expert`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/isms-audit-expert/SKILL.md)
+- Playbook: [iso27001_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/isms-audit-expert/references/iso27001_audit_playbook.md)
+- Adjacent: [`skills/soc2-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/soc2-audit-prep), [`skills/aims-audit`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/aims-audit), [`skills/gdpr-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/gdpr-audit-prep), [`skills/compliance-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-readiness)
 
 ---
 

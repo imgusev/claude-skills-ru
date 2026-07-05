@@ -8,7 +8,7 @@ description: "EU AI Act (Regulation (EU) 2024/1689) operational compliance for c
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-check-outline: Regulatory & Quality</span>
 <span class="meta-badge">:material-identifier: `eu-ai-act-specialist`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -195,10 +195,10 @@ python scripts/conformity_assessment_planner.py system.json
 
 ## References
 
-- [eu_ai_act_titles.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist/references/eu_ai_act_titles.md) — Titles I–XII Article-by-Article walkthrough with deployer/provider/importer/distributor obligation breakdown
-- [high_risk_systems_annex_iii.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist/references/high_risk_systems_annex_iii.md) — Annex III 8 categories detailed + Article 6(2)–(3) interaction + carve-out test
-- [gpai_obligations.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist/references/gpai_obligations.md) — Articles 51–55 GPAI track + systemic-risk threshold + transparency rules + Code of Practice status
-- [cross_framework_mapping_ai_act.md](https://github.com/<GH_USER>/<REPO>/tree/main/ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist/references/cross_framework_mapping_ai_act.md) — AI Act ↔ ISO 42001 ↔ NIST AI RMF ↔ GDPR control-level mapping
+- [eu_ai_act_titles.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist/references/eu_ai_act_titles.md) — Titles I–XII Article-by-Article walkthrough with deployer/provider/importer/distributor obligation breakdown
+- [high_risk_systems_annex_iii.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist/references/high_risk_systems_annex_iii.md) — Annex III 8 categories detailed + Article 6(2)–(3) interaction + carve-out test
+- [gpai_obligations.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist/references/gpai_obligations.md) — Articles 51–55 GPAI track + systemic-risk threshold + transparency rules + Code of Practice status
+- [cross_framework_mapping_ai_act.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/compliance-team-eu-ai-act/skills/eu-ai-act-specialist/references/cross_framework_mapping_ai_act.md) — AI Act ↔ ISO 42001 ↔ NIST AI RMF ↔ GDPR control-level mapping
 
 ---
 

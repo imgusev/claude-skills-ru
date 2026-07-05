@@ -8,7 +8,7 @@ description: "Quality & Regulatory agent for ISO 13485 QMS, MDR compliance, FDA 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-shield-check-outline: Regulatory & Quality</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/ra-qm-team/cs-quality-regulatory.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/ra-qm-team/cs-quality-regulatory.md">Source</a></span>
 </div>
 
 
@@ -85,5 +85,5 @@ Regulatory affairs and quality management specialist for medical device and heal
 
 ## Related Agents
 
-- [cs-engineering-lead](https://github.com/<GH_USER>/<REPO>/tree/main/agents/engineering-team/cs-engineering-lead.md) -- Engineering process alignment for design controls and software validation
-- [cs-product-manager](https://github.com/<GH_USER>/<REPO>/tree/main/agents/product/cs-product-manager.md) -- Product requirements traceability and risk-benefit analysis coordination
+- [cs-engineering-lead](https://github.com/imgusev/claude-skills-ru/tree/main/agents/engineering-team/cs-engineering-lead.md) -- Engineering process alignment for design controls and software validation
+- [cs-product-manager](https://github.com/imgusev/claude-skills-ru/tree/main/agents/product/cs-product-manager.md) -- Product requirements traceability and risk-benefit analysis coordination

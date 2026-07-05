@@ -8,7 +8,7 @@ description: "Use when the user asks to capture a full-page screenshot, long scr
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `full-page-screenshot`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/full-page-screenshot/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/full-page-screenshot/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -130,5 +130,5 @@ file /tmp/screenshot.png
 
 ## Cross-References
 
-- [`engineering/browser-automation`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/browser-automation/SKILL.md) — General browser automation patterns via CDP/Playwright
-- [`engineering/performance-profiler`](https://github.com/<GH_USER>/<REPO>/tree/main/engineering/skills/performance-profiler/SKILL.md) — Performance analysis that may complement visual captures
+- [`engineering/browser-automation`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/browser-automation/SKILL.md) — General browser automation patterns via CDP/Playwright
+- [`engineering/performance-profiler`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/performance-profiler/SKILL.md) — Performance analysis that may complement visual captures

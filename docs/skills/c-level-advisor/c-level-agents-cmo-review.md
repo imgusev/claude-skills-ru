@@ -8,7 +8,7 @@ description: "/cs:cmo-review <plan> — Narrative-first interrogation of positio
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `cmo-review`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/skills/cmo-review/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/cmo-review/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -103,9 +103,9 @@ One-sentence statement: <here>
 
 ## Related
 
-- Agent: [`cs-cmo-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/c-level-agents/agents/cs-cmo-advisor.md)
-- Skill: [`cmo-advisor`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/cmo-advisor/SKILL.md)
-- Execution domain: [`marketing-skill`](https://github.com/<GH_USER>/<REPO>/tree/main/marketing-skill)
+- Agent: [`cs-cmo-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-cmo-advisor.md)
+- Skill: [`cmo-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/SKILL.md)
+- Execution domain: [`marketing-skill`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill)
 
 ---
 

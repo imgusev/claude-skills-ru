@@ -8,7 +8,7 @@ description: "Start an autonomous experiment loop with user-selected interval (1
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
 <span class="meta-badge">:material-identifier: `loop`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/engineering/autoresearch-agent/skills/loop/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/autoresearch-agent/skills/loop/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

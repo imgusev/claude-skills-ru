@@ -8,7 +8,7 @@ description: "One-time setup skill that builds a personalized inbox triage knowl
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-lightning-bolt-outline: Productivity</span>
 <span class="meta-badge">:material-identifier: `inbox-setup`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -16,7 +16,7 @@ description: "One-time setup skill that builds a personalized inbox triage knowl
 </div>
 
 
-> **Paired with `inbox-triage`.** This skill writes the 7-file knowledge base at `${WORKSPACE}/Email/` that `inbox-triage` reads on every run. The file contracts (names, sections, fields) MUST match between the two skills exactly. See [`references/kb_file_contract.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/references/kb_file_contract.md).
+> **Paired with `inbox-triage`.** This skill writes the 7-file knowledge base at `${WORKSPACE}/Email/` that `inbox-triage` reads on every run. The file contracts (names, sections, fields) MUST match between the two skills exactly. See [`references/kb_file_contract.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/references/kb_file_contract.md).
 
 Run once (or re-run when business/priorities change). Interview the user about their email patterns, business context, reply style, and priorities. Generate the structured knowledge base in `${WORKSPACE}/Email/` that captures everything `inbox-triage` needs to process the inbox effectively.
 
@@ -42,7 +42,7 @@ Grill-me discipline applies throughout:
 - **Forcing format where possible.** Multi-choice > open-ended.
 - **Dependency-ordered.** Q2 depends on Q1; downstream sections depend on upstream.
 
-See [`references/grill_me_section_walk.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/references/grill_me_section_walk.md) for the 8-section discipline detail.
+See [`references/grill_me_section_walk.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/references/grill_me_section_walk.md) for the 8-section discipline detail.
 
 ## Knowledge Base Contract — Files To Produce
 
@@ -58,7 +58,7 @@ Exactly these files at `${WORKSPACE}/Email/`:
 | `tracker.md` | Active follow-ups, overdue items, deadlines | **Yes** (starts mostly empty) |
 | `triage-log/` | Directory for per-run logs | **Yes** (created empty) |
 
-The contract is identical to what `inbox-triage` expects — see [`references/kb_file_contract.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/references/kb_file_contract.md) for the full spec.
+The contract is identical to what `inbox-triage` expects — see [`references/kb_file_contract.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/references/kb_file_contract.md) for the full spec.
 
 ## Stop Condition (Full Interview)
 
@@ -116,7 +116,7 @@ Six grill-me questions plus the critical sample request:
 
 If user runs a business: also ask about media kits, rate sheets, standard pitches, repeated replies.
 
-**Action:** Generate `email-patterns.md` with tone description (with do/don't examples), persona rules, templates, signatures, hard rules. See [`references/voice_calibration.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/references/voice_calibration.md) for the sample-extraction discipline.
+**Action:** Generate `email-patterns.md` with tone description (with do/don't examples), persona rules, templates, signatures, hard rules. See [`references/voice_calibration.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/references/voice_calibration.md) for the sample-extraction discipline.
 
 ## Section 4: Evaluation Framework (Conditional)
 
@@ -212,9 +212,9 @@ Re-running on an existing setup:
 
 ## References
 
-- [`references/kb_file_contract.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/references/kb_file_contract.md) — the canonical 7-file contract (write perspective; mirror lives in `inbox-triage/references/`)
-- [`references/grill_me_section_walk.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/references/grill_me_section_walk.md) — 8-section discipline, skip-logic, commit-per-section
-- [`references/voice_calibration.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/email/skills/inbox-setup/references/voice_calibration.md) — sample-based voice extraction theory + anti-patterns
+- [`references/kb_file_contract.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/references/kb_file_contract.md) — the canonical 7-file contract (write perspective; mirror lives in `inbox-triage/references/`)
+- [`references/grill_me_section_walk.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/references/grill_me_section_walk.md) — 8-section discipline, skip-logic, commit-per-section
+- [`references/voice_calibration.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-setup/references/voice_calibration.md) — sample-based voice extraction theory + anti-patterns
 
 ## Anti-Patterns To Reject
 
@@ -230,5 +230,5 @@ Re-running on an existing setup:
 ---
 
 **Version:** 1.0.0
-**Source spec:** [`megaprompts/06-inbox-setup-megaprompt.md`](https://github.com/<GH_USER>/<REPO>/tree/main/megaprompts/06-inbox-setup-megaprompt.md)
+**Source spec:** [`megaprompts/06-inbox-setup-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/06-inbox-setup-megaprompt.md)
 **Build pattern:** Path B (direct conversion). Paired with `inbox-triage`.

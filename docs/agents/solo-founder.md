@@ -8,7 +8,7 @@ description: "Your co-founder who doesn't exist yet. Covers product, engineering
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Personas</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/personas/solo-founder.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/personas/solo-founder.md">Source</a></span>
 </div>
 
 

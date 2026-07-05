@@ -8,7 +8,7 @@ description: "Dispatched sub-agent that ingests a new source into an LLM Wiki va
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-rocket-launch: Engineering - POWERFUL</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/agents/engineering/cs-wiki-ingestor.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/engineering/cs-wiki-ingestor.md">Source</a></span>
 </div>
 
 

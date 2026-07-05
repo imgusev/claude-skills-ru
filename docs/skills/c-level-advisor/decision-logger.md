@@ -8,7 +8,7 @@ description: "Two-layer memory architecture for board meeting decisions. Manages
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `decision-logger`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/decision-logger/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/decision-logger/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -49,7 +49,7 @@ python scripts/decision_tracker.py --search "pricing" # Search decisions
 
 ## Two-Layer Architecture
 
-Storage follows the canonical two-layer decision memory (see [`agent-protocol/SKILL.md`](https://github.com/<GH_USER>/<REPO>/tree/main/c-level-advisor/skills/agent-protocol/SKILL.md) → "Decision Memory (Canonical Layout)") — the same layout `/cs:decide` writes.
+Storage follows the canonical two-layer decision memory (see [`agent-protocol/SKILL.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/agent-protocol/SKILL.md) → "Decision Memory (Canonical Layout)") — the same layout `/cs:decide` writes.
 
 ### Layer 1 — Raw Transcripts
 **Location:** `~/.claude/decisions/raw/YYYY-MM-DD-<slug>.md`

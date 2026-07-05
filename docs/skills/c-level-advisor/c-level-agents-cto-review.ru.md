@@ -1,0 +1,128 @@
+---
+title: "/cs:технический директор-ревью — Технический директор форсирует вопросы { #cscto-review--cto-forcing-questions } — Агентский скилл для руководителей"
+description: "/cs:технический директор - ревью <плана> — Опрос по архитектуре и масштабированию. Технический долг, масштабирование утесов, масштабирование команды,. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+---
+
+# /cs:технический директор-ревью — Технический директор форсирует вопросы { #cscto-review--cto-forcing-questions }
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-account-tie: C-level консультирование</span>
+<span class="meta-badge">:material-identifier: `cto-review`</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/cto-review/SKILL.md">Источник</a></span>
+</div>
+
+<div class="install-banner" markdown>
+<span class="install-label">Установить:</span> <code>claude /plugin install c-level-skills</code>
+</div>
+
+
+**Команда:** `/cs:cto-review <plan>`
+
+Тестирует архитектуру под давлением и инженерные решения по масштабированию. Шесть вопросов, которые помогут вам подняться на следующую скалу, прежде чем вы на нее наткнетесь.
+
+## Когда запускать { #when-to-run }
+
+- Перед утверждением серьезного изменения архитектуры
+- Прежде чем удвоить инженерную команду
+- До принятия решения о строительстве или покупке > 100 тысяч долларов в год
+- Когда система демонстрирует повышенную надежность (пропущены SLO)
+- Перед переходом на новую платформу / язык / базу данных
+
+## Шесть вопросов технического директора { #the-six-cto-questions }
+
+### 1. Взбирающийся на скалу { #1-scaling-cliff }
+**Где нарушается текущая архитектура с точки зрения пользователей / запросов /объема данных?**
+- Будьте конкретны. "Он прерывается при 10-кратной текущей нагрузке, потому что первичная база данных насыщается записями".
+- Если вы не знаете, запустите нагрузочный тест, прежде чем принимать решение.
+
+### 2. Инвентаризация технического долга { #2-tech-debt-inventory }
+** Какова основная статья технического долга, сколько это стоит в неделю и когда он становится блокирующим?**
+```bash
+python ../../../skills/cto-advisor/scripts/tech_debt_analyzer.py
+```
+
+### 3. Масштабирование команды { #3-team-scaling }
+**Для каждого открытого запроса, каково время нарастания и модель вклада?**
+```bash
+python ../../../skills/cto-advisor/scripts/team_scaling_calculator.py
+```
+
+### 4. Строить против покупки { #4-build-vs-buy }
+** Почему мы строим это вместо того, чтобы покупать — и какова общая стоимость каждого из них на 3 года?**
+- Если "мы хотим контроля" или "это не так сложно" — давите в ответ.
+- Если ответ таков: "это наш основной ров", стройте.
+
+### 5. SLO / надежность { #5-slo--reliability }
+**Каковы SLO для этой системы и каков текущий расход бюджета на ошибки?**
+- Без SLO вы не сможете рассуждать о компромиссах в отношении надежности.
+- Видишь `engineering/slo-architect` для SLO-дизайна.
+
+### 6. Поверхность безопасности и соответствия требованиям { #6-security--compliance-surface }
+**Что это означает и был ли подписан cs-ciso-advisor?**
+- Архитектурные решения - это решения о соответствии требованиям.
+- Цикл в cs-ciso-advisor перед фиксацией.
+
+## Воркфлоу { #workflow }
+
+1. Запустите технический анализатор долгов + калькулятор масштабирования команды
+2. Явно определите гипотезу о скале масштабирования
+3. Перепроверьте с cs-ciso-advisor последствия для безопасности
+4. Вынести вердикт
+
+## Выходной формат { #output-format }
+
+```markdown
+# CTO Review: <plan>
+**Date:** YYYY-MM-DD
+
+## Scaling Cliff
+- Current capacity: <metric>
+- Break point: <metric>
+- Headroom: X months at current growth
+
+## Tech Debt
+- Top item: <description>
+- Cost per week: $X or N eng-hours
+- Blocking date estimate: <date>
+
+## Team
+- Open reqs: N
+- Median ramp: X months
+- Contribution model: <pairing / squad / area>
+
+## Build vs Buy
+- 3-year build TCO: $X
+- 3-year buy TCO: $X
+- Strategic fit: <core / context>
+- Decision: BUILD | BUY
+
+## Reliability
+- SLO defined: yes / no
+- Error budget burn: X% (target < Y%)
+
+## Security
+- cs-ciso sign-off: ✅ / ❌
+
+## Verdict
+🟢 SHIP | 🟡 SHARPEN | 🔴 BLOCK
+
+## Next Steps
+[3 concrete actions]
+```
+
+## Маршрутизация { #routing }
+
+- `/cs:ciso-review` — обязательно при изменении поверхности данных
+- `/cs:cfo-review` — для сборки против покупки > 100 тысяч долларов
+- `/cs:execute` — квартальный план
+- `/cs:boardroom` — для архитектурных стержней
+
+## Связанный { #related }
+
+- Агент: [`cs-cto-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/agents/c-level/cs-cto-advisor.md)
+- Скилл: [`cto-advisor`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cto-advisor/SKILL.md)
+- СЛО: [`engineering/slo-architect`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/slo-architect)
+
+---
+
+**Версия:** 1.0.0

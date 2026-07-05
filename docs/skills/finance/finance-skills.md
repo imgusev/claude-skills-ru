@@ -8,7 +8,7 @@ description: "Router/index for the 2 finance skills bundled in this plugin: fina
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-calculator-variant: Finance</span>
 <span class="meta-badge">:material-identifier: `finance-skills`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/finance/skills/finance-skills/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/finance/skills/finance-skills/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

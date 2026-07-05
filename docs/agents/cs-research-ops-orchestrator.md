@@ -8,7 +8,7 @@ description: "Evidence-first R&D operations lead. Routes enterprise research inq
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Agent</span>
 <span class="meta-badge">:material-account: Research Ops</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/research-ops/agents/cs-research-ops-orchestrator.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research-ops/agents/cs-research-ops-orchestrator.md">Source</a></span>
 </div>
 
 

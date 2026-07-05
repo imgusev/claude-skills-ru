@@ -8,7 +8,7 @@ description: "Converts a markdown PR writeup or code review (one with ```diff fe
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-language-html5: Markdown to HTML</span>
 <span class="meta-badge">:material-identifier: `md-review`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/markdown-html/skills/md-review/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/skills/md-review/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

@@ -8,7 +8,7 @@ description: "Use when a user wants to convert any markdown file in their Claude
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-language-html5: Markdown to HTML</span>
 <span class="meta-badge">:material-identifier: `markdown-html-orchestrator`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/markdown-html/skills/markdown-html-orchestrator/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/skills/markdown-html-orchestrator/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

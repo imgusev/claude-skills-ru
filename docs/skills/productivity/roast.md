@@ -8,7 +8,7 @@ description: "Use when someone asks to roast an idea, pressure-test or stress-te
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-lightning-bolt-outline: Productivity</span>
 <span class="meta-badge">:material-identifier: `roast`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/skills/roast/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/skills/roast/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>
@@ -138,14 +138,14 @@ Then list the five panel scores in one line: `Critic X/10 · Champion X/10 · An
 
 ## References
 
-- [`references/adversarial_panel_canon.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/skills/roast/references/adversarial_panel_canon.md) — why a diverse adversarial panel beats one reviewer (red-teaming, devil's advocacy, dialectical inquiry; 7 sources)
-- [`references/verdict_synthesis_method.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/skills/roast/references/verdict_synthesis_method.md) — the weighting, the veto gates, and why you must not average (6 sources)
-- [`references/cheapest_test_canon.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/skills/roast/references/cheapest_test_canon.md) — demand testing before building: smoke test, pre-sale, concierge, fake-door (7 sources)
+- [`references/adversarial_panel_canon.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/skills/roast/references/adversarial_panel_canon.md) — why a diverse adversarial panel beats one reviewer (red-teaming, devil's advocacy, dialectical inquiry; 7 sources)
+- [`references/verdict_synthesis_method.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/skills/roast/references/verdict_synthesis_method.md) — the weighting, the veto gates, and why you must not average (6 sources)
+- [`references/cheapest_test_canon.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/skills/roast/references/cheapest_test_canon.md) — demand testing before building: smoke test, pre-sale, concierge, fake-door (7 sources)
 
 ## Assets
 
-- [`assets/roast_brief_worksheet.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/skills/roast/assets/roast_brief_worksheet.md) — fillable 4-input brief worksheet
-- [`assets/example_roast_verdict.md`](https://github.com/<GH_USER>/<REPO>/tree/main/productivity/roast/skills/roast/assets/example_roast_verdict.md) — a full worked roast (brief → 5 panel scores → tension → verdict → cheapest test)
+- [`assets/roast_brief_worksheet.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/skills/roast/assets/roast_brief_worksheet.md) — fillable 4-input brief worksheet
+- [`assets/example_roast_verdict.md`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/roast/skills/roast/assets/example_roast_verdict.md) — a full worked roast (brief → 5 panel scores → tension → verdict → cheapest test)
 
 ## Rules
 
