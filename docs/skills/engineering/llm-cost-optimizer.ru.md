@@ -1,6 +1,6 @@
 ---
 title: "Оптимизатор затрат LLM { #llm-cost-optimizer } — Агентский скилл для Codex и OpenClaw"
-description: "Используйте проактивно всякий раз, когда возникают затраты на LLM API - или должны возникать. Триггеры включают:. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+description: "Используйте проактивно всякий раз, когда возникают затраты на LLM API - или должны возникать. Триггеры включают: 'мои затраты на ИИ слишком высоки'. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
 # Оптимизатор затрат LLM { #llm-cost-optimizer }

@@ -16,10 +16,18 @@ import shutil
 import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# SKILL.ru.md added (§3.3 ARCHITECTURE.md): translate.py only writes the RU
-# sibling into the standalone copy, so it must be mirrored into the bundled
-# copy too, or check_dual_publish.py will flag it as only-in-standalone.
-MIRRORED = ("SKILL.md", "SKILL.ru.md", "scripts", "references", "assets")
+# SKILL.ru.md added (§3.3 ARCHITECTURE.md): a translation may land on EITHER
+# side (generate-docs.py's find_skill_files() treats the bundled copy as
+# canonical and skips the standalone one for discovery, so a fresh
+# translate.py run writes SKILL.ru.md only to the bundled side — the
+# opposite of every other MIRRORED file, where standalone is the source of
+# truth). It is mirrored SYMMETRICALLY (see _sync_symmetric): whichever
+# side already has it gets copied to the other side; neither side is ever
+# deleted just because the other happens to be empty (DEF-2 — the naive
+# one-directional _mirror_one() used for SKILL.md/scripts/references/assets
+# would silently destroy an existing bundled-only translation).
+MIRRORED = ("SKILL.md", "scripts", "references", "assets")
+SYMMETRIC_MIRRORED = ("SKILL.ru.md",)
 
 
 def standalone_payload(plugin_dir):
@@ -72,6 +80,23 @@ def _mirror_one(src, dst):
         shutil.copy2(src, dst)
 
 
+def _sync_symmetric(src, dst):
+    """Fill in whichever side is missing a file that may originate on
+    EITHER side (currently only SKILL.ru.md) — never deletes existing
+    content on either side. If both exist and differ, warns instead of
+    silently picking a winner (a human should reconcile that manually)."""
+    src_exists, dst_exists = os.path.isfile(src), os.path.isfile(dst)
+    if src_exists and dst_exists:
+        if not filecmp.cmp(src, dst, shallow=False):
+            print(f"WARNING: {src} and {dst} both exist and differ — not overwriting either", file=sys.stderr)
+        return
+    if src_exists:
+        shutil.copy2(src, dst)
+    elif dst_exists:
+        shutil.copy2(dst, src)
+    # else: neither side has it yet (not translated) — nothing to do.
+
+
 def sync(plugin_dir):
     src_root = standalone_payload(plugin_dir)
     dst_root = bundled_target(plugin_dir)
@@ -81,6 +106,8 @@ def sync(plugin_dir):
     os.makedirs(dst_root, exist_ok=True)
     for name in MIRRORED:
         _mirror_one(os.path.join(src_root, name), os.path.join(dst_root, name))
+    for name in SYMMETRIC_MIRRORED:
+        _sync_symmetric(os.path.join(src_root, name), os.path.join(dst_root, name))
     print(f"synced: {src_root} -> {dst_root}")
     return 0
 
@@ -102,6 +129,11 @@ def check(plugin_dir):
         elif os.path.isfile(src):
             if not os.path.exists(dst) or not filecmp.cmp(src, dst, shallow=False):
                 diffs.append(name)
+    for name in SYMMETRIC_MIRRORED:
+        src, dst = os.path.join(src_root, name), os.path.join(dst_root, name)
+        src_exists, dst_exists = os.path.isfile(src), os.path.isfile(dst)
+        if src_exists != dst_exists or (src_exists and dst_exists and not filecmp.cmp(src, dst, shallow=False)):
+            diffs.append(f"{name} (symmetric — run --sync to fill in the missing side, not overwrite)")
     if diffs:
         print(f"FAIL: {plugin_dir} mirror out of sync")
         for d in diffs:

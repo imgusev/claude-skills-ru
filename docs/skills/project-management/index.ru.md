@@ -29,17 +29,17 @@ description: "9 управление проектами skills — агентс�
 
     Специалист по созданию, изменению и управлению многоразовыми шаблонами и файлами для Jira и Confluence. Обеспечивает ...
 
--   **[Atlassian Confluence Expert](confluence-expert.md)**
+-   **[Эксперт по слиянию Атлантиды { #atlassian-confluence-expert }](confluence-expert.md)**
 
     ---
 
-    Master-level expertise in Confluence space management, documentation architecture, content creation, macros, template...
+    Опыт работы на уровне магистра в области управления пространством Confluence, архитектуры документации, создания конт...
 
--   **[Atlassian Jira Expert](jira-expert.md)**
+-   **[Эксперт Atlassian Jira { #atlassian-jira-expert }](jira-expert.md)**
 
     ---
 
-    Master-level expertise in Jira configuration, project management, JQL, workflows, automation, and reporting. Handles ...
+    Опыт работы на уровне магистра в области настройки Jira, управления проектами, JQL, воркфлоу, автоматизации и отчетно...
 
 -   **[Анализатор информации о собраниях { #meeting-insights-analyzer }](meeting-analyzer.md)**
 
@@ -53,17 +53,17 @@ description: "9 управление проектами skills — агентс�
 
     Этот плагин объединяет  скиллы 8 PM (этот маршрутизатор находится в 9-й папке под project-management/skills/). Каждый...
 
--   **[Scrum Master Expert](scrum-master.md)**
+-   **[Эксперт Scrum Master { #scrum-master-expert }](scrum-master.md)**
 
     ---
 
-    Data-driven Scrum Master skill combining sprint analytics, probabilistic forecasting, and team development coaching. ...
+    Овладейте скиллами Scrum, основанными на данных, сочетающими аналитику спринта, вероятностное прогнозирование и коучи...
 
--   **[Senior Project Management Expert](senior-pm.md)**
+-   **[Старший эксперт по управлению проектами { #senior-project-management-expert }](senior-pm.md)**
 
     ---
 
-    Strategic project management for enterprise software, SaaS, and digital transformation initiatives. Provides portfoli...
+    Стратегическое управление проектами в области корпоративного программного обеспечения, SaaS и инициатив по цифровой т...
 
 -   **[Внутренняя связь { #internal-comms }](team-communications.md)**
 

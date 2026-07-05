@@ -1,6 +1,6 @@
 ---
 title: "Аркитето де Эмпреса { #arquiteto-de-empresa } — Агентский скилл для руководителей"
-description: "Arquiteto de Empresa: разработка и ведение переговоров с нулевым использованием пакета OKF (Open Knowledge Format) — uma arvore de arquivos .md. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+description: "Архитектура Империи: разработка и ведение переговоров с нулевым использованием пакета OKF (Open Knowledge Format) — uma arvore de arquivos .md версия. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
 # Аркитето де Эмпреса { #arquiteto-de-empresa }
@@ -26,7 +26,7 @@ description: "Arquiteto de Empresa: разработка и ведение пе�
 
 Правила соответствия для голоса **нунка** кебра (детали полностью) [`references/okf_conformance.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/okf_conformance.md)):
 
-1. **Связка = директорио де `.md`.** Када аркиво э **ум задумывается**; идентификация э о каминьо сем `.md`.
+1. **Связка = директорио де `.md`.** Када аркиво э **ум замысловатый**; идентификация э о каминьо сем `.md`.
 2. **Frontmatter YAML com `type` обригатор** em todo conceito (вокабуляр em [`references/type_vocabulary.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/type_vocabulary.md)).
 3. **Relações = ссылки на Markdown без corpo** (`[Identidade](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/00-fundacao/identidade.md)`), formando um grafo — não не содержит frontmatter.
 4. **`index.md` e `log.md` сан-резервадос** (список макаронных изделий / история принятия решений) э ** нао** каррегам `type`.
@@ -51,7 +51,7 @@ description: "Arquiteto de Empresa: разработка и ведение пе�
 
 `00-fundacao` → `01-estrategia` → `02-mercado` → `03-financeiro` → `04-comercial` → `05-marketing` → `06-produto` (pular se serviço puro) → `07-operacoes` → `08-tech` (так называемый инфракрасно-цифровой преобразователь) → `09-pessoas` → `10-juridico` → `11-governanca`.
 
-Em cada fase: (a) оценка объективности em 1 linha, (b) фасад как пергунтас, (c) монте-ос-консейтос, (d) подтверждение и эскрево, (e) оформление `index.md` райз э `log.md`.
+Em cada fase: (a) определение цели em 1 linha, (b) фасад как пергунтас, (c) монте-ос-консейтос, (d) подтверждение и эскрево, (e) оформление `index.md` райз э `log.md`.
 
 ## Ферраментас (tornam o trabalho determinístico) { #ferramentas-tornam-o-trabalho-determinístico }
 

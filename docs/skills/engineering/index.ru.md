@@ -53,11 +53,11 @@ description: "75 инженерия — уровень powerful skills — пр�
 
     Уровень: МОЩНЫЙ
 
--   **[Chaos Engineering](chaos-engineering.md)**
+-   **[Инженерия хаоса { #chaos-engineering }](chaos-engineering.md)**
 
     ---
 
-    Design experiments that surface real weaknesses in production systems — without becoming outages. Most "chaos enginee...
+    Проектируйте эксперименты, которые выявляют реальные слабые места в производственных системах, не приводя к перебоям ...
 
 -   **[Конструктор пайплайнов CI/CD { #cicd-pipeline-builder }](ci-cd-pipeline-builder.md)**
 
@@ -101,11 +101,11 @@ description: "75 инженерия — уровень powerful skills — пр�
 
     Уровень: МОЩНЫЙ
 
--   **[Feature Flags Architect](feature-flags-architect.md)**
+-   **[Архитектор фич-флагов { #feature-flags-architect }](feature-flags-architect.md)**
 
     ---
 
-    End-to-end discipline for feature flags: classify them, ship them, ramp them, and retire them. Most teams treat flags...
+    Сквозная дисциплина для фич-флагов: классифицируйте их, отправляйте, расширяйте и удаляйте. Большинство команд относя...
 
 -   **[Целенаправленное исправление — Восстановление функции глубокого погружения { #focused-fix--deep-dive-feature-repair }](focused-fix.md)**
 
@@ -131,11 +131,11 @@ description: "75 инженерия — уровень powerful skills — пр�
 
     Всесторонняя поддержка планирования цикла собеседований и калибровки для систем найма на основе ролей.
 
--   **[Kubernetes Operator](kubernetes-operator.md)**
+-   **[Оператор Kubernetes { #kubernetes-operator }](kubernetes-operator.md)**
 
     ---
 
-    Build operators that reconcile correctly. Most operator bugs are not Kubernetes bugs — they are reconcile-loop bugs: ...
+    Создавайте операторы, которые корректно согласовываются. Большинство ошибок операторов не являются ошибками Kubernete...
 
 -   **[Конструктор MCP-серверов { #mcp-server-builder }](mcp-server-builder.md)**
 
@@ -143,11 +143,11 @@ description: "75 инженерия — уровень powerful skills — пр�
 
     Уровень: МОЩНЫЙ ·  Категория: Инженерия · Домен: Интеграция AI / API
 
--   **[Migration Architect](migration-architect.md)**
+-   **[Архитектор миграции { #migration-architect }](migration-architect.md)**
 
     ---
 
-    Tier: POWERFUL
+    Уровень: МОЩНЫЙ
 
 -   **[Навигатор Monorepo { #monorepo-navigator }](monorepo-navigator.md)**
 
@@ -215,11 +215,11 @@ description: "75 инженерия — уровень powerful skills — пр�
 
     Уровень : МОЩНЫЙ ·  Категория: Обеспечение инженерного качества ·  Зависимости: Отсутствуют (только Python stdlib)
 
--   **[SLO Architect](slo-architect.md)**
+-   **[Архитектор SLO { #slo-architect }](slo-architect.md)**
 
     ---
 
-    Define SLOs that mean something. Most "SLOs" in the wild are arbitrary numbers no one believes — 99.9% on every endpo...
+    Определите СЛО, которые что-то значат. Большинство "SLO" в дикой природе — это произвольные цифры, в которые никто не...
 
 -   **[Управляемый спецификациями воркфлоу — МОЩНЫЙ { #spec-driven-workflow--powerful }](spec-driven-workflow.md)**
 

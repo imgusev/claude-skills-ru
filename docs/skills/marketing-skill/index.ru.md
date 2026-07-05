@@ -281,11 +281,11 @@ description: "48 маркетинг skills — маркетинговый аге
 
     Вы старший стратег по социальным сетям, который увеличил количество аккаунтов с нуля до шестизначных цифр на всех осн...
 
--   **[Webinar & Virtual Event Marketing](webinar-marketing.md)**
+-   **[Маркетинг вебинаров и виртуальных мероприятий { #webinar--virtual-event-marketing }](webinar-marketing.md)**
 
     ---
 
-    You are an expert in webinar and virtual event marketing. Your goal is to help plan, promote, run, and optimize webin...
+    Вы являетесь экспертом в области маркетинга вебинаров и виртуальных мероприятий. Ваша цель — помочь спланировать, про...
 
 -   **[Двигатель роста X/Twitter { #xtwitter-growth-engine }](x-twitter-growth.md)**
 

@@ -29,17 +29,17 @@ description: "52 инженерия — базовый уровень skills —
 
     Скиллы оценки безопасности AI и LLM для обнаружения промптов, уязвимостей джейлбрейка, риска инверсии модели, заражен...
 
--   **[AWS Solution Architect](aws-solution-architect.md)**
+-   **[Архитектор решений AWS { #aws-solution-architect }](aws-solution-architect.md)**
 
     ---
 
-    Design scalable, cost-effective AWS architectures for startups with infrastructure-as-code templates.
+    Разрабатывайте масштабируемые и экономически эффективные архитектуры AWS для стартапов с использованием шаблонов "инф...
 
--   **[Azure Cloud Architect](azure-cloud-architect.md)**
+-   **[Облачный архитектор Azure { #azure-cloud-architect }](azure-cloud-architect.md)**
 
     ---
 
-    Design scalable, cost-effective Azure architectures for startups and enterprises with Bicep infrastructure-as-code te...
+    Разрабатывайте масштабируемые, экономически эффективные архитектуры Azure для стартапов и предприятий с помощью шабло...
 
 -   **[Облачная безопасность { #cloud-security }](cloud-security.md)**
 
@@ -71,11 +71,11 @@ description: "52 инженерия — базовый уровень skills —
 
     Теперь вы  эксперт по эпическому дизайну мирового класса . Вы создаете кинематографичные, захватывающие веб—сайты, ко...
 
--   **[GCP Cloud Architect](gcp-cloud-architect.md)**
+-   **[Облачный архитектор GCP { #gcp-cloud-architect }](gcp-cloud-architect.md)**
 
     ---
 
-    Design scalable, cost-effective Google Cloud architectures for startups and enterprises with infrastructure-as-code t...
+    Разрабатывайте масштабируемые и экономически эффективные облачные архитектуры Google для стартапов и предприятий с по...
 
 -   **[Скилл командира инцидента { #incident-commander-skill }](incident-commander.md)**
 
@@ -149,11 +149,11 @@ description: "52 инженерия — базовый уровень skills —
 
     Полный набор инструментов для старших разработчиков с современными инструментами и лучшими практиками.
 
--   **[Senior Frontend](senior-frontend.md)**
+-   **[Старший интерфейс { #senior-frontend }](senior-frontend.md)**
 
     ---
 
-    Frontend development patterns, performance optimization, and automation tools for React/Next.js applications.
+    Шаблоны разработки интерфейса, оптимизация производительности и инструменты автоматизации для React/Next.js приложения.
 
 -   **[Старший полный состав { #senior-fullstack }](senior-fullstack.md)**
 
@@ -167,11 +167,11 @@ description: "52 инженерия — базовый уровень skills —
 
     Производственные шаблоны разработки ML для развертывания моделей, инфраструктуры MLOps и интеграции LLM.
 
--   **[Senior Prompt Engineer](senior-prompt-engineer.md)**
+-   **[Старший инженер по промпту { #senior-prompt-engineer }](senior-prompt-engineer.md)**
 
     ---
 
-    Eval-driven prompt engineering, RAG quality measurement, and agent workflow validation. Everything here is model-agno...
+    Разработка промптов на основе Eval, измерение качества RAG и проверка воркфлоу агента. Все здесь  не зависит от модел...
 
 -   **[Старший инженер по контролю качества { #senior-qa-engineer }](senior-qa.md)**
 
@@ -185,11 +185,11 @@ description: "52 инженерия — базовый уровень skills —
 
     Полный набор инструментов для обеспечения безопасности, включая управление уязвимостями, проверку соответствия требов...
 
--   **[Senior Security Engineer — Threat Modeling + Security Router](senior-security.md)**
+-   **[Старший инженер по безопасности — Моделирование угроз + Маршрутизатор безопасности { #senior-security-engineer--threat-modeling--security-router }](senior-security.md)**
 
     ---
 
-    This skill does exactly one job itself — STRIDE/DREAD threat modeling (plus a quick secret scan) — and routes every o...
+    Этот скилл сам выполняет ровно одну работу —  Моделирование угроз STRIDE / DREAD  (плюс быстрое секретное сканировани...
 
 -   **[Эксперт по интеграции Stripe { #stripe-integration-expert }](stripe-integration-expert.md)**
 

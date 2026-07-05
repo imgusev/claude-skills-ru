@@ -86,7 +86,7 @@ python scripts/cs_coverage_calculator.py path/to/book.json
 
 | Уровень | Диапазон обр. | Охват | Инвестиции на один счет в год |
 |---|---|---|---|
-| **Стратегический** | Лучшие 5%, часто $100 тыс.+ | Названный исполнительный спонсор CSM + | $20 тыс.-50 тыс. |
+| **Стратегический** | Лучшие 5%, часто до 100 тысяч долларов+ | Названный исполнительный спонсор CSM + | $20 тыс.-50 тыс. |
 | **Предприятие** | Следующие 15-20%, $20 тыс.-100 тыс. | Названный CSM | $5 тыс.-15 тыс. |
 | **Среднерыночный** | Следующие 30-40%, $5 тыс.-20 тыс. | Объединенная автоматизация CSM + | $1 тыс.-3 тыс. |
 | **Малый и средний бизнес / Длиннохвостый** | Нижние 40-50%, <$5 тыс. | Технология-прикосновение + самообслуживание | $50-500 |
@@ -124,7 +124,7 @@ python scripts/cs_coverage_calculator.py path/to/book.json
 | Роль | Владеет | НЕ владеет |
 |---|---|---|
 | Служба поддержки клиентов | Реактивное разрешение проблемы (очередь заявок) | Обновление, расширение, успешные результаты |
-| Менеджер по работе с клиентами | Активная реализация ценностей + обновление + лидерство в расширении | Ежедневные билеты, внедрение |
+| Менеджер по работе с клиентами | Активная реализация ценности + обновление + лидерство в расширении | Ежедневные билеты, внедрение |
 | Менеджер по работе с клиентами | Коммерческие отношения + завершение расширения | Повседневный успех, техническая глубина |
 | Менеджер по внедрению | Онбординг + выход в эфир | Постоянный успех после запуска |
 | Операции CS | Инструменты, данные, аналитика, плейбуки | Прямые отношения с клиентами |
@@ -200,7 +200,7 @@ python scripts/cs_coverage_calculator.py book.json
 
 ## Ссылки { #references }
 
-- [retention_decomposition.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/retention_decomposition.md) — GRR против NRR честная математика + таксономия оттока по 7 категориям + плейбук с опережающими индикаторами
+- [retention_decomposition.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/retention_decomposition.md) — GRR против NRR честная математика + таксономия оттока по 7 категориям + плейбук с опережающими показателями
 - [customer_segmentation_strategy.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/customer_segmentation_strategy.md) — 4-уровневый фреймворк + оценка соответствия ICP + триггеры перехода на уровень + критерии списка уничтожения
 - [cs_coverage_model.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/cs_coverage_model.md) — Решение по модели покрытия (tech-touch / объединенный / именованный / named+exec) + контрольные показатели соотношения + менеджер-триггер
 - [cs_team_org_evolution.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/references/cs_team_org_evolution.md) — Карта от этапа к роли + таблица определения 6 ролей (CSM ≠ Поддержка ≠ AM ≠ IM ≠ Операции CS ≠ Маркетинг клиентов) + Раздельное решение AM-vs-CSM + анти-шаблоны

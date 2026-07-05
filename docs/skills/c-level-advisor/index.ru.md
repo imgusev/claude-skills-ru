@@ -23,11 +23,11 @@ description: "62 c-level консультирование skills — агент�
 
     Как агенты C-suite общаются друг с другом. Правила, которые предотвращают хаос, циклы и круговые рассуждения.
 
--   **[Arquiteto de Empresa](arquiteto-de-empresa.md)**
+-   **[Аркитето де Эмпреса { #arquiteto-de-empresa }](arquiteto-de-empresa.md)**
 
     ---
 
-    Você é o Arquiteto de Empresa — um chief of staff sênior que reúne num só agente estrategista de negócios, CFO, CMO, ...
+    Должность Архитектора Империи — начальник штаба, старший помощник, а также стратегический агент по переговорам, финан...
 
 -   **[Конструктор настольных колод { #board-deck-builder }](board-deck-builder.md)**
 
@@ -65,23 +65,23 @@ description: "62 c-level консультирование skills — агент�
 
     Большинство изменений терпят неудачу при реализации, а не при проектировании. Модель ADKAR объясняет вам, почему и ка...
 
--   **[Chief AI Officer Advisor](chief-ai-officer-advisor.md)**
+-   **[Советник главного специалиста по искусственному интеллекту { #chief-ai-officer-advisor }](chief-ai-officer-advisor.md)**
 
     ---
 
-    Strategic AI leadership for startup CAIOs and founders without one. Four decisions, no AI hype:
+    Стратегическое лидерство в области искусственного интеллекта для руководителей стартапов и основателей без такового. ...
 
--   **[Chief Customer Officer Advisor](chief-customer-officer-advisor.md)**
-
-    ---
-
-    Strategic customer leadership for startup CCOs and founders without one. Four decisions, no generic CS survey:
-
--   **[Chief Data Officer Advisor](chief-data-officer-advisor.md)**
+-   **[Главный консультант по работе с клиентами { #chief-customer-officer-advisor }](chief-customer-officer-advisor.md)**
 
     ---
 
-    Strategic data leadership for startup CDOs and founders without one. Four decisions, no surveys:
+    Стратегическое лидерство в работе с клиентами для руководителей стартапов и основателей без такового. Четыре решения,...
+
+-   **[Советник главного специалиста по обработке данных { #chief-data-officer-advisor }](chief-data-officer-advisor.md)**
+
+    ---
+
+    Стратегическое лидерство в области данных для CDO стартапов и основателей без такового. Четыре решения, никаких опросов:
 
 -   **[Начальник штаба { #chief-of-staff }](chief-of-staff.md)**
 
@@ -173,11 +173,11 @@ description: "62 c-level консультирование skills — агент�
 
     Ваша компания может расти только так быстро, как это делаете вы. Этот скилл рассматривает развитие основателя как стр...
 
--   **[General Counsel Advisor](general-counsel-advisor.md)**
+-   **[Главный юрисконсульт Советник { #general-counsel-advisor }](general-counsel-advisor.md)**
 
     ---
 
-    Strategic legal frameworks for startup General Counsels and founders without one. Contract risk, IP strategy, term sh...
+    Стратегические правовые фреймворки для генеральных консультантов стартапов и основателей без таковых. Контрактный рис...
 
 -   **[Внутренний конструктор повествования { #internal-narrative-builder }](internal-narrative.md)**
 
@@ -215,10 +215,10 @@ description: "62 c-level консультирование skills — агент�
 
     Стратегия терпит неудачу в каскаде, а не в зале заседаний. Этот скилл выявляет рассогласование до того, как оно превр...
 
--   **[VP of Engineering Advisor](vpe-advisor.md)**
+-   **[Вице-президент по техническому консультированию { #vp-of-engineering-advisor }](vpe-advisor.md)**
 
     ---
 
-    Strategic engineering operations leadership for startup VPEs and founders without one. Four decisions, no generic eng...
+    Руководство стратегическими инженерными операциями для вице-президентов стартапов и основателей без такового. Четыре ...
 
 </div>

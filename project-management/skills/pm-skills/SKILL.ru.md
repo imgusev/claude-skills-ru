@@ -1,6 +1,6 @@
 ---
 name: "pm-skills"
-description: "Маршрутизатор/ индекс для 8 скилл по управлению проектами, включенных в этот плагин (senior PM quant toolkit, scrum master, Jira/JQL, Confluence, Atlassian admin, Atlassian шаблоны, анализатор собраний, командные коммуникации). Используйте, когда запрос в личку явно не соответствует какому-либо скиллу, и вам нужно выбрать правильный (например, "наши спринты не работают", "аудит наших разрешений Jira"). Связывает конфигурацию Atlassian Remote MCP (.mcp.json) для прямого доступа к Jira/Confluence."
+description: "Маршрутизатор/ индекс для 8 скилл по управлению проектами, включенных в этот плагин (senior PM quant toolkit, scrum master, Jira/JQL, Confluence, Atlassian admin, Atlassian шаблоны, анализатор собраний, командные коммуникации). Используйте, когда запрос в личку явно не соответствует какому-либо скиллу, и вам нужно выбрать правильный (например, \"наши спринты не работают\", \"аудит наших разрешений Jira\"). Связывает конфигурацию Atlassian Remote MCP (.mcp.json) для прямого доступа к Jira/Confluence."
 version: 2.9.0
 author: Alireza Rezvani
 license: MIT

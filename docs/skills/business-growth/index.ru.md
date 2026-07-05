@@ -35,11 +35,11 @@ description: "5 бизнес и рост skills — агентский скил�
 
     Аналитика успеха клиентов производственного уровня с многомерной оценкой состояния здоровья, прогнозированием риска о...
 
--   **[Revenue Operations](revenue-operations.md)**
+-   **[Доходные операции { #revenue-operations }](revenue-operations.md)**
 
     ---
 
-    Pipeline analysis, forecast accuracy tracking, and GTM efficiency measurement for SaaS revenue teams.
+    Анализ пайплайна, отслеживание точности прогнозов и измерение эффективности GTM для отделов по доходам SaaS.
 
 -   **[Скилл инженера по продажам { #sales-engineer-skill }](sales-engineer.md)**
 

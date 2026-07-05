@@ -83,16 +83,16 @@ description: "17 продукт skills — продуктовый агентск
 
     Превратите спецификацию проекта на естественном языке в полноценный, доступный для запуска стартовый репозиторий. Не ...
 
--   **[UI Design System](ui-design-system.md)**
+-   **[Система проектирования пользовательского интерфейса { #ui-design-system }](ui-design-system.md)**
 
     ---
 
-    Generate design tokens, create color palettes, calculate typography scales, build component systems, and prepare deve...
+    Генерируйте маркеры дизайна, создавайте цветовые палитры, рассчитывайте типографские масштабы, создавайте компонентны...
 
--   **[UX Researcher & Designer](ux-researcher-designer.md)**
+-   **[Исследователь и дизайнер UX { #ux-researcher--designer }](ux-researcher-designer.md)**
 
     ---
 
-    Generate user personas from research data, create journey maps, plan usability tests, and synthesize research finding...
+    Создавайте образы пользователей на основе данных исследований, создавайте карты путешествий, планируйте юзабилити-тес...
 
 </div>

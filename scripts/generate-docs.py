@@ -181,6 +181,27 @@ def extract_subtitle(filepath):
     return None
 
 
+def _unescape_yaml_double_quoted(text):
+    """Inverse of YAML double-quoted scalar escaping (backslash/quote only).
+
+    Needed because a double-quoted description may itself contain an
+    escaped `\\"` (e.g. a translated trigger phrase quoted inside the
+    description, see DEF-1 in _meta/docs/QA-REPORT.md) — the raw regex
+    match below intentionally keeps escape sequences as literal two-char
+    sequences, so callers get the human-readable unescaped text.
+    """
+    result = []
+    i = 0
+    while i < len(text):
+        if text[i] == "\\" and i + 1 < len(text) and text[i + 1] in "\\\"":
+            result.append(text[i + 1])
+            i += 2
+        else:
+            result.append(text[i])
+            i += 1
+    return "".join(result)
+
+
 def extract_description_from_frontmatter(filepath):
     """Extract the description field from YAML frontmatter.
 
@@ -195,9 +216,12 @@ def extract_description_from_frontmatter(filepath):
         fm = match.group(1)
 
         # Try quoted single-line: description: "text" or description: 'text'
-        m = re.search(r'description:\s*"([^"]+)"', fm)
+        # (?:[^"\\]|\\.)* accounts for escaped \" inside the value — a plain
+        # [^"]+ would stop at the FIRST quote, escaped or not, silently
+        # truncating the description (DEF-1's visible symptom on the site).
+        m = re.search(r'description:\s*"((?:[^"\\]|\\.)*)"', fm)
         if m:
-            return m.group(1).strip()
+            return _unescape_yaml_double_quoted(m.group(1).strip())
         m = re.search(r"description:\s*'([^']+)'", fm)
         if m:
             return m.group(1).strip()

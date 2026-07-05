@@ -149,7 +149,7 @@ python scripts/experiment_postmortem.py --plan experiment.json --result-log resu
 
 ## Воркфлоу { #workflows }
 
-### Воркфлоу 1: Спроектируйте и проведите один эксперимент { #workflow-1-design-and-run-a-single-experiment }
+### Воркфлоу 1: Спроектируйте и запустите один эксперимент { #workflow-1-design-and-run-a-single-experiment }
 
 ```
 1. State a hypothesis: "When [fault], steady-state metric X stays within Y."
