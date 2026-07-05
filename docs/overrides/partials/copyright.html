@@ -1,0 +1,37 @@
+{#-
+  Custom copyright partial.
+
+  Extends Material's default footer copyright line with links to the
+  llms.txt / llms-full.txt AI-agent discovery files (llmstxt.org convention),
+  so AI agents and crawlers can find a machine-readable description of the repo
+  from any page's footer.
+-#}
+{#- Included from both regular page templates (context has 'i18n_page_locale',
+    set in on_page_context) and theme-only templates like 404.html (context
+    has 'i18n_current_language', set in on_template_context) — check both. -#}
+{% set locale = i18n_page_locale or i18n_current_language or 'en' %}
+{% if config.copyright %}
+  <div class="md-copyright">
+    {% if config.copyright %}
+      <div class="md-copyright__highlight">
+        {{ config.copyright }}
+      </div>
+    {% endif %}
+    {#- trim('/') strips a trailing slash from site_url so the join stays
+        correct whether or not site_url ends in "/" (defensive against future
+        config edits). It only strips '/' from the ends, so "https://" is safe. -#}
+    {% set ai_base = (config.site_url or '') | trim('/') %}
+    <div class="md-copyright__ai">
+      {% if locale == 'ru' %}Для AI-агентов:{% else %}For AI agents:{% endif %}
+      <a href="{{ ai_base ~ '/llms.txt' }}" title="Machine-readable site index (llms.txt convention)">llms.txt</a>
+      ·
+      <a href="{{ ai_base ~ '/llms-full.txt' }}" title="Full repository description for AI agents">llms-full.txt</a>
+    </div>
+    {% if not config.extra.generator == false %}
+      {% if locale == 'ru' %}Сделано на{% else %}Made with{% endif %}
+      <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+        Material for MkDocs
+      </a>
+    {% endif %}
+  </div>
+{% endif %}

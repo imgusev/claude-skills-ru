@@ -1,0 +1,13 @@
+{#- Included from regular page templates, so 'i18n_page_locale' (set in
+    on_page_context) is the reliable variable here; fall back to
+    'i18n_current_language' for theme-only render paths just in case. -#}
+{% set locale = i18n_page_locale or i18n_current_language or 'en' %}
+{% if locale == 'ru' %}
+<a href="skills/markdown-html/">
+  <strong>Новое:</strong> домен Markdown&nbsp;→&nbsp;HTML — превращайте markdown в фирменные документы, код-ревью и слайд-деки одним файлом.
+</a>
+{% else %}
+<a href="skills/markdown-html/">
+  <strong>New:</strong> Markdown&nbsp;→&nbsp;HTML domain — turn markdown into branded single-file documents, code reviews, and slide decks.
+</a>
+{% endif %}

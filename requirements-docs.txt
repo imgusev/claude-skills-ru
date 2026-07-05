@@ -1,0 +1,8 @@
+# Docs site build dependencies (mkdocs.yml plugins). Install into the
+# project venv: uv pip install -r requirements-docs.txt
+# Resolved with mkdocs-static-i18n==1.3.1 — its config schema (§1.1/§2.1
+# ARCHITECTURE.md) is version-specific; re-verify mkdocs_static_i18n/config.py
+# if this pin moves.
+mkdocs-material==9.7.6
+mkdocs-static-i18n==1.3.1
+mkdocs-redirects==1.2.3
