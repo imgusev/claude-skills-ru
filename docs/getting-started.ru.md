@@ -194,7 +194,7 @@ description: "Как установить 345 скилл агента и 78 пл
 | **Регулирование и качество** | `/plugin install ra-qm-skills@claude-code-skills` | 18 |
 | **Соответствие требованиям ОС** | `/plugin install compliance-os@claude-code-skills` | 9 |
 | **Управление проектами** | `/plugin install pm-skills@claude-code-skills` | 9 |
-| **Консультирование на уровне C** | `/plugin install c-level-skills@claude-code-skills` | 61 |
+| **Консультирование на уровне С** | `/plugin install c-level-skills@claude-code-skills` | 61 |
 | **Бизнес и рост** | `/plugin install business-growth-skills@claude-code-skills` | 5 |
 | **Бизнес-операции** | `/plugin install business-operations-skills@claude-code-skills` | 7 |
 | **Коммерческий** | `/plugin install commercial-skills@claude-code-skills` | 8 |

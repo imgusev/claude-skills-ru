@@ -1,0 +1,135 @@
+---
+title: "/cs-pulse — слэш-команда для ИИ-агентов разработки"
+description: "/cs:pulse <тема> — Недавнее исследование из нескольких источников. Просмотр Grill-me (тема / ракурс / окно / область видимости), затем параллельный. Слэш-команда для Claude Code, Codex CLI, Gemini CLI."
+---
+
+# /cs-pulse
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-console: Слэш-команда</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/commands/cs-pulse.md">Источник</a></span>
+</div>
+
+
+**Команда:** `/cs:pulse <topic>`
+
+Тот `cs-pulse` персона отслеживает актуальность темы в Reddit, Hacker News, open Web и (опционально) X / Twitter — в настраиваемом окне последних событий — и синтезирует единый последовательный брифинг.
+
+## Когда запускать { #when-to-run }
+
+- "Что люди говорят о X прямо сейчас?"
+- Исследование конкурентов с привкусом новизны
+- Выявление тенденций / сравнение инструментов / настроения аудитории
+- Предварительная разведка перед созданием контента
+
+Скилл ТАКЖЕ триггер срабатывает автоматически без `/cs:pulse` когда вы используете фразы-триггеры:
+- "пульс включен [тема]"
+- "что происходит с [тема]"
+- "что люди говорят о [тема]"
+- "текущий разговор о [тема]"
+- "пощупай пульс у [тема]"
+- "в тренде: [тема]"
+- "найди мне информацию о [тема]"
+
+`/cs:pulse` это явная форма.
+
+## Форсированный прием (2-4 вопроса, по одному за раз) { #forcing-intake-24-questions-one-at-a-time }
+
+| Вопрос | Спрашивает | Почему |
+|---|---|---|
+| Вопрос 1 | Специфика темы (1-2 предложения, без неопределенных существительных) | Расплывчатый вопрос 1 → расплывчатый брифинг. Отказывается от "AI" / "tech" один раз. |
+| Q2 | Ракурс: тренд / настроение / проблемы / возможности / сравнение | Определяет, голос какой платформы имеет больший вес в синтезе. По умолчанию: тренд. |
+| Вопрос 3 | Временное окно: 7 / 14 / 30 / 60 / 90 дни | По умолчанию: 30. 7d = прерывание, 90d = устойчивый сдвиг. |
+| Q4 | Область применения платформы (пропустить что-либо?) | Задается только тогда, когда угол обзора указывает на то, что некоторые платформы находятся вне цели. По умолчанию: все. |
+
+## Что Вы получаете { #what-you-get }
+
+```
+# [TOPIC] — Pulse (Last [N] Days)
+*Generated: [DATE] | Angle: [trend|sentiment|problems|opportunities|comparison]*
+
+## TL;DR
+[2-3 sentences]
+
+## Reddit
+### Top Posts ... ### What Reddit Is Saying
+
+## Hacker News
+### Notable Stories ... ### What HN Is Saying
+
+## Web
+### Key Sources ... ### What the Web Is Saying
+
+## X/Twitter (if available)
+[Or: "Skipped — [reason]"]
+
+## Cross-Platform Patterns
+## Key Takeaways
+## Content Angles (if applicable)
+
+---
+*Audit:* Queries sent: N. Sources received: M. Sources cited: K.
+```
+
+Сохранено в `${RESEARCH_DIR}/pulse/<topic-slug>-<YYYY-MM-DD>.md` И вставил в чат.
+
+## Дисциплина { #discipline }
+
+- ** Один входной вопрос за ход. ** Никогда не связывайтесь.
+- ** Откажитесь от расплывчатого Q1 один раз.** Приведите примеры; предоставьте с оговоркой, если пользователь не будет сужать.
+- ** Параллельные фазы 1-3** — Reddit + HN + Web одновременно. Последовательный внутри платформы. 1 вопрос/сек.
+- **Дисциплина источника** — ссылается только на результаты сеансового вызова. `[Background]` за учебные знания, исключенные из числа цитируемых.
+- **Отслеживание по трем счетам** — отправлено / получено / процитировано в журнале аудита.
+- **Повторите попытку один раз через 3 секунды** — затем войдите в систему. 3 последовательных сбоя в разных источниках → остановка.
+- **Постепенная деградация** — сбой из одного источника → продолжить с rest. Никогда не завершайте весь запуск с одним источником.
+
+## Воркфлоу { #workflow }
+
+```bash
+# A. Pre-flight (post-intake)
+python ../skills/pulse/scripts/time_window_calculator.py --window 30d
+python ../skills/pulse/scripts/topic_slug_generator.py --topic "<topic>" --date $(date +%Y-%m-%d)
+python ../skills/pulse/scripts/citation_tracker.py --action start --session NAME
+
+# B. Phases 1–3 (parallel, 1 q/sec per platform)
+#    Reddit: search.json sort=top&t=month + sort=new&t=month + top thread comments
+#    HN: Algolia stories + comments with timestamp filter
+#    Web: 2–3 targeted queries
+
+# C. Phase 4 (optional, sequential): X/Twitter via Grok / X API / browser automation
+
+# D. Synthesis: cross-platform pattern detection
+
+# E. Output: file + chat + audit summary
+python ../skills/pulse/scripts/citation_tracker.py --action close --session NAME
+```
+
+## Условия остановки { #stop-conditions }
+
+- Все 4 фазы завершены (или фаза 4 пропущена с примечанием) → синтезировать + доставить
+- 3 последовательных сбоя во всех источниках → остановить, сообщить о том, что было собрано
+- Пользователь говорит "стоп" → произвести частичный инструктаж с учетом того, что было собрано на данный момент.
+
+## Отклоненные анти-паттерны { #anti-patterns-rejected }
+
+- Запуск любого поиска до фиксации Q1 (специфика темы)
+- Вопросы о дозированном приеме
+- Жестко закодированные URL-адреса, которые не выдержат изменений API (формат примечания, объяснение может измениться)
+- Ссылки на конкретного человека/бренд
+- Тесная связь с одним интерфейсом X/Twitter
+- Отсутствующее резервное поведение
+- "Просто используй [конкретный инструмент]" без объяснения того, что делает этот инструмент
+- Цитирование учебных знаний в качестве результатов сессии
+- Создание источников для заполнения раздела
+
+## Связанный { #related }
+
+- Агент: [`cs-pulse`](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/agents/cs-pulse.md)
+- Скилл: [`pulse`](https://github.com/imgusev/claude-skills-ru/tree/main/research/pulse/skills/pulse/SKILL.md)
+- Спецификация источника: [`megaprompts/01-pulse-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/01-pulse-megaprompt.md)
+- Исследовательские скиллы братьев и сестер (после сборки): `/cs:litreview`, `/cs:grants`, `/cs:syllabus`, `/cs:patent`, `/cs:dossier`, `/cs:research` (маршрутизатор)
+
+---
+
+**Версия:** 1.0.0
+**Источник:** Прямое преобразование Path-B в `megaprompts/01-pulse-megaprompt.md`

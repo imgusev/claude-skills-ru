@@ -13,7 +13,7 @@ description: "20 лучших плагинов Claude Code и скиллы аг�
 
 ## В чем разница между плагинами и Скиллами? { #whats-the-difference-between-plugins-and-skills }
 
-**Плагины Claude Code** используйте `.claude-plugin/plugin.json` форматирование и установка с помощью `/plugin install`. **Скиллы агента** использование `SKILL.md` файлы и работа с Claude Code, Codex, Gemini CLI, Cursor и 8 другими агентами кодирования.
+**Плагины Claude Code** используйте `.claude-plugin/plugin.json` форматирование и установка с помощью `/plugin install`. **Скиллы агента ** использование `SKILL.md` файлы и работа с Claude Code, Codex, Gemini CLI, Cursor и 8 другими агентами кодирования.
 
 Это репозиторий предоставляет ** оба формата** — каждый скилл включает в себя `.claude-plugin` каталог для поддержки встроенного плагина Claude Code, а также `SKILL.md` для кросс-платформенной совместимости.
 

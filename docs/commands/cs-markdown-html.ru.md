@@ -1,0 +1,64 @@
+---
+title: "/cs-markdown-html — слэш-команда для ИИ-агентов разработки"
+description: "Маршрутизатор Markdown-to-HTML верхнего уровня. Классифицирует входные данные Markdown (документ / ревью / слайды), проверяет гейт онбординга системы. Слэш-команда для Claude Code, Codex CLI, Gemini CLI."
+---
+
+# /cs-markdown-html
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-console: Слэш-команда</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/markdown-html/commands/cs-markdown-html.md">Источник</a></span>
+</div>
+
+
+Направьте это преобразование через `markdown-html-orchestrator` скилл:
+
+**$АРГУМЕНТЫ**
+
+## Предполетные гейты (отказываются и выходят на поверхность, никогда не перекрываются) { #pre-flight-gates-refuse-and-surface-never-override }
+
+1. **Ввод < 100 строк.** Markdown по-прежнему выигрывает при значении ниже порогового значения (Shihipar). Отказаться с указанием количества строк + рекомендация сохранить как Markdown.
+2. **Дизайн-система не онбординг.** Поверхность `python3 markdown-html/skills/design-system/scripts/onboard.py` и повторите промпт после этого.
+3. **Выходной каталог недоступен для записи.** Отказаться; пусть пользователь исправит путь или повторно введет онбординг.
+
+## Маршрутизация (детерминированная, порог с двумя сигналами) { #routing-deterministic-two-signal-threshold }
+
+| Класс сигнала | Подсказки по имени файла | Сигналы о содержании | Вспомогательный скилл |
+|---|---|---|---|
+| ДОКУМЕНТ | `report.md`, `spec.md`, `rfc-*.md`, `*-doc.md`, `*-analysis.md`, `*-explainer.md` | `## Table of Contents`, `^# `, `^## `, строки таблицы, выноски GFM | `md-document` |
+| РЕВЬЮ | `review.md`, `*-pr-*.md`, `*.diff.md`, `code-review*.md` | ` ```diff `, `^[-+]{3} `, `^@@`, `> [!BLOCKER]/[!MAJOR]/[!MINOR]/[!NIT]`, `LGTM`/`nit:`/`blocker:` | `md-review` |
+| СЛАЙДЫ | `deck.md`, `slides.md`, `*-talk.md`, `presentation*.md` | `^---$` ≥ 3, `<!-- notes:`, Частота H1 ≥ 5 со средним промежутком ≤ 12 строк | `md-slides` |
+
+Пайплайн:
+
+```bash
+python3 markdown-html/skills/markdown-html-orchestrator/scripts/doctype_classifier.py \
+    --input "$ARGUMENTS" --output json \
+  | python3 markdown-html/skills/markdown-html-orchestrator/scripts/route_explainer.py
+
+python3 markdown-html/skills/markdown-html-orchestrator/scripts/output_path_resolver.py \
+    --input "$ARGUMENTS" --doctype <verdict>
+```
+
+1. Бесшумный маршрут - только тогда, когда победитель ≥ 3 И (занявший второе место = 0 ИЛИ победитель ≥ 2× занявший второе место).
+2. Одиночный сигнал или ничья → один уточняющий вопрос с рекомендуемым ответом.
+3. Нет сигналов → спросите, на какой полосе, порекомендуйте `md-document` в качестве безопасного значения по умолчанию.
+
+## Выходные данные (дайджест из ≤ 100 слов) { #output--100-word-digest }
+
+- Входные строки + doctype
+- Выходной путь (определяется с помощью `output_path_resolver.py`)
+- Стиль дизайна + основной применяемый бренд (от `config_loader.py`)
+- Топ-3 используемых функции (sticky TOC, scrollspy, копирование кода, значки серьезности, режим презентатора и т.д.)
+- Один форсирующий вопрос для пользователя (цитирую Shihipar / WCAG / Lupton / Tufte)
+
+## Жесткие правила { #hard-rules }
+
+- Никогда не соединяйте два преобразователя в бесшумную цепочку. Выберите один, закончите, спросите, прежде чем связывать в цепочку.
+- Никогда не переопределяйте `REFUSE` от `route_explainer.py`.
+- Никогда не придумывайте фирменные цвета, если пользователь еще не онбординг. Поверхностный онбординг.
+- На выходе получается однофайловый HTML-файл. Внешний CDN доступен только для Google Fonts + Prism.js .
+
+## Статус { #status }
+
+Все пять скилл доступны в режиме реального времени (оркестратор + `design-system` + три преобразователя). Эта команда запускает гейт классификатора + системы проектирования, затем передает преобразование в под-скилл маршрутизируемого конвертера (`/cs:md-document`, `/cs:md-review`, или `/cs:md-slides`). Никогда не отображайте HTML встроенным — рендеринг принадлежит скриптам конвертера.

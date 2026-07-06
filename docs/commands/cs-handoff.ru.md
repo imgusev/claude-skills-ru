@@ -1,0 +1,85 @@
+---
+title: "/cs-handoff — слэш-команда для ИИ-агентов разработки"
+description: "/cs:хэндофф <следующая сессия-фокус> — Сжать текущую беседу в документ хэндофф для нового агента. Адаптирован к задачам следующего сеанса. Слэш-команда для Claude Code, Codex CLI, Gemini CLI."
+---
+
+# /cs-handoff
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-console: Слэш-команда</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/commands/cs-handoff.md">Источник</a></span>
+</div>
+
+
+**Команда:** `/cs:handoff <next-session-focus>`
+
+Передайте текущий разговор новому агенту. Адаптированный к аргументу фокуса.
+
+## Когда запускать { #when-to-run }
+
+- Завершение долгого сеанса; хотите продолжения
+- Переключение контекстов в полете
+- Передача работы другой команде/лицу/агенту
+- Запуск параллельного сеанса, для которого требуется текущее состояние
+
+## Пять разделов (за Мэтта Покока) { #the-five-sections-per-matt-pocock }
+
+1. **Цель следующей сессии** — результат, которого должна достичь следующая сессия (с учетом направленности)
+2. ** Состояние игры** — готово / выполняется / блокируется, с путями + ссылками
+3. ** Открытые решения** — что должен решить следующий агент, с опциями + текущими склонностями
+4. **Скиллы для использования** — конкретный список из `skill_recommender.py`
+5. **Артефакты** — только пути + URL-адреса (никогда не встроенное содержимое)
+
+## Жесткое правило (Мэтта) { #hard-rule-matts }
+
+> "Не дублируйте содержимое, уже захваченное в других артефактах (PRD, планы, ADR, проблемы, фиксации, различия). Вместо этого ссылайтесь на них по пути или URL-адресу."
+
+Тот `artifact_deduplicator.py` приводит в исполнение это — вердикт о сбое блокирует хэндофф.
+
+## Воркфлоу { #workflow }
+
+```bash
+# 1. Generate template tailored to focus
+python ../skills/handoff/scripts/handoff_template_generator.py \
+  --next-focus "<focus from command argument>" \
+  --mktemp
+
+# 2. Fill in the 5 sections from current conversation state
+
+# 3. Pre-flight: dedup check
+python ../skills/handoff/scripts/artifact_deduplicator.py path/to/draft.md
+#   CLEAN or WARN (with justified findings) → proceed
+#   FAIL → refactor; replace duplicated content with refs
+
+# 4. Populate skills section
+python ../skills/handoff/scripts/skill_recommender.py path/to/draft.md
+#   Use top recommendations for "Skills to use"
+
+# 5. Share the file path. Next agent reads + acts.
+```
+
+## Логика адаптации { #tailoring-logic }
+
+| Ключевое слово аргумента фокуса | Акцент раздела |
+|---|---|
+| отгрузка/деплою/PR | Команды развертывания, проверки, утверждения, откат |
+| ревью/аудит | Чек-лист, конфиденциальные файлы, похожие шаблоны |
+| отладка/исправление/расследование | Симптом, повторные шаги, уже опробовано |
+| дизайн/план/область применения | Результат, ограничения, отвергнутые альтернативы |
+| тестирование/контроль качества | План тестирования, существующее покрытие, крайние случаи |
+| (другое) | Немедленное действие, блокировщик, файлы, открытые решения |
+
+## Цель длины { #length-target }
+
+50-100 строк. Все, что длиннее, вероятно, дублирует артефакт.
+
+## Связанный { #related }
+
+- Агент: [`cs-handoff-author`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/agents/cs-handoff-author.md)
+- Скилл: [`handoff`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/SKILL.md)
+- Смежный: `/cs:caveman`, `/cs:grill-me`, `/cs:write-a-skill`
+
+---
+
+**Версия:** 1.0.0
+** Производное: ** Хэндофф Мэтта Покока (Массачусетский технологический институт) + оболочка этого репозитория

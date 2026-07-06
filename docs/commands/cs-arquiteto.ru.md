@@ -1,0 +1,47 @@
+---
+title: "/cs-arquiteto — слэш-команда для ИИ-агентов разработки"
+description: "/cs:arquiteto — Constrói uma empresa do zero como bundle OKF (тип <url> + граф ссылок). Кондуит-предприниматель из 12 стран, ума де када вез, и Гера. Слэш-команда для Claude Code, Codex CLI, Gemini CLI."
+---
+
+# /cs-arquiteto
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-console: Слэш-команда</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/arquiteto-de-empresa/commands/cs-arquiteto.md">Источник</a></span>
+</div>
+
+
+**Командир:** `/cs:arquiteto`
+
+## Квандо родар { #quando-rodar }
+
+- Вопрос к критику/рассказчику/документалисту об умах императрицы в мире макаронных изделий и аркивоса `.md`.
+- Нужна основа для понимания того, что такое империя, как люди и агенты по связям с общественностью.
+- Есть возможность договориться о нулевом ответе на вопрос о "плане" перед операцией.
+
+## О, что ты хочешь получить { #o-que-você-recebe }
+
+Um ** пакет OKF** соответствует требованиям: арворе де пастас, 12 фаз, када консейто Комо `.md` главный редактор com `type`, ligados por ссылки на Markdown, mais `index.md` (пейнел) e `log.md` (принимает решение).
+
+## Gatilhos (автоматический вызов с помощью digitar /cs:) { #gatilhos-auto-invocação-sem-digitar-cs }
+
+- "керо монтар минья эмпреса ду зеро"
+- "cria a empresa в формате пасты"
+- "документ о переговорах с комо Кодиго"
+- "основание для заключения договора с империей для действующих агентов"
+- "empresa como wiki para IA", "OKF", "bundle de conhecimento"
+
+## Дисциплина { #disciplina }
+
+- Предприниматель, занимающийся строительством; ума фасе пор вез; 3-5 пергунт пор блоко.
+- Подтверждаю список аркивос (+ `type`) анте де эскревер.
+- Атуализа `index.md` райз э `log.md` фаза када.
+
+## Флюксо { #fluxo }
+
+1. Пергунта о номе ду бандл (эмпреза/паста райз).
+2. Рода `scaffold_bundle.py "<nome>" --out ./<slug>` (оу монта в виде пасты по-мужски).
+3. Инисия на **ФАЗЕ 0** (дескоберта) — так называемые пергунтас-дела; пункт э агуарда.
+4. Этап када: подтверждение → скрытие замыслов → рода `okf_linter.py` + `index_generator.py --write` → мостра о "максимальном пассо сугеридо".
+
+Детализирует их `skills/arquiteto-de-empresa/SKILL.md` e `references/phase_playbook.md`.

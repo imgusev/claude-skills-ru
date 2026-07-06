@@ -1,0 +1,490 @@
+---
+title: "Агент по разработке стратегии продукта { #product-strategist-agent } — ИИ-агент для Claude Code и Codex"
+description: "Агент по продуктовой стратегии для ежеквартального планирования OKR, анализа конкурентной среды, разработки видения продукта и оценки основных. Агентский оркестратор для Claude Code, Codex, Gemini CLI."
+---
+
+# Агент по разработке стратегии продукта { #product-strategist-agent }
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-robot: Агент</span>
+<span class="meta-badge">:material-lightbulb-outline: Продукт</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/agents/product/cs-product-strategist.md">Источник</a></span>
+</div>
+
+
+## Цель { #purpose }
+
+Агент cs-product-strategist - это специализированный агент по стратегическому планированию, специализирующийся на видении продукта, каскадировании OKR, конкурентной разведке и формулировании стратегии. Этот агент организует скилл продуктового стратега наряду с анализом конкурентной среды, чтобы помочь лидерам по продуктам принимать обоснованные стратегические решения, ставить значимые цели и ориентироваться в конкурентной среде.
+
+Этот агент предназначен для руководителей продуктов, старших менеджеров по продуктам, вице-президентов по продуктам и основателей, которым нужны структурированные фреймворки для воплощения видения компании в практическую стратегию продукта. Сочетая каскадную генерацию OKR с анализом конкурентной матрицы, агент гарантирует, что стратегия продукта является как желательной, так и основанной на рыночных реалиях.
+
+Агент cs-product-strategist работает на стыке бизнес-стратегии и реализации продукта. Это помогает лидерам сформулировать видение продукта, установить ежеквартальные цели, которые переходят от целей компании к ключевым результатам на уровне команды, проанализировать конкурентное позиционирование и оценить, когда необходимы стратегические повороты. В отличие от агента cs-product-manager, который фокусируется на функциональном исполнении, этот агент работает на портфельном и стратегическом уровнях.
+
+## Интеграция в скиллы { #skill-integration }
+
+**Основной скилл:** [`skills/product-strategist`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist)
+
+### Все организованные скиллы { #all-orchestrated-skills }
+
+| # | Скилл | Местоположение | Основной инструмент |
+|---|-------|----------|-------------|
+| 1 | Специалист по продуктовому стратегу | [`skills/product-strategist`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist) | okr_cascade_generator.py |
+| 2 | Конкурентный срыв | [`skills/competitive-teardown`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/competitive-teardown) | competitive_matrix_builder.py |
+| 3 | Инструментарий менеджера по продукту | [`skills/product-manager-toolkit`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-manager-toolkit) | rice_prioritizer.py |
+
+### Инструменты Python { #python-tools }
+
+1. **Каскадный генератор OKR**
+   - ** Цель:** Генерировать каскадные OKR от целей компании до ключевых результатов на уровне команды с отображением инициатив
+   - **Путь:** [`scripts/okr_cascade_generator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/scripts/okr_cascade_generator.py)
+   - **Использование:** `python ../../product-team/skills/product-strategist/scripts/okr_cascade_generator.py growth`
+   - ** Особенности: ** Многоуровневый каскад (компания > продукт > команда), отображение инициатив, фреймворк для подсчета очков, отслеживание частоты вращения
+   - ** Варианты использования:** Ежеквартальное планирование, стратегическое согласование, постановка целей, годовое планирование
+
+2. **Составитель конкурентной матрицы**
+   - ** Цель:** Построение матриц конкурентного анализа, таблиц сравнения характеристик и карт позиционирования
+   - **Путь:** [`scripts/competitive_matrix_builder.py`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/competitive-teardown/scripts/competitive_matrix_builder.py)
+   - **Использование:** `python ../../product-team/skills/competitive-teardown/scripts/competitive_matrix_builder.py competitors.csv`
+   - ** Особенности: ** Многомерная оценка, взвешенное сравнение, анализ пробелов, визуализация позиционирования
+   - ** Примеры использования:** Конкурентная разведка, позиционирование на рынке, анализ пробелов в характеристиках, стратегическая дифференциация.
+
+3. **Приоритетность РИСА**
+   - **Цель:** Определение приоритетов стратегических инициатив с использованием фреймворка RICE для принятия решений на уровне портфеля
+   - **Путь:** [`scripts/rice_prioritizer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py)
+   - **Использование:** `python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py initiatives.csv --capacity 50`
+   - ** Особенности:** Анализ квадрантов портфеля (крупные ставки, быстрые выигрыши), планирование производственных мощностей, формирование стратегической дорожной карты
+   - ** Примеры использования:** Определение приоритетов инициатив, распределение ресурсов, стратегическое управление портфелем
+
+### Базы знаний { #knowledge-bases }
+
+1. **Фреймворк OKR**
+   - **Местоположение:** [`references/okr_framework.md`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/references/okr_framework.md)
+   - ** Содержание:** Методология OKR, каскадные модели, рекомендации по подсчету очков, распространенные подводные камни
+   - ** Пример использования:** Обучение OKR, подготовка ежеквартального планирования
+
+2. **Типы стратегий**
+   - **Местоположение:** [`references/strategy_types.md`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/references/strategy_types.md)
+   - **Содержание:** Фреймворки продуктовой стратегии, модели конкурентного позиционирования, стратегии роста
+   - ** Пример использования:** Формулирование стратегии, анализ рынка, разработка видения продукта
+
+3. **Руководство по сбору данных**
+   - **Местоположение:** [`references/data-collection-guide.md`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/competitive-teardown/references/data-collection-guide.md)
+   - **Содержание:** Источники и методы сбора конкурентной информации с соблюдением этических норм
+   - ** Пример использования:** Планирование конкурентных исследований, идентификация источника данных
+
+4. **Рубрика подсчета очков**
+   - **Местоположение:** [`references/scoring-rubric.md`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/competitive-teardown/references/scoring-rubric.md)
+   - ** Содержание:** Стандартизированные критерии оценки по соревновательным параметрам (шкала от 1 до 10)
+   - ** Пример использования:** Последовательная оценка конкурентов, устранение предвзятости
+
+5. **Шаблоны анализа**
+   - **Местоположение:** [`references/analysis-templates.md`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/competitive-teardown/references/analysis-templates.md)
+   - ** Содержание:** SWOT, Пять сил Портера, карты позиционирования, боевые карты, анализ побед/поражений
+   - ** Пример использования:** Структурированный конкурентный анализ, стимулирование продаж
+
+### Шаблоны { #templates }
+
+1. **шаблон OKR**
+   - **Местоположение:** [`assets/okr_template.md`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/assets/okr_template.md)
+   - ** Пример использования:** Ежеквартальная документация OKR со структурой отслеживания
+
+2. **шаблон PRD**
+   - **Местоположение:** [`assets/prd_template.md`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-manager-toolkit/assets/prd_template.md)
+   - ** Пример использования:** Документирование стратегических инициатив в качестве формальных требований
+
+## Воркфлоу { #workflows }
+
+### Воркфлоу 1: Ежеквартальное планирование OKR { #workflow-1-quarterly-okr-planning }
+
+** Цель:** Установите амбициозные, согласованные ежеквартальные OKR, которые переходят от целей компании к ключевым результатам продуктовой команды.
+
+**Шаги:**
+1. **Ревью стратегии компании** - Соберите стратегический контекст:
+   - ОКР на уровне компании или годовые цели
+   - Приоритеты правления и ожидания инвесторов
+   - Цели по доходам и росту
+   - Результаты OKR за предыдущий квартал и полученные знания
+
+2. **Анализировать рыночный контекст** - Понимать внешние факторы:
+   ```bash
+   # Build competitive landscape
+   python ../../product-team/skills/competitive-teardown/scripts/competitive_matrix_builder.py competitors.csv
+   ```
+   - Ревью конкурентных движений за прошедший квартал
+   - Выявлять рыночные тенденции и возможности
+   - Оцените темы отзывов клиентов
+
+3. **Генерировать каскад OKR** - Создавать согласованные цели:
+   ```bash
+   # Generate OKRs for growth strategy
+   python ../../product-team/skills/product-strategist/scripts/okr_cascade_generator.py growth
+   ```
+
+4. **Определите цели продукта** - Установите 2-3 цели продукта:
+   - Каждая цель качественная и вдохновляющая
+   - Непосредственно поддерживает цели на уровне компании
+   - Достижимо в течение квартала с натяжкой
+
+5. ** Установите ключевые результаты** - 3-4 измеримых показателя KR для каждой цели:
+   - Конкретный, поддающийся измерению, с исходным уровнем и целью
+   - Сочетание опережающих и запаздывающих показателей
+   - Достижение цели в 70% (если вы постоянно достигаете 100%, это недостаточно амбициозно)
+
+6. **Сопоставление инициатив с KRs** - Увязка работы с результатами:
+   ```bash
+   # Prioritize strategic initiatives
+   python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py initiatives.csv --capacity 50
+   ```
+
+7. ** Согласование с стейкхолдерами** - Представление и повторение:
+   - Ревью с инженерными руководителями на предмет осуществимости
+   - Согласование с отделом маркетинга/продаж для координации GTM
+   - Получите одобрение руководства в отношении целей и KRs
+
+8. **Документируйте и запускайте** - Используйте шаблон OKR:
+   ```bash
+   cat ../../product-team/skills/product-strategist/assets/okr_template.md
+   ```
+
+** Ожидаемый результат:** Ежеквартальный документ OKR с 2-3 целями, 8-12 ключевыми результатами, намеченными инициативами и согласованием с стейкхолдерами
+
+** Расчетное время:** 1 неделя (конец предыдущего квартала)
+
+**Пример:**
+```bash
+# Full quarterly planning flow
+echo "Q3 2026 OKR Planning"
+echo "===================="
+
+# Step 1: Competitive context
+python ../../product-team/skills/competitive-teardown/scripts/competitive_matrix_builder.py q3-competitors.csv
+
+# Step 2: Generate OKR cascade
+python ../../product-team/skills/product-strategist/scripts/okr_cascade_generator.py growth
+
+# Step 3: Prioritize initiatives
+python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py q3-initiatives.csv --capacity 45
+
+# Step 4: Review OKR template
+cat ../../product-team/skills/product-strategist/assets/okr_template.md
+```
+
+### Воркфлоу 2: Ревью конкурентного ландшафта { #workflow-2-competitive-landscape-review }
+
+**Цель:** Провести всесторонний конкурентный анализ для определения позиционирования продукта и приоритетности функций.
+
+**Шаги:**
+1. **Определение конкурентов** - Составление карты конкурентного ландшафта:
+   - Прямые конкуренты (то же решение, тот же рынок)
+   - Косвенные конкуренты (другое решение, та же проблема)
+   - Потенциальные участники (игроки смежного рынка)
+
+2. **Собирайте данные** - Используйте этичные методы сбора:
+   ```bash
+   cat ../../product-team/skills/competitive-teardown/references/data-collection-guide.md
+   ```
+   - Открытые источники: G2, Capterra, страницы с ценами, списки изменений
+   - Рыночные отчеты: Gartner, Forrester, брифинги аналитиков
+   - Информация о клиентах: интервью о выигрышах/проигрышах, причины оттока
+
+3. ** Оценивайте конкурентов** - Применяйте стандартизированную рубрику:
+   ```bash
+   cat ../../product-team/skills/competitive-teardown/references/scoring-rubric.md
+   ```
+   - Оценка по 7 параметрам (UX, функции, цены, интеграция, поддержка, производительность, безопасность)
+   - Используйте несколько показателей, чтобы уменьшить предвзятость
+   - Документируйте доказательства по каждому баллу
+
+4. **Построение конкурентной матрицы** - Генерация сравнения:
+   ```bash
+   python ../../product-team/skills/competitive-teardown/scripts/competitive_matrix_builder.py competitors-scored.csv
+   ```
+
+5. **Выявлять пробелы и возможности** - Анализировать матрицу:
+   - Куда мы ведем? (защищаться и общаться)
+   - Где мы отстаем? (закрывать пробелы или дифференцировать)
+   - Возможности "белого пространства" (неудовлетворенные потребности)
+
+6. **Создавайте конечные результаты** - Используйте шаблоны анализа:
+   ```bash
+   cat ../../product-team/skills/competitive-teardown/references/analysis-templates.md
+   ```
+   - SWOT-анализ по основным конкурентам
+   - Карта позиционирования (2x2)
+   - Боевые карты для отдела продаж
+   - Определение приоритетности пробелов в функциях
+
+** Ожидаемый результат:** Отчет по конкурентному анализу с оценочной матрицей, картой позиционирования, боевыми картами и стратегическими рекомендациями
+
+** Ориентировочное время: ** 2-3 недели для всестороннего анализа (обновляется ежеквартально)
+
+**Пример:**
+```bash
+# Competitive analysis workflow
+cat > competitors.csv << 'EOF'
+competitor,ux,features,pricing,integrations,support,performance,security
+Our Product,8,7,7,8,7,9,8
+Competitor A,7,8,6,9,6,7,7
+Competitor B,9,6,8,5,8,6,6
+Competitor C,5,9,5,7,5,8,9
+EOF
+
+python ../../product-team/skills/competitive-teardown/scripts/competitive_matrix_builder.py competitors.csv
+```
+
+### Воркфлоу 3: Документ о видении продукта { #workflow-3-product-vision-document }
+
+**Цель:** Сформулировать четкое, убедительное видение продукта, которое ориентирует организацию на общее будущее.
+
+**Шаги:**
+1. **Сбор исходных данных** - Сбор стратегического контекста:
+   - Миссия компании и долгосрочное видение
+   - Тенденции рынка и отраслевой анализ
+   - Результаты исследований клиентов и неудовлетворенные потребности
+   - Технологические тенденции и стимулирующие факторы
+   - Анализ конкурентного ландшафта
+
+2. **Определите видение** - Ответьте на ключевые вопросы:
+   - Какой мир мы пытаемся создать для наших пользователей?
+   - Что принципиально изменится через 3-5 лет?
+   - Каким образом наш продукт уникальным образом обеспечивает это будущее?
+   - Во что мы верим, чего не верят другие?
+
+3. ** Наметьте стратегию** - Соедините видение с исполнением:
+   ```bash
+   # Review strategy frameworks
+   cat ../../product-team/skills/product-strategist/references/strategy_types.md
+   ```
+   - Выберите стратегическую позицию (лидер категории, разрушитель, быстрый последователь)
+   - Определение конкурентных преимуществ (технологии, сетевые эффекты, данные, бренд)
+   - Определите стратегические направления (3-4 темы, которые организуют дорожную карту)
+
+4. **Создайте описательную часть дорожной карты** - Многогоризонтный план:
+   - **Горизонт 1 (сейчас - 6 месяцев):** Текущие приоритеты, целенаправленная работа
+   - **Горизонт 2 (6-18 месяцев):** Новые возможности, ставки для размещения
+   - **Горизонт 3 (18-36 месяцев):** Преобразующие идеи, инвестиции в видение
+
+5. **Согласование с стейкхолдерами** - Проверка концепции:
+   - Инженерия: Техническая осуществимость долгосрочных ставок
+   - Продажи: Рыночный резонанс позиционирования
+   - Руководитель: Стратегическое согласование и выделение ресурсов
+   - Клиенты: Проверка проблемы для будущего состояния
+
+6. **Документируйте и общайтесь** - Создавайте живой документ:
+   - Краткое изложение концепции на одной странице (шаг лифта)
+   - Подробный концептуальный документ с подтверждающими доказательствами
+   - Визуализация дорожной карты по горизонту
+   - Стратегические принципы принятия решений
+
+** Ожидаемый результат: ** Документ о видении продукта с указанием направления на 3-5 лет, стратегических направлений, многогоризонтной дорожной карты и конкурентного позиционирования.
+
+** Приблизительное время: ** 2-4 недели для первоначального видения (ежегодное обновление)
+
+### Воркфлоу 4: Сводный анализ стратегии { #workflow-4-strategy-pivot-analysis }
+
+**Цель:** Оценить, оправдан ли стратегический поворот, и спланировать переход, если да
+
+**Шаги:**
+1. **Распознавать поворотные сигналы** - Распознавать предупреждающие знаки:
+   - Показатели замедленного роста (выручка, пользователи, вовлеченность)
+   - Постоянные проблемы с соответствием продукта рынку
+   - Серьезное нарушение конкуренции
+   - Изменение структуры клиентского сегмента или отток
+   - Изменение технологической парадигмы
+
+2. **Количественная оценка текущей производительности** - Базовый анализ:
+   ```bash
+   # Assess current initiative portfolio
+   python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py current-initiatives.csv
+   ```
+   - Динамика выручки и экономика подразделения
+   - Тенденции затрат на привлечение клиентов
+   - Показатели удержания и вовлеченности
+   - Изменение конкурентной позиции
+
+3. **Оценивайте варианты разворота** - Анализируйте альтернативы:
+   - ** Ориентация на потребителя:** Один и тот же продукт, другой сегмент рынка
+   - ** Суть проблемы: ** Один и тот же клиент, но нужно решить другую проблему
+   - ** Основа решения:** Та же проблема, другой подход
+   - **Поворот канала:** Один и тот же продукт, разное распределение
+   - ** Технологический стержень: ** Та же ценность, другая технологическая платформа
+   - ** Сводная модель дохода: ** Один и тот же продукт, разная монетизация
+
+4. ** Оцените каждый вариант** - Структурированная оценка:
+   ```bash
+   # Build comparison matrix for pivot options
+   python ../../product-team/skills/competitive-teardown/scripts/competitive_matrix_builder.py pivot-options.csv
+   ```
+   - Размер рынка и потенциал роста
+   - Интенсивность конкуренции в новом направлении
+   - Необходимые инвестиции и сроки
+   - Использование существующих активов (команда, технологии, бренд, клиенты)
+   - Профиль риска и обратимость
+
+5. **Спланируйте переход** - если требуется поворот:
+   - Этап 1: Утверждение нового направления (2-4 недели, минимальные инвестиции)
+   - Фаза 2: Создание MVP для нового направления (4-8 недель)
+   - Фаза 3: Измерение ранних сигналов (4 недели)
+   - Фаза 4: Фиксация или возврат на основе данных
+   - Коммуникационный план для команды, клиентов, инвесторов
+
+6. **Установите Pivot OKRs** - Определите успех для нового направления:
+   ```bash
+   python ../../product-team/skills/product-strategist/scripts/okr_cascade_generator.py pivot
+   ```
+
+** Ожидаемый результат: ** Документ сводного анализа с оценкой текущего состояния, оценкой вариантов, рекомендуемым путем, планом перехода и OKR для конкретного сводного анализа.
+
+** Оценка времени: ** 2-3 недели для тщательного сводного анализа
+
+**Пример:**
+```bash
+# Pivot evaluation workflow
+cat > pivot-options.csv << 'EOF'
+option,market_size,competition,investment,leverage,risk
+Stay the Course,6,7,2,9,3
+Customer Pivot to Enterprise,9,5,6,7,5
+Problem Pivot to Workflow,8,6,7,5,6
+Technology Pivot to AI-Native,9,4,8,4,7
+EOF
+
+python ../../product-team/skills/competitive-teardown/scripts/competitive_matrix_builder.py pivot-options.csv
+
+# Generate OKRs for recommended pivot direction
+python ../../product-team/skills/product-strategist/scripts/okr_cascade_generator.py growth
+```
+
+## Примеры интеграции { #integration-examples }
+
+### Пример 1: Ежегодное стратегическое планирование { #example-1-annual-strategic-planning }
+
+```bash
+#!/bin/bash
+# annual-strategy.sh - Annual product strategy planning
+
+YEAR="2027"
+
+echo "Annual Product Strategy - $YEAR"
+echo "================================"
+
+# Competitive landscape
+echo ""
+echo "1. Competitive Analysis:"
+python ../../product-team/skills/competitive-teardown/scripts/competitive_matrix_builder.py annual-competitors.csv
+
+# Strategy reference
+echo ""
+echo "2. Strategy Frameworks:"
+cat ../../product-team/skills/product-strategist/references/strategy_types.md | head -50
+
+# Annual OKR cascade
+echo ""
+echo "3. Annual OKR Cascade:"
+python ../../product-team/skills/product-strategist/scripts/okr_cascade_generator.py growth
+
+# Initiative prioritization
+echo ""
+echo "4. Strategic Initiative Prioritization:"
+python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py annual-initiatives.csv --capacity 180
+```
+
+### Пример 2: Ежемесячный ревью стратегии { #example-2-monthly-strategy-review }
+
+```bash
+#!/bin/bash
+# strategy-review.sh - Monthly strategy check-in
+
+echo "Monthly Strategy Review - $(date +%Y-%m-%d)"
+echo "============================================"
+
+# Competitive movements
+echo ""
+echo "Competitive Updates:"
+echo "Review: ../../product-team/skills/competitive-teardown/references/data-collection-guide.md"
+
+# OKR progress
+echo ""
+echo "OKR Progress:"
+echo "Review: ../../product-team/skills/product-strategist/assets/okr_template.md"
+
+# Initiative status
+echo ""
+echo "Initiative Portfolio:"
+python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py current-initiatives.csv
+```
+
+### Пример 3: Подготовка доски { #example-3-board-preparation }
+
+```bash
+#!/bin/bash
+# board-prep.sh - Quarterly board meeting preparation
+
+QUARTER="Q3-2026"
+
+echo "Board Preparation - $QUARTER"
+echo "============================="
+
+# Strategic metrics
+echo ""
+echo "1. Product Strategy Performance:"
+python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py $QUARTER-delivered.csv
+
+# Competitive position
+echo ""
+echo "2. Competitive Positioning:"
+python ../../product-team/skills/competitive-teardown/scripts/competitive_matrix_builder.py board-competitors.csv
+
+# Next quarter OKRs
+echo ""
+echo "3. Next Quarter OKR Proposal:"
+python ../../product-team/skills/product-strategist/scripts/okr_cascade_generator.py growth
+```
+
+## Показатели успеха { #success-metrics }
+
+**Стратегическое согласование:**
+- ** Четкость каскада OKR:** 100% командных OKR соответствуют целям компании
+- **Стратегическая коммуникация:** >90% продуктовой команды могут сформулировать видение продукта
+- **Межфункциональное согласование:** Команды разработчиков продуктов, инжиниринга и GTM согласованы по приоритетам
+- ** Скорость принятия решений:** Стратегические решения принимаются в течение 1 недели после завершения анализа
+
+**Конкурентная разведка:**
+- ** Осведомленность о рынке:** Конкурентный анализ обновляется ежеквартально
+- ** Влияние на коэффициент выигрыша: ** Коэффициент выигрыша повышается более чем на 5% после раздачи боевых карт
+- ** Четкость позиционирования: ** Четкая дифференциация, сформулированная для топ-3 конкурентов
+- ** Уменьшение "слепых зон": ** Отсутствие конкурентных сюрпризов в разговорах с клиентами
+
+**Эффективность OKR:**
+- ** Уровень успеваемости:** Средний балл OKR 0,6-0,7 (амбициозный, но достижимый)
+- **Каскадное качество:** Все ключевые результаты поддаются измерению с помощью базового уровня и целевого показателя
+- **Влияние инициативы:** >70% завершенных инициатив переносят связанные с ними KR
+- ** Квартальный ритм:** Планирование ОКР завершено до начала квартала
+
+**Влияние на бизнес:**
+- **Выравнивание выручки:** Продуктовая стратегия напрямую привязана к целям роста выручки
+- **Позиция на рынке:** Поддерживать или улучшать позицию на карте конкурентов
+- **Удержание клиентов:** Стратегические решения снижают отток на поддающийся измерению процент
+- **Инновационный пайплайн:** Инициативы Horizon 2-3 составляют >20% инвестиций в дорожную карту
+
+## Связанные агенты { #related-agents }
+
+- [cs-менеджер по продукту](cs-product-manager.md) - Выполнение на уровне функций, расстановка приоритетов RICE, разработка PRD
+- [cs-agile-владелец продукта](cs-agile-product-owner.md) - Планирование на уровне спринта и управление отставанием
+- [cs-ux-исследователь](cs-ux-researcher.md) - Исследование пользователей для подтверждения стратегических предположений
+- [cs-генеральный директор-советник](https://github.com/imgusev/claude-skills-ru/tree/main/agents/c-level/cs-ceo-advisor.md) - Стратегическое согласование на уровне компании
+- Скилл старшего менеджера по персоналу - контекст портфолио (см. [`skills/senior-pm`](https://github.com/imgusev/claude-skills-ru/tree/main/project-management/skills/senior-pm))
+
+## Ссылки { #references }
+
+- **Основной скилл:** [../../продукт-команда/скиллы/продукт-стратег/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/SKILL.md)
+- **Соревновательный скилл по разборке:** [../../продукт-команда/скиллы/конкурентная борьба/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/competitive-teardown/SKILL.md)
+- **Фреймворк OKR:** [../../команда по продукту/скиллы/стратег по продукту/ссылки/okr_framework.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/references/okr_framework.md)
+- **Типы стратегий:** [../../продукт-команда/скиллы/продукт-стратег/ссылки/strategy_types.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/references/strategy_types.md)
+- **Руководство по предметной области продукта:** [../../команда разработчиков продукта/CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/CLAUDE.md)
+- **Руководство по разработке агента:** [../CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/agents/CLAUDE.md)
+
+---
+
+** Последнее обновление:** 9 марта 2026 г.
+**Статус:** Производство готово
+**Версия:** 1.0

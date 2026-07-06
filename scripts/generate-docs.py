@@ -447,7 +447,11 @@ def find_agent_files():
             if not os.path.isdir(domain_path):
                 continue
             for agent_file in sorted(os.listdir(domain_path)):
-                if not agent_file.endswith(".md") or agent_file == "CLAUDE.md":
+                if (
+                    not agent_file.endswith(".md")
+                    or agent_file.endswith(".ru.md")
+                    or agent_file == "CLAUDE.md"
+                ):
                     continue
                 agent_name = agent_file.replace(".md", "")
                 agent_path = os.path.join(domain_path, agent_file)
@@ -476,7 +480,11 @@ def find_agent_files():
         agent_domain_key = SKILL_TO_AGENT_DOMAIN.get(skill_domain, skill_domain)
         for plugin_agents_dir in candidate_dirs:
             for agent_file in sorted(os.listdir(plugin_agents_dir)):
-                if not agent_file.endswith(".md") or agent_file == "CLAUDE.md":
+                if (
+                    not agent_file.endswith(".md")
+                    or agent_file.endswith(".ru.md")
+                    or agent_file == "CLAUDE.md"
+                ):
                     continue
                 agent_name = agent_file.replace(".md", "")
                 slug = slugify(agent_name)
@@ -519,7 +527,11 @@ def find_command_files():
 
     if os.path.isdir(commands_dir):
         for cmd_file in sorted(os.listdir(commands_dir)):
-            if not cmd_file.endswith(".md") or cmd_file == "CLAUDE.md":
+            if (
+                not cmd_file.endswith(".md")
+                or cmd_file.endswith(".ru.md")
+                or cmd_file == "CLAUDE.md"
+            ):
                 continue
             cmd_name = cmd_file.replace(".md", "")
             cmd_path = os.path.join(commands_dir, cmd_file)
@@ -549,7 +561,11 @@ def find_command_files():
 
     for cmd_dir in extra_cmd_dirs:
         for cmd_file in sorted(os.listdir(cmd_dir)):
-            if not cmd_file.endswith(".md") or cmd_file == "CLAUDE.md":
+            if (
+                not cmd_file.endswith(".md")
+                or cmd_file.endswith(".ru.md")
+                or cmd_file == "CLAUDE.md"
+            ):
                 continue
             cmd_name = cmd_file.replace(".md", "")
             slug = slugify(cmd_name)

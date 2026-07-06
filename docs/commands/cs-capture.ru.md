@@ -1,0 +1,114 @@
+---
+title: "/cs-capture — слэш-команда для ИИ-агентов разработки"
+description: "/cs:захват <dump-text-or-path> — явный вызов организатора мозгового дампа. Фиксирует неструктурированный поток мыслей / задач /идей и возвращает. Слэш-команда для Claude Code, Codex CLI, Gemini CLI."
+---
+
+# /cs-capture
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-console: Слэш-команда</span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/commands/cs-capture.md">Источник</a></span>
+</div>
+
+
+**Команда:** `/cs:capture <dump-text-or-path>`
+
+Тот `cs-capture` персона разбивает дамп на 4 пригодных для использования раздела с нулевой потерей информации.
+
+## Когда запускать { #when-to-run }
+
+- Вам нужно упорядочить неструктурированный блок смешанных мыслей
+- Вам нужны всплывающие соединения с рабочей областью (проверено Glob+Grep)
+- Вам нужны конкретные предложения о дальнейших действиях, а не общие предложения "рассмотреть X".
+
+Скилл ТАКЖЕ триггер срабатывает автоматически без `/cs:capture` когда ты:
+- Используйте фразы-триггеры, такие как "свалка мозгов", "позвольте мне поделиться некоторыми идеями", "вот все, что у меня на уме", "Мне нужно упорядочить свои мысли".
+- Вставьте длинный неструктурированный блок смешанных идей (неявный триггер)
+
+`/cs:capture` является ли явная форма полезной, когда ваш дамп не включает формулировку триггера, но вы все равно хотите организовать поведение.
+
+## Что Вы получаете { #what-you-get }
+
+**Для типичного дампа из 8+ элементов (формат из 4 разделов):**
+
+```
+## Projects & Ideas
+{clustered themes with embedded questions/decisions}
+
+## Tasks
+{flat scannable action list}
+
+## Connections
+{real workspace links — Glob+Grep verified, never fabricated}
+
+## How I Can Help
+{concrete offers — what + where}
+
+**Which of these should I tackle?**
+```
+
+**Для небольшого дампа (≤5 несвязанных элементов, сжатый формат):**
+
+```
+## What I heard
+- ...
+
+## How I can help
+- ...
+
+Which should I tackle?
+```
+
+## Дисциплина { #discipline }
+
+- ** Захватывать все ** — нулевые потери; вводятся тривиальные элементы; пользователь удаляет их позже
+- ** Сохраняйте голос ** — никакой корпоративности; "создайте что-нибудь сумасшедшее с помощью искусственного интеллекта" остается в силе.
+- ** Сопоставьте выходные данные с входными** — небольшие дампы получают сжатый формат, а не принудительные 4 раздела
+- **Без изготовления ** — В разделе 3 только поверхности соответствуют реальному рабочему пространству
+- **Никаких действий без выбора** — единственным автоматическим действием является сама организация
+- **Максимум 1 осветлитель на дамп ** — только в том случае, если один элемент действительно неоднозначен между задачей и проектом
+
+## Воркфлоу { #workflow }
+
+```bash
+# 1. (Optional) Pre-classify the dump as a heuristic seed
+python ../skills/capture/scripts/dump_classifier.py path/to/dump.txt
+
+# 2. (Optional) Recommend output format
+python ../skills/capture/scripts/complexity_estimator.py path/to/dump.txt
+
+# 3. Inventory the workspace for Section 3 candidates
+python ../skills/capture/scripts/workspace_inventory.py \
+  --root . --keywords "<extracted-keywords-from-dump>"
+
+# 4. Persona organizes + delivers four (or compressed) sections.
+# 5. Persona ends with "Which of these should I tackle?" and waits.
+```
+
+## Условия остановки { #stop-conditions }
+
+- Доставлено четыре секции (или сжатые) → готово с помощью части автоматического действия
+- Пользователь выбирает предложение из раздела 4 → выполнить это предложение
+- Пользователь говорит "перейти", не выбирая → соблюдайте это, но отметьте все элементы, в которых вы не были уверены
+
+## Отклоненные анти-паттерны { #anti-patterns-rejected }
+
+- Создание подключений к рабочей области, которые на самом деле не были проверены
+- Отбрасывание предметов, считающихся "тривиальными"
+- Корпоративный-адаптация повседневного языка пользователя
+- Форсирование 4-секционной структуры при небольших входных данных
+- Действовать в соответствии с предложениями раздела 4 немедленно, без одобрения
+- Разделение решений/вопросов на отдельные категории верхнего уровня вместо их встраивания
+- Неопределенный раздел-4 предложения ("возможно, вы захотите рассмотреть...")
+
+## Связанный { #related }
+
+- Агент: [`cs-capture`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/agents/cs-capture.md)
+- Скилл: [`capture`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/SKILL.md)
+- Спецификация источника: [`megaprompts/05-capture-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/05-capture-megaprompt.md)
+- Смежные команды: `/cs:grill-me` (медленный, продуманный план приготовления на гриле), `/cs:grill-with-docs` (гриль с креплением к документам), `/cs:handoff` (продолжение сессии)
+
+---
+
+**Версия:** 1.0.0
+**Источник:** Прямое преобразование Path-B в `megaprompts/05-capture-megaprompt.md`
