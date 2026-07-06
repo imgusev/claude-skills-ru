@@ -53,7 +53,7 @@ description: "78 installable agent plugins for Claude Code, Codex CLI, Gemini CL
 
     ```bash
     # Add the marketplace
-    /plugin marketplace add alirezarezvani/claude-skills
+    /plugin marketplace add imgusev/claude-skills-ru
 
     # Install a domain bundle
     /plugin install engineering-skills@claude-code-skills
@@ -65,7 +65,7 @@ description: "78 installable agent plugins for Claude Code, Codex CLI, Gemini CL
 === "OpenAI Codex"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/codex-install.sh
     ```
@@ -73,7 +73,7 @@ description: "78 installable agent plugins for Claude Code, Codex CLI, Gemini CL
 === "Gemini CLI"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     python3 scripts/sync-gemini-skills.py --verbose
     ```
@@ -81,7 +81,7 @@ description: "78 installable agent plugins for Claude Code, Codex CLI, Gemini CL
 === "OpenClaw"
 
     ```bash
-    curl -sL https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/scripts/openclaw-install.sh | bash
+    curl -sL https://raw.githubusercontent.com/imgusev/claude-skills-ru/main/scripts/openclaw-install.sh | bash
     ```
 
 ---

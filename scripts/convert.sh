@@ -382,8 +382,8 @@ write_tool_readme() {
     printf '%s\n\n' "$manual_install"
     printf '### Script\n\n'
     printf '```bash\n'
-    printf 'git clone https://github.com/alirezarezvani/claude-skills.git\n'
-    printf 'cd claude-skills\n'
+    printf 'git clone https://github.com/imgusev/claude-skills-ru.git\n'
+    printf 'cd claude-skills-ru\n'
     printf '%s\n' "$script_install"
     printf '```\n\n'
     printf '## Verify\n\n'
@@ -391,7 +391,7 @@ write_tool_readme() {
     printf '## Update\n\n'
     printf '%s\n\n' "$update_step"
     printf '## Source Repository\n\n'
-    printf -- '- https://github.com/alirezarezvani/claude-skills\n'
+    printf -- '- https://github.com/imgusev/claude-skills-ru\n'
   } > "${out_dir}/README.md"
 }
 

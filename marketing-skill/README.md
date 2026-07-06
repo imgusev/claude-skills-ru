@@ -26,35 +26,35 @@ Install all marketing skills with one command:
 
 ```bash
 # Install all marketing skills to all supported agents
-npx ai-agent-skills install alirezarezvani/claude-skills/marketing-skill
+npx ai-agent-skills install imgusev/claude-skills-ru/marketing-skill
 
 # Install to Claude Code only
-npx ai-agent-skills install alirezarezvani/claude-skills/marketing-skill --agent claude
+npx ai-agent-skills install imgusev/claude-skills-ru/marketing-skill --agent claude
 
 # Install to Cursor only
-npx ai-agent-skills install alirezarezvani/claude-skills/marketing-skill --agent cursor
+npx ai-agent-skills install imgusev/claude-skills-ru/marketing-skill --agent cursor
 ```
 
 ### Install Individual Skills
 
 ```bash
 # Content Creator
-npx ai-agent-skills install alirezarezvani/claude-skills/marketing-skill/skills/content-creator
+npx ai-agent-skills install imgusev/claude-skills-ru/marketing-skill/skills/content-creator
 
 # Demand Generation & Acquisition
-npx ai-agent-skills install alirezarezvani/claude-skills/marketing-skill/skills/marketing-demand-acquisition
+npx ai-agent-skills install imgusev/claude-skills-ru/marketing-skill/skills/marketing-demand-acquisition
 
 # Product Marketing Strategy
-npx ai-agent-skills install alirezarezvani/claude-skills/marketing-skill/skills/marketing-strategy-pmm
+npx ai-agent-skills install imgusev/claude-skills-ru/marketing-skill/skills/marketing-strategy-pmm
 
 # App Store Optimization
-npx ai-agent-skills install alirezarezvani/claude-skills/marketing-skill/skills/app-store-optimization
+npx ai-agent-skills install imgusev/claude-skills-ru/marketing-skill/skills/app-store-optimization
 
 # Social Media Analyzer
-npx ai-agent-skills install alirezarezvani/claude-skills/marketing-skill/skills/social-media-analyzer
+npx ai-agent-skills install imgusev/claude-skills-ru/marketing-skill/skills/social-media-analyzer
 
 # Campaign Analytics
-npx ai-agent-skills install alirezarezvani/claude-skills/marketing-skill/skills/campaign-analytics
+npx ai-agent-skills install imgusev/claude-skills-ru/marketing-skill/skills/campaign-analytics
 ```
 
 **Supported Agents:** Claude Code, Cursor, VS Code, Copilot, Goose, Amp, Codex

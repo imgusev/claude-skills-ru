@@ -16,8 +16,8 @@ End-to-end discipline for chaos experiments — design, run, learn — without b
 /plugin install chaos-engineering
 
 # Or clone the repo
-git clone https://github.com/alirezarezvani/claude-skills.git
-cd claude-skills/engineering/chaos-engineering
+git clone https://github.com/imgusev/claude-skills-ru.git
+cd claude-skills-ru/engineering/chaos-engineering
 ```
 
 ## Quick start

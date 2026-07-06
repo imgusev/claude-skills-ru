@@ -10,43 +10,43 @@ Install all engineering skills with one command:
 
 ```bash
 # Install all engineering skills to all supported agents
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team
 
 # Install to Claude Code only
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team --agent claude
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team --agent claude
 
 # Install to Cursor only
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team --agent cursor
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team --agent cursor
 ```
 
 ### Install Individual Skills
 
 ```bash
 # Core Engineering
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-architect
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-frontend
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-backend
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-fullstack
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-qa
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-devops
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-secops
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/code-reviewer
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-security
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-architect
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-frontend
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-backend
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-fullstack
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-qa
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-devops
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-secops
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/code-reviewer
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-security
 
 # Cloud & Enterprise
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/aws-solution-architect
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/ms365-tenant-manager
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/aws-solution-architect
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/ms365-tenant-manager
 
 # Development Tools
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/tdd-guide
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/tech-stack-evaluator
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/tdd-guide
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/tech-stack-evaluator
 
 # AI/ML/Data
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-data-scientist
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-data-engineer
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-ml-engineer
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-prompt-engineer
-npx ai-agent-skills install alirezarezvani/claude-skills/engineering-team/skills/senior-computer-vision
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-data-scientist
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-data-engineer
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-ml-engineer
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-prompt-engineer
+npx ai-agent-skills install imgusev/claude-skills-ru/engineering-team/skills/senior-computer-vision
 ```
 
 **Supported Agents:** Claude Code, Cursor, VS Code, Copilot, Goose, Amp, Codex

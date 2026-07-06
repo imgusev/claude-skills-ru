@@ -27,7 +27,7 @@ description: "Index of the engineering-team skills bundle for Claude Code, Codex
 
 ### Codex CLI
 ```bash
-npx agent-skills-cli add alirezarezvani/claude-skills/engineering-team
+npx agent-skills-cli add imgusev/claude-skills-ru/engineering-team
 ```
 
 ## Skills Overview

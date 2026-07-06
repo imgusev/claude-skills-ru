@@ -358,7 +358,7 @@ Seventeen domains cover the full lifecycle of building a product and running a c
 
     ```bash
     # Add the marketplace
-    /plugin marketplace add alirezarezvani/claude-skills
+    /plugin marketplace add imgusev/claude-skills-ru
 
     # Install any skill bundle
     /plugin install engineering-skills@claude-code-skills
@@ -367,20 +367,20 @@ Seventeen domains cover the full lifecycle of building a product and running a c
 === "OpenAI Codex"
 
     ```bash
-    npx agent-skills-cli add alirezarezvani/claude-skills --agent codex
+    npx agent-skills-cli add imgusev/claude-skills-ru --agent codex
     ```
 
 === "Gemini CLI"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills && ./scripts/gemini-install.sh
     ```
 
 === "Hermes Agent"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     python scripts/sync-hermes-skills.py --verbose
     # Skills appear in /skills and /<skill-name> automatically
@@ -389,7 +389,7 @@ Seventeen domains cover the full lifecycle of building a product and running a c
 === "Mistral Vibe"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/vibe-install.sh
     # Skills install to ~/.vibe/skills/claude-skills/; same SKILL.md standard
@@ -398,7 +398,7 @@ Seventeen domains cover the full lifecycle of building a product and running a c
 === "Cursor / Windsurf / Aider"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/convert.sh --tool cursor    # or windsurf, aider
     ./scripts/install.sh --tool cursor --target /path/to/project

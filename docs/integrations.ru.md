@@ -90,8 +90,8 @@ description: "Установите скиллы Claude Code и плагины а
 ### 1. Преобразовать { #1-convert }
 
 ```bash
-git clone https://github.com/alirezarezvani/claude-skills.git
-cd claude-skills
+git clone https://github.com/imgusev/claude-skills-ru.git
+cd claude-skills-ru
 
 # Convert all skills for all tools (~15 seconds)
 ./scripts/convert.sh --tool all
@@ -602,7 +602,7 @@ find ~/.gemini/antigravity/skills -name "SKILL.md" | wc -l
 === "Сценарий синхронизации (рекомендуется)"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     python scripts/sync-hermes-skills.py --verbose
     ```
@@ -673,7 +673,7 @@ hermes
 ### Обновление { #updating }
 
 ```bash
-cd claude-skills
+cd claude-skills-ru
 git pull origin main
 python scripts/sync-hermes-skills.py --verbose
 # Existing symlinks are preserved, new skills are added
@@ -803,7 +803,7 @@ Vibe поддерживает обе размещенные модели Mistral
 === "Сценарий синхронизации (рекомендуется)"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/vibe-install.sh
     ```
@@ -873,7 +873,7 @@ vibe
 ### Обновление { #updating }
 
 ```bash
-cd claude-skills
+cd claude-skills-ru
 git pull origin main
 python scripts/sync-vibe-skills.py --verbose
 # Existing symlinks are preserved, new skills are added

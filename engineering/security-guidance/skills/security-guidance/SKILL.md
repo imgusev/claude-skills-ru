@@ -51,7 +51,7 @@ This plugin ships as a Claude Code plugin with `hooks.json` wiring:
 
 ```bash
 # In Claude Code:
-/plugin marketplace add alirezarezvani/claude-skills
+/plugin marketplace add imgusev/claude-skills-ru
 /plugin install security-guidance@claude-code-skills
 ```
 

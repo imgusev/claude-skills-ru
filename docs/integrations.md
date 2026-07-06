@@ -90,8 +90,8 @@ All 345 skills in this repository work with **9 AI coding tools** beyond Claude 
 ### 1. Convert
 
 ```bash
-git clone https://github.com/alirezarezvani/claude-skills.git
-cd claude-skills
+git clone https://github.com/imgusev/claude-skills-ru.git
+cd claude-skills-ru
 
 # Convert all skills for all tools (~15 seconds)
 ./scripts/convert.sh --tool all
@@ -602,7 +602,7 @@ If you don't have Hermes Agent installed yet, set it up first:
 === "Sync script (recommended)"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     python scripts/sync-hermes-skills.py --verbose
     ```
@@ -673,7 +673,7 @@ hermes
 ### Updating
 
 ```bash
-cd claude-skills
+cd claude-skills-ru
 git pull origin main
 python scripts/sync-hermes-skills.py --verbose
 # Existing symlinks are preserved, new skills are added
@@ -803,7 +803,7 @@ Vibe supports both Mistral's hosted models (via `MISTRAL_API_KEY`) and self-host
 === "Sync script (recommended)"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/vibe-install.sh
     ```
@@ -873,7 +873,7 @@ vibe
 ### Updating
 
 ```bash
-cd claude-skills
+cd claude-skills-ru
 git pull origin main
 python scripts/sync-vibe-skills.py --verbose
 # Existing symlinks are preserved, new skills are added

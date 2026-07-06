@@ -23,7 +23,7 @@ This repo provides **both formats** — every skill includes a `.claude-plugin` 
 
 ```bash
 # Install the full marketplace (all 345 skills as Claude Code plugins)
-claude /plugin install https://github.com/alirezarezvani/claude-skills
+claude /plugin install https://github.com/imgusev/claude-skills-ru
 
 # Install by domain
 claude /plugin install engineering-skills

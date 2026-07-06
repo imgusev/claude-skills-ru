@@ -27,7 +27,7 @@ description: "Index of 37 advanced engineering agent skills for Claude Code, Cod
 
 ### Codex CLI
 ```bash
-npx agent-skills-cli add alirezarezvani/claude-skills/engineering
+npx agent-skills-cli add imgusev/claude-skills-ru/engineering
 ```
 
 ## Skills Overview

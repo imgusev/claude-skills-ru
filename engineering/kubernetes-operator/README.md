@@ -16,8 +16,8 @@ End-to-end discipline for building Kubernetes Operators correctly. Catches the r
 /plugin install kubernetes-operator
 
 # Or clone the repo
-git clone https://github.com/alirezarezvani/claude-skills.git
-cd claude-skills/engineering/kubernetes-operator
+git clone https://github.com/imgusev/claude-skills-ru.git
+cd claude-skills-ru/engineering/kubernetes-operator
 ```
 
 ## Quick start

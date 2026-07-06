@@ -18,7 +18,7 @@ description: "Как установить 345 скилл агента и 78 пл
     <ol class="install-steps">
       <li>
         <strong>Add the marketplace</strong>
-        <pre><code>/plugin marketplace add alirezarezvani/claude-skills</code></pre>
+        <pre><code>/plugin marketplace add imgusev/claude-skills-ru</code></pre>
       </li>
       <li>
         <strong>Install the skills you need</strong>
@@ -32,20 +32,20 @@ description: "Как установить 345 скилл агента и 78 пл
 === "Кодекс OpenAI"
 
     ```bash
-    npx agent-skills-cli add alirezarezvani/claude-skills --agent codex
+    npx agent-skills-cli add imgusev/claude-skills-ru --agent codex
     ```
 
     Или клонировать и устанавливать вручную:
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     ./scripts/codex-install.sh
     ```
 
 === "Gemini CLI"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     ./scripts/gemini-install.sh
     ```
 
@@ -58,7 +58,7 @@ description: "Как установить 345 скилл агента и 78 пл
 === "OpenClaw"
 
     ```bash
-    bash <(curl -s https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/scripts/openclaw-install.sh)
+    bash <(curl -s https://raw.githubusercontent.com/imgusev/claude-skills-ru/main/scripts/openclaw-install.sh)
     ```
 
 === "агент Гермеса"
@@ -66,7 +66,7 @@ description: "Как установить 345 скилл агента и 78 пл
     [Агент Гермеса](https://github.com/NousResearch/hermes-agent) использует тот же самый agentskills.io SKILL.md стандартный — преобразование формата не требуется.
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     python scripts/sync-hermes-skills.py --verbose
     ```
@@ -86,7 +86,7 @@ description: "Как установить 345 скилл агента и 78 пл
     [Мистралевая атмосфера](https://github.com/mistralai/mistral-vibe) является агентом по кодированию CLI Apache-2.0 с открытым исходным кодом от Mistral AI. Он использует тот же самый agentskills.io SKILL.md стандартный — преобразование формата не требуется.
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/vibe-install.sh
     ```
@@ -105,7 +105,7 @@ description: "Как установить 345 скилл агента и 78 пл
 === "Курсор"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/convert.sh --tool cursor
     ./scripts/install.sh --tool cursor --target /path/to/project
@@ -114,7 +114,7 @@ description: "Как установить 345 скилл агента и 78 пл
 === "Помощник"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/convert.sh --tool aider
     ./scripts/install.sh --tool aider --target /path/to/project
@@ -123,7 +123,7 @@ description: "Как установить 345 скилл агента и 78 пл
 === "Виндсерфинг"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/convert.sh --tool windsurf
     ./scripts/install.sh --tool windsurf --target /path/to/project
@@ -132,7 +132,7 @@ description: "Как установить 345 скилл агента и 78 пл
 === "Код килограмма"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/convert.sh --tool kilocode
     ./scripts/install.sh --tool kilocode --target /path/to/project
@@ -141,7 +141,7 @@ description: "Как установить 345 скилл агента и 78 пл
 === "Открытый код"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/convert.sh --tool opencode
     ./scripts/install.sh --tool opencode --target /path/to/project
@@ -150,7 +150,7 @@ description: "Как установить 345 скилл агента и 78 пл
 === "Увеличить"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/convert.sh --tool augment
     ./scripts/install.sh --tool augment --target /path/to/project
@@ -159,7 +159,7 @@ description: "Как установить 345 скилл агента и 78 пл
 === "Антигравитация"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills
     ./scripts/convert.sh --tool antigravity
     ./scripts/install.sh --tool antigravity
@@ -168,7 +168,7 @@ description: "Как установить 345 скилл агента и 78 пл
 === "Руководство пользователя"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     # Copy any skill folder to ~/.claude/skills/
     ```
 

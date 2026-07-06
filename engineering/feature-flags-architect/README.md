@@ -20,8 +20,8 @@ Most teams treat flags as throwaway `if`-statements. This skill treats them as a
 /plugin install feature-flags-architect
 
 # Or clone the repo
-git clone https://github.com/alirezarezvani/claude-skills.git
-cd claude-skills/engineering/feature-flags-architect
+git clone https://github.com/imgusev/claude-skills-ru.git
+cd claude-skills-ru/engineering/feature-flags-architect
 ```
 
 ### Other tools (Codex CLI, Cursor, Antigravity, OpenCode, Gemini CLI)

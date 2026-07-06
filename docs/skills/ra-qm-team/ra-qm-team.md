@@ -27,7 +27,7 @@ description: "12 regulatory & QM agent skills and plugins for Claude Code, Codex
 
 ### Codex CLI
 ```bash
-npx agent-skills-cli add alirezarezvani/claude-skills/ra-qm-team
+npx agent-skills-cli add imgusev/claude-skills-ru/ra-qm-team
 ```
 
 ## Skills Overview

@@ -13,8 +13,8 @@ description: "Установите и используйте скиллы 345 а
 
 ```bash
 # Clone the repository
-git clone https://github.com/alirezarezvani/claude-skills.git
-cd claude-skills
+git clone https://github.com/imgusev/claude-skills-ru.git
+cd claude-skills-ru
 
 # Run the Gemini setup script (converts and installs all skills)
 ./scripts/gemini-install.sh

@@ -1,59 +1,59 @@
-🇬🇧 English · 🇷🇺 [Русский](README.ru.md)
+🇬🇧 [English](README.en.md) · 🇷🇺 Русский
 
-# Claude Code Skills & Plugins — Agent Skills for Every Coding Tool
+# Скиллы Claude Code и плагины — Скиллы агента для каждого инструмента кодирования { #claude-code-skills--plugins--agent-skills-for-every-coding-tool }
 
-**354 production-ready Claude Code skills, plugins, and agent skills for 13 AI coding tools.**
+**354 готовых к использованию скилла Claude Code, плагины и скиллы агентов для 13 инструментов кодирования с использованием искусственного интеллекта.**
 
-The most comprehensive open-source library of Claude Code skills and agent plugins — also works with OpenAI Codex, Gemini CLI, Cursor, and 9 more coding agents. Reusable expertise packages covering engineering, DevOps, marketing (incl. AEO — Answer Engine Optimization for LLM citation), security (PreToolUse hooks), compliance, C-level advisory (incl. founder-mode CFO/CMO/CRO/CPO/COO/CHRO/CISO/GC/CDO/CAIO/CCO/VPE personas + 21 /cs:* slash commands), productivity (capture/email/reflect), an academic research stack (litreview/grants/dossier/patent/syllabus/pulse/notebooklm/deep-research + hybrid router), and enterprise Research Operations (clinical-research/research-finance/market-research/product-research, v2.9.0).
+Наиболее полная библиотека с открытым исходным кодом Claude Code скиллы и плагины для агентов — также работает с OpenAI Codex, Gemini CLI, Cursor и еще 9 агентами по кодированию. Многоразовые экспертные пакеты, охватывающие инженерию, DevOps, маркетинг (вкл. AEO — Оптимизация системы ответов для цитирования LLM), безопасность (предварительное использование хуков), соответствие требованиям, консультации на уровне C (вкл. финансовый директор в режиме основателя/CMO/CRO/CPO/COO/CHRO/CISO/GC/CDO/CAIO/CCO/VPE персоны + 21 /cs:* слэш-команды), производительность (захват / электронная почта / отражение), набор академических исследований (litreview/гранты / досье / патент/ учебная программа/pulse/notebooklm/deep-research + гибридный маршрутизатор) и исследовательские операции на предприятии (клинические исследования/финансовые исследования/исследование рынка/исследование продукта, версия 2.9.0).
 
-**Works with:** Claude Code · OpenAI Codex · Gemini CLI · OpenClaw · Hermes Agent[^hermes] · Mistral Vibe[^vibe] · Cursor · Aider · Windsurf · Kilo Code · OpenCode · Augment · Antigravity
+** Работает с:** Кодом Клода · Кодексом OpenAI · Gemini CLI · OpenClaw · агентом Hermes[^hermes] · Атмосфера Мистраля[^vibe] · Курсор · Помощник · Виндсерфинг · Килограммовый код · Открытый код · Дополнение · Антигравитация
 
-[^hermes]: Hermes Agent is **BYO-sync tier**: the repo ships a pre-generated `.hermes/skills/claude-skills/` tree, but you run `python scripts/sync-hermes-skills.py` once locally to install into `~/.hermes/skills/`. Uses the same agentskills.io SKILL.md standard — no format conversion.
-[^vibe]: Mistral Vibe is also **BYO-sync tier**: the repo ships a pre-generated `.vibe/skills/claude-skills/` tree, run `./scripts/vibe-install.sh` once locally to install into `~/.vibe/skills/`. Same agentskills.io SKILL.md standard — no format conversion. Docs: <https://docs.mistral.ai/mistral-vibe/agents-skills>.
+[^hermes]: агент Hermes - это ** уровень BYO-sync**: репозиторий отправляет предварительно сгенерированный `.hermes/skills/claude-skills/` дерево, но ты бежишь `python scripts/sync-hermes-skills.py` один раз локально установить в `~/.hermes/skills/`. Использует тот же самый agentskills.io SKILL.md стандартный — без преобразования формата.
+[^vibe]: Mistral Vibe также является ** уровнем BYO-sync**: репозиторий отправляет предварительно сгенерированный `.vibe/skills/claude-skills/` дерево, беги `./scripts/vibe-install.sh` один раз локально установить в `~/.vibe/skills/` То же самое agentskills.io SKILL.md стандартный — без преобразования формата. Документы: <https://docs.mistral.ai/mistral-vibe/agents-skills>.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Skills](https://img.shields.io/badge/Skills-354-brightgreen?style=for-the-badge)](#skills-overview)
-[![Agents](https://img.shields.io/badge/Agents-96-blue?style=for-the-badge)](#agents)
-[![Personas](https://img.shields.io/badge/Personas-7-purple?style=for-the-badge)](#personas)
-[![Commands](https://img.shields.io/badge/Commands-102-orange?style=for-the-badge)](#commands)
-[![Stars](https://img.shields.io/github/stars/alirezarezvani/claude-skills?style=for-the-badge)](https://github.com/alirezarezvani/claude-skills/stargazers)
-[![SkillCheck Validated](https://img.shields.io/badge/SkillCheck-Validated-4c1?style=for-the-badge)](https://getskillcheck.com)
+[![Лицензия: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Скиллы](https://img.shields.io/badge/Skills-354-brightgreen?style=for-the-badge)](#skills-overview)
+[![Агенты](https://img.shields.io/badge/Agents-96-blue?style=for-the-badge)](#agents)
+[![Персонажи](https://img.shields.io/badge/Personas-7-purple?style=for-the-badge)](#personas)
+[![Команды](https://img.shields.io/badge/Commands-102-orange?style=for-the-badge)](#commands)
+[![Звезды](https://img.shields.io/github/stars/alirezarezvani/claude-skills?style=for-the-badge)](https://github.com/alirezarezvani/claude-skills/stargazers)
+[![Проверка навыков подтверждена](https://img.shields.io/badge/SkillCheck-Validated-4c1?style=for-the-badge)](https://getskillcheck.com)
 
-> **5,200+ GitHub stars** — the most comprehensive open-source Claude Code skills & agent plugins library.
+> ** Более 5200 звезд на GitHub ** — самая полная библиотека плагинов для скилл и агента Claude Code с открытым исходным кодом.
 
 ---
 
-## What Are Claude Code Skills & Agent Plugins?
+## Что такое Скиллы Claude Code и плагины для агентов? { #what-are-claude-code-skills--agent-plugins }
 
-Claude Code skills (also called agent skills or coding agent plugins) are modular instruction packages that give AI coding agents domain expertise they don't have out of the box. Each skill includes:
+Скиллы Claude Code (также называемые скиллами агента или плагинами для агентов кодирования) представляют собой модульные пакеты инструкций, которые предоставляют агентам по кодированию ИИ знания в предметной области, которых у них нет "из коробки". Каждый скилл включает в себя:
 
-- **SKILL.md** — structured instructions, workflows, and decision frameworks
-- **Python tools** — 593 CLI scripts (all stdlib-only, zero pip installs)
-- **Reference docs** — 711 templates, checklists, and domain-specific knowledge files
+- **SKILL.md ** — структурированные инструкции, воркфлоу и фреймворки для принятия решений
+- **Инструменты Python** — 593 CLI-скрипта (все только для stdlib, установка без pip)
+- **Справочные материалы** — 711 шаблонов, чек-листов и файлов знаний по конкретной предметной области
 
-**One repo, thirteen platforms.** Works natively as Claude Code plugins, Codex agent skills, Gemini CLI skills, Hermes Agent skills, Mistral Vibe skills, and converts to more tools via `scripts/convert.sh`. All 593 Python tools run anywhere Python runs.
+** Один репозиторий, тринадцать платформ.** Изначально работает как плагины Claude Code, скиллы агента Codex, скиллы Gemini CLI, скиллы агента Hermes, скиллы Mistral Vibe и преобразуется в другие инструменты с помощью `scripts/convert.sh`. Все 593 инструмента Python запускаются везде, где работает Python.
 
-### Skills vs Agents vs Personas
+### Скиллы против агентов против персонажей { #skills-vs-agents-vs-personas }
 
-| | Skills | Agents | Personas |
+| | Скиллы | Агенты | Персонажи |
 |---|---|---|---|
-| **Purpose** | How to execute a task | What task to do | Who is thinking |
-| **Scope** | Single domain | Single domain | Cross-domain |
-| **Voice** | Neutral | Professional | Personality-driven |
-| **Example** | "Follow these steps for SEO" | "Run a security audit" | "Think like a startup CTO" |
+| **Цель** | Как выполнить задачу | Какую задачу выполнить | Кто думает |
+| **Сфера применения** | Единый домен | Единый домен | Междоменный |
+| **Голос** | Нейтральный | Профессиональный | Ориентированный на личность |
+| **Пример** | "Выполните следующие действия для SEO" | "Проведите аудит безопасности" | "Думай как технический директор стартапа" |
 
-All three work together. See [Orchestration](#orchestration) for how to combine them.
+Все трое работают вместе. Видишь [Оркестрация](#orchestration) о том, как их сочетать.
 
 ---
 
-## Quick Install
+## Быстрая установка { #quick-install }
 
-### Gemini CLI (New)
+### Gemini CLI (новый) { #gemini-cli-new }
 
 ```bash
 # Clone the repository
-git clone https://github.com/alirezarezvani/claude-skills.git
-cd claude-skills
+git clone https://github.com/imgusev/claude-skills-ru.git
+cd claude-skills-ru
 
 # Run the setup script
 ./scripts/gemini-install.sh
@@ -62,11 +62,11 @@ cd claude-skills
 > activate_skill(name="senior-architect")
 ```
 
-### Claude Code (Recommended)
+### Код Клода (рекомендуется) { #claude-code-recommended }
 
 ```bash
 # Add the marketplace
-/plugin marketplace add alirezarezvani/claude-skills
+/plugin marketplace add imgusev/claude-skills-ru
 
 # Install by domain
 /plugin install engineering-skills@claude-code-skills          # 24 core engineering
@@ -86,45 +86,45 @@ cd claude-skills
 /plugin install content-creator@claude-code-skills              # Single skill
 ```
 
-### OpenAI Codex
+### Кодекс OpenAI { #openai-codex }
 
 ```bash
-npx agent-skills-cli add alirezarezvani/claude-skills --agent codex
+npx agent-skills-cli add imgusev/claude-skills-ru --agent codex
 # Or: git clone + ./scripts/codex-install.sh
 ```
 
-### OpenClaw
+### Открытый коготь { #openclaw }
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/scripts/openclaw-install.sh)
+bash <(curl -s https://raw.githubusercontent.com/imgusev/claude-skills-ru/main/scripts/openclaw-install.sh)
 ```
 
-### Manual Installation
+### Ручная установка { #manual-installation }
 
 ```bash
-git clone https://github.com/alirezarezvani/claude-skills.git
+git clone https://github.com/imgusev/claude-skills-ru.git
 # Copy any skill folder to ~/.claude/skills/ (Claude Code) or ~/.codex/skills/ (Codex)
 ```
 
 ---
 
-## Multi-Tool Support (New)
+## Поддержка нескольких инструментов (новинка) { #multi-tool-support-new }
 
-**Convert all 345 skills to 9 AI coding tools** with a single script:
+** Преобразуйте все 345 скилл в 9 инструментов для кодирования искусственного интеллекта ** с помощью одного скрипта:
 
-| Tool | Format | Install |
+| Инструмент | Формат | Установить |
 |------|--------|---------|
-| **Cursor** | `.mdc` rules | `./scripts/install.sh --tool cursor --target .` |
-| **Aider** | `CONVENTIONS.md` | `./scripts/install.sh --tool aider --target .` |
-| **Kilo Code** | `.kilocode/rules/` | `./scripts/install.sh --tool kilocode --target .` |
-| **Windsurf** | `.windsurf/skills/` | `./scripts/install.sh --tool windsurf --target .` |
-| **OpenCode** | `.opencode/skills/` | `./scripts/install.sh --tool opencode --target .` |
-| **Augment** | `.augment/rules/` | `./scripts/install.sh --tool augment --target .` |
-| **Antigravity** | `~/.gemini/antigravity/skills/` | `./scripts/install.sh --tool antigravity` |
-| **Hermes Agent** | `~/.hermes/skills/` | `python scripts/sync-hermes-skills.py --verbose` |
-| **Mistral Vibe** | `~/.vibe/skills/` | `./scripts/vibe-install.sh` |
+| **Курсор** | `.mdc` правила | `./scripts/install.sh --tool cursor --target .` |
+| **Помощник** | `CONVENTIONS.md` | `./scripts/install.sh --tool aider --target .` |
+| **Код килограмма** | `.kilocode/rules/` | `./scripts/install.sh --tool kilocode --target .` |
+| **Виндсерфинг** | `.windsurf/skills/` | `./scripts/install.sh --tool windsurf --target .` |
+| **Открытый код** | `.opencode/skills/` | `./scripts/install.sh --tool opencode --target .` |
+| **Увеличить** | `.augment/rules/` | `./scripts/install.sh --tool augment --target .` |
+| **Антигравитация** | `~/.gemini/antigravity/skills/` | `./scripts/install.sh --tool antigravity` |
+| **Агент "Гермес"** | `~/.hermes/skills/` | `python scripts/sync-hermes-skills.py --verbose` |
+| **Атмосфера Мистраля** | `~/.vibe/skills/` | `./scripts/vibe-install.sh` |
 
-**How it works:**
+**Как это работает:**
 
 ```bash
 # 1. Convert all skills to all tools (takes ~15 seconds)
@@ -140,54 +140,54 @@ git clone https://github.com/alirezarezvani/claude-skills.git
 find .cursor/rules -name "*.mdc" | wc -l  # Should show 346
 ```
 
-**Each tool gets:**
-- ✅ All 345 skills converted to native format
-- ✅ Per-tool README with install/verify/update steps
-- ✅ Support for scripts, references, templates where applicable
-- ✅ Zero manual conversion work
+**Каждый инструмент получает:**
+- ✅ Все 345 скиллами, преобразованными в родной формат
+- ✅ README для каждого инструмента с шагами установки/проверки/обновления
+- ✅ Поддержка скриптов, ссылок, шаблонов, где это применимо
+- ✅ Нулевая работа по преобразованию вручную
 
-Run `./scripts/convert.sh --tool all` to generate tool-specific outputs locally.
+Бежать `./scripts/convert.sh --tool all` для локального создания выходных данных, специфичных для конкретного инструмента.
 
 ---
 
-## Skills Overview
+## Обзор скиллы { #skills-overview }
 
-**354 skills across 18 domains:**
+**354 скилла в 18 областях:**
 
-| Domain | Skills | Highlights | Details |
+| Домен | Скиллы | Основные моменты | Детали |
 |--------|--------|------------|---------|
-| **🔧 Engineering — Core** | 52 | Architecture, frontend, backend, fullstack, QA, DevOps, SecOps, AI/ML, data, Playwright Pro (test gen, flaky fix, migrations), self-improving agent (auto-memory curation), security suite, a11y audit, **named-persona-adversarial-review** (review via named engineering philosophies) | [engineering-team/](engineering-team/) |
-| **⚡ Engineering — POWERFUL** | 80 | Agent designer, RAG architect, database designer, CI/CD builder, security auditor, MCP builder, AgentHub, Helm charts, Terraform, self-eval, llm-wiki, tc-tracker, autoresearch-agent, **reliability portfolio** (feature-flags-architect, kubernetes-operator, chaos-engineering, slo-architect), ship-gate, security-guidance PreToolUse hook, **Matt Pocock skills** (write-a-skill, caveman, grill-me, handoff, grill-with-docs), **zero-hallucination-coder** (Discuss→Map→Decompose→Execute→Verify) | [engineering/](engineering/) |
-| **🎯 Product** | 17 | Product manager, agile PO, strategist, UX researcher, UI design, landing pages, SaaS scaffolder, analytics, experiment designer, discovery, roadmap communicator, code-to-prd, apple-hig-expert | [product-team/](product-team/) |
-| **📣 Marketing** | 48 | 8 pods: Content, SEO + AEO (`aeo` — E-E-A-T audit, citation tracking across 5 LLMs) + local (`local-seo-manager` — GBP/NAP/Map-Pack), CRO, Channels, Growth, Intelligence, Sales + context foundation + orchestration router | [marketing-skill/](marketing-skill/) |
-| **🚀 Productivity** | 7 | `capture` (brain-dump-to-action), `email` pair (inbox-setup + inbox-triage), `reflect` (journal), `handoff` (Matt Pocock-inspired), `andreessen` (market-first decision mode), `roast` (5-angle idea panel → GO/RESHAPE/KILL) | [productivity/](productivity/) |
-| **🎨 Marketing (top-level)** | 1 | `landing` — single-file HTML landing-page generator (4 design styles, GSAP patterns, brand palette validator) | [marketing/](marketing/) |
-| **🔬 Research (academic)** | 9 | `research` orchestrator (hybrid router + fallback) + 8 specialists: `pulse`, `litreview`, `grants` (NIH), `dossier`, `patent`, `syllabus`, `notebooklm`, `deep-research` (rigor-first meta-research) | [research/](research/) |
-| **🧪 Research Operations** ✨v2.9.0 | 5 | Enterprise/cross-functional research: orchestrator + `clinical-research` (study design), `research-finance` (R&D program finance), `market-research` (sizing/survey/segmentation), `product-research` (user research) — each with onboarding + customization + opt-in autoresearch bridge | [research-ops/](research-ops/) |
-| **📋 Project Management** | 9 | Senior PM, scrum master, Jira, Confluence, Atlassian admin, templates + bundled Atlassian Remote MCP | [project-management/](project-management/) |
-| **🏥 Regulatory & QM** | 19 | ISO 13505, MDR 2017/745, FDA, ISO 27001, GDPR, SOC 2, CAPA, risk management, agent-decision-receipts (PQ-signed action receipts) | [ra-qm-team/](ra-qm-team/) |
-| **🛡️ Compliance OS** | 9 | Compliance operating system — controls, evidence, audit-readiness workflows | [compliance-os/](compliance-os/) |
-| **💼 C-Level Advisory** | 68 | Full C-suite (CEO/CTO/CFO/CMO/CRO/CPO/COO/CHRO/CISO/GC/CDO/CAIO/CCO/VPE) + founder-mode agents + orchestration + board meetings + culture & collaboration | [c-level-advisor/](c-level-advisor/) |
-| **📈 Business & Growth** | 5 | Customer success, sales engineer, revenue ops, contracts & proposals, BizDev toolkit | [business-growth/](business-growth/) |
-| **🏭 Business Operations** | 7 | Orchestrator + process-mapper, vendor-management, capacity-planner, internal-comms, knowledge-ops, procurement-optimizer | [business-operations/](business-operations/) |
-| **🤝 Commercial** | 8 | Orchestrator + pricing-strategist, deal-desk, partnerships-architect, channel-economics, commercial-policy, rfp-responder, commercial-forecaster | [commercial/](commercial/) |
-| **💰 Finance** | 4 | Financial analyst (DCF, budgeting, forecasting), SaaS metrics coach, business investment advisor | [finance/](finance/) |
-| **🔄 Loop Library** | 1 | `loop-library` — discover, find, audit/repair, adapt, and design bounded AI-agent loops; reads the live catalog from signals.forwardfuture.ai at runtime (vendored verbatim from [Forward-Future/loop-library](https://github.com/Forward-Future/loop-library)) | [loop-library/](loop-library/) |
-| **📄 Markdown → HTML** | 5 | `markdown-html-orchestrator` (doctype router) + `design-system` (WCAG-AA brand tokens) + `md-document` (long-form) + `md-review` (2-col code review) + `md-slides` (single-file deck) — markdown-to-interactive-HTML converter | [markdown-html/](markdown-html/) |
+| **🔧 Инженерное ядро** | 52 | Архитектура, frontend, backend, fullstack, QA, DevOps, SecOps, AI/ML, данные, Dramager Pro (тестирование, исправление ошибок, миграции), самосовершенствующийся агент (автоматическое управление памятью), пакет безопасности, аудит a11y, ** именованный-персона-состязательный-ревью** (ревью с помощью названных инженерных концепций) | [инженерная команда/](engineering-team/) |
+| **⚡ Инженерия — МОЩНАЯ** | 80 | Разработчик агентов, RAG-архитектор, разработчик баз данных, CI/CD builder, аудитор безопасности, MCP builder, AgentHub, Helm charts, Terraform, самооценка, llm-wiki, tc-tracker, агент автоматического поиска, ** портфель надежности** (feature-flags-архитектор, kubernetes-оператор, хаос-инжиниринг, slo-архитектор), гейт-корабль, руководство по безопасности перед использованием инструмента, ** скиллы Мэтта Покока** (написать скилл, пещерный человек, гриль-я, хэндофф, гриль-с-документами), ** программист с нулевыми галлюцинациями** (Обсудить→Сопоставить→Разложить→Выполнить→Проверить) | [инженерное дело/](engineering/) |
+| **🎯 Продукт** | 17 | Менеджер по продукту, agile PO, стратег, исследователь UX, дизайн пользовательского интерфейса, целевые страницы, SaaS-скаффолдер, аналитика, разработчик экспериментов, discovery, коммуникатор дорожной карты, code-to-prd, эксперт Apple-hig | [команда разработчиков/](product-team/) |
+| **📣 Маркетинг** | 48 | 8 модулей: Контент, SEO + AEO (`aeo` — Аудит E-E-A-T, отслеживание цитирования в 5 LLMs) + локальный (`local-seo-manager` — GBP/NAP/Map-Pack), CRO, каналы, рост, аналитика, продажи + контекстная основа + маршрутизатор оркестрации | [маркетинг-скилл/](marketing-skill/) |
+| **🚀 Производительность** | 7 | `capture` (от выброса мозгов к действию), `email` сопряжение (входящие-настройка + входящие-сортировка), `reflect` (журнал), `handoff` (Вдохновленный Мэттом Пококом), `andreessen` (режим принятия решения, ориентированного на рынок), `roast` (панель идей с 5 углами обзора → ПЕРЕЙТИ/ИЗМЕНИТЬ ФОРМУ/УНИЧТОЖИТЬ) | [производительность/](productivity/) |
+| **🎨 Маркетинг (высший уровень)** | 1 | `landing` — генератор однофайловых HTML-лендингов (4 стиля оформления, шаблоны GSAP, валидатор палитры брендов) | [маркетинг/](marketing/) |
+| **🔬 Исследовательская (академическая)** | 9 | `research` оркестратор (гибридный маршрутизатор + резервный вариант) + 8 специалистов: `pulse`, `litreview`, `grants` (NIH), `dossier`, `patent`, `syllabus`, `notebooklm`, `deep-research` (метаисследование, основанное на строгости) | [исследование/](research/) |
+| **🧪 Исследовательские операции** ✨Версия 2.9.0 | 5 | Корпоративное/кросс-функциональное исследование: оркестратор + `clinical-research` (дизайн исследования), `research-finance` (Финансирование программы НИОКР), `market-research` (определение размера/опрос/сегментация), `product-research` (исследование пользователей) — каждый с онбордингом + кастомизацией + опцией автоматического поиска. | [исследовательские операции/](research-ops/) |
+| **📋 Управление проектами** | 9 | Старший PM, scrum-мастер, Jira, Confluence, администратор Atlassian, шаблоны + в комплекте Atlassian Remote MCP | [управление проектами/](project-management/) |
+| **🏥 Регулирование и контроль качества** | 19 | ISO 13505, MDR 2017/745, FDA, ISO 27001, GDPR, SOC 2, CAPA, управление рисками, квитанции о принятии решений агентом (квитанции о действиях, подписанные PQ) | [ra-qm-команда/](ra-qm-team/) |
+| **🛡️ Соответствие требованиям ОС** | 9 | Операционная система соответствия требованиям — средства контроля, доказательства, аудит -воркфлоу готовности | [соответствие требованиям-ос/](compliance-os/) |
+| **💼 Консультация на уровне C** | 68 | Полный набор C-suite (генеральный директор/технический директор/финансовый директор по финансам/CMO/CRO/CPO/COO/CHRO/CISO/GC/CDO/CAIO/CCO/VPE) + агенты в режиме учредителя + оркестрация + заседания правления + культура и сотрудничество | [советник c-уровня/](c-level-advisor/) |
+| **📈 Бизнес и рост** | 5 | Успех клиентов, инженер по продажам, управление доходами, контракты и предложения, инструментарий BizDev | [рост бизнеса/](business-growth/) |
+| **🏭 Бизнес - операции** | 7 | Оркестратор + картограф процессов, управление поставщиками, планирование производственных мощностей, внутренняя связь, управление знаниями, оптимизатор закупок | [бизнес-операции/](business-operations/) |
+| **🤝 Коммерческий** | 8 | Оркестратор + стратег по ценообразованию, отдел заключения сделок, архитектор партнерских отношений, экономика каналов, коммерческая политика, ответчик на запросы, коммерческий прогнозист | [коммерческий/](commercial/) |
+| **finance Финансы** | 4 | Финансовый аналитик (DCF, бюджетирование, прогнозирование), тренер по показателям SaaS, консультант по бизнес-инвестициям | [финансы/](finance/) |
+| **Библиотека циклов🔄** | 1 | `loop-library` — обнаружение, нахождение, аудит/ремонт, адаптация и проектирование ограниченных циклов AI-агента; считывает текущий каталог из signals.forwardfuture.ai во время выполнения (дословно передано из [Вперед-Будущее/цикл-библиотека](https://github.com/Forward-Future/loop-library)) | [цикл-библиотека/](loop-library/) |
+| **📄 Markdown → HTML** | 5 | `markdown-html-orchestrator` (маршрутизатор doctype) + `design-system` (Фирменные токены WCAG-AA) + `md-document` (удлиненная форма) + `md-review` (ревью кода 2-col) + `md-slides` (однофайловая колода) — конвертер Markdown в интерактивныйHTML | [Markdown-HTML-файл/](markdown-html/) |
 
 ---
 
-## Personas
+## Персонажи { #personas }
 
-Pre-configured agent identities with curated skill loadouts, workflows, and distinct communication styles. Personas go beyond "use these skills" — they define how an agent thinks, prioritizes, and communicates.
+Предварительно настроенные идентификаторы агентов с заданными скиллами, воркфлоу и различными стилями общения. Персонажи выходят за рамки "используй эти скиллы" — они определяют, как агент мыслит, расставляет приоритеты и общается.
 
-| Persona | Domain | Best For |
+| Персона | Домен | Лучше всего подходит для |
 |---------|--------|----------|
-| [**Startup CTO**](agents/personas/startup-cto.md) | Engineering + Strategy | Architecture decisions, tech stack selection, team building, technical due diligence |
-| [**Growth Marketer**](agents/personas/growth-marketer.md) | Marketing + Growth | Content-led growth, launch strategy, channel optimization, bootstrapped marketing |
-| [**Solo Founder**](agents/personas/solo-founder.md) | Cross-domain | One-person startups, side projects, MVP building, wearing all hats |
+| [**Технический директор стартапа**](agents/personas/startup-cto.md) | Проектирование + Стратегия | Архитектурные решения, выбор технологического пакета, формирование команды, техническая экспертиза |
+| [**Специалист по маркетингу роста**](agents/personas/growth-marketer.md) | Маркетинг + Рост | Рост, основанный на контенте, стратегия запуска, оптимизация каналов, начальный маркетинг |
+| [**Основатель-одиночка**](agents/personas/solo-founder.md) | Междоменный | Стартапы одного человека, побочные проекты, создание MVP, ношение всех шляп |
 
-**Usage:**
+**Использование:**
 ```bash
 # Claude Code
 cp agents/personas/startup-cto.md ~/.claude/agents/
@@ -196,110 +196,110 @@ cp agents/personas/startup-cto.md ~/.claude/agents/
 ./scripts/convert.sh --tool cursor  # Converts personas too
 ```
 
-See [agents/personas/](agents/personas/) for details. Create your own with [TEMPLATE.md](agents/personas/TEMPLATE.md).
+Видишь [агенты/персонажи/](agents/personas/) для получения подробной информации. Создайте свой собственный с помощью [TEMPLATE.md](agents/personas/TEMPLATE.md).
 
 ---
 
-## Orchestration
+## Оркестрация { #orchestration }
 
-A lightweight protocol for coordinating personas, skills, and agents on work that crosses domain boundaries. No framework required.
+Облегченный протокол для координации персоналий, скилл-групп и агентов в работе, которая пересекает границы домена. Никакого фреймворка не требуется.
 
-**Four patterns:**
+** Четыре паттерна:**
 
-| Pattern | What | When |
+| Узор | Что | Когда |
 |---------|------|------|
-| **Solo Sprint** | Switch personas across project phases | Side projects, MVPs, solo founders |
-| **Domain Deep-Dive** | One persona + multiple stacked skills | Architecture reviews, compliance audits |
-| **Multi-Agent Handoff** | Personas review each other's output | High-stakes decisions, launch readiness |
-| **Skill Chain** | Sequential skills, no persona needed | Content pipelines, repeatable checklists |
+| **Одиночный спринт** | Меняйте персонажей на разных этапах проекта | Сайд-проекты, MVP, сольные основатели |
+| **Глубокое погружение в домен** | Одна персона + несколько сложенных скиллы | Ревью архитектуры, аудит соответствия |
+| **Хэндофф с несколькими агентами** | Персонажи ревью к результатам работы друг друга | Решения с высокими ставками, готовность к запуску |
+| **Цепочка скилла** | Последовательные скиллы, персона не требуется | Пайплайны контента, повторяемые чек-листы |
 
-**Example: 6-week product launch**
+**Пример: 6-недельный запуск продукта**
 ```
 Week 1-2: startup-cto + aws-solution-architect + senior-frontend → Build
 Week 3-4: growth-marketer + launch-strategy + copywriting + seo-audit → Prepare
 Week 5-6: solo-founder + email-sequence + analytics-tracking → Ship and iterate
 ```
 
-See [orchestration/ORCHESTRATION.md](orchestration/ORCHESTRATION.md) for the full protocol and examples.
+Видишь [оркестрация/ОРКЕСТРАЦИЯ.md](orchestration/ORCHESTRATION.md) для получения полного протокола и примеров.
 
 ---
 
-## POWERFUL Tier
+## МОЩНЫЙ уровень { #powerful-tier }
 
-25 advanced skills with deep, production-grade capabilities:
+25 продвинутой скиллы с глубокими производственными возможностями:
 
-| Skill | What It Does |
+| Скилл | Что он делает |
 |-------|-------------|
-| **agent-designer** | Multi-agent orchestration, tool schemas, performance evaluation |
-| **agent-workflow-designer** | Sequential, parallel, router, orchestrator, and evaluator patterns |
-| **rag-architect** | RAG pipeline builder, chunking optimizer, retrieval evaluator |
-| **database-designer** | Schema analyzer, ERD generation, index optimizer, migration generator |
-| **database-schema-designer** | Requirements → migrations, types, seed data, RLS policies |
-| **migration-architect** | Migration planner, compatibility checker, rollback generator |
-| **skill-security-auditor** | 🔒 Security gate — scan skills for malicious code before installation |
-| **ci-cd-pipeline-builder** | Analyze stack → generate GitHub Actions / GitLab CI configs |
-| **mcp-server-builder** | Build MCP servers from OpenAPI specs |
-| **pr-review-expert** | Blast radius analysis, security scan, coverage delta |
-| **api-design-reviewer** | REST API linter, breaking change detector, design scorecard |
-| **api-test-suite-builder** | Scan API routes → generate complete test suites |
-| **dependency-auditor** | Multi-language scanner, license compliance, upgrade planner |
-| **observability-designer** | SLO designer, alert optimizer, dashboard generator |
-| **performance-profiler** | Node/Python/Go profiling, bundle analysis, load testing |
-| **monorepo-navigator** | Turborepo/Nx/pnpm workspace management & impact analysis |
-| **changelog-generator** | Conventional commits → structured changelogs |
-| **codebase-onboarding** | Auto-generate onboarding docs from codebase analysis |
-| **runbook-generator** | Codebase → operational runbooks with commands |
-| **git-worktree-manager** | Parallel dev with port isolation, env sync |
-| **env-secrets-manager** | .env management, leak detection, rotation workflows |
-| **incident-commander** | Incident response playbook, severity classifier, PIR generator |
-| **tech-debt-tracker** | Codebase debt scanner, prioritizer, trend dashboard |
-| **interview-system-designer** | Interview loop designer, question bank, calibrator |
+| **агент-дизайнер** | Оркестрация с несколькими агентами, схемы инструментов, оценка производительности |
+| **агент-воркфлоу-дизайнер** | Шаблоны последовательного, параллельного, маршрутизатора, оркестратора и вычислителя |
+| **тряпичный архитектор** | Конструктор пайплайнов RAG, оптимизатор фрагментации, оценщик поиска |
+| **разработчик базы данных** | Анализатор схем, генерация ERD, оптимизатор индексов, генератор миграции |
+| **база данных-схема-конструктор** | Требования → миграции, типы, исходные данные, политики RLS |
+| **миграция-архитектор** | Планировщик миграции, средство проверки совместимости, генератор отката |
+| **скилл-аудитор по безопасности** | Security Гейт безопасности — сканируйте скиллы на наличие вредоносного кода перед установкой |
+| **ci-cd-пайплайн-конструктор** | Анализировать стек → генерировать действия GitHub / конфигурации GitLab CI |
+| **mcp-конструктор серверов** | Создавайте серверы MCP на основе спецификаций OpenAPI |
+| **pr-ревью-эксперт** | Анализ радиуса поражения, сканирование системы безопасности, дельта охвата |
+| **api-разработчик-рецензент** | Линтер REST API, детектор критических изменений, система показателей проектирования |
+| **api-набор тестов-конструктор** | Сканировать маршруты API → генерировать полные наборы тестов |
+| **аудитор зависимостей** | Многоязычный сканер, соответствие лицензиям, планировщик обновлений |
+| **наблюдаемость-дизайнер** | Конструктор SLO, оптимизатор оповещений, генератор дашбордов |
+| **профилировщик производительности** | Профилирование Node/Python/Go, анализ пакетов, нагрузочное тестирование |
+| **монорепо-навигатор** | Управление рабочим пространством Turborepo/Nx/pnpm и анализ воздействия |
+| **журнал изменений-генератор** | Обычные фиксации → структурированные журналы изменений |
+| **кодовая база- онбординг** | Автоматическое создание документов для онбординга на основе анализа кодовой базы |
+| **рансбук-генератор** | Кодовая база → операционные рансбуки с командами |
+| **git-worktree-менеджер** | Параллельный разработчик с изоляцией портов, синхронизацией env |
+| **env-секреты-менеджер** | .управление env, обнаружение утечек, воркфлоу ротации |
+| **инцидент - командир** | Плейбук для реагирования на инциденты, классификатор серьезности, генератор PIR |
+| **технология отслеживания долгов** | Сканер долговой базы кода, определение приоритетов, дашборд тенденций |
+| **интервью-системный дизайнер** | Разработчик циклов интервью, банк вопросов, калибратор |
 
 ---
 
-## 🔒 Skill Security Auditor
+## 🔒 Скилл аудитора безопасности { #-skill-security-auditor }
 
-New in v2.0.0 — audit any skill for security risks before installation:
+Новое в версии 2.0.0 — аудит любого скилла на предмет угроз безопасности перед установкой:
 
 ```bash
 python3 engineering/skill-security-auditor/scripts/skill_security_auditor.py /path/to/skill/
 ```
 
-Scans for: command injection, code execution, data exfiltration, prompt injection, dependency supply chain risks, privilege escalation. Returns **PASS / WARN / FAIL** with remediation guidance.
+Проверяет наличие: внедрения команд, выполнения кода, эксфильтрации данных, внедрения промптов, рисков цепочки поставок зависимостей, эскалации привилегий. Возвращает **PASS / WARN / FAIL** с инструкциями по исправлению.
 
-**Zero dependencies.** Works anywhere Python runs.
-
----
-
-## Recently Enhanced Skills
-
-Production-quality upgrades added for:
-
-- `engineering/git-worktree-manager` — worktree lifecycle + cleanup automation scripts
-- `engineering/mcp-server-builder` — OpenAPI -> MCP scaffold + manifest validator
-- `engineering/changelog-generator` — release note generator + conventional commit linter
-- `engineering/ci-cd-pipeline-builder` — stack detector + pipeline generator
-- `marketing-skill/prompt-engineer-toolkit` — prompt A/B tester + prompt version/diff manager
-
-Each now ships with `scripts/`, extracted `references/`, and a usage-focused `README.md`.
+**Нулевые зависимости.** Работает везде, где запущен Python.
 
 ---
 
-## Usage Examples
+## Недавно улучшенные скиллы { #recently-enhanced-skills }
 
-### Architecture Review
+Улучшено качество производства, добавленное для:
+
+- `engineering/git-worktree-manager` — жизненный цикл рабочего дерева + сценарии автоматизации очистки
+- `engineering/mcp-server-builder` — OpenAPI -> Каркас MCP + средство проверки манифеста
+- `engineering/changelog-generator` — генератор заметок о выпуске + обычный линтер фиксации
+- `engineering/ci-cd-pipeline-builder` — детектор стека + генератор пайплайна
+- `marketing-skill/prompt-engineer-toolkit` — промпт A/B тестер + промпт версии/менеджер различий
+
+Каждый из них теперь поставляется с `scripts/`, извлеченный `references/`, и ориентированный на использование `README.md`.
+
+---
+
+## Примеры использования { #usage-examples }
+
+### Ревью архитектуры { #architecture-review }
 ```
 Using the senior-architect skill, review our microservices architecture
 and identify the top 3 scalability risks.
 ```
 
-### Content Creation
+### Создание контента { #content-creation }
 ```
 Using the content-creator skill, write a blog post about AI-augmented
 development. Optimize for SEO targeting "Claude Code tutorial".
 ```
 
-### Compliance Audit
+### Аудит соответствия требованиям { #compliance-audit }
 ```
 Using the mdr-745-specialist skill, review our technical documentation
 for MDR Annex II compliance gaps.
@@ -307,9 +307,9 @@ for MDR Annex II compliance gaps.
 
 ---
 
-## Python Analysis Tools
+## Инструменты анализа Python { #python-analysis-tools }
 
-580 CLI tools ship with the skills (all verified, stdlib-only):
+580 инструментов CLI поставляются вместе с скиллами (все проверены, только для stdlib):
 
 ```bash
 # SaaS health check
@@ -333,51 +333,51 @@ python3 product-team/landing-page-generator/scripts/landing_page_scaffolder.py c
 
 ---
 
-## Related Projects
+## Связанные проекты { #related-projects }
 
-| Project | Description |
+| Проект | Описание |
 |---------|-------------|
-| [**Claude Code Skills & Agents Factory**](https://github.com/alirezarezvani/claude-code-skills-agents-factory) | Methodology for building skills at scale |
-| [**Claude Code Tresor**](https://github.com/alirezarezvani/claude-code-tresor) | Productivity toolkit with 60+ prompt templates |
-| [**Product Manager Skills**](https://github.com/Digidai/product-manager-skills) | Senior PM agent with 6 knowledge domains, 12 templates, 30+ frameworks — discovery, strategy, delivery, SaaS metrics, career coaching, AI product craft |
-| [**toprank**](https://github.com/nowork-studio/toprank) | 9 SEO and Google Ads skills for Claude Code — connects Google Search Console, PageSpeed Insights, and Google Ads API; ships meta tag, schema markup, and keyword bid fixes to source or CMS. MIT, 107 stars |
+| [**Фабрика по скиллам и агентам Claude Code**](https://github.com/alirezarezvani/claude-code-skills-agents-factory) | Методология наращивания скиллы в масштабе |
+| [**Клод Код Трезор**](https://github.com/alirezarezvani/claude-code-tresor) | Набор инструментов для повышения производительности с более чем 60 шаблонами промптов |
+| [** Скиллы менеджера по продукту**](https://github.com/Digidai/product-manager-skills) | Старший PM—агент с 6 областями знаний, 12 шаблонами, более чем 30 фреймворками - поиск, стратегия, доставка, показатели SaaS, карьерный коучинг, разработка продуктов с использованием искусственного интеллекта |
+| [**самый высокий рейтинг**](https://github.com/nowork-studio/toprank) | 9 Скилл по SEO и Google Ads для Claude Code — подключает Google Search Console, PageSpeed Insights и Google Ads API; отправляет мета-теги, разметку схемы и исправления ставок по ключевым словам в source или CMS. Массачусетский технологический институт, 107 звезд |
 
 ---
 
-## FAQ
+## Часто задаваемые вопросы { #faq }
 
-**How do I install Claude Code plugins?**
-Add the marketplace with `/plugin marketplace add alirezarezvani/claude-skills`, then install any skill bundle with `/plugin install <name>@claude-code-skills`.
+**Как мне установить плагины Claude Code?**
+Добавьте маркетплейс с `/plugin marketplace add imgusev/claude-skills-ru`, затем установите любой пакет для скилла с `/plugin install <name>@claude-code-skills`.
 
-**Do these skills work with OpenAI Codex / Cursor / Windsurf / Aider / Mistral Vibe?**
-Yes. Skills work natively with 13 tools: Claude Code, OpenAI Codex, Gemini CLI, OpenClaw, Hermes Agent, Mistral Vibe, Cursor, Aider, Windsurf, Kilo Code, OpenCode, Augment, and Antigravity. Hermes Agent and Mistral Vibe both use the same agentskills.io SKILL.md standard — run `python scripts/sync-hermes-skills.py` or `./scripts/vibe-install.sh` to install. For other tools run `./scripts/convert.sh --tool all` then `./scripts/install.sh --tool <name>`. See [Multi-Tool Integrations](https://alirezarezvani.github.io/claude-skills/integrations/) for details.
+**Работают ли эти скиллы с OpenAI Codex / Cursor / Windsurf / Aider / Mistral Vibe?**
+Да. Скиллы изначально работают с 13 инструментами: Claude Code, OpenAI Codex, Gemini CLI, OpenClaw, Hermes агент, Mistral Vibe, Курсор, Помощник, Виндсерфинг, Kilo Code, OpenCode, Augment и Антигравитация. Агент Hermes и Mistral Vibe используют одно и то же agentskills.io SKILL.md стандартный запуск `python scripts/sync-hermes-skills.py` или `./scripts/vibe-install.sh` для установки. Для других инструментов запустите `./scripts/convert.sh --tool all` затем `./scripts/install.sh --tool <name>`. Смотри [Интеграция с несколькими инструментами](https://alirezarezvani.github.io/claude-skills/integrations/) для получения подробной информации.
 
-**Will updating break my installation?**
-No. We follow semantic versioning and maintain backward compatibility within patch releases. Existing script arguments, plugin source paths, and SKILL.md structures are never changed in patch versions. See the [CHANGELOG](CHANGELOG.md) for details on each release.
+** Приведет ли обновление к нарушению моей установки?**
+Нет. Мы следуем семантическому управлению версиями и поддерживаем обратную совместимость в выпусках исправлений. Существующие аргументы скрипта, пути к исходным текстам плагина и SKILL.md структуры никогда не изменяются в версиях исправлений. Увидеть [СПИСОК ИЗМЕНЕНИЙ](CHANGELOG.md) для получения подробной информации о каждом выпуске.
 
-**Are the Python tools dependency-free?**
-Yes. All 593 Python CLI tools use the standard library only — zero pip installs required. Every script is verified to run with `--help`.
+**Свободны ли инструменты Python от зависимостей?**
+Да. Все 593 инструмента Python CLI используют только стандартную библиотеку — установка pip не требуется. Каждый скрипт проверяется на запуск с помощью `--help`.
 
-**How do I create my own Claude Code skill?**
-Each skill is a folder with a `SKILL.md` (frontmatter + instructions), optional `scripts/`, `references/`, and `assets/`. See the [Skills & Agents Factory](https://github.com/alirezarezvani/claude-code-skills-agents-factory) for a step-by-step guide.
-
----
-
-## Contributing
-
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-**Quick ideas:**
-- Add new skills in underserved domains
-- Improve existing Python tools
-- Add test coverage for scripts
-- Translate skills for non-English markets
+**Как мне создать свой собственный скилл Claude Code?**
+Каждый скилл представляет собой папку с `SKILL.md` (передняя панель + инструкции), необязательно `scripts/`, `references/`, и `assets/`. Посмотрите на [Фабрика скиллы и агентов](https://github.com/alirezarezvani/claude-code-skills-agents-factory) для получения пошагового руководства.
 
 ---
 
-## Building the Docs Site (Maintainers)
+## Способствующий { #contributing }
 
-This fork adds a bilingual (en/ru) documentation site on top of the upstream content — `SKILL.ru.md` files live right next to each English `SKILL.md`. Setup and run:
+Мы приветствуем вклады! Видишь [CONTRIBUTING.md](CONTRIBUTING.md) для получения рекомендаций.
+
+**Быстрые идеи:**
+- Добавляйте новые скиллы в недостаточно обслуживаемых областях
+- Улучшите существующие инструменты Python
+- Добавить тестовое покрытие для скриптов
+- Переводить скиллы для неанглоязычных рынков
+
+---
+
+## Создание сайта Docs (сопровождающие) { #building-the-docs-site-maintainers }
+
+Этот форк добавляет двуязычный сайт документации (en /ru) поверх вышестоящего контента — `SKILL.ru.md` файлы находятся прямо рядом с каждым английским `SKILL.md`. Настройка и запуск:
 
 ```bash
 # 1. Create the venv (uv, Python 3.12+) and install dependencies
@@ -392,28 +392,28 @@ uv pip install -r requirements-docs.txt -r requirements-dev.txt
 .venv/bin/mkdocs build      # or: .venv/bin/mkdocs serve
 ```
 
-The translation pipeline itself (Yandex Translate integration, structural integrity checks) is internal tooling and isn't part of this published repository.
+Сам пайплайн перевода (интеграция с Yandex Translate, проверка структурной целостности) является внутренним инструментом и не является частью этого опубликованного репозитория.
 
 ---
 
-## Maintainers & Attribution
+## Сопровождающие и атрибуция { #maintainers--attribution }
 
-**RU maintainer:** [Ilya Gusev](https://imgusev.ru) — [imgusev.ru](https://imgusev.ru) · [@imgusev](https://t.me/imgusev) on Telegram · [github.com/imgusev](https://github.com/imgusev).
+**Сопровождающий RU:** [Илья Гусев](https://imgusev.ru) — [imgusev.ru](https://imgusev.ru) · [@imgusev](https://t.me/imgusev) в Telegram · [github.com/imgusev](https://github.com/imgusev).
 
-This is a Russian translation/adaptation of [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills), MIT licensed, © Alireza Rezvani. See [LICENSE](LICENSE) and [NOTICE](NOTICE) for the full attribution.
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE) for details. See also [NOTICE](NOTICE) for the Russian-translation attribution.
+Это русский перевод/адаптация [алирезарезвани/Клод-скиллы](https://github.com/alirezarezvani/claude-skills), лицензия Массачусетского технологического института, © Алиреза Резвани. Видишь [ЛИЦЕНЗИЯ](LICENSE) и [ОБРАТИТЕ ВНИМАНИЕ](NOTICE) для полной атрибуции.
 
 ---
 
-## Star History
+## Лицензия { #license }
 
-[![Star History Chart](https://api.star-history.com/svg?repos=alirezarezvani/claude-skills&type=Date)](https://star-history.com/#alirezarezvani/claude-skills&Date)
+Массачусетский технологический институт [ЛИЦЕНЗИЯ](LICENSE) для получения подробной информации. Смотрите также [ОБРАТИТЕ ВНИМАНИЕ](NOTICE) для указания авторства перевода на русский язык.
 
 ---
 
-**Built by [Alireza Rezvani](https://alirezarezvani.com)** · [Medium](https://alirezarezvani.medium.com) · [Twitter](https://twitter.com/nginitycloud)
+## Звездная история { #star-history }
+
+[![Диаграмма звездной истории](https://api.star-history.com/svg?repos=alirezarezvani/claude-skills&type=Date)](https://star-history.com/#alirezarezvani/claude-skills&Date)
+
+---
+
+**Построенный [Алиреза Резвани](https://alirezarezvani.com)** · [Средний](https://alirezarezvani.medium.com) · [Твиттер](https://twitter.com/nginitycloud)

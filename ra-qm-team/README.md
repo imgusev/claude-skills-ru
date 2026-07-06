@@ -27,39 +27,39 @@ Install all RA/QM skills with one command:
 
 ```bash
 # Install all RA/QM skills to all supported agents
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team
 
 # Install to Claude Code only
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team --agent claude
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team --agent claude
 
 # Install to Cursor only
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team --agent cursor
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team --agent cursor
 ```
 
 ### Install Individual Skills
 
 ```bash
 # Strategic Leadership
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/regulatory-affairs-head
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/quality-manager-qmr
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/regulatory-affairs-head
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/quality-manager-qmr
 
 # Quality Systems
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/quality-manager-qms-iso13485
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/capa-officer
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/quality-documentation-manager
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/quality-manager-qms-iso13485
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/capa-officer
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/quality-documentation-manager
 
 # Risk & Security
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/risk-management-specialist
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/information-security-manager-iso27001
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/risk-management-specialist
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/information-security-manager-iso27001
 
 # Regulatory Specialists
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/mdr-745-specialist
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/fda-consultant-specialist
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/mdr-745-specialist
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/fda-consultant-specialist
 
 # Audit & Compliance
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/qms-audit-expert
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/isms-audit-expert
-npx ai-agent-skills install alirezarezvani/claude-skills/ra-qm-team/skills/gdpr-dsgvo-expert
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/qms-audit-expert
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/isms-audit-expert
+npx ai-agent-skills install imgusev/claude-skills-ru/ra-qm-team/skills/gdpr-dsgvo-expert
 ```
 
 **Supported Agents:** Claude Code, Cursor, VS Code, Copilot, Goose, Amp, Codex

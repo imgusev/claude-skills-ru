@@ -27,7 +27,7 @@ description: "6 project management agent skills and plugins for Claude Code, Cod
 
 ### Codex CLI
 ```bash
-npx agent-skills-cli add alirezarezvani/claude-skills/project-management
+npx agent-skills-cli add imgusev/claude-skills-ru/project-management
 ```
 
 ## Skills Overview

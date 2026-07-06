@@ -27,7 +27,7 @@ Production-ready financial analysis skill for strategic decision-making.
 
 ### Codex CLI
 ```bash
-npx agent-skills-cli add alirezarezvani/claude-skills/finance
+npx agent-skills-cli add imgusev/claude-skills-ru/finance
 ```
 
 ## Skills Overview

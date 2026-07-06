@@ -342,7 +342,7 @@ Is it a compiled binary (Go, Rust, C)?
 
 ### Однострочник (любой инструмент) { #one-liner-any-tool }
 ```bash
-git clone https://github.com/alirezarezvani/claude-skills.git
+git clone https://github.com/imgusev/claude-skills-ru.git
 cp -r claude-skills/engineering/docker-development ~/.claude/skills/
 ```
 

@@ -17,7 +17,7 @@ Not just guidelines — ships Python tools that **detect** violations, a review 
 
 ```bash
 # Install as Claude Code plugin
-/plugin marketplace add alirezarezvani/claude-skills
+/plugin marketplace add imgusev/claude-skills-ru
 /plugin install karpathy-coder@claude-code-skills
 
 # Run before committing

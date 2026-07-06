@@ -16,8 +16,8 @@ Define SLOs that mean something. Most "SLOs" in the wild are arbitrary numbers n
 /plugin install slo-architect
 
 # Or clone the repo
-git clone https://github.com/alirezarezvani/claude-skills.git
-cd claude-skills/engineering/slo-architect
+git clone https://github.com/imgusev/claude-skills-ru.git
+cd claude-skills-ru/engineering/slo-architect
 ```
 
 ## Quick start

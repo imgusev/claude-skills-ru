@@ -48,7 +48,7 @@ hide:
 
     ```bash
     # Add the marketplace
-    /plugin marketplace add alirezarezvani/claude-skills
+    /plugin marketplace add imgusev/claude-skills-ru
 
     # Install any skill bundle
     /plugin install engineering-skills@claude-code-skills
@@ -59,21 +59,21 @@ hide:
 === "Gemini CLI"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills && python3 scripts/sync-gemini-skills.py
     ```
 
 === "OpenAI Codex"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills && python3 scripts/sync-codex-skills.py
     ```
 
 === "OpenClaw"
 
     ```bash
-    git clone https://github.com/alirezarezvani/claude-skills.git
+    git clone https://github.com/imgusev/claude-skills-ru.git
     cd claude-skills && bash scripts/openclaw-install.sh
     ```
 

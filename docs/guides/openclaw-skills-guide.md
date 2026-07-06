@@ -29,7 +29,7 @@ OpenClaw's skill system is the most natural fit in the ecosystem — skills live
 ### Quick Install (Recommended)
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/scripts/openclaw-install.sh)
+bash <(curl -s https://raw.githubusercontent.com/imgusev/claude-skills-ru/main/scripts/openclaw-install.sh)
 ```
 
 This installs all 345 skills into your OpenClaw workspace with the correct directory structure.
@@ -37,8 +37,8 @@ This installs all 345 skills into your OpenClaw workspace with the correct direc
 ### Manual Install
 
 ```bash
-git clone https://github.com/alirezarezvani/claude-skills.git
-cd claude-skills
+git clone https://github.com/imgusev/claude-skills-ru.git
+cd claude-skills-ru
 ./scripts/install.sh --tool openclaw
 ```
 
@@ -66,7 +66,7 @@ cd claude-skills
 If you have the ClawHub CLI:
 
 ```bash
-clawhub install alirezarezvani/claude-skills
+clawhub install imgusev/claude-skills-ru
 ```
 
 ## How Skills Work in OpenClaw

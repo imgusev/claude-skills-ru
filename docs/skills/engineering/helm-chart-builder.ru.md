@@ -430,7 +430,7 @@ LIBRARY CHARTS
 
 ### Однострочник (любой инструмент) { #one-liner-any-tool }
 ```bash
-git clone https://github.com/alirezarezvani/claude-skills.git
+git clone https://github.com/imgusev/claude-skills-ru.git
 cp -r claude-skills/engineering/helm-chart-builder ~/.claude/skills/
 ```
 

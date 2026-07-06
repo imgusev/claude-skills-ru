@@ -44,7 +44,7 @@ description: "Преобразуйте автоматическую память
 
 ### Код Клода (плагин) { #claude-code-plugin }
 ```
-/plugin marketplace add alirezarezvani/claude-skills
+/plugin marketplace add imgusev/claude-skills-ru
 /plugin install self-improving-agent@claude-code-skills
 ```
 

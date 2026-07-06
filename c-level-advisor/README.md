@@ -23,23 +23,23 @@ Install all C-Level advisory skills with one command:
 
 ```bash
 # Install all C-Level skills to all supported agents
-npx ai-agent-skills install alirezarezvani/claude-skills/c-level-advisor
+npx ai-agent-skills install imgusev/claude-skills-ru/c-level-advisor
 
 # Install to Claude Code only
-npx ai-agent-skills install alirezarezvani/claude-skills/c-level-advisor --agent claude
+npx ai-agent-skills install imgusev/claude-skills-ru/c-level-advisor --agent claude
 
 # Install to Cursor only
-npx ai-agent-skills install alirezarezvani/claude-skills/c-level-advisor --agent cursor
+npx ai-agent-skills install imgusev/claude-skills-ru/c-level-advisor --agent cursor
 ```
 
 ### Install Individual Skills
 
 ```bash
 # CEO Advisor
-npx ai-agent-skills install alirezarezvani/claude-skills/c-level-advisor/skills/ceo-advisor
+npx ai-agent-skills install imgusev/claude-skills-ru/c-level-advisor/skills/ceo-advisor
 
 # CTO Advisor
-npx ai-agent-skills install alirezarezvani/claude-skills/c-level-advisor/skills/cto-advisor
+npx ai-agent-skills install imgusev/claude-skills-ru/c-level-advisor/skills/cto-advisor
 ```
 
 **Supported Agents:** Claude Code, Cursor, VS Code, Copilot, Goose, Amp, Codex
@@ -148,7 +148,7 @@ This C-Level advisory skills collection provides executive leadership guidance f
 
 1. **Install CEO Advisor:**
    ```bash
-   npx ai-agent-skills install alirezarezvani/claude-skills/c-level-advisor/skills/ceo-advisor
+   npx ai-agent-skills install imgusev/claude-skills-ru/c-level-advisor/skills/ceo-advisor
    ```
 
 2. **Evaluate Strategic Initiative:**
@@ -170,7 +170,7 @@ This C-Level advisory skills collection provides executive leadership guidance f
 
 1. **Install CTO Advisor:**
    ```bash
-   npx ai-agent-skills install alirezarezvani/claude-skills/c-level-advisor/skills/cto-advisor
+   npx ai-agent-skills install imgusev/claude-skills-ru/c-level-advisor/skills/cto-advisor
    ```
 
 2. **Analyze Technical Debt:**

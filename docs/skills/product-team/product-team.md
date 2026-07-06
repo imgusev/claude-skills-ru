@@ -27,7 +27,7 @@ description: "10 product agent skills and plugins for Claude Code, Codex, Gemini
 
 ### Codex CLI
 ```bash
-npx agent-skills-cli add alirezarezvani/claude-skills/product-team
+npx agent-skills-cli add imgusev/claude-skills-ru/product-team
 ```
 
 ## Skills Overview
