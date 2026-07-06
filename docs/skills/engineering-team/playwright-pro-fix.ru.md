@@ -1,6 +1,6 @@
 ---
 title: "Исправлять неудачные или слоеные тесты { #fix-failing-or-flaky-tests } — Агентский скилл и плагин Codex"
-description: "Fix failing or flaky Playwright tests. Use when user says 'fix test', 'flaky test', 'test failing', 'debug test', 'test broken', 'test passes. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+description: ">-. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
 # Исправлять неудачные или слоеные тесты { #fix-failing-or-flaky-tests }
@@ -67,7 +67,7 @@ npx playwright test <file> --trace=on --retries=0
 |---|---|---|
 | **Синхронизация/асинхронность** | Периодически происходит сбой везде | `--repeat-each=20` размножается локально |
 | **Тестовая изоляция** | Терпит неудачу в номере люкс, проходит в одиночку | `--workers=1 --grep "test name"` проходит |
-| **Окружающая среда** | Сбой в CI, проходит локально | Сравните CI с локальными скриншотами/трассировками |
+| **Окружающая среда** | Сбой в CI, проходит локально | Сравните скриншоты CI и local/traces |
 | **Инфраструктура** | Случайный, без закономерности | Ошибка ссылается на внутренние компоненты браузера |
 
 ### 4. Примените целевое исправление { #4-apply-targeted-fix }

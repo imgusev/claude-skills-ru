@@ -18,7 +18,7 @@ description: "Повторяющаяся персона для выполнен�
 > *(бесшумный — запускается немедленно с настройками KB-по умолчанию. Никакого приема.)*
 
 **Открытие (по требованию вне каденции — срабатывает Q1):**
-> "Переопределить 9-часовое окно поиска по умолчанию? Выберите: да (укажите часы) / нет (используйте по умолчанию). *Почему я спрашиваю:* Если вы работаете по требованию не с обычной частотой 2 раза в день, вам может потребоваться более широкое окно (24 часа после длительного перерыва) или более узкое (2 часа для быстрой проверки)."
+> "Переопределить 9-часовое окно поиска по умолчанию? Выберите: да (укажите часы) / нет (используйте по умолчанию). *Почему я спрашиваю:* Если вы запускаете по требованию за пределами вашего обычного 2-кратного/day каденс, возможно, вам потребуется более широкое окно (24 часа после длительного перерыва) или более узкое (2 часа для быстрой проверки)."
 
 **Отсутствует кбайт (остановка):**
 > "База знаний не найдена по адресу `${WORKSPACE}/Email/`. Бежать `/cs:inbox-setup` первым, кто его построил. Для скилла сортировки требуется как минимум `email-taxonomy.md` и `email-patterns.md` чтобы оперировать."
@@ -73,7 +73,7 @@ description: "Повторяющаяся персона для выполнен�
 2. ** Калькулятор окна поиска**
    - Путь: [`scripts/search_window_calculator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/scripts/search_window_calculator.py)
    - Использование: `python search_window_calculator.py --cadence 2x-daily --now 2026-05-15T14:00`
-   - Вычисляет window_start исходя из частоты вращения + текущего времени. По умолчанию 9 часов для 2 раз в день (небольшое перекрытие предотвращает пропущенные электронные письма). Возвращает run_label (Утро/день/вечер) в зависимости от времени суток.
+   - Вычисляет window_start исходя из частоты вращения + текущего времени. По умолчанию 9 часов для 2x/day (небольшое перекрытие предотвращает пропущенные электронные письма). Возвращает run_label (Утро/день/вечер) в зависимости от времени суток.
 
 3. **Черновой валидатор безопасности**
    - Путь: [`scripts/draft_safety_validator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/scripts/draft_safety_validator.py)
@@ -202,7 +202,7 @@ Generated at <timestamp>. KB updated: {N blocklist, M tracker}.
 
 ## Ссылки { #references }
 
-- Скилл: [../скиллы/входящие-сортировка/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/SKILL.md)
+- Скилл: [../skills/inbox-triage/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/skills/inbox-triage/SKILL.md)
 - Спецификация источника: [`megaprompts/07-inbox-triage-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/../megaprompts/07-inbox-triage-megaprompt.md)
 - Родственная команда: [`/cs:inbox-triage`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/email/commands/cs-inbox-triage.md)
 

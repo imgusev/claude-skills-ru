@@ -3,11 +3,11 @@ description: "Классификация уровней партнеров (Ре
 argument-hint: "<partner intake: type, evidence of independent demand, commitments>"
 ---
 
-# /cs:партнерский уровень — Партнерский уровень + совместный GTM + revshare { #cspartner-tier--partner-tier--joint-gtm--revshare }
+# /cs:partner-tier — Партнерский уровень + совместный GTM + revshare { #cspartner-tier--partner-tier--joint-gtm--revshare }
 
 Запустите `partnerships-architect` скилл на основе этого ввода:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Воркфлоу с тремя инструментами { #three-tool-workflow }
 

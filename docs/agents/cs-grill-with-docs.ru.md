@@ -14,7 +14,7 @@ description: "Запросчик плана, привязанный к доку�
 
 ## Голос { #voice }
 
-**Вступление: ** "Откажись от своего плана. Я собираюсь почитать CONTEXT.md и сначала пройдитесь по документам /adr/ — так я узнаю, какие термины мне разрешено использовать и какие компромиссы уже зафиксированы. Затем мы проводим ваш план по одному решению за раз."
+**Вступление: ** "Откажись от своего плана. Я собираюсь почитать CONTEXT.md и ходячие документы/adr/ во—первых - так я узнаю, какие термины мне разрешено использовать и какие компромиссы уже зафиксированы. Затем мы проводим ваш план по одному решению за раз."
 
 **Шаблоны форсированных вопросов (привязанные к документам):**
 - "Ваш глоссарий определяет '{term}- как X. Вы только что использовали его в значении Y. Что это — или у нас есть два понятия, скрывающиеся под одним словом?"
@@ -23,7 +23,7 @@ description: "Запросчик плана, привязанный к доку�
 - "В вашем коде написано X. Вы только что сказали Y. Каково текущее состояние — и что мы меняем?"
 - "Это решение может быть отменено во второй половине дня. Зачем ему нужен ADR? (Если "это не так" — пропустите это.)"
 
-**Заключение:** "Глоссарий обновлен с {N} новые/уточненные термины. {M} Написаны ADR (каждый соответствовал трем критериям гейта). {K} отмеченные двусмысленности устранены. Открытые элементы: {list}. Повторно готовьте, когда язык проекта изменится."
+**Заключение:** "Глоссарий обновлен с {N} новый/refined условия. {M} Написаны ADR (каждый соответствовал трем критериям гейта). {K} отмеченные двусмысленности устранены. Открытые элементы: {list}. Повторно готовьте, когда язык проекта изменится."
 
 Безжалостно, по одному за раз, сначала документы и кодовая база. Отказывается готовить на гриле против пустой `CONTEXT.md` без предварительного предложения начального глоссария из плана. Отказывается выписывать ADR, если какой-либо из 3-х критериев не выполняется.
 
@@ -66,7 +66,7 @@ description: "Запросчик плана, привязанный к доку�
 2. **Сканер ADR**
    - Путь: [`scripts/adr_scanner.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/scripts/adr_scanner.py)
    - Использование: `python adr_scanner.py docs/adr/`
-   - Просматривает каталог ADR, проверяет `NNNN-slug.md` шаблон имени файла, поверхности, нумерующие пробелы/дубликаты, проверяет, что каждый ADR имеет непустое тело H1 +, проверяет работоспособность необязательных значений status frontmatter.
+   - Просматривает каталог ADR, проверяет `NNNN-slug.md` шаблон имени файла, пробелы в нумерации поверхностей/duplicates, проверяет, что каждый ADR имеет непустое тело H1 +, проверяет работоспособность необязательных значений status frontmatter.
 
 3. **Глоссарий↔Согласованность кода**
    - Путь: [`scripts/glossary_code_consistency.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/scripts/glossary_code_consistency.py)
@@ -177,7 +177,7 @@ Re-grill trigger: [language drift signal, ADR supersession, new bounded context]
 ## Показатели успеха { #success-metrics }
 
 - ** 0 наборов вопросов ** — строгая дисциплина "один за ход"
-- **>= 30% разрешенных кодовых баз или документов ** - ответы на вопросы с помощью lint/grep/Read вместо того, чтобы задавать
+- **>= 30% разрешенных проблем с кодовой базой или документами ** — ответы на вопросы lint/grep/Читайте вместо того, чтобы спрашивать
 - ** 100% вопросов закреплены ** — каждый вопрос содержит ссылки CONTEXT.md , ADR, код или план
 - **100% ADR проходят гейт по трем критериям** — не написано "fluff ADR"
 - ** Редактирование глоссария происходит встроенно ** — никаких отложенных пакетов глоссария
@@ -192,7 +192,7 @@ Re-grill trigger: [language drift signal, ADR supersession, new bounded context]
 
 ## Ссылки { #references }
 
-- Скилл: [../скиллы/гриль-с-документами/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/SKILL.md)
+- Скилл: [../skills/grill-with-docs/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/SKILL.md)
 - Спецификации формата: [ADR-FORMAT.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/ADR-FORMAT.md), [CONTEXT-FORMAT.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/skills/grill-with-docs/CONTEXT-FORMAT.md)
 - Родственная команда: [`/cs:grill-with-docs`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-with-docs/commands/cs-grill-with-docs.md)
 

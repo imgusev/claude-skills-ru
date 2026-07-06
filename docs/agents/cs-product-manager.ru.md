@@ -35,12 +35,12 @@ description: "Агент по управлению продуктами для �
 | 5 | Система проектирования пользовательского интерфейса | [`skills/ui-design-system`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/ui-design-system) | design_token_generator.py |
 | 6 | Конкурентный срыв | [`skills/competitive-teardown`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/competitive-teardown) | competitive_matrix_builder.py |
 | 7 | Генератор целевой страницы | [`skills/landing-page-generator`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/landing-page-generator) | landing_page_scaffolder.py |
-| 8 | Держатель строительных лесов SaaS | [`skills/saas-scaffolder`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/saas-scaffolder) | project_bootstrapper.py |
+| 8 | Каркас SaaS | [`skills/saas-scaffolder`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/saas-scaffolder) | project_bootstrapper.py |
 
 ### Инструменты Python { #python-tools }
 
 1. **Приоритетность РИСА**
-   - **Цель:** Внедрение фреймворка RICE для определения приоритетов функций с помощью анализа портфолио и планирования мощностей
+   - **Цель:** Внедрение фреймворка RICE для определения приоритетов функций с анализом портфолио и планированием мощностей
    - **Путь:** [`scripts/rice_prioritizer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py)
    - **Использование:** `python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py features.csv --capacity 20`
    - ** Формула:** Оценка РАЙСА = (охват × Воздействие × Уверенность) / Усилие
@@ -73,7 +73,7 @@ description: "Агент по управлению продуктами для �
    - ** Примеры использования: ** Обобщение исследований пользователей, разработка персоны, составление карты путешествий
 
 6. **Дизайн генератора токенов**
-   - ** Цель:** Генерировать дизайнерские токены для согласованной реализации пользовательского интерфейса
+   - ** Цель:** Генерировать токены дизайна для последовательной реализации пользовательского интерфейса
    - **Путь:** [`scripts/design_token_generator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/ui-design-system/scripts/design_token_generator.py)
    - **Использование:** `python ../../product-team/skills/ui-design-system/scripts/design_token_generator.py theme.json`
    - **Варианты использования:** Создание системы проектирования, хэндофф разработчика, тематизация
@@ -91,7 +91,7 @@ description: "Агент по управлению продуктами для �
    - ** Примеры использования:** Запуск продукта, A/B тестирование, кампании GTM
 
 9. **Загрузчик проекта**
-   - **Назначение:** Строительные конструкции SaaS-проекта Scaffold с типовыми схемами и конфигурациями
+   - **Назначение:** Строительные конструкции SaaS-проекта Scaffold с типовой таблицей и конфигурациями
    - **Путь:** [`scripts/project_bootstrapper.py`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/saas-scaffolder/scripts/project_bootstrapper.py)
    - **Использование:** `python ../../product-team/skills/saas-scaffolder/scripts/project_bootstrapper.py --stack nextjs --name my-saas`
    - ** Примеры использования:** Создание лесов MVP, запуск проекта, создание прототипа SaaS
@@ -141,7 +141,7 @@ description: "Агент по управлению продуктами для �
 9. **Фреймворки для юзабилити-тестирования**
    - **Местоположение:** [`references/usability-testing-frameworks.md`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/ux-researcher-designer/references/usability-testing-frameworks.md)
    - **Содержание:** Планирование юзабилити-тестирования, разработка задач, методы анализа
-   - ** Пример использования:** Исследования юзабилити, проверка прототипа, оценка UX
+   - ** Пример использования:** Исследования юзабилити, валидация прототипа, оценка UX
 
 10. **Компонентная архитектура**
     - **Местоположение:** [`references/component-architecture.md`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/ui-design-system/references/component-architecture.md)
@@ -272,7 +272,7 @@ cat roadmap.txt
 7. ** Проверка решений** - Проверка гипотез перед построением:
    - Создавайте макеты или прототипы
    - Показывайте пользователям, наблюдайте за реакцией
-   - Измерять готовность платить/принимать
+   - Измерять готовность платить/adopt
 
 ** Ожидаемый результат:** Приоритетный список подтвержденных проблем с цитатами пользователей и доказательствами
 
@@ -330,7 +330,7 @@ cat roadmap.txt
 
 ** Ожидаемый результат:** Заполните PRD с указанием проблемы, решения, показателей, критериев приемлемости и согласия стейкхолдеров.
 
-** Оценка времени: ** 1-2 недели для комплексного PRD (итеративный процесс)
+** Ориентировочное время: ** 1-2 недели для комплексного PRD (итеративный процесс)
 
 ### Воркфлоу 4: Ежеквартальное планирование и настройка OKR { #workflow-4-quarterly-planning--okr-setting }
 
@@ -338,7 +338,7 @@ cat roadmap.txt
 
 **Шаги:**
 1. **Ревью OKR компании** - Приведение целей продукта в соответствие с бизнес-целями:
-   - Ревью CEO/executive OKR за квартал
+   - Ревью генерального директора/executive ОКР за квартал
    - Определите области вклада продукта
    - Понимать стратегические приоритеты
 
@@ -352,7 +352,7 @@ cat roadmap.txt
    python ../../product-team/skills/product-strategist/scripts/okr_cascade_generator.py growth
    ```
 
-4. **Определите требования к продукту** - Ставьте амбициозные, но достижимые цели:
+4. **Определите требования к качеству продукта** - Ставьте амбициозные, но достижимые цели:
    - **Цель**: Качественная, вдохновляющая (например, "Стать самой простой платформой для онбординга")
    - **Ключевые результаты**: Количественные, поддающиеся измерению (например, "Сократить время онбординга с 30 до 10 минут")
    - **Инициативы**: Функции, обеспечивающие ключевые результаты
@@ -422,7 +422,7 @@ cat roadmap.txt
    - Убедитесь, что демографические данные и поведение соответствуют реальным пользовательским данным
    - Обновляйте информацию о персонажах ежеквартально по мере появления новых исследований
 
-** Ожидаемый результат: ** 3-5 пользовательских персоналий, основанных на данных, с демографическими данными, целями, болевыми точками, поведением и отображенными путешествиями клиентов.
+** Ожидаемый результат: ** 3-5 пользовательских персоналий, основанных на данных, с демографическими данными, целями, болевыми точками, поведением и отображенными поездками клиентов.
 
 ** Ориентировочное время: ** 1-2 недели (сбор данных для исследования + создание персоны + валидация)
 
@@ -470,7 +470,7 @@ cat ../../product-team/skills/ux-researcher-designer/references/journey-mapping-
    - Выявлять зависимости между историями
    - Напишите критерии приемлемости в заданном формате/When/Then
 
-6. ** Расставляйте приоритеты для спринта ** - Используйте оценки RICE для упорядочивания историй
+6. ** Расставьте приоритеты для спринта ** - Используйте оценки RICE для упорядочивания историй
    ```bash
    python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py sprint-stories.csv --capacity 8
    ```
@@ -520,7 +520,7 @@ cat ../../product-team/agile-product-owner/skills/agile-product-owner/references
    - Ценовое позиционирование (стоимость по сравнению с премией по сравнению с бюджетом)
    - Недостаточно обслуживаемые сегменты (неудовлетворенные потребности пользователей)
 
-5. ** Учитывайте расстановку приоритетов** - Используйте пробелы для информирования о дорожной карте
+5. ** Учитывайте расстановку приоритетов** - Используйте пробелы для составления дорожной карты
    ```bash
    # Add competitive gap features to RICE analysis
    python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritizer.py competitive-features.csv --capacity 20
@@ -646,7 +646,7 @@ echo "Report: $QUARTER-roadmap.txt"
 
 **Эффективность расстановки приоритетов:**
 - ** Скорость принятия решения: ** <2 дней с момента ревью невыполненной работы до принятия решения по дорожной карте
-- ** Согласование с стейкхолдерами:** >90% согласия стейкхолдеров по приоритетам
+- ** Согласование стейкхолдеров:** >90% согласия стейкхолдеров по приоритетам
 - ** Проверка RICE: ** более 80% поставляемых функций соответствуют прогнозируемому воздействию
 - ** Баланс портфеля:** 40% быстрых выигрышей, 40% крупных ставок, 20% пополнений
 
@@ -665,7 +665,7 @@ echo "Report: $QUARTER-roadmap.txt"
 **Влияние на бизнес:**
 - ** Внедрение функций:** >60% пользователей внедряют новые функции в течение 30 дней
 - ** Решение проблемы:** >70% снижение остроты болевых точек после запуска
-- ** Влияние на доход:** Отслеживание увеличения дохода / удержания за счет приоритетных функций
+- ** Влияние на доход:** Отслеживание доходов/retention переход от приоритетных функций
 - ** Эффективность разработки: ** сокращение переделок на 30%+ благодаря четким требованиям
 
 ## Связанные агенты { #related-agents }
@@ -676,8 +676,8 @@ echo "Report: $QUARTER-roadmap.txt"
 
 ## Ссылки { #references }
 
-- **Документация по скиллам:** [../../команда по продукту/скиллы/инструментарий менеджера по продукту/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-manager-toolkit/SKILL.md)
-- **Руководство по предметной области продукта:** [../../команда разработчиков продукта/CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/CLAUDE.md)
+- **Документация по скиллам:** [../../product-team/skills/product-manager-toolkit/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-manager-toolkit/SKILL.md)
+- **Руководство по предметной области продукта:** [../../product-team/CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/CLAUDE.md)
 - **Руководство по разработке агента:** [../CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/agents/CLAUDE.md)
 
 ---

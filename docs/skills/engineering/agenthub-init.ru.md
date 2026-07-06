@@ -1,9 +1,9 @@
 ---
-title: "/hub:init — Создать новый сеанс { #hubinit--create-new-session } — Агентский скилл для Codex и OpenClaw"
+title: "/hub:init — Создать новую сессию { #hubinit--create-new-session } — Агентский скилл для Codex и OpenClaw"
 description: "Создайте новый сеанс совместной работы AgentHub с заданием, количеством агентов и критериями оценки. Используется, когда пользователь запускает. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /hub:init — Создать новый сеанс { #hubinit--create-new-session }
+# /hub:init — Создать новую сессию { #hubinit--create-new-session }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Инженерия — уровень POWERFUL</span>

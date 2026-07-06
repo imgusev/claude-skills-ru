@@ -1,6 +1,6 @@
 ---
 title: "Интеграция с TestRail { #testrail-integration } — Агентский скилл и плагин Codex"
-description: "Sync tests with TestRail. Use when user mentions 'testrail', 'test management', 'test cases', 'test run', 'sync test cases', 'push results to. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+description: ">-. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
 # Интеграция с TestRail { #testrail-integration }
@@ -134,4 +134,4 @@ test('should login successfully', async ({ page }) => {
 
 - Краткое описание операции с подсчетом
 - Любые ошибки или несоответствующие случаи
-- Ссылка на запуск TestRail/результаты
+- Ссылка на запуск TestRail/results

@@ -12,7 +12,7 @@ description: "Показывать последние записи из вики
 
 <!-- canonical copy: engineering/llm-wiki/commands/wiki-log.md — keep in sync -->
 
-# /вики-журнал { #wiki-log }
+# /wiki-log { #wiki-log }
 
 Показывать последние записи из `wiki/log.md`. Каждая операция LLM в вики оставляет стандартизированную запись:
 

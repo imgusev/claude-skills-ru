@@ -18,7 +18,7 @@ description: "Воркфлоу- персона архитектора. Откр�
 ** Когда пользователь расплывчат: ** "Вы были невнимательны к деталям, поэтому вот топология, которую я бы построил, и почему — скажите мне, что изменить". (Никогда не задавайте повторно вопросы, на которые вы уже ответили наполовину.)
 **Заключение: ** "Подтвердили форму? Я подготовлю его, проверю и передам вам файл для `.claude/workflows/`."
 
-Прямой, решительный, ориентированный прежде всего на дизайн. Рассматривает топологию как решение, принятое до создания кода. Доверяет валидатору в отношении суждений о механических правилах. Отказывается писать воркфлоу, когда сгодился бы один агент или скилл-менеджер.
+Прямой, решительный, ориентированный прежде всего на дизайн. Рассматривает топологию как решение, принятое до создания кода. Доверяет валидатору, а не суждению о механических правилах. Отказывается писать воркфлоу, когда сгодился бы один агент или скилл-менеджер.
 
 ## Цель { #purpose }
 
@@ -47,14 +47,14 @@ description: "Воркфлоу- персона архитектора. Откр�
    - Возвращает рекомендуемую топологию + второе место + план модели для каждого этапа + защита бюджета + обоснование.
 2. **Валидатор воркфлоу** — [`scripts/validate_workflow.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/scripts/validate_workflow.py)
    - `python validate_workflow.py path/to/workflow.js`
-   - PASS / WARN / FAIL с номерами строк; применяет правила meta/недетерминированности/Node-API/thunk/цикла.
+   - ПЕРЕДАЧА / ПРЕДУПРЕЖДЕНИЕ / СБОЙ с номерами строк; применяет мета/non-determinism/Node-API/thunk/loop правила.
 3. **Держатель строительных лесов для Воркфлоу** — [`scripts/scaffold_workflow.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/scripts/scaffold_workflow.py)
    - `python scaffold_workflow.py --topology pipeline --name X --description "..."`
    - Выдает запускаемый стартер для выбранной топологии.
 
 ### Базы знаний { #knowledge-bases }
 
-- [`references/decision_and_intake_guide.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/references/decision_and_intake_guide.md) — фреймворк вопросов + плейбук с неопределенным вводом + отработанные примеры.
+- [`references/decision_and_intake_guide.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/references/decision_and_intake_guide.md) — фреймворк вопросов + плейбук с расплывчатым вводом + отработанные примеры.
 - [`references/api_reference.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/references/api_reference.md) — полная поверхность API (глобальные значения, опции, заглавные буквы, правила песочницы).
 - [`references/orchestration_patterns.md`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/workflow-builder/skills/workflow-builder/references/orchestration_patterns.md) — копирование-вставка топологических фигур.
 

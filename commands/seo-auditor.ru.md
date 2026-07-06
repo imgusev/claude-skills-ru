@@ -7,7 +7,7 @@ description: "|"
 argument-hint: "[path]"
 ---
 
-# /seo-аудитор { #seo-auditor }
+# /seo-auditor { #seo-auditor }
 
 Систематически сканируйте, проводите аудит и оптимизируйте файлы документации для SEO. Цели README.md файлы и документы/ страницы — исправляет проблемы на месте, сохраняет рейтинг на высокоэффективных страницах и формирует окончательный отчет.
 
@@ -38,7 +38,7 @@ find . -maxdepth 2 -name 'README.md' -not -path './.codex/*' -not -path './.gemi
 ```
 
 Классифицируйте каждый файл:
-- **Новые/недавно измененные** — файлы, измененные за последние 2 фиксации (проверьте через `git log`)
+- **Новый/recently изменено** — файлы, измененные за последние 2 фиксации (проверьте через `git log`)
 - **Индексные страницы** — `index.md` файлы (высокий авторитет, обращаться с ними осторожно)
 - **Страницы с скиллами** — `docs/skills/**/*.md` (сгенерированный `generate-docs.py`)
 - **Статические страницы** — `docs/index.md`, `docs/getting-started.md`, `docs/integrations.md` и т.д.
@@ -160,7 +160,7 @@ python3 marketing-skill/skills/content-humanizer/scripts/humanizer_scorer.py {fi
 
 | Тип страницы | Основные ключевые слова | Второстепенные ключевые слова |
 |-----------|-----------------|-------------------|
-| Домашняя страница (docs/index.md) | "Скиллы Claude Code", "плагины для агента" | "Скиллы Кодекса", "Gemini CLI", "OpenClaw" |
+| Домашняя страница (документы/index.md) | "Скиллы Claude Code", "плагины для агента" | "Скиллы Кодекса", "Gemini CLI", "OpenClaw" |
 | Страницы с скиллами | Название скилла + "Код Клода" | "скилл агента", "плагин Codex", доменные термины |
 | Страницы агента | Имя агента + "агент по кодированию искусственного интеллекта" | "Клод Код", "оркестратор" |
 | Страницы команд | Название команды + "слэш-команда" | "Код Клода", "Кодирование с помощью искусственного интеллекта" |
@@ -321,7 +321,7 @@ python3 marketing-skill/skills/site-architecture/scripts/sitemap_analyzer.py sit
 | Инструмент | Путь | Использование |
 |------|------|-----|
 | Средство проверки SEO | `marketing-skill/skills/seo-audit/scripts/seo_checker.py` | Оценка HTML-страниц 0-100 |
-| Оценщик контента | `marketing-skill/skills/content-production/scripts/content_scorer.py` | Оценивайте читаемость контента/структуру/вовлеченность |
+| Оценщик контента | `marketing-skill/skills/content-production/scripts/content_scorer.py` | Оцените читабельность контента/structure/engagement |
 | Очеловечивающий бомбардир | `marketing-skill/skills/content-humanizer/scripts/humanizer_scorer.py` | Обнаруживать контент, похожий на искусственный интеллект |
 | Лучший бомбардир | `marketing-skill/skills/copywriting/scripts/headline_scorer.py` | Оценка качества титула |
 | SEO-оптимизатор | `marketing-skill/skills/content-production/scripts/seo_optimizer.py` | Оптимизируйте контент по целевому ключевому слову |

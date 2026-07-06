@@ -1,9 +1,9 @@
 ---
-title: "/ar:возобновить — Возобновить эксперимент { #arresume--resume-experiment } — Агентский скилл для Codex и OpenClaw"
+title: "/ar:resume — Возобновить эксперимент { #arresume--resume-experiment } — Агентский скилл для Codex и OpenClaw"
 description: "Возобновите приостановленный эксперимент. Проверьте ветку эксперимента, прочитайте историю результатов, продолжайте итерацию. Используйте, когда. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /ar:возобновить — Возобновить эксперимент { #arresume--resume-experiment }
+# /ar:resume — Возобновить эксперимент { #arresume--resume-experiment }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Инженерия — уровень POWERFUL</span>
@@ -35,7 +35,7 @@ description: "Возобновите приостановленный экспе
 python {skill_path}/scripts/setup_experiment.py --list
 ```
 
-Показывать статус для каждого (активен / приостановлен / выполнен на основе результатов.возраст tsv). Позвольте пользователю выбрать.
+Показывать статус для каждого (активного/paused/done на основании результатов.tsv возраст). Позвольте пользователю выбрать.
 
 ### Шаг 2: Загрузите полный контекст { #step-2-load-full-context }
 

@@ -3,7 +3,7 @@ name: "cs-landing"
 description: "/cs:целевая страница <product-or-brief> — Создайте высококачественную целевую страницу в HTML-формате с 3D-анимацией GSAP, триггерами прокрутки и глубиной параллакса мыши. Опрос Grill-me (4 вопроса) фиксирует продукт / аудиторию / бренд / тональность перед любой разметкой. Вывод: ${OUTPUT_DIR}/<продукт-кебаб>.HTML или HTML-артефакт."
 ---
 
-# /cs:landing — Генератор HTML-страниц премиум-класса { #cslanding--premium-html-landing-page-generator }
+# /cs:landing — Генератор целевых страниц премиум-класса в HTML-формате { #cslanding--premium-html-landing-page-generator }
 
 **Команда:** `/cs:landing <product-or-brief>`
 

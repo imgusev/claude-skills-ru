@@ -1,9 +1,9 @@
 ---
-title: "/cs:ciso-ревью — CISO форсирует вопросы { #csciso-review--ciso-forcing-questions } — Агентский скилл для руководителей"
+title: "/cs:ciso-review — CISO форсирует вопросы { #csciso-review--ciso-forcing-questions } — Агентский скилл для руководителей"
 description: "/cs:ciso-ревью <плана> — Параноидальный анализ рисков любого плана, который касается данных, соответствия требованиям или производственного доступа. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:ciso-ревью — CISO форсирует вопросы { #csciso-review--ciso-forcing-questions }
+# /cs:ciso-review — CISO форсирует вопросы { #csciso-review--ciso-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>
@@ -41,7 +41,7 @@ description: "/cs:ciso-ревью <плана> — Параноидальный 
 - Количественно выражайте в долларах с помощью ЧЕСТНОГО ЭЛЯ.
 
 ### 3. Обнаружение { #3-detection }
-**Какие сигналы указывают на компромисс и через сколько времени они будут триггерами (MTTD)?**
+**Какие сигналы указывают на компромисс и через какое время они будут триггерами (MTTD)?**
 - Сами по себе журналы не являются обнаружением.
 - Определите правило обнаружения, оповещение и вызов по вызову.
 

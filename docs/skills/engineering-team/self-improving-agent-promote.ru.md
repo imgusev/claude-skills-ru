@@ -1,9 +1,9 @@
 ---
-title: "/si:продвижение — обучение выпускников правилам { #sipromote--graduate-learnings-to-rules } — Агентский скилл и плагин Codex"
+title: "/si:promote — Обучение выпускников правилам { #sipromote--graduate-learnings-to-rules } — Агентский скилл и плагин Codex"
 description: "Извлеките проверенный шаблон из автоматической памяти (MEMORY.md ) к CLAUDE.md или .claude/правила/ для постоянного применения. Используйте, когда. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /si:продвижение — обучение выпускников правилам { #sipromote--graduate-learnings-to-rules }
+# /si:promote — Обучение выпускников правилам { #sipromote--graduate-learnings-to-rules }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Инженерия — базовый уровень</span>
@@ -138,9 +138,9 @@ The pattern is now an enforced instruction. Claude will follow it in all future 
 - Это может измениться в ближайшее время (например, во время миграции).
 - Это уже предусмотрено существующими правилами
 
-### CLAUDE.md против Клода/правила/ { #claudemd-vs-clauderules }
+### CLAUDE.md против Клода/rules/ { #claudemd-vs-clauderules }
 
-| Использование CLAUDE.md для | Используйте .claude/правила/ для |
+| Использование CLAUDE.md для | Используй .Клод/rules/ для |
 |---|---|
 | Правила глобального проекта | Шаблоны, зависящие от типа файла |
 | Создавать команды | Соглашения о тестировании |

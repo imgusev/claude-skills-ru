@@ -282,7 +282,7 @@ python scripts/architecture_designer.py \
 ```
 
 ** Входные данные:** Тип приложения, ожидаемые пользователи, требования к JSON
-** Выходные данные:** Рекомендуемый шаблон, набор услуг, оценка затрат, плюсы/минусы
+** Выходные данные:** Рекомендуемый шаблон, набор услуг, оценка затрат, плюсы/cons
 
 ### cost_optimizer.py { #cost_optimizerpy }
 
@@ -319,7 +319,7 @@ python scripts/bicep_generator.py --arch-type microservices --output main.bicep
 
 ## Быстрый старт { #quick-start }
 
-### Архитектура веб-приложения (<100 долларов в месяц) { #web-app-architecture--100month }
+### Архитектура веб-приложения (<100 долларов США/month) { #web-app-architecture--100month }
 
 ```
 Ask: "Design an Azure web app for a startup with 5000 users"
@@ -333,7 +333,7 @@ Result:
 - Estimated: $40-80/month
 ```
 
-### Микросервисы на AKS (500-2000 долларов в месяц) { #microservices-on-aks-500-2000month }
+### Микросервисы на AKS ($500-2000/month) { #microservices-on-aks-500-2000month }
 
 ```
 Ask: "Design a microservices architecture on Azure for a SaaS platform with 50k users"
@@ -347,7 +347,7 @@ Result:
 - Multi-zone deployment
 ```
 
-### Бессерверный, управляемый событиями (<200 долларов в месяц) { #serverless-event-driven--200month }
+### Бессерверный, управляемый событиями (<200 долларов США/month) { #serverless-event-driven--200month }
 
 ```
 Ask: "Design an event-driven backend for processing orders"
@@ -361,7 +361,7 @@ Result:
 - Estimated: $30-150/month depending on volume
 ```
 
-### Пайплайн передачи данных (300-1500 долларов в месяц) { #data-pipeline-300-1500month }
+### Пайплайн передачи данных ($300-1500/month) { #data-pipeline-300-1500month }
 
 ```
 Ask: "Design a data pipeline for ingesting 10M events/day"
@@ -383,8 +383,8 @@ Result:
 | Требование | Описание | Пример |
 |-------------|-------------|---------|
 | Тип приложения | То, что ты строишь | Платформа SaaS, мобильный сервер |
-| Ожидаемый масштаб | Пользователи, запросы в секунду | 10 тысяч пользователей, 100 RPS |
-| Бюджет | Ежемесячный лимит Azure | максимум 500 долларов в месяц |
+| Ожидаемый масштаб | Пользователи, запросы/sec | 10 тысяч пользователей, 100 RPS |
+| Бюджет | Ежемесячный лимит Azure | $500/month макс. |
 | Командный контекст | Размер, опыт работы в Azure | 3 разработчика, средний уровень |
 | Соответствие требованиям | Нормативные потребности | HIPAA, GDPR, SOC 2 |
 | Доступность | Требования к времени безотказной работы | 99,9% SLA, 1 час RPO |
@@ -438,7 +438,7 @@ Result:
 ### Анализ затрат { #cost-analysis }
 
 - Разбивка текущих расходов с рекомендациями по оптимизации
-- Список приоритетных действий (высокий/средний/низкий) и чек-лист для реализации.
+- Список приоритетных действий (высокий/medium/low) и чек-лист по внедрению
 
 ---
 

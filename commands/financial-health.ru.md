@@ -4,7 +4,7 @@ description: "Выполните анализ финансовых коэффи�
 argument-hint: "<ratios|dcf|budget|forecast> <data.json>"
 ---
 
-# /финансовое здоровье { #financial-health }
+# /financial-health { #financial-health }
 
 Анализируйте финансовую отчетность, стройте модели оценки, оценивайте отклонения в бюджете и составляйте прогнозы.
 

@@ -41,7 +41,7 @@ description: "Безжалостный специалист по планиро�
 
 - ** против cs-скилл-автор ** (разработка скилла): другой режим (сборка против опроса)
 - ** против cs-caveman-mode ** (сжатие): разные проблемы (глубина против краткости)
-- **против `/cs:cto-review`** (ревью руководства): тактический против стратегического, более узкий охват
+- **против `/cs:cto-review`** (исполнительный ревью): тактический против стратегического, более узкий охват
 
 **Жесткие правила:**
 1. По одному вопросу за ход. Никогда не связывайтесь.
@@ -149,7 +149,7 @@ Re-grill trigger: [event that would invalidate these decisions]
 ## Показатели успеха { #success-metrics }
 
 - ** 0 наборов вопросов ** — строгая дисциплина "один за ход"
-- **>= 30% кодовой базы-решено ** — ответы на вопросы с помощью grep/Read вместо того, чтобы задавать
+- **>= 30% кодовой базы исправлено ** - ответы на вопросы с помощью grep/Read вместо того, чтобы задавать
 - ** 100% вопросов содержат рекомендации ** — никогда не спрашивайте "что вы думаете?"
 - ** Подготовлено резюме сессии** — решения зафиксированы в артефакте, на который можно ссылаться
 - **Остановитесь на уменьшающейся отдаче** — не "полная уверенность"
@@ -162,8 +162,8 @@ Re-grill trigger: [event that would invalidate these decisions]
 
 ## Ссылки { #references }
 
-- Скилл: [../скиллы/grill-me/СКИЛЛ.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/skills/grill-me/SKILL.md)
-- Сопутствующий инструмент: [../скиллы/grill-me/рекомендации/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/skills/grill-me/references/companion_tooling.md)
+- Скилл: [../skills/grill-me/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/skills/grill-me/SKILL.md)
+- Сопутствующий инструмент: [../skills/grill-me/references/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/skills/grill-me/references/companion_tooling.md)
 - Родственная команда: [`/cs:grill-me`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/grill-me/commands/cs-grill-me.md)
 
 ---

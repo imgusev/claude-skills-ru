@@ -1,9 +1,9 @@
 ---
-title: "/cs:Онбординг — Интервью с основателем { #csonboard--founder-interview } — Агентский скилл для руководителей"
+title: "/cs:onboard — Интервью с основателем { #csonboard--founder-interview } — Агентский скилл для руководителей"
 description: "/cs:онбординг — интервью с основателем, которое заполняет ~/.claude/company-context.md, используя каноническую 7-мерную схему cs-онбординг. Первая. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:Онбординг — Интервью с основателем { #csonboard--founder-interview }
+# /cs:onboard — Интервью с основателем { #csonboard--founder-interview }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>
@@ -51,7 +51,7 @@ description: "/cs:онбординг — интервью с основател�
 
 ## Выходной формат { #output-format }
 
-**Каноническая схема:** `~/.claude/company-context.md` находится в собственности [`cs-onboard`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cs-onboard/SKILL.md) скилл и следует его 7-мерной схеме ([`templates/company-context-template.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cs-onboard/templates/company-context-template.md)): Идентичность компании, Стадия и масштаб, Профиль основателя, Команда и культура, Рынок и конкуренция, Текущие вызовы, Цели и амбиции. Приведенные выше 12 вопросов представляют собой более быстрый структурированный ввод, который заполняет тот же файл — Личность / Бизнес / Финансы → Стадия и масштаб, Команда → Команда и культура, Квартальные приоритеты / риски → Текущие задачи + Цели и амбиции. Писать `[not captured]` для измерений, которых не достигает быстрый ввод (профиль основателя, рынок и конкуренция); запустите полный `cs-onboard` собеседование, чтобы заполнить их. Никогда не создавайте второй контекстный файл или другой макет.
+**Каноническая схема:** `~/.claude/company-context.md` находится в собственности [`cs-onboard`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cs-onboard/SKILL.md) скилл и следует его 7-мерной схеме ([`templates/company-context-template.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cs-onboard/templates/company-context-template.md)): Идентичность компании, Стадия и масштаб, Профиль основателя, Команда и культура, Рынок и конкуренция, Текущие вызовы, Цели и амбиции. Приведенные выше 12 вопросов представляют собой более быстрый структурированный ввод, который заполняет тот же файл — Идентичность / Бизнес / финансы → Этап и масштаб, Команда → Команда и культура, Квартальные приоритеты/risks → Текущие задачи + Цели и амбиции. Писать `[not captured]` для измерений, которых не достигает быстрый ввод (профиль основателя, рынок и конкуренция); запустите полный `cs-onboard` собеседование, чтобы заполнить их. Никогда не создавайте второй контекстный файл или другой макет.
 
 Краткое содержание приема, отраженное в 12 вопросах:
 

@@ -1,6 +1,6 @@
 ---
 title: "Анализ пробелов в тестовом покрытии { #analyze-test-coverage-gaps } — Агентский скилл и плагин Codex"
-description: "Analyze test coverage gaps. Use when user says 'test coverage', 'what's not tested', 'coverage gaps', 'missing tests', 'coverage report', or 'what. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+description: ">-. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
 # Анализ пробелов в тестовом покрытии { #analyze-test-coverage-gaps }
@@ -44,7 +44,7 @@ description: "Analyze test coverage gaps. Use when user says 'test coverage', 'w
 
 Сканировать все `*.spec.ts` / `*.spec.js` файлы:
 
-- Извлеките, какие страницы/маршруты охвачены (по `page.goto()` звонки)
+- Извлеките, какие страницы/routes покрываются (за счет `page.goto()` звонки)
 - Извлеките, какие компоненты тестируются (с помощью локатора)
 - Извлеките, какие конечные точки API подвергаются издевательствам или попаданию
 - Подсчитайте количество тестов в каждой области
@@ -64,7 +64,7 @@ description: "Analyze test coverage gaps. Use when user says 'test coverage', 'w
 | Checkout | /checkout | 8 | ✅ Covered |
 ```
 
-### 4. Расставьте приоритеты по пробелам { #4-prioritize-gaps }
+### 4. Определите приоритетность пробелов { #4-prioritize-gaps }
 
 Ранжируйте непокрытые области по влиянию на бизнес:
 
@@ -78,7 +78,7 @@ description: "Analyze test coverage gaps. Use when user says 'test coverage', 'w
 Для каждого пробела рекомендуется:
 - Количество необходимых тестов
 - Какой шаблон из `templates/` для использования
-- Предполагаемое усилие (быстрое/среднее/сложное)
+- Предполагаемое усилие (быстрое/medium/complex)
 
 ```
 ## Recommended Test Plan

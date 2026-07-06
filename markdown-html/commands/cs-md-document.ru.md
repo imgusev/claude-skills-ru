@@ -3,7 +3,7 @@ description: "Преобразуйте Markdown в расширенной фор
 argument-hint: "<path to markdown file> [--out <dir>] [--features search,copycode,smoothscroll,scrollspy]"
 ---
 
-# /cs:md-document — Markdown длинной формы → HTML { #csmd-document--long-form-markdown--html }
+# /cs:md-document — Markdown в длинной форме → HTML { #csmd-document--long-form-markdown--html }
 
 Преобразуйте Markdown в **$ARGUMENTS** в однофайловый интерактивный HTML-документ.
 
@@ -11,7 +11,7 @@ argument-hint: "<path to markdown file> [--out <dir>] [--features search,copycod
 
 1. **Введите < 100 строк** → отклонить (Markdown выигрывает ниже порогового значения для каждого Shihipar). `wc -l <path>` для подтверждения.
 2. **Дизайн-система не онбординг** → мусор, поверхность `/cs:design-system`.
-3. **Выходной каталог недоступен для записи ** → отказать, запросить у пользователя альтернативный через `--out`.
+3. **Выходной каталог недоступен для записи ** → отказаться, запросить у пользователя альтернативный через `--out`.
 
 ## Пайплайн { #pipeline }
 

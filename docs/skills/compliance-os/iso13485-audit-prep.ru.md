@@ -1,9 +1,9 @@
 ---
-title: "/cs: iso13485-аудит-подготовка — ISO 13485 СМК форсирует вопросы { #csiso13485-audit-prep--iso-13485-qms-forcing-questions } — Плагин и агентский скилл для Claude Code"
+title: "/cs:iso13485-audit-prep — ISO 13485 Система менеджмента качества, форсирующая вопросы { #csiso13485-audit-prep--iso-13485-qms-forcing-questions } — Плагин и агентский скилл для Claude Code"
 description: "/cs: iso13485-аудит-подготовка <область применения> — аудит СМК ISO 13485 6 - принудительный опрос по вопросам. Управление дизайном + CAPA +. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs: iso13485-аудит-подготовка — ISO 13485 СМК форсирует вопросы { #csiso13485-audit-prep--iso-13485-qms-forcing-questions }
+# /cs:iso13485-audit-prep — ISO 13485 Система менеджмента качества, форсирующая вопросы { #csiso13485-audit-prep--iso-13485-qms-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
@@ -44,7 +44,7 @@ description: "/cs: iso13485-аудит-подготовка <область пр
 - Глубина анализа первопричин: минимум 5 причин
 - Проверка эффективности = измеримые доказательства, а не "мы обновили процедуру".
 - Закрытие, одобренное соответствующим органом
-- Повторные настройки для разных продуктов = триггер системной проблемы
+- Повторные настройки CAPA для разных продуктов = триггер системной проблемы
 
 ### 3. Когда в последний раз проводилась повторная проверка процесса (IQ/OQ/PQ)? { #3-when-was-process-validation-iqoqpq-last-revalidated }
 **Пункт 7.5.6 — часто устарел.**

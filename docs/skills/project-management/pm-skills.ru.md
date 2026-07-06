@@ -28,7 +28,7 @@ description: "Маршрутизатор/ индекс для 8 скилл по 
 | Скорость спринта, ретро-анализ, здоровье церемонии | scrum-мастер | `skills/scrum-master/` |
 | Запросы JQL, воркфлоу Jira, доски объявлений | jira-эксперт | `skills/jira-expert/` |
 | Пространства слияния, структура страницы, аудит контента | слияние-эксперт | `skills/confluence-expert/` |
-| Администрирование пользователя/разрешений/схемы | atlassian-администратор | `skills/atlassian-admin/` |
+| Пользователь/permission/scheme администрация | atlassian-администратор | `skills/atlassian-admin/` |
 | Многоразовые шаблоны Confluence/Jira | atlassian-шаблоны | `skills/atlassian-templates/` |
 | Стенограммы заседаний, время разговора, пункты о действиях | встреча-анализатор | `skills/meeting-analyzer/` |
 | Обновления статуса, обновления 3P, связь с стейкхолдерами | командные коммуникации | `skills/team-communications/` |

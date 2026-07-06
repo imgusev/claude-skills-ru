@@ -1,9 +1,9 @@
 ---
-title: "/cs:gdpr-аудит-подготовка — GDPR DPO - Форсирующие вопросы { #csgdpr-audit-prep--gdpr-dpo-forcing-questions } — Плагин и агентский скилл для Claude Code"
+title: "/cs:gdpr-audit-prep — GDPR DPO форсирует вопросы { #csgdpr-audit-prep--gdpr-dpo-forcing-questions } — Плагин и агентский скилл для Claude Code"
 description: "/cs:gdpr-аудит-подготовка <область применения> — аудит GDPR 6-статья с вопросом - цитируемый принудительный допрос. Используйте перед ежегодной. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:gdpr-аудит-подготовка — GDPR DPO - Форсирующие вопросы { #csgdpr-audit-prep--gdpr-dpo-forcing-questions }
+# /cs:gdpr-audit-prep — GDPR DPO форсирует вопросы { #csgdpr-audit-prep--gdpr-dpo-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>

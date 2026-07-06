@@ -1,9 +1,9 @@
 ---
-title: "/si:извлекать — Создавать скиллы из шаблонов { #siextract--create-skills-from-patterns } — Агентский скилл и плагин Codex"
+title: "/si:extract — Создавайте скиллы на основе шаблонов { #siextract--create-skills-from-patterns } — Агентский скилл и плагин Codex"
 description: "Превратите проверенный шаблон или решение для отладки в автономный многоразовый скилл с помощью SKILL.md , справочные материалы и примеры. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /si:извлекать — Создавать скиллы из шаблонов { #siextract--create-skills-from-patterns }
+# /si:extract — Создавайте скиллы на основе шаблонов { #siextract--create-skills-from-patterns }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Инженерия — базовый уровень</span>

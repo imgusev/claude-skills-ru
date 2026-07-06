@@ -35,7 +35,7 @@ description: "17 продукт skills — продуктовый агентск
 
     Создавайте целевые страницы с высокой конверсией на основе описания продукта. Выводите полные компоненты Next.js /Rea...
 
--   **[Аналитика продукта { #product-analytics }](product-analytics.md)**
+-   **[Аналитика продуктов { #product-analytics }](product-analytics.md)**
 
     ---
 
@@ -47,7 +47,7 @@ description: "17 продукт skills — продуктовый агентск
 
     Запустите структурированное обнаружение, чтобы выявить ценные возможности и снизить риски при выборе продукта.
 
--   **[Набор инструментов менеджера по продукту { #product-manager-toolkit }](product-manager-toolkit.md)**
+-   **[Инструментарий менеджера по продукту { #product-manager-toolkit }](product-manager-toolkit.md)**
 
     ---
 

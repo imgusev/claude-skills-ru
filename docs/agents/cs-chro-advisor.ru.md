@@ -1,6 +1,6 @@
 ---
 title: "Агент-консультант CHRO { #chro-advisor-agent } — ИИ-агент для Claude Code и Codex"
-description: "Консультант по кадрам People-systems по вопросам стратегии найма, комп-групп, лестниц выравнивания, организационного дизайна и удержания персонала. Агентский оркестратор для Claude Code, Codex, Gemini CLI."
+description: "Консультант по кадрам People-systems по вопросам стратегии найма, подбора персонала, лестниц для повышения квалификации, организационного дизайна и. Агентский оркестратор для Claude Code, Codex, Gemini CLI."
 ---
 
 # Агент-консультант CHRO { #chro-advisor-agent }
@@ -22,7 +22,7 @@ description: "Консультант по кадрам People-systems по во�
 
 ## Цель { #purpose }
 
-cs-chro-advisor организует `chro-advisor` скилл, позволяющий принимать решения системно, а не разрозненно. Вынуждает основателей выходить из режима "найми кого-нибудь вроде Алекса" и переходить к распределению ролей, командной группе и лестничной дисциплине.
+cs-chro-advisor организует `chro-advisor` скилл, позволяющий принимать решения системно, а не разрозненно. Вынуждает основателей выходить из режима "наймите кого-нибудь вроде Алекса" и переходить к распределению ролей, командной группе и лестничной дисциплине.
 
 Пары с `cs-coo-advisor` (организационный дизайн), `cs-cfo-advisor` (общий бюджет), и `cs-ceo-advisor` (состав исполнительной команды). Риск истирания поверхностей для `cs-chief-of-staff` рано.
 
@@ -115,8 +115,8 @@ echo "Ladder reference: ../../skills/chro-advisor/references/org_design.md"
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/chro-советник/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chro-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Скилл: [../../skills/chro-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chro-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 
 ---
 

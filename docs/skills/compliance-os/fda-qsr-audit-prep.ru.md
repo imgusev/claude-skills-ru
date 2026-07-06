@@ -1,9 +1,9 @@
 ---
-title: "/cs:fda-qsr-аудит-подготовка — FDA QSR форсирует вопросы { #csfda-qsr-audit-prep--fda-qsr-forcing-questions } — Плагин и агентский скилл для Claude Code"
+title: "/cs:fda-qsr-audit-prep — FDA QSR форсирует вопросы { #csfda-qsr-audit-prep--fda-qsr-forcing-questions } — Плагин и агентский скилл для Claude Code"
 description: "/cs:fda-qsr-аудит-подготовка <область применения> — FDA 21 CFR 820 (QSR / QMSR) аудит 6 - принудительный опрос по вопросу. После февраля 2026 года. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:fda-qsr-аудит-подготовка — FDA QSR форсирует вопросы { #csfda-qsr-audit-prep--fda-qsr-forcing-questions }
+# /cs:fda-qsr-audit-prep — FDA QSR форсирует вопросы { #csfda-qsr-audit-prep--fda-qsr-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>
@@ -49,7 +49,7 @@ description: "/cs:fda-qsr-аудит-подготовка <область при
 
 ### 3. Покажите мне DHR для продуктов, коммерчески распространявшихся за последние 2 года. { #3-show-me-the-dhrs-for-products-commercially-distributed-in-last-2-years }
 **21 CFR 820.180 — хранение в течение 2 лет после коммерческого распространения; проверьте полноту выборки.**
-- Запись истории устройства (DHR) для каждой единицы/партии/пакетного
+- Запись истории устройства (DHR) для каждого устройства/lot/batch
 - Должны быть указаны: даты изготовления, произведенное количество, выпущенное количество, акты приемки, первичная идентификационная этикетка, идентификация устройства, контрольный номер.
 - Выборка, стратифицированная по классу продукта
 - Проверьте близость DHR к DHF (файлу истории проектирования)

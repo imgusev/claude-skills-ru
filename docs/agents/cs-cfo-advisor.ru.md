@@ -35,7 +35,7 @@ description: "Numerate-скептически настроенный финан�
 1. ** Калькулятор скорости горения**
    - Путь: [`scripts/burn_rate_calculator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cfo-advisor/scripts/burn_rate_calculator.py)
    - Использование: `python ../../skills/cfo-advisor/scripts/burn_rate_calculator.py`
-   - Выводит базовые/бычьи/медвежьи сценарии взлетно-посадочной полосы, количество наличных в месяцах, статус "жив по умолчанию" или "мертв по умолчанию".
+   - База выходных данных/bull/bear сценарии взлетно-посадочной полосы, месяцы наличных, статус "жив по умолчанию" или "мертв по умолчанию".
 
 2. **Анализатор экономики единицы измерения**
    - Путь: [`scripts/unit_economics_analyzer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cfo-advisor/scripts/unit_economics_analyzer.py)
@@ -124,8 +124,8 @@ echo "Artifacts ready in /tmp/. Feed into /cs:boardroom brief."
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/финансовый директор-консультант/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cfo-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Скилл: [../../skills/cfo-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cfo-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 - Руководство по домену: [../../CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/CLAUDE.md)
 
 ---

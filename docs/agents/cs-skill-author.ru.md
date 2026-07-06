@@ -1,9 +1,9 @@
 ---
-title: "Автор скилла Агент { #skill-author-agent } — ИИ-агент для Claude Code и Codex"
+title: "Автор Агента по скиллу { #skill-author-agent } — ИИ-агент для Claude Code и Codex"
 description: "Скилл - персона автора. Принуждение-допрашивающий задает вопрос перед выполнением любого нового скилла. Запускает чек-лист Мэтта Покока для ревью из. Агентский оркестратор для Claude Code, Codex, Gemini CLI."
 ---
 
-# Автор скилла Агент { #skill-author-agent }
+# Автор Агента по скиллу { #skill-author-agent }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-robot: Агент</span>
@@ -24,7 +24,7 @@ description: "Скилл - персона автора. Принуждение-�
 
 Агент-автор cs-скилла организует `write-a-skill` Мэтт Покок назвал скилл из трех решений, связанных с разработкой скилла.:
 
-1. ** Соберите требования** — какая задача/домен, какие варианты использования, только скрипты или инструкции, справочные материалы
+1. **Соберите требования** — какая задача/domain, какие варианты использования, только скрипты или инструкции, справочные материалы
 2. **Подготовьте скилл для проекта** — SKILL.md + справочные файлы (при необходимости) + скрипты (если они детерминированы)
 3. ** Ревью с пользователем ** — охватывает ли это варианты использования, чего-то не хватает, правильный ли уровень детализации
 
@@ -52,7 +52,7 @@ description: "Скилл - персона автора. Принуждение-�
    - Использование: `python skill_structure_validator.py path/to/skill-folder/`
    - Возвращает: 6-вердикт проверки (SKILL.md присутствует, ≤100 строк, ссылки при необходимости разделяются, глубина в один уровень, без циклических ссылок, примечание к скриптам/ папкам)
 
-3. **Бегун по чек-листу для ревью по скиллам.**
+3. **Бегун по чек-листу ревью скилла-раннеру**
    - Путь: [`scripts/skill_review_checklist_runner.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/skills/write-a-skill/scripts/skill_review_checklist_runner.py)
    - Использование: `python skill_review_checklist_runner.py path/to/skill-folder/`
    - Результаты: вердикт Мэтта по чек-листу из 6 пунктов (триггер описания, SKILL.md ≤100 строк, нет информации, зависящей от времени, последовательная терминология, конкретные примеры, ссылки глубиной в один уровень)
@@ -141,8 +141,8 @@ done
 
 ## Ссылки { #references }
 
-- Скилл: [../скиллы/скилл для записи/СКИЛЛ.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/skills/write-a-skill/SKILL.md)
-- Сопутствующий инструмент: [../скиллы/скилл для написания/ссылки/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/skills/write-a-skill/references/companion_tooling.md)
+- Скилл: [../skills/write-a-skill/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/skills/write-a-skill/SKILL.md)
+- Сопутствующий инструмент: [../skills/write-a-skill/references/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/skills/write-a-skill/references/companion_tooling.md)
 - Родственная команда: [`/cs:write-a-skill`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/write-a-skill/commands/cs-write-a-skill.md)
 
 ---

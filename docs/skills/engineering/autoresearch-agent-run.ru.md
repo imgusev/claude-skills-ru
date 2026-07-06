@@ -1,9 +1,9 @@
 ---
-title: "/ar:запуск — Одиночная итерация эксперимента { #arrun--single-experiment-iteration } — Агентский скилл для Codex и OpenClaw"
+title: "/ar:run — Одиночная итерация эксперимента { #arrun--single-experiment-iteration } — Агентский скилл для Codex и OpenClaw"
 description: "Запустите одну итерацию эксперимента. Отредактируйте целевой файл, оцените, сохраните или удалите. Используйте, когда пользователь запускает /ar:run. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /ar:запуск — Одиночная итерация эксперимента { #arrun--single-experiment-iteration }
+# /ar:run — Одиночная итерация эксперимента { #arrun--single-experiment-iteration }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Инженерия — уровень POWERFUL</span>

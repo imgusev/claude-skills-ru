@@ -39,7 +39,7 @@ tools: [Read, Bash, Grep, Glob]
 1. **Компрессор**
    - Путь: `../skills/caveman/scripts/caveman_compressor.py`
    - Использование: `python caveman_compressor.py "text to compress"`
-   - Детерминистически применяет правила Мэтта (отбрасывает статьи / наполнители / любезности / подстраховку, сокращает технические термины, стрелки причинно-следственной связи).
+   - Применяет правила Мэтта детерминированно (отбрасывает статьи/filler/pleasantries/hedging, сокращенные технические термины, стрелки причинно-следственной связи)
 
 2. **Оценка экономии токенов**
    - Путь: `../skills/caveman/scripts/token_savings_estimator.py`
@@ -110,8 +110,8 @@ Caveman resume. [terse continuation].
 
 ## Ссылки { #references }
 
-- Скилл: [../скиллы/пещерный человек/СКИЛЛЫ.md](../skills/caveman/SKILL.md)
-- Сопутствующий инструмент: [../скиллы/пещерный человек/рекомендации/companion_tooling.md](../skills/caveman/references/companion_tooling.md)
+- Скилл: [../skills/caveman/SKILL.md](../skills/caveman/SKILL.md)
+- Сопутствующий инструмент: [../skills/caveman/references/companion_tooling.md](../skills/caveman/references/companion_tooling.md)
 - Родственная команда: [`/cs:caveman`](../commands/cs-caveman.md)
 
 ---

@@ -1,9 +1,9 @@
 ---
-title: "/cs:финансовый директор-ревью — Финансовый директор форсирует вопросы { #cscfo-review--cfo-forcing-questions } — Агентский скилл для руководителей"
+title: "/cs:cfo-review — Финансовый директор, форсирующий вопросы { #cscfo-review--cfo-forcing-questions } — Агентский скилл для руководителей"
 description: "/cs: финансовый директор - ревью <плана> — Подсчитать - скептическое отношение к любому плану, который касается денег. Экономика предприятия. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:финансовый директор-ревью — Финансовый директор форсирует вопросы { #cscfo-review--cfo-forcing-questions }
+# /cs:cfo-review — Финансовый директор, форсирующий вопросы { #cscfo-review--cfo-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

@@ -4,7 +4,7 @@ description: "Запросите вики— раздел LLM - читает ind
 ---
 <!-- canonical copy: engineering/llm-wiki/commands/wiki-query.md — keep in sync (root copy uses repo-root-relative script paths) -->
 
-# /вики-запрос { #wiki-query }
+# /wiki-query { #wiki-query }
 
 Задайте вопрос вики. Библиотекарь читает `index.md` сначала выбирает релевантные страницы по категориям, обобщает ответ с цитатами и предлагает отправить ответ обратно в вики, чтобы ваши исследования были более комплексными.
 

@@ -3,7 +3,7 @@ name: "gdpr-audit-prep"
 description: "/cs:gdpr-аудит-подготовка <область применения> — аудит GDPR 6-статья с вопросом - цитируемый принудительный допрос. Используйте перед ежегодной внутренней ревью GDPR, внутренним аудитом после нарушения, подготовкой к расследованию DPA или проведением due diligence при приобретении."
 ---
 
-# /cs:gdpr-аудит-подготовка — GDPR DPO - Форсирующие вопросы { #csgdpr-audit-prep--gdpr-dpo-forcing-questions }
+# /cs:gdpr-audit-prep — GDPR DPO форсирует вопросы { #csgdpr-audit-prep--gdpr-dpo-forcing-questions }
 
 **Команда:** `/cs:gdpr-audit-prep <scope>`
 

@@ -1,6 +1,6 @@
 ---
 title: "Корабельные гейты { #ship-gate } — Агентский скилл для Codex и OpenClaw"
-description: "Pre-production audit that scans a codebase for security, database, deployment, code quality, AI/LLM, dependency, frontend, and observability issues. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+description: ">. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
 # Корабельные гейты { #ship-gate }
@@ -16,8 +16,8 @@ description: "Pre-production audit that scans a codebase for security, database,
 </div>
 
 
-Предварительный аудит, который сканирует кодовую базу и сообщает о прохождении / сбое / руководстве
-по 8 категориям, прежде чем что-либо будет отправлено.
+Предварительный аудит, который сканирует кодовую базу и передает отчеты/fail/manual
+по 8 категориям, прежде чем что-либо отправится.
 
 ## Поведение перехвата { #intercept-behavior }
 

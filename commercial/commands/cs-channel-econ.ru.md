@@ -3,11 +3,11 @@ description: "Экономика прямых и партнерских кана
 argument-hint: "<channels with deal count + ARR + costs, or path to channel JSON>"
 ---
 
-# /cs:channel-econ — Direct против partner economics { #cschannel-econ--direct-vs-partner-economics }
+# /cs:channel-econ — Прямая экономика против экономики партнеров { #cschannel-econ--direct-vs-partner-economics }
 
 Запустите `channel-economics` скилл на основе этого ввода:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Воркфлоу с тремя инструментами { #three-tool-workflow }
 

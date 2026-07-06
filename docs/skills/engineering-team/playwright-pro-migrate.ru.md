@@ -1,6 +1,6 @@
 ---
 title: "Перейти к драматургу { #migrate-to-playwright } — Агентский скилл и плагин Codex"
-description: "Migrate from Cypress or Selenium to Playwright. Use when user mentions 'cypress', 'selenium', 'migrate tests', 'convert tests', 'switch to. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+description: ">-. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
 # Перейти к драматургу { #migrate-to-playwright }
@@ -140,4 +140,4 @@ npx playwright test <converted-file> --reporter=list
 - Сводка по преобразованию: файлы преобразованы, все тесты перенесены
 - Любые тесты, которые не удалось преобразовать автоматически (требуется ручное вмешательство)
 - Обновленная конфигурация CI
-- Сравнение результатов тестового запуска до/после
+- До того, как/after сравнение результатов тестового запуска

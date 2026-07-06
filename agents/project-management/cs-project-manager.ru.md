@@ -46,12 +46,12 @@ tools: [Read, Write, Bash, Grep, Glob]
 **Базы знаний:**
 
 - `../../project-management/skills/senior-pm/references/portfolio-prioritization-models.md` -- WSJF, Москва, Стоимость задержки, фреймворки для оценки портфолио
-- `../../project-management/skills/senior-pm/references/risk-management-framework.md` -- Идентификация рисков, качественный/количественный анализ, стратегии реагирования
+- `../../project-management/skills/senior-pm/references/risk-management-framework.md` -- Идентификация рисков, качественное/quantitative анализ, стратегии реагирования
 - `../../project-management/skills/senior-pm/references/portfolio-kpis.md` -- Определения ключевых показателей эффективности, частота отслеживания, показатели отчетности руководителей
 
 **Шаблоны:**
 
-- `../../project-management/skills/senior-pm/assets/executive_report_template.md` -- Отчет о состоянии исполнительной власти с указанием RAG, рисков, необходимых решений
+- `../../project-management/skills/senior-pm/assets/executive_report_template.md` -- Отчет о состоянии исполнительной власти с информацией о RAG, рисках, необходимых решениях
 - `../../project-management/skills/senior-pm/assets/project_charter_template.md` -- Устав проекта с указанием сферы охвата, целей, ограничений, стейкхолдеров
 - `../../project-management/skills/senior-pm/assets/raci_matrix_template.md` -- Матрица распределения ответственности для межфункциональных команд
 
@@ -74,7 +74,7 @@ tools: [Read, Write, Bash, Grep, Glob]
    - ** Особенности: ** Скользящие средние, стандартное отклонение, тренды от спринта к спринту в течение всего периода, прогнозирование пропускной способности
 
 3. **Анализатор ретроспективы**
-   - **Цель:** Структурированный анализ ретроспективы с отслеживанием элементов действий и выделением темы
+   - **Цель:** Структурированный анализ ретроспективы с отслеживанием элементов действия и выделением темы
    - **Путь:** `../../project-management/skills/scrum-master/scripts/retrospective_analyzer.py`
    - **Использование:** `python ../../project-management/skills/scrum-master/scripts/retrospective_analyzer.py retro_notes.json`
    - ** Особенности: ** Кластеризация тем, анализ настроений, извлечение элементов действий, отслеживание тенденций в спринтах
@@ -147,10 +147,10 @@ tools: [Read, Write, Bash, Grep, Glob]
    python ../../project-management/skills/senior-pm/scripts/resource_capacity_planner.py team_data.json
    ```
    - Учетная запись для ВОМ, праздников, общих ресурсов
-   - Отмечать чрезмерно выделенных членов команды
+   - Отмечать чрезмерно распределенных членов команды
    - Отрегулируйте пропускную способность спринта в зависимости от фактической доступности
 
-4. **Выберите журнал невыполненных работ спринта** - Фиксируйте элементы в пределах возможностей:
+4. **Выберите невыполненную работу по спринту** - Фиксация элементов в пределах возможностей:
    - Применить WSJF или выбор на основе приоритета (ссылка: `../../project-management/skills/senior-pm/references/portfolio-prioritization-models.md`)
    - Обеспечьте соответствие целей спринта - каждый пункт должен способствовать достижению 1-2 целей
    - Включите 10-15% возможностей для исправления ошибок и оперативной работы
@@ -161,7 +161,7 @@ tools: [Read, Write, Bash, Grep, Glob]
    - Ссылка на доску спринта Jira для отслеживания в реальном времени
 
 6. **Настройка отслеживания спринта** - Настройка дашбордов и автоматизации:
-   - Создать дашборд выгорания/burnup (ссылка: `../../project-management/skills/jira-expert/references/AUTOMATION.md`)
+   - Создать выгорание/burnup дашборд (ссылка: `../../project-management/skills/jira-expert/references/AUTOMATION.md`)
    - Настройте автоматизацию ежедневных напоминаний о простоях
    - Настройка оповещений об изменении области действия спринта
 
@@ -258,7 +258,7 @@ cat resource_report.txt
 
 2. **Выберите ретро формат ** - Выберите формат, основанный на потребностях команды:
    - Ссылка: `../../project-management/skills/scrum-master/references/retro-formats.md`
-   - **Запуск/остановка/продолжение**: Универсальное, подходит для новых команд
+   - ** Запуск/остановка/продолжение**: Универсальное, подходит для новых команд
    - **4Ls (Понравилось/выучено/не хватало/к чему стремились)**: Фокусируется на обучении и росте
    - ** Парусник**: Визуальная метафора якорей (блокираторов) и ветра (ускорителей).
    - ** Безумный/грустный/радостный**: Ориентирован на эмоции, хорош для поддержания морального духа команды
@@ -296,7 +296,7 @@ cat resource_report.txt
 
 ** Ожидаемый результат: ** Ретро-резюме с приоритетными темами, 2-3 собственных элемента действий с билетами Jira, диаграмма тенденций работоспособности спринта и документация Confluence.
 
-**Оценка времени:** 1.5-2 часы (30 минут подготовки + 60 минут ретро-оформления + 30 минут документации)
+**Оценка времени:** 1.5-2 часы (30 минут подготовки + 60 минут ретро + 30 минут документации)
 
 **Пример:**
 ```bash
@@ -354,7 +354,7 @@ cat retro_analysis.txt
 
 6. **Создавайте дашборды** - Повышайте видимость для команды и стейкхолдеров:
    - Доска для спринта с плавательными дорожками от назначенного лица
-   - Устройство для составления диаграммы выгорания / burnup chart
+   - Сгорание/burnup устройство для построения диаграмм
    - Диаграмма скорости для исторического отслеживания
    - Отслеживание соответствия требованиям SLA
    - Используйте шаблоны JQL из `../../project-management/skills/jira-expert/references/jql-examples.md`
@@ -487,7 +487,7 @@ echo "Template: ../../project-management/skills/senior-pm/assets/executive_repor
 - ** Удовлетворенность команды:** Показатели проверки работоспособности стабильны или улучшаются по всем параметрам
 
 ** Общение с стейкхолдерами:**
-- ** Частота отчетов:** 100% своевременная доставка еженедельных/ ежемесячных отчетов о состоянии
+- ** Частота отчетов:** 100% своевременная доставка еженедельных/monthly отчеты о состоянии дел
 - ** Изменение решения:** <3 дней с момента эскалации до принятия решения руководством
 - **Доверие стейкхолдеров:** Удовлетворенность >90% по результатам ежеквартальных опросов эффективности PM
 - **Прозрачность:** Все проектные данные доступны с помощью дашбордов самообслуживания
@@ -500,12 +500,12 @@ echo "Template: ../../project-management/skills/senior-pm/assets/executive_repor
 
 ## Ссылки { #references }
 
-- **Скилл старшего помощника премьер-министра:** [../../управление проектами/скиллы/senior-pm/СКИЛЛЫ.md](../../project-management/skills/senior-pm/SKILL.md)
-- **Скилл Scrum-мастера:** [../../управление проектами/скиллы/scrum-мастер/СКИЛЛ.md](../../project-management/skills/scrum-master/SKILL.md)
-- **Экспертный скилл Jira:** [../../управление проектами/скиллы/jira-эксперт/СКИЛЛЫ.md](../../project-management/skills/jira-expert/SKILL.md)
-- **Скилл эксперта по слиянию:** [../../управление проектами/скиллы/confluence-эксперт/СКИЛЛЫ.md](../../project-management/skills/confluence-expert/SKILL.md)
-- **Скилл администратора Atlassian:** [../../управление проектами/скиллы/atlassian-администратор/СКИЛЛЫ.md](../../project-management/skills/atlassian-admin/SKILL.md)
-- **Руководство по домену PM:** [../../управление проектами/CLAUDE.md](../../project-management/CLAUDE.md)
+- **Скилл старшего помощника премьер-министра:** [../../project-management/skills/senior-pm/SKILL.md](../../project-management/skills/senior-pm/SKILL.md)
+- **Скилл Scrum-мастера:** [../../project-management/skills/scrum-master/SKILL.md](../../project-management/skills/scrum-master/SKILL.md)
+- **Экспертный скилл Jira:** [../../project-management/skills/jira-expert/SKILL.md](../../project-management/skills/jira-expert/SKILL.md)
+- **Скилл эксперта по слиянию:** [../../project-management/skills/confluence-expert/SKILL.md](../../project-management/skills/confluence-expert/SKILL.md)
+- **Скилл администратора Atlassian:** [../../project-management/skills/atlassian-admin/SKILL.md](../../project-management/skills/atlassian-admin/SKILL.md)
+- **Руководство по домену PM:** [../../project-management/CLAUDE.md](../../project-management/CLAUDE.md)
 - **Руководство по разработке агента:** [../CLAUDE.md](../CLAUDE.md)
 
 ---

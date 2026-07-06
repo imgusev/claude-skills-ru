@@ -1,9 +1,9 @@
 ---
-title: "/em: фреймворк с жестким вызовом для решений без хороших вариантов { #emhard-call--framework-for-decisions-with-no-good-options } — Агентский скилл для руководителей"
+title: "/em:hard-call — Фреймворк для принятия решений без хороших вариантов { #emhard-call--framework-for-decisions-with-no-good-options } — Агентский скилл для руководителей"
 description: "/em: фреймворк с жестким вызовом для решений, в которых нет хороших вариантов. Используйте, когда каждый вариант болезненен и требуется. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /em: фреймворк с жестким вызовом для решений без хороших вариантов { #emhard-call--framework-for-decisions-with-no-good-options }
+# /em:hard-call — Фреймворк для принятия решений без хороших вариантов { #emhard-call--framework-for-decisions-with-no-good-options }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>
@@ -114,7 +114,7 @@ description: "/em: фреймворк с жестким вызовом для р
 Видишь [`references/hard_things.md — Co-Founder Conflicts`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/executive-mentor/skills/executive-mentor/references/hard_things.md — Co-Founder Conflicts) для полного фреймворка.
 
 Ключевые вопросы, на которые нужно ответить в первую очередь:
-- Это проблема производительности или проблема ценностей / культуры? (Разные разговоры)
+- Это проблема с производительностью или с ценностями/culture проблема? (Разные разговоры)
 - Были ли вы откровенны — не намекали, а прямо говорили — о проблеме?
 - Как выглядит таблица ограничений и каковы юридические последствия?
 - Есть ли роль, которая подходит им лучше, или это полный уход?
@@ -154,7 +154,7 @@ description: "/em: фреймворк с жестким вызовом для р
 
 ## Тест на избегание этого { #the-avoiding-it-test }
 
-Ты знаешь, что избегал трудного вызова, если:
+Ты знаешь, что избегал трудного разговора, если:
 - Ты думал об этом каждую неделю больше месяца
 - Вы надеетесь, что ситуация "разрешится сама собой"
 - Вы ждете больше данных, которых, по вашему мнению, никогда не будет достаточно

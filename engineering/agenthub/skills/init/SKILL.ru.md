@@ -4,7 +4,7 @@ description: "Создайте новый сеанс совместной раб
 command: /hub:init
 ---
 
-# /hub:init — Создать новый сеанс { #hubinit--create-new-session }
+# /hub:init — Создать новую сессию { #hubinit--create-new-session }
 
 Инициализируйте сеанс совместной работы AgentHub. Создает `.agenthub/` структура каталогов, генерирует идентификатор сеанса и настраивает критерии оценки.
 

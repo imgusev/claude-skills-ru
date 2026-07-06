@@ -3,11 +3,11 @@ description: "Ревью Fullstack engineering — проходит 7 форси
 argument-hint: "<problem or codebase to review>"
 ---
 
-# /cs:fullstack-ревью — Инженерный ревью Fullstack { #csfullstack-review--fullstack-engineering-review }
+# /cs:fullstack-review — Ревью инженерного обеспечения Fullstack { #csfullstack-review--fullstack-engineering-review }
 
 Используйте `cs-fullstack-engineer` агент (который использует `context: fork` чтобы сохранить родительский поток чистым) для обработки этого запроса:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Библиотека принудительных вопросов { #forcing-question-library }
 
@@ -54,7 +54,7 @@ argument-hint: "<problem or codebase to review>"
 - ❌ Связывание форсирующих вопросов — по одному за ход.
 - ❌ Пропуск проверки критериев уничтожения.
 - ❌ Переосмысление сферы деятельности специалиста. Вилка — не дублируйте.
-- ❌ Автоматическое утверждение производственных изменений. Всегда называйте человека, который утверждает.
+- ❌ Автоматическое утверждение производственных изменений. Всегда называйте человека, утверждающего.
 
 ## Настройка { #customization }
 
@@ -62,11 +62,11 @@ argument-hint: "<problem or codebase to review>"
 
 1. Копия `saas-startup.json` (или в зависимости от того, что лучше всего подходит) для `<your-org>.json`.
 2. Редактировать `constraints`, `stack_recommendations`, `success_thresholds`, `named_approver_chain`.
-3. Механизм принятия решений автоматически обнаруживает новые JSON-файлы профилей.
+3. Механизм принятия решений автоматически обнаруживает новые JSON-файлы профиля.
 
 ## Связанные команды { #related-commands }
 
 - `/cs:frontend-review` — интерфейс-только глубокое погружение
 - `/cs:backend-review` — бэкенд-только глубокое погружение
-- `/cs:engineer-grill` — перекрестная роль 21-форсирование вопросов-бегущий за вопросами
+- `/cs:engineer-grill` — кросс-роль 21-форсирование вопросов-бегущий за вопросами
 - `/karpathy-check` — Карпатия 4-ревью принципа перед совершением

@@ -11,7 +11,7 @@ description: "Преобразуйте колоду Markdown (слайды, ра
 </div>
 
 
-Преобразуйте колоду Markdown в **$ARGUMENTS** в однофайловую интерактивную HTML-презентацию.
+Преобразуйте колоду Markdown в **$ARGUMENTS** в интерактивную HTML-презентацию в виде одного файла.
 
 ## Предполетные гейты (отказывать, никогда не перекрывать) { #pre-flight-gates-refuse-never-override }
 
@@ -45,7 +45,7 @@ python3 markdown-html/skills/md-slides/scripts/deck_html_renderer.py \
 
 ## Что поставляется в HTML-коде { #what-ships-in-the-html }
 
-- **Все слайды в виде `<section class="slide">`** с одним видимым контентом за раз (контролируемый CSS, не требующий JS-контента)
+- **Все слайды в виде `<section class="slide">`** с одним видимым за раз (контролируемым CSS, не требующим JS контентом)
 - ** Навигация с клавиатуры**:
   - `→` / `Space` / `PgDn` → следующий слайд
   - `←` / `PgUp` → предыдущий слайд
@@ -53,7 +53,7 @@ python3 markdown-html/skills/md-slides/scripts/deck_html_renderer.py \
   - `P` → переключить режим презентатора
   - `Esc` → выход из режима презентатора
 - ** Режим презентатора ** — разделенный просмотр: текущий слайд (ширина 60%) + панель (ширина 40% с часами + заметки диктора + предварительный просмотр следующего слайда)
-- **Глубокая привязка URL-хэша** — `#3` переходит к слайду 3; обходит слайды взад/вперед; делится `deck.html#5` чтобы приземлиться на слайде 5
+- **Глубокая привязка URL-хэша** — `#3` переход к слайду 3; назад/forward ходит по горкам; делится `deck.html#5` чтобы приземлиться на слайде 5
 - ** Индикатор выполнения ** вверху (3 пикселя); счетчик перемещений в правом нижнем углу
 - **Печать в формате PDF ** с помощью встроенного диалогового окна печати браузера: `@media print` делает каждый слайд одной страницей (`Cmd+P` / `Ctrl+P`)
 - **`prefers-reduced-motion`** удостоенный чести
@@ -80,6 +80,6 @@ python3 markdown-html/skills/md-slides/scripts/deck_html_renderer.py \
 ## Ссылки { #references }
 
 Видишь `markdown-html/skills/md-slides/references/`:
-- `presentation_ux.md` — Аткинсон + Рейнольдс + Тафте + NN/g + Вайншенк + Марп/reveal.js/Большая конвергенция
+- `presentation_ux.md` — Аткинсон + Рейнольдс + Тафте + НН/g + Вайншенк + Марп/reveal.js/Большая конвергенция
 - `keyboard_nav_patterns.md` — reveal.js / Big / Spectacle ключевая карта + WCAG 2.1.1 + 2.4.3 + MDN KeyboardEvent
 - `single_file_deck_conventions.md` — Big + Marp + Pandoc + WCAG 2.3.3 + @media print

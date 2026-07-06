@@ -1,9 +1,9 @@
 ---
-title: "/концентратор: запуск — Однократный жизненный цикл { #hubrun--one-shot-lifecycle } — Агентский скилл для Codex и OpenClaw"
+title: "/hub:run — Жизненный цикл с одним выстрелом { #hubrun--one-shot-lifecycle } — Агентский скилл для Codex и OpenClaw"
 description: "Одноразовая команда жизненного цикла, которая объединяет init → baseline → spawn → eval → merge в одном вызове. Используйте, когда пользователь. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /концентратор: запуск — Однократный жизненный цикл { #hubrun--one-shot-lifecycle }
+# /hub:run — Жизненный цикл с одним выстрелом { #hubrun--one-shot-lifecycle }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Инженерия — уровень POWERFUL</span>
@@ -85,7 +85,7 @@ python {skill_path}/scripts/hub_init.py \
 После запуска сообщите пользователю, что агенты запущены. Когда все агенты завершат работу (инструмент агента возвращает результаты):
 
 1. Отобразите краткую информацию о работе каждого агента
-2. Приступайте к оценке
+2. Переходите к оценке
 
 ### Шаг 5: Оценка { #step-5-evaluate }
 

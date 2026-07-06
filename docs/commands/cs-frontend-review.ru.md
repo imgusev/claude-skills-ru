@@ -13,7 +13,7 @@ description: "Ревью Frontend engineering — отвечает на 7 фор
 
 Используйте `cs-frontend-engineer` агент (использует `context: fork`) для обработки этого запроса:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Библиотека принудительных вопросов { #forcing-question-library }
 

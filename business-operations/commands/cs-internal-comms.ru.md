@@ -3,11 +3,11 @@ description: "Связь для управления изменениями то
 argument-hint: "<change description: type, audience, magnitude, effective date>"
 ---
 
-# /cs:внутренняя связь — Внутренняя связь с изменениями (ADKAR + Kotter) { #csinternal-comms--internal-change-comms-adkar--kotter }
+# /cs:internal-comms — Внутренняя связь с изменениями (ADKAR + Kotter) { #csinternal-comms--internal-change-comms-adkar--kotter }
 
 Запустите `internal-comms` скилл на основе этого ввода:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Воркфлоу с тремя инструментами { #three-tool-workflow }
 

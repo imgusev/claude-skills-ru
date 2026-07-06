@@ -13,7 +13,7 @@ description: "Маршрутизатор Markdown-to-HTML верхнего ур�
 
 Направьте это преобразование через `markdown-html-orchestrator` скилл:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Предполетные гейты (отказываются и выходят на поверхность, никогда не перекрываются) { #pre-flight-gates-refuse-and-surface-never-override }
 

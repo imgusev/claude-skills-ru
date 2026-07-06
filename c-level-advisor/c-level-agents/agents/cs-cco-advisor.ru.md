@@ -164,8 +164,8 @@ python ../../skills/chief-customer-officer-advisor/scripts/cs_coverage_calculato
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/руководитель отдела по работе с клиентами-консультант/СКИЛЛЫ.md](../../skills/chief-customer-officer-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](../references/persona-voices.md)
+- Скилл: [../../skills/chief-customer-officer-advisor/SKILL.md](../../skills/chief-customer-officer-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](../references/persona-voices.md)
 - Родственная команда: [`/cs:cco-review`](../skills/cco-review/SKILL.md)
 
 ---

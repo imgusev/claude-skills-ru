@@ -3,11 +3,11 @@ description: "Маршрутизатор Markdown-to-HTML верхнего ур�
 argument-hint: "<path to markdown file>"
 ---
 
-# /cs:Markdown-HTML — маршрутизатор Markdown-to-HTML { #csmarkdown-html--markdown-to-html-router }
+# /cs:markdown-html — Маршрутизатор Markdown-to-HTML { #csmarkdown-html--markdown-to-html-router }
 
 Направьте это преобразование через `markdown-html-orchestrator` скилл:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Предполетные гейты (отказываются и выходят на поверхность, никогда не перекрываются) { #pre-flight-gates-refuse-and-surface-never-override }
 

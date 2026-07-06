@@ -145,7 +145,7 @@ gws gmail +triage
 ### Поиск и проверка (команды обнаружения) { #search-and-inspect-discovery-commands }
 
 Следуют команды обнаружения `gws <service> <resource> <method>` и принимать
-параметры запроса в виде JSON через `--params` (параметры запроса/пути) и `--json` (тело запроса).
+параметры запроса в формате JSON через `--params` (запрос/path параметры) и `--json` (тело запроса).
 Сначала проверьте точную схему любого метода:
 
 ```bash
@@ -313,7 +313,7 @@ gws drive about get --params '{"fields": "*"}'
 | `gws_doctor.py` | Предполетная диагностика | `python3 scripts/gws_doctor.py [--json] [--services gmail,drive]` |
 | `auth_setup_guide.py` | Управляемая настройка авторизации | `python3 scripts/auth_setup_guide.py --guide oauth` |
 | `gws_recipe_runner.py` | Каталог рецептов и бегунок | `python3 scripts/gws_recipe_runner.py --list [--persona pm]` |
-| `workspace_audit.py` | Аудит безопасности/конфигурации | `python3 scripts/workspace_audit.py [--json] [--demo]` |
+| `workspace_audit.py` | Безопасность/config аудит | `python3 scripts/workspace_audit.py [--json] [--demo]` |
 | `output_analyzer.py` | Анализ JSON/NDJSON | `gws ... --json \| python3 scripts/output_analyzer.py --count` |
 
 Все скрипты доступны только для stdlib, поддержка `--json` вывод и включение демонстрационного режима со встроенными образцами данных.
@@ -335,7 +335,7 @@ gws drive about get --params '{"fields": "*"}'
 1. Все `gws` выходные данные структурированы в формате JSON — передайте их по каналу `output_analyzer.py` для фильтрации и агрегирования
 2. Использование `gws workflow +*` помощники для многоэтапных операций вместо цепочки необработанных команд
 3. Воспользуйтесь местным каталогом рецептов (`gws_recipe_runner.py`) в качестве шаблонов команд, затем сверьте каждый из них с `gws --help`
-4. `--page-all` выдает одну строку JSON на страницу (NDJSON) для потоковой передачи больших результирующих наборов
+4. `--page-all` выдает по одной строке JSON на страницу (NDJSON) для потоковой передачи больших результирующих наборов
 5. Использование `--dry-run` для предварительного просмотра любого запроса перед его выполнением
 
 ### Производительность { #performance }

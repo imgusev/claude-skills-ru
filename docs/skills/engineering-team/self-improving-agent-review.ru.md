@@ -1,9 +1,9 @@
 ---
-title: "/si:ревью — Автоматический анализ памяти { #sireview--analyze-auto-memory } — Агентский скилл и плагин Codex"
+title: "/si:review — Анализ автоматической памяти { #sireview--analyze-auto-memory } — Агентский скилл и плагин Codex"
 description: "Проанализируйте автоматическую память на предмет кандидатов на повышение, устаревших записей, возможностей консолидации и показателей. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /si:ревью — Автоматический анализ памяти { #sireview--analyze-auto-memory }
+# /si:review — Анализ автоматической памяти { #sireview--analyze-auto-memory }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Инженерия — базовый уровень</span>

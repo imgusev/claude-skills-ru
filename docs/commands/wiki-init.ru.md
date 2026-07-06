@@ -12,7 +12,7 @@ description: "Загрузите свежее хранилище LLM Wiki с т�
 
 <!-- canonical copy: engineering/llm-wiki/commands/wiki-init.md — keep in sync -->
 
-# /wiki-инициализация { #wiki-init }
+# /wiki-init { #wiki-init }
 
 Загрузите новое вики-хранилище LLM. Создает `raw/`, `wiki/{entities,concepts,sources,comparisons,synthesis}`, индекс и журнал, и устанавливает файл(ы) схемы для выбранного вами LLM CLI.
 

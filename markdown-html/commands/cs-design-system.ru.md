@@ -3,7 +3,7 @@ description: "Запустите одноразовый мастер онбор�
 argument-hint: "[--defaults | --show | --reset | --set key=value | --scope global|project]"
 ---
 
-# /cs:дизайн-система — Markdown-онбординг HTML-дизайн-системы { #csdesign-system--markdown-html-design-system-onboarding }
+# /cs:design-system — Markdown-дизайн в HTML-формате- онбординг системы { #csdesign-system--markdown-html-design-system-onboarding }
 
 Запустите мастер проектирования системы:
 

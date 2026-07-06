@@ -26,16 +26,16 @@ description: "Разрабатывайте и отправляйте готов�
 
 ## Основные возможности { #core-capabilities }
 
-- Преобразуйте пути/операции OpenAPI в определения инструментов MCP
+- Преобразование путей OpenAPI/operations в определения инструментов MCP
 - Генерировать стартовые серверные каркасы (Python или TypeScript)
 - Обеспечение согласованности имен, описаний и схем
 - Проверка манифестов инструментов MCP на наличие распространенных производственных сбоев
 - Применяйте проверку версий и обратной совместимости
-- Отделять решения о транспортировке/времени выполнения от разработки контракта на инструмент
+- Отдельный транспорт/runtime решения, принимаемые при разработке контракта на инструмент
 
 ## Когда использовать { #when-to-use }
 
-- Вам нужно предоставить доступ к внутреннему/внешнему REST API агенту LLM
+- Вам нужно раскрыть внутренний/external REST API для агента LLM
 - Вы заменяете хрупкую автоматизацию браузера типизированными инструментами
 - Вы хотите, чтобы один сервер MCP был общим для всех команд и помощников
 - Вам нужны повторяющиеся проверки качества перед публикацией MCP tools
@@ -78,8 +78,8 @@ python3 scripts/mcp_validator.py --input out/tool_manifest.json --strict --forma
 ### 3. Выбор времени выполнения { #3-runtime-selection }
 
 - Выберите ** Python** для быстрой итерации и бэкэндов с большим объемом данных.
-- Выберите ** TypeScript** для унифицированных стеков JS и более плотного повторного использования контрактов frontend/backend.
-- Поддерживайте стабильность контрактов с инструментами даже при изменении транспорта/времени выполнения.
+- Выберите **TypeScript** для унифицированных стеков JS и более плотного интерфейса/backend повторное использование контракта.
+- Сохраняйте стабильность контрактов на инструменты даже при транспортировке/runtime изменения.
 
 ### 4. Затвердеть для производства { #4-harden-for-production }
 
@@ -89,7 +89,7 @@ python3 scripts/mcp_validator.py --input out/tool_manifest.json --strict --forma
 - Предпочитайте исходящие списки разрешений хостинга открытым прокси
 - Используйте изменения только для добавления; никогда не переименовывайте названия инструментов на месте
 
-Полное руководство по упрочнению: [список литературы/производство-упрочнение-руководство.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/production-hardening-guide.md).
+Полное руководство по упрочнению: [ссылки/production-hardening-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/production-hardening-guide.md).
 
 ## Интерфейсы сценариев { #script-interfaces }
 
@@ -103,9 +103,9 @@ python3 scripts/mcp_validator.py --input out/tool_manifest.json --strict --forma
 
 ## Справочный материал { #reference-material }
 
-- [список литературы/производство-упрочнение-руководство.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/production-hardening-guide.md) — дизайн аутентификации и безопасности, стратегия управления версиями, распространенные ошибки, лучшие практики, архитектурные решения, гейты качества контрактов, стратегия тестирования, методы развертывания, средства контроля безопасности
-- [ссылки/openapi-извлечение-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/openapi-extraction-guide.md)
-- [ссылки/python-server-шаблон.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/python-server-template.md)
-- [ссылки/typescript-сервер-шаблон.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/typescript-server-template.md)
-- [ссылки/проверка-чек-лист.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/validation-checklist.md)
+- [ссылки/production-hardening-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/production-hardening-guide.md) — дизайн аутентификации и безопасности, стратегия управления версиями, распространенные ошибки, лучшие практики, архитектурные решения, гейты качества контрактов, стратегия тестирования, методы развертывания, средства контроля безопасности
+- [ссылки/openapi-extraction-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/openapi-extraction-guide.md)
+- [ссылки/python-server-template.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/python-server-template.md)
+- [ссылки/typescript-server-template.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/typescript-server-template.md)
+- [ссылки/validation-checklist.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/references/validation-checklist.md)
 - [README.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/mcp-server-builder/README.md)

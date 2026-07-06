@@ -42,7 +42,7 @@ description: "Оператор в режиме пещерного человек
 1. **Компрессор**
    - Путь: [`scripts/caveman_compressor.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/scripts/caveman_compressor.py)
    - Использование: `python caveman_compressor.py "text to compress"`
-   - Детерминистически применяет правила Мэтта (отбрасывает статьи / наполнители / любезности / подстраховку, сокращает технические термины, стрелки причинно-следственной связи).
+   - Применяет правила Мэтта детерминированно (отбрасывает статьи/filler/pleasantries/hedging, сокращенные технические термины, стрелки причинно-следственной связи)
 
 2. **Оценка экономии токенов**
    - Путь: [`scripts/token_savings_estimator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/scripts/token_savings_estimator.py)
@@ -113,8 +113,8 @@ Caveman resume. [terse continuation].
 
 ## Ссылки { #references }
 
-- Скилл: [../скиллы/пещерный человек/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/SKILL.md)
-- Сопутствующий инструмент: [../скиллы/пещерный человек/рекомендации/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/references/companion_tooling.md)
+- Скилл: [../skills/caveman/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/SKILL.md)
+- Сопутствующий инструмент: [../skills/caveman/references/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/skills/caveman/references/companion_tooling.md)
 - Родственная команда: [`/cs:caveman`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/caveman/commands/cs-caveman.md)
 
 ---

@@ -151,8 +151,8 @@ python dpia_generator.py processing_activity.json
 
 ## Ссылки { #references }
 
-- Скилл: [../../ra-qm-команда/скиллы/gdpr-dsgvo-эксперт/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/gdpr-dsgvo-expert/SKILL.md)
-- Плейбук: [../../ra-qm-команда/скиллы/gdpr-dsgvo-эксперт/ссылки/gdpr_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/gdpr-dsgvo-expert/references/gdpr_audit_playbook.md)
+- Скилл: [../../ra-qm-team/skills/gdpr-dsgvo-expert/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/gdpr-dsgvo-expert/SKILL.md)
+- Плейбук: [../../ra-qm-team/skills/gdpr-dsgvo-expert/references/gdpr_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/gdpr-dsgvo-expert/references/gdpr_audit_playbook.md)
 - Родственная команда: [`/cs:gdpr-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/gdpr-audit-prep/SKILL.md)
 
 ---

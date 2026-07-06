@@ -1,9 +1,9 @@
 ---
-title: "/cs:рабочее время — Шесть вопросов для допроса основателя { #csoffice-hours--six-question-founder-interrogation } — Агентский скилл для руководителей"
+title: "/cs:office-hours — Допрос основателя из шести вопросов { #csoffice-hours--six-question-founder-interrogation } — Агентский скилл для руководителей"
 description: "/cs: рабочее время <тема> — опрос основателя в стиле YC с 6 вопросами перед любым советом. Обеспечивает ясность в отношении проблемы, клиента. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:рабочее время — Шесть вопросов для допроса основателя { #csoffice-hours--six-question-founder-interrogation }
+# /cs:office-hours — Допрос основателя из шести вопросов { #csoffice-hours--six-question-founder-interrogation }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

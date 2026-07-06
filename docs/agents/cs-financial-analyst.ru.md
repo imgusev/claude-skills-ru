@@ -18,11 +18,11 @@ description: "Агент-финансовый аналитик по оценке
 
 ## Интеграция в скиллы { #skill-integration }
 
-### финансы/финансовый аналитик — Традиционный финансовый анализ { #financefinancial-analyst--traditional-financial-analysis }
+### финансы/financial-analyst — Традиционный финансовый анализ { #financefinancial-analyst--traditional-financial-analysis }
 - Сценарии: `dcf_valuation.py`, `ratio_calculator.py`, `forecast_builder.py`, `budget_variance_analyzer.py`
 - Ссылки: `financial-ratios-guide.md`, `valuation-methodology.md`, `forecasting-best-practices.md`, `industry-adaptations.md`
 
-### финансы/saas-показатели-тренер — Финансовое здоровье SaaS { #financesaas-metrics-coach--saas-financial-health }
+### финансы/saas-metrics-coach — Финансовое благополучие SaaS { #financesaas-metrics-coach--saas-financial-health }
 - Сценарии: `metrics_calculator.py`, `quick_ratio_calculator.py`, `unit_economics_simulator.py`
 - Ссылки: `formulas.md`, `benchmarks.md`
 - Активы: `input-template.md`
@@ -40,13 +40,13 @@ description: "Агент-финансовый аналитик по оценке
 1. Запустите анализ соотношения с помощью `ratio_calculator.py`
 2. Оценка ликвидности (текущий, быстрый коэффициент)
 3. Оценка прибыльности (валовая прибыль, рентабельность по EBITDA, ROE)
-4. Оценка кредитного плеча (долг/собственный капитал, покрытие процентов)
+4. Оценка кредитного плеча (долга/equity, покрытие процентов)
 5. Сравнение с отраслевыми стандартами
 
 ### 3. Прогнозирование доходов { #3-revenue-forecasting }
 1. Анализ исторических тенденций
 2. Генерировать прогноз с помощью `forecast_builder.py`
-3. Запуск сценариев (бычий/базовый/медвежий) с помощью `budget_variance_analyzer.py`
+3. Запуск сценариев (бычий/base/bear) через `budget_variance_analyzer.py`
 4. Вычислить доверительные интервалы
 5. Представить с четко сформулированными предположениями
 
@@ -55,13 +55,13 @@ description: "Агент-финансовый аналитик по оценке
 2. Установите целевые показатели выручки по сегментам
 3. Распределение расходов по отделам
 4. Составьте ежемесячный прогноз движения денежных средств
-5. Определите пороговые значения отклонения и ревью частоты
+5. Определите пороговые значения отклонений и ревью частоты
 
 ### 5. Проверка работоспособности SaaS { #5-saas-health-check }
 1. Сбор данных MRR, количества клиентов, оттока, CAC от пользователя
 2. Бежать `metrics_calculator.py` для вычисления ARR, LTV, LTV:CAC, NRR, окупаемость
-3. Бежать `quick_ratio_calculator.py` при наличии MRR расширения/оттока
-4. Сопоставьте каждый показатель со стадией/сегментом с помощью `benchmarks.md`
+3. Бежать `quick_ratio_calculator.py` если расширение/churn Доступен MRR
+4. Сравните каждый показатель с этапом/segment через `benchmarks.md`
 5. Отмечайте КРИТИЧЕСКИЕ показатели/СЛЕДИТЕ за ними и рекомендуйте 3 лучших действия
 
 ### 6. Экономический прогноз подразделения SaaS { #6-saas-unit-economics-projection }
@@ -110,4 +110,4 @@ python ../../finance/skills/financial-analyst/scripts/dcf_valuation.py valuation
 ## Связанные агенты { #related-agents }
 
 - [cs-генеральный директор-советник](https://github.com/imgusev/claude-skills-ru/tree/main/agents/c-level/cs-ceo-advisor.md) -- Стратегические финансовые решения, отчетность правления и планирование сбора средств
-- [cs-стратег по росту](https://github.com/imgusev/claude-skills-ru/tree/main/agents/business-growth/cs-growth-strategist.md) -- Данные по операциям с доходами и исходные данные для прогнозирования пайплайна
+- [cs-стратег по росту](https://github.com/imgusev/claude-skills-ru/tree/main/agents/business-growth/cs-growth-strategist.md) -- Данные о доходных операциях и исходные данные для прогнозирования пайплайна

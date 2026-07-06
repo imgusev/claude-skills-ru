@@ -3,11 +3,11 @@ description: "Прогноз форвардных бронирований / в�
 argument-hint: "<pipeline export path or cohort + funnel data>"
 ---
 
-# /cs:реклама-прогноз — Предварительные заказы + совокупный доход + уверенность в воронке { #cscommercial-forecast--forward-bookings--cohort-arr--funnel-confidence }
+# /cs:commercial-forecast — Предварительные заказы + обход когорты + уверенность в воронке { #cscommercial-forecast--forward-bookings--cohort-arr--funnel-confidence }
 
 Запустите `commercial-forecaster` скилл на основе этого ввода:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Воркфлоу с тремя инструментами { #three-tool-workflow }
 

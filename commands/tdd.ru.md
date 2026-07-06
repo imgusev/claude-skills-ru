@@ -15,9 +15,9 @@ argument-hint: <generate|coverage|validate> [file-or-dir]
 ### `/tdd generate <file-or-dir>` — сначала напишите неудачные тесты { #tdd-generate---write-failing-tests-first }
 
 1. Читать `engineering-team/skills/tdd-guide/SKILL.md` и `engineering-team/skills/tdd-guide/references/tdd-best-practices.md` для красно-зеленой дисциплины рефакторинга и таксономии тестовых примеров (счастливый путь, крайние случаи, случаи ошибок)
-2. Обнаружьте тестовый фреймворк проекта — используйте `engineering-team/skills/tdd-guide/references/framework-guide.md` для соглашений Jest/Vitest/pytest/JUnit
+2. Обнаружьте тестовый фреймворк проекта — используйте `engineering-team/skills/tdd-guide/references/framework-guide.md` в шутку/для острастки/pytest/Соглашения JUnit
 3. Напишите тесты ** перед ** любой реализацией; запустите их и подтвердите, что они завершились неудачей (красный)
-4. Реализуйте минимальный код для прохождения (зеленый), затем проведите рефакторинг, оставив тесты зелеными
+4. Реализуйте минимальный код для прохождения (зеленый), затем проведите рефакторинг так, чтобы тесты оставались зелеными
 5. При необходимости используйте библиотеку для создания шаблонов-заглушек:
 
 ```bash
@@ -46,7 +46,7 @@ for gap in a.identify_gaps(threshold=80.0): print(gap)
 "
 ```
 
-(Вход для проверки на дым доступен по адресу `engineering-team/skills/tdd-guide/assets/sample_coverage_report.lcov`.)
+(Вход для проверки на задымление доступен по адресу `engineering-team/skills/tdd-guide/assets/sample_coverage_report.lcov`.)
 
 3. Для каждого пробела вернитесь к `/tdd generate` — пробелы в охвате заполняются тестами, а не оправданиями
 

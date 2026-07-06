@@ -1,9 +1,9 @@
 ---
-title: "/хаб:слияние — Победитель слияния { #hubmerge--merge-winner } — Агентский скилл для Codex и OpenClaw"
+title: "/hub:merge — Победитель слияния { #hubmerge--merge-winner } — Агентский скилл для Codex и OpenClaw"
 description: "Объедините ветку победившего агента с базой, заархивируйте проигравших и очистите рабочие деревья. Используйте, когда пользователь запускает. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /хаб:слияние — Победитель слияния { #hubmerge--merge-winner }
+# /hub:merge — Победитель слияния { #hubmerge--merge-winner }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Инженерия — уровень POWERFUL</span>

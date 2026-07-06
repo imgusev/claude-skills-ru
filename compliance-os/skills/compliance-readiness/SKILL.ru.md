@@ -3,7 +3,7 @@ name: "compliance-readiness"
 description: "/cs:compliance-readiness <программа> — сотрудник по комплаенсу с несколькими фреймворками 6 - принудительный опрос любой программы комплаенс. Используйте перед запуском нового фреймворка, планированием календаря ежегодных аудитов или подготовкой к этапу 1 сертификации."
 ---
 
-# /cs:соответствие требованиям-готовность — Сотрудник по соблюдению требований форсирует вопросы { #cscompliance-readiness--compliance-officer-forcing-questions }
+# /cs:compliance-readiness — Специалист по соблюдению требований, форсирующий вопросы { #cscompliance-readiness--compliance-officer-forcing-questions }
 
 **Команда:** `/cs:compliance-readiness <program>`
 

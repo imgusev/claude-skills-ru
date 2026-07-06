@@ -34,7 +34,7 @@ context: fork
    - **Путь:** `../../engineering-team/skills/senior-frontend/scripts/frontend_decision_engine.py`
    - **Использование:** `python ../../engineering-team/skills/senior-frontend/scripts/frontend_decision_engine.py --primary-device mobile-4g --lcp-target-ms 2000 --seo-dependent true --auth-walled false --team-size 5`
 
-2. **Каркас для интерфейсной части** (существующий)
+2. **Каркас для интерфейсного интерфейса** (существующий)
    - **Путь:** `../../engineering-team/skills/senior-frontend/scripts/frontend_scaffolder.py`
    - **Когда:** Только после того, как будут даны ответы на 7 вопросов и профиль будет заблокирован.
 
@@ -139,4 +139,4 @@ python ../../engineering/karpathy-coder/skills/karpathy-coder/scripts/diff_surge
 - Скилл: `../../engineering-team/skills/senior-frontend/SKILL.md`
 - Карпатия 4 принципа: `../../engineering/karpathy-coder/skills/karpathy-coder/references/karpathy-principles.md`
 - Мэтт Покок канон: `../../engineering/grill-me/skills/grill-me/references/forcing_question_patterns.md`
-- Web Vitals (Google): web.dev/жизненные показатели
+- Web Vitals (Google): web.dev/vitals

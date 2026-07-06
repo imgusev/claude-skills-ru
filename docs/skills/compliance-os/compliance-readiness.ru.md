@@ -1,9 +1,9 @@
 ---
-title: "/cs:соответствие требованиям-готовность — Сотрудник по соблюдению требований форсирует вопросы { #cscompliance-readiness--compliance-officer-forcing-questions } — Плагин и агентский скилл для Claude Code"
+title: "/cs:compliance-readiness — Специалист по соблюдению требований, форсирующий вопросы { #cscompliance-readiness--compliance-officer-forcing-questions } — Плагин и агентский скилл для Claude Code"
 description: "/cs:compliance-readiness <программа> — сотрудник по комплаенсу с несколькими фреймворками 6 - принудительный опрос любой программы комплаенс. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:соответствие требованиям-готовность — Сотрудник по соблюдению требований форсирует вопросы { #cscompliance-readiness--compliance-officer-forcing-questions }
+# /cs:compliance-readiness — Специалист по соблюдению требований, форсирующий вопросы { #cscompliance-readiness--compliance-officer-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>

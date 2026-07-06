@@ -103,7 +103,7 @@ clawhub install self-improving-agent
 
 Это то, что делает этот плагин.
 
-### Продвижение по службе = окончание учебы { #promotion--graduation }
+### Продвижение по службе = окончание школы { #promotion--graduation }
 
 Когда вы продвигаете обучение, оно перемещается из блокнота Клода (MEMORY.md ) в систему правил вашего проекта (CLAUDE.md или `.claude/rules/`). Разница имеет значение:
 
@@ -169,5 +169,5 @@ paths:
 ## Связанный { #related }
 
 - [Документы по памяти кода Клода](https://code.claude.com/docs/en/memory)
-- [пскоетт/агент по самосовершенствованию](https://clawhub.ai/pskoett/self-improving-agent) — вдохновение
+- [пскоетт/self-improving-agent](https://clawhub.ai/pskoett/self-improving-agent) — вдохновение
 - [драматург-профессионал](https://github.com/imgusev/claude-skills-ru/tree/main/engineering-team/playwright-pro/) — дочерний плагин в этом репозитории

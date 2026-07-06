@@ -26,13 +26,13 @@ cs-vpe-advisor организует `vpe-advisor` скилл по четырем
 
 1. **Обеспечиваем ли мы правильную пропускную способность?** (показатели DORA 4 + выявление узких мест)
 2. **Как нам масштабировать воронку найма в Англии?** (конверсия + разрыв в пайплайне + исправление на самом слабом этапе)
-3. ** Какова структура нашей английской команды — когда мы добавим технического руководителя?** (отряд/племя + менеджер-триггер + сфера контроля)
+3. ** Какова структура нашей английской команды — когда мы добавим ведущего технического менеджера?** (команда/tribe + менеджер-триггер + область контроля)
 4. ** Какова наша производственная дисциплина?** (оперативность, частота развертывания, культура вскрытия)
 
 Четко различает:
 
 - ** vs cs-технический директор-консультант: ** Технический директор владеет * тем, что создавать* (архитектура, масштабирование, сборка против покупки); VPE владеет * тем, как это поставлять* (операции доставки, выполнение найма, структура команды, производственная дисциплина). Чистый раскол.
-- ** vs cs-ведущий инженер** (агент в /агентах/инженерной команде/): ведущий инженер отвечает за повседневный инцидент + координацию по вызову. VPE владеет **операционной моделью**, которую выполняет ведущий инженер.
+- **vs cs-инжиниринг-ведущий специалист** (агент в /agents/engineering-team/): ведущий инженер отвечает за повседневный инцидент + координацию по вызову. VPE владеет **операционной моделью**, которую выполняет ведущий инженер.
 - ** против cs-chro-advisor: ** CHRO владеет СИСТЕМАМИ найма персонала (лестницы, группы, рубрики по всей компании). VPE владеет спецификой подбора персонала для ENG (каналы поиска поставщиков, технический дизайн собеседований, ожидания от ramp).
 - ** vs cs-главный операционный директор-консультант:** Главный операционный директор владеет операционной системой cadence в масштабах всей компании. VPE владеет интонацией, специфичной для английского языка.
 
@@ -52,7 +52,7 @@ cs-vpe-advisor организует `vpe-advisor` скилл по четырем
 2. ** Калькулятор воронки найма инженеров**
    - Путь: [`scripts/eng_hiring_funnel_calculator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/scripts/eng_hiring_funnel_calculator.py)
    - Использование: `python ../../skills/vpe-advisor/scripts/eng_hiring_funnel_calculator.py funnel.json`
-   - Отдача: Поэтапные показатели конверсии (7-ступенчатая воронка) с вердиктом "здоров" /"дырявый", сквозная конверсия, требуемый объем на вершине воронки для целевого найма, идентификация самого слабого этапа + исправления (подбор источников, калибровка, дизайн интервью, дисциплина при приеме на работу).
+   - Доходность: Поэтапные коэффициенты конверсии (7-ступенчатая воронка) со здоровыми/leaky вердикт, сквозная конверсия, требуемый объем в верхней части воронки для целевой группы по найму, идентификация самого слабого этапа + исправления (подбор источников, калибровка, дизайн интервью, составление/close дисциплина)
 
 3. **Проектировщик структуры инженерной команды**
    - Путь: [`scripts/eng_team_structure_designer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/scripts/eng_team_structure_designer.py)
@@ -63,7 +63,7 @@ cs-vpe-advisor организует `vpe-advisor` скилл по четырем
 
 - [`references/delivery_throughput.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/references/delivery_throughput.md) — Полный фреймворк DORA + пороговые значения + 4 распространенных узких места (ревью PR, уязвимость CI, гейты депло, запланированные релизы) + что нужно исправить в первую очередь (время выполнения → частота отказов → периодичность → MTTR) + анти-шаблоны
 - [`references/engineering_hiring_funnel.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/references/engineering_hiring_funnel.md) — 7-ступенчатая воронка + контрольные показатели конверсии + диагностика утечек на каждом этапе + расчет объема пайплайна + дисциплина по времени заполнения + дизайн технического собеседования + стоимость найма
-- [`references/eng_team_structure.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/references/eng_team_structure.md) — Закон Конвея + карта соотношения численности персонала и структуры + контрольные показатели сферы контроля + различие между EM и tech-лидерами + менеджер + директор + триггеры VPE + размер команды + дисциплина в подразделении
+- [`references/eng_team_structure.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/references/eng_team_structure.md) — Закон Конвея + карта соотношения численности персонала и структуры + контрольные показатели сферы контроля + различие между EM и tech-лидерами + менеджер + директор + триггеры VPE + размер команды + дисциплина главы
 - [`references/production_discipline.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/references/production_discipline.md) — Ротация по вызову (≥ 6 человек; сигналы о выгорании) + реагирование на инциденты (уровни серьезности, роль IC, безупречные вскрытия) + Частота развертывания (непрерывная или запланированная; постепенная доставка) + Дисциплина SLO + модель уровня зрелости (уровень 1-5)
 
 ## Воркфлоу { #workflows }
@@ -156,8 +156,8 @@ python ../../skills/vpe-advisor/scripts/eng_team_structure_designer.py current-t
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/vpe-советник/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Скилл: [../../skills/vpe-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/vpe-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 - Родственная команда: [`/cs:vpe-review`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/vpe-review/SKILL.md)
 
 ---

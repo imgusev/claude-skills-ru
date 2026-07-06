@@ -1,9 +1,9 @@
 ---
-title: "/cs:cro-ревью — CRO форсирует вопросы { #cscro-review--cro-forcing-questions } — Агентский скилл для руководителей"
+title: "/cs:cro-review — CRO форсирует вопросы { #cscro-review--cro-forcing-questions } — Агентский скилл для руководителей"
 description: "/cs:cro-ревью <плана> — Пайплайн - параноидальный опрос о доходах, коэффициенте выигрыша, NRR и времени нарастания. Используйте, когда прогноз не. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:cro-ревью — CRO форсирует вопросы { #cscro-review--cro-forcing-questions }
+# /cs:cro-review — CRO форсирует вопросы { #cscro-review--cro-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

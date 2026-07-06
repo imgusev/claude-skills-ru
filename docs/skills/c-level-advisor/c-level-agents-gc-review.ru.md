@@ -1,9 +1,9 @@
 ---
-title: "/cs:gc-ревью — Главный юрисконсульт, форсирующий вопросы { #csgc-review--general-counsel-forcing-questions } — Агентский скилл для руководителей"
+title: "/cs:gc-review — Главный юрисконсульт, форсирующий вопросы { #csgc-review--general-counsel-forcing-questions } — Агентский скилл для руководителей"
 description: "/cs:gc-ревью <план> — опрос главного юрисконсульта по контрактам, интеллектуальной собственности, нормативным актам, срокам службы и трудовому праву. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:gc-ревью — Главный юрисконсульт, форсирующий вопросы { #csgc-review--general-counsel-forcing-questions }
+# /cs:gc-review — Главный юрисконсульт, форсирующий вопросы { #csgc-review--general-counsel-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

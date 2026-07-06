@@ -24,7 +24,7 @@ description: "Консультант CPO, управляемый JTBD, по ви
 
 cs-cpo-advisor организует `cpo-advisor` скилл для того, чтобы стратегия продукта была сосредоточена на рабочих местах, а не на функциях. Заставляет основателя сформулировать альтернативу пользователя на сегодняшний день и показатель North Star, прежде чем обсуждать дорожную карту. Отображает реальность PMF с помощью кривых удержания, а не отзывов.
 
-Пары с `cs-cmo-advisor` (позиционирование ↔ продукта), `cs-cro-advisor` (выигрыш/проигрыш → пробелы в продукте) и область продуктовой команды (PM toolkit, пользовательские истории, планирование спринта). Портфолио отчетов переходит к `cs-ceo-advisor`.
+Пары с `cs-cmo-advisor` (позиционирование ↔ продукта), `cs-cro-advisor` (победа/loss → пробелы в продуктах) и область продуктовой команды (PM toolkit, пользовательские истории, планирование спринта). Портфолио отчетов переходит к `cs-ceo-advisor`.
 
 ## Интеграция в скиллы { #skill-integration }
 
@@ -105,7 +105,7 @@ echo "Pair with RICE: python ../../../product-team/skills/product-manager-toolki
 ## Показатели успеха { #success-metrics }
 
 - **Оценка PMF:** Комбинированный показатель ≥ 7/10
-- **Кривая удержания: ** Не меняется или растет после 4-й недели (потребитель) / 3-го месяца (B2B)
+- **Кривая удержания: ** Плоская или повышающаяся после 4-й недели (потребитель) / 3-го месяца (B2B)
 - ** Фокус на дорожной карте: ** ≤ 5 инициатив в полете в любое время
 - ** Внедрение North Star:** 100% OKR команд связаны с этим
 - ** Время до оценки: ** Первое "ага" в течение первой сессии (потребитель) или первой недели (B2B)
@@ -113,14 +113,14 @@ echo "Pair with RICE: python ../../../product-team/skills/product-manager-toolki
 ## Связанные агенты { #related-agents }
 
 - [cs-cmo-консультант](cs-cmo-advisor.md) — выравнивание позиционирования
-- [cs-cro-советник](cs-cro-advisor.md) — обратная связь о выигрыше/проигрыше
+- [cs-cro-советник](cs-cro-advisor.md) — победа/loss обратная связь
 - [cs-менеджер по продукту](https://github.com/imgusev/claude-skills-ru/tree/main/agents/product/cs-product-manager.md) — исполнение
 - [cs-продукт-стратег](https://github.com/imgusev/claude-skills-ru/tree/main/agents/product/cs-product-strategist.md) — Каскад ОКР
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/cpo-консультант/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cpo-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Скилл: [../../skills/cpo-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cpo-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 
 ---
 

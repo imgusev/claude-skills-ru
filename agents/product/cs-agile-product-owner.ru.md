@@ -295,7 +295,7 @@ cat ../../product-team/agile-product-owner/skills/agile-product-owner/references
    - **Ценный**: Обеспечивает ценность для пользователя или бизнеса
    - **Оцениваемый**: Команда может оценить усилия
    - **Маленький**: Помещается в пределах одного спринта
-   - **Проверяемо**: Четкие критерии прохождения/провала
+   - **Проверяемо**: Чистый проход/fail критерии
 
 6. ** Оценивайте как команда ** - Консенсус по сюжетной линии:
    - Используйте покер планирования или кулак из пяти
@@ -398,16 +398,16 @@ echo "Location: ../../product-team/agile-product-owner/skills/agile-product-owne
 
 - [cs-менеджер по продукту](cs-product-manager.md) - Полный жизненный цикл управления продуктом (рисование, интервью, PRDS)
 - [cs-продукт-стратег](cs-product-strategist.md) - Каскад OKR и стратегическое планирование для согласования дорожной карты
-- [cs-ux-исследователь](cs-ux-researcher.md) - Исследование пользователей для определения требований к истории и критериев приемлемости
+- [cs-ux-исследователь](cs-ux-researcher.md) - Исследование пользователей для информирования о требованиях к истории и критериях приемлемости
 - Scrum Master - контекст скорости и выполнение спринта (см. `../../project-management/skills/scrum-master/`)
 
 ## Ссылки { #references }
 
-- **Основной скилл:** [../../команда разработчиков продукта/agile-владелец продукта/скиллы/agile-владелец продукта/СКИЛЛЫ.md](../../product-team/agile-product-owner/skills/agile-product-owner/SKILL.md)
-- **РИСОВЫЙ фреймворк:** [../../команда по продукту/скиллы/инструментарий менеджера по продукту/СКИЛЛЫ.md](../../product-team/skills/product-manager-toolkit/SKILL.md)
-- **Руководство по предметной области продукта:** [../../команда разработчиков продукта/CLAUDE.md](../../product-team/CLAUDE.md)
+- **Основной скилл:** [../../product-team/agile-product-owner/skills/agile-product-owner/SKILL.md](../../product-team/agile-product-owner/skills/agile-product-owner/SKILL.md)
+- **РИСОВЫЙ фреймворк:** [../../product-team/skills/product-manager-toolkit/SKILL.md](../../product-team/skills/product-manager-toolkit/SKILL.md)
+- **Руководство по предметной области продукта:** [../../product-team/CLAUDE.md](../../product-team/CLAUDE.md)
 - **Руководство по разработке агента:** [../CLAUDE.md](../CLAUDE.md)
-- **Скилл мастера Scrum:** [../../управление проектами/скиллы/scrum-мастер/СКИЛЛ.md](../../project-management/skills/scrum-master/SKILL.md)
+- **Скилл мастера Scrum:** [../../project-management/skills/scrum-master/SKILL.md](../../project-management/skills/scrum-master/SKILL.md)
 
 ---
 

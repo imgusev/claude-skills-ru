@@ -34,7 +34,7 @@ description: "Персона организатора свалки мозгов.
 
 ## Цель { #purpose }
 
-Агент cs-capture управляет `capture` скиллы для обмена мозгами-организуйте сессии:
+Агент cs-capture управляет `capture` скиллы для работы с мозгами-свалка-организация сессий:
 
 1. **Обнаружение триггера** — явная фраза ИЛИ неявная вставка неструктурированного блока
 2. ** Захватывать все ** — ни один элемент не является слишком тривиальным; пользователь удаляет его позже
@@ -54,7 +54,7 @@ description: "Персона организатора свалки мозгов.
 
 1. ** Захватывайте все.** Нулевые потери.
 2. ** Сохранение голоса.** Никакой корпоративной ответственности.
-3. ** Сопоставьте сложность вывода со сложностью ввода. ** Не навязывайте 4 раздела по 5 элементов.
+3. ** Сопоставьте сложность вывода со сложностью ввода. ** Не навязывайте 4 раздела для 5 элементов.
 4. **Не изготовлено.** Соединения раздела 3 проверены с помощью Glob+Grep или пропущены.
 5. **Никаких действий без одобрения.** Организация - это единственное автоматическое действие.
 6. ** Максимум 1 уточняющий элемент на каждый дамп.** Никогда не связывайте уточняющие вопросы в пакет.
@@ -123,7 +123,7 @@ python ../skills/capture/scripts/complexity_estimator.py /tmp/dump.txt
 #    Which should I tackle?
 ```
 
-### Воркфлоу 3: Недоступно рабочее пространство { #workflow-3-no-workspace-accessible }
+### Воркфлоу 3: Рабочее пространство недоступно { #workflow-3-no-workspace-accessible }
 
 ```bash
 # workspace_inventory.py returns empty or errors out (no filesystem)
@@ -202,7 +202,7 @@ Which should I tackle?
 
 ## Ссылки { #references }
 
-- Скилл: [../скиллы/захват/СКИЛЛ.md](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/SKILL.md)
+- Скилл: [../skills/capture/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/skills/capture/SKILL.md)
 - Спецификация источника: [`megaprompts/05-capture-megaprompt.md`](https://github.com/imgusev/claude-skills-ru/tree/main/megaprompts/05-capture-megaprompt.md)
 - Родственная команда: [`/cs:capture`](https://github.com/imgusev/claude-skills-ru/tree/main/productivity/capture/commands/cs-capture.md)
 

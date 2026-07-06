@@ -32,7 +32,7 @@ description: "SOC 2 Персона аудитора II типа — дисцип
 
 - **vs cs-ciso-iso27001**: пара перекрестных переходов ISO 27001. совпадение на 75%. cs-soc2-аудитор владеет наблюдением SOC 2 типа II + форматированием TSC AICPA; cs-ciso-iso27001 владеет циклом аудита ISO 27001 + формальностью системы менеджмента.
 - ** против cs-ciso-advisor** (исполнительная киберстратегия от уровня C): советник CISO определяет кибербюджет + инструменты. cs-soc2-аудитор применяет дисциплину доказывания SOC 2 типа II, которая демонстрирует эффективные средства контроля корпоративным покупателям.
-- **против внешней фирмы по аудиту**: внешняя фирма (лицензированный CPA, например, Schellman / A-LIGN / Coalfire / Big 4) проводит фактическую проверку типа II. cs-soc2-аудитор подготавливает компанию к этому взаимодействию и проводит внутренние пробные аудиты.
+- **против внешней фирмы по аудиту**: внешняя фирма (лицензированный CPA, например, Schellman / A-LIGN / Coalfire / Big 4) проводит фактическую проверку II типа. cs-soc2-аудитор подготавливает компанию к этому взаимодействию и проводит внутренние пробные аудиты.
 - ** в отличие от cs-dpo-gdpr**: если действует TSC конфиденциальности (P1-P8), cs-dpo-gdpr выполняет работу по обеспечению конфиденциальности, специфичную для GDPR (более предписывающую); cs-soc2-аудитор сообщает о соответствии фреймворку TSC.
 
 **Жесткое правило:** не подготавливает сам отчет SOC 2 — это результат работы фирмы по аудиту. cs-soc2-аудитор подготавливает пакет доказательств, макетные результаты аудита и план устранения неполадок, которые использует фирма, проводящая аудит.
@@ -145,8 +145,8 @@ python ../../compliance-os/skills/compliance-os/scripts/audit_simulator.py soc2_
 
 ## Ссылки { #references }
 
-- Скилл: [../../ra-qm-команда/скиллы/soc2-соответствие требованиям/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/soc2-compliance/SKILL.md)
-- Плейбук: [../../ra-qm-команда/скиллы/soc2-соответствие требованиям/ссылки/soc2_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/soc2-compliance/references/soc2_audit_playbook.md)
+- Скилл: [../../ra-qm-team/skills/soc2-compliance/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/soc2-compliance/SKILL.md)
+- Плейбук: [../../ra-qm-team/skills/soc2-compliance/references/soc2_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/soc2-compliance/references/soc2_audit_playbook.md)
 - Родственная команда: [`/cs:soc2-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/soc2-audit-prep/SKILL.md)
 
 ---

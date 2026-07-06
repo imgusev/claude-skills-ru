@@ -1,9 +1,9 @@
 ---
-title: "/cs: посмертно — честная ретроспектива { #cspost-mortem--honest-retrospective } — Агентский скилл для руководителей"
+title: "/cs:post-mortem — Честная ретроспектива { #cspost-mortem--honest-retrospective } — Агентский скилл для руководителей"
 description: "/cs: посмертное <решение> — честная ретроспектива принятого решения, оцениваемая с учетом первоначальных предположений и несогласия. Завершает. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs: посмертно — честная ретроспектива { #cspost-mortem--honest-retrospective }
+# /cs:post-mortem — Честная ретроспектива { #cspost-mortem--honest-retrospective }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

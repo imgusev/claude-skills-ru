@@ -1,9 +1,9 @@
 ---
 name: "cs-grill-with-docs"
-description: "/cs:grill-with-docs <путь-к-плану> — Запуск сеанса приготовления на гриле с привязкой к документам. Предварительные рейсы CONTEXT.md + docs/adr/ linters, затем запрашивает план по одному решению за раз, обновляя глоссарий + встроенное написание ADR по мере их кристаллизации."
+description: "/cs:grill-with-docs <путь-к-плану> — Запуск сеанса приготовления на гриле с привязкой к документам. Предварительные рейсы CONTEXT.md + docs/adr/ linters, затем опрашивает план по одному решению за раз, обновляя глоссарий + встроенное написание ADR по мере их кристаллизации."
 ---
 
-# /cs:опрос по плану grill-with-docs — Docs-Anchored { #csgrill-with-docs--docs-anchored-plan-interrogation }
+# /cs:grill-with-docs — Привязанный к документам план допроса { #csgrill-with-docs--docs-anchored-plan-interrogation }
 
 **Команда:** `/cs:grill-with-docs <path-to-plan>`
 

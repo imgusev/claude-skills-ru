@@ -115,13 +115,13 @@ echo "IR runbook check: ../../skills/ciso-advisor/references/incident_response.m
 
 - [cs-технический директор-консультант](https://github.com/imgusev/claude-skills-ru/tree/main/agents/c-level/cs-cto-advisor.md) — архитектура безопасности
 - [cs-финансовый директор-консультант](cs-cfo-advisor.md) — риск → страхование, бюджет аудита
-- [cs-контроль качества-нормативный](https://github.com/imgusev/claude-skills-ru/tree/main/agents/ra-qm-team/cs-quality-regulatory.md) — ISO 27001, выполнение GDPR
+- [cs-качество-нормативное регулирование](https://github.com/imgusev/claude-skills-ru/tree/main/agents/ra-qm-team/cs-quality-regulatory.md) — ISO 27001, выполнение GDPR
 - [cs-старший инженер](https://github.com/imgusev/claude-skills-ru/tree/main/agents/engineering/cs-senior-engineer.md) — безопасное кодирование
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/ciso-консультант/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/ciso-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Скилл: [../../skills/ciso-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/ciso-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 
 ---
 

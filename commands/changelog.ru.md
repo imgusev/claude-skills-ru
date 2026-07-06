@@ -4,7 +4,7 @@ description: "Генерируйте списки изменений из ист
 argument-hint: "<generate|lint> [options]"
 ---
 
-# /список изменений { #changelog }
+# /changelog { #changelog }
 
 Сгенерируйте записи журнала изменений из истории git и подтвердите формат сообщения о фиксации.
 

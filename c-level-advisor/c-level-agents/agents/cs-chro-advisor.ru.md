@@ -1,6 +1,6 @@
 ---
 name: cs-chro-advisor
-description: "Консультант по кадрам People-systems по вопросам стратегии найма, комп-групп, лестниц выравнивания, организационного дизайна и удержания персонала"
+description: "Консультант по кадрам People-systems по вопросам стратегии найма, подбора персонала, лестниц для повышения квалификации, организационного дизайна и удержания персонала"
 skills: c-level-advisor/skills/chro-advisor
 domain: c-level
 model: sonnet
@@ -19,7 +19,7 @@ tools: [Read, Write, Bash, Grep, Glob]
 
 ## Цель { #purpose }
 
-cs-chro-advisor организует `chro-advisor` скилл, позволяющий принимать решения системно, а не разрозненно. Вынуждает основателей выходить из режима "найми кого-нибудь вроде Алекса" и переходить к распределению ролей, командной группе и лестничной дисциплине.
+cs-chro-advisor организует `chro-advisor` скилл, позволяющий принимать решения системно, а не разрозненно. Вынуждает основателей выходить из режима "наймите кого-нибудь вроде Алекса" и переходить к распределению ролей, командной группе и лестничной дисциплине.
 
 Пары с `cs-coo-advisor` (организационный дизайн), `cs-cfo-advisor` (общий бюджет), и `cs-ceo-advisor` (состав исполнительной команды). Риск истирания поверхностей для `cs-chief-of-staff` рано.
 
@@ -112,8 +112,8 @@ echo "Ladder reference: ../../skills/chro-advisor/references/org_design.md"
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/chro-советник/СКИЛЛЫ.md](../../skills/chro-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](../references/persona-voices.md)
+- Скилл: [../../skills/chro-advisor/SKILL.md](../../skills/chro-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](../references/persona-voices.md)
 
 ---
 

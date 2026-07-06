@@ -3,11 +3,11 @@ description: "Конструктор матриц скидок + библиот�
 argument-hint: "<inputs: deal-band data, current discount distribution, target NRR>"
 ---
 
-# /cs:коммерческая политика — матрица скидок + поток исключений { #cscommercial-policy--discount-matrix--exception-flow }
+# /cs:commercial-policy — Матрица скидок + поток исключений { #cscommercial-policy--discount-matrix--exception-flow }
 
 Запустите `commercial-policy` скилл на основе этого ввода:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Воркфлоу с тремя инструментами { #three-tool-workflow }
 

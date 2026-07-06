@@ -1,9 +1,9 @@
 ---
-title: "/cs: перекрестная оценка — Консенсус по нескольким моделям { #cscross-eval--multi-model-consensus } — Агентский скилл для руководителей"
+title: "/cs:cross-eval — Консенсус по нескольким моделям { #cscross-eval--multi-model-consensus } — Агентский скилл для руководителей"
 description: "/cs: перекрестная оценка <памятка> - Многомодельный консенсус по записке правления или краткой стратегии. Кросс-ревью Claude + Codex + Gemini с."
 ---
 
-# /cs: перекрестная оценка — Консенсус по нескольким моделям { #cscross-eval--multi-model-consensus }
+# /cs:cross-eval — Консенсус по нескольким моделям { #cscross-eval--multi-model-consensus }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

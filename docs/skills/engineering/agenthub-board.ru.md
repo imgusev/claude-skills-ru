@@ -1,9 +1,9 @@
 ---
-title: "/концентратор:доска объявлений — Доска объявлений { #hubboard--message-board } — Агентский скилл для Codex и OpenClaw"
+title: "/hub:board — Доска объявлений { #hubboard--message-board } — Агентский скилл для Codex и OpenClaw"
 description: "Читайте, пишите и просматривайте доску объявлений AgentHub для координации действий агентов. Используется, когда пользователь запускает /hub:board. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /концентратор:доска объявлений — Доска объявлений { #hubboard--message-board }
+# /hub:board — Доска объявлений { #hubboard--message-board }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Инженерия — уровень POWERFUL</span>

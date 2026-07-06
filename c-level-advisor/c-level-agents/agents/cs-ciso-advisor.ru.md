@@ -112,13 +112,13 @@ echo "IR runbook check: ../../skills/ciso-advisor/references/incident_response.m
 
 - [cs-технический директор-консультант](../../../agents/c-level/cs-cto-advisor.md) — архитектура безопасности
 - [cs-финансовый директор-консультант](cs-cfo-advisor.md) — риск → страхование, бюджет аудита
-- [cs-контроль качества-нормативный](../../../agents/ra-qm-team/cs-quality-regulatory.md) — ISO 27001, выполнение GDPR
+- [cs-качество-нормативное регулирование](../../../agents/ra-qm-team/cs-quality-regulatory.md) — ISO 27001, выполнение GDPR
 - [cs-старший инженер](../../../agents/engineering/cs-senior-engineer.md) — безопасное кодирование
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/ciso-консультант/СКИЛЛЫ.md](../../skills/ciso-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](../references/persona-voices.md)
+- Скилл: [../../skills/ciso-advisor/SKILL.md](../../skills/ciso-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](../references/persona-voices.md)
 
 ---
 

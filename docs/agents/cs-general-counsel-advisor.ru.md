@@ -43,12 +43,12 @@ description: "Склонный к риску главный юрисконсул
 2. **Анализатор терминального листа**
    - Путь: [`scripts/term_sheet_analyzer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor/scripts/term_sheet_analyzer.py)
    - Использование: `python ../../skills/general-counsel-advisor/scripts/term_sheet_analyzer.py term_sheet.json`
-   - Оценка в терминальном листе от 0 до 100 баллов по 12 параметрам: предпочтение при ликвидации, предотвращение разбавления, пул опционов, правление, наделение правами, пропорциональное распределение, перетаскивание, защитные положения, права на информацию, дивиденды, оценка/разбавление, целостный подход.
+   - Оценка в терминальном листе от 0 до 100 баллов по 12 параметрам: предпочтение при ликвидации, предотвращение разбавления, пул опционов, правление, наделение полномочиями, пропорциональность, перетаскивание, защитные положения, права на информацию, дивиденды, оценка/dilution, целостный
    - Результат: оценка дружелюбия основателя (FOUNDER_FRIENDLY / NEGOTIATE / HOSTILE) + флаги для каждого предложения
 
 ### Базы знаний { #knowledge-bases }
 
-- [`references/contracts_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor/references/contracts_playbook.md) — 7 типов контрактов для стартапов (MSA, SaaS, NDA, DPA, занятость, подрядчик, акционерный капитал), основные ограничения для каждого типа, эвристика быстрой сортировки
+- [`references/contracts_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor/references/contracts_playbook.md) — 7 типов контрактов для стартапов (MSA, SaaS, NDA, DPA, трудоустройство, подрядчик, акционерный капитал), основные ограничения для каждого типа, эвристика быстрой сортировки
 - [`references/ip_and_regulatory.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor/references/ip_and_regulatory.md) — Инвентаризация интеллектуальной собственности (патенты, авторские права, товарные знаки, коммерческая тайна), присвоение изобретений, соответствие лицензии OSS, нормативная матрица триггеров (HIPAA, GDPR, FDA, fintech, Закон об искусственном интеллекте), SOC 2 → последовательность ISO
 - [`references/term_sheet_decoder.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor/references/term_sheet_decoder.md) — Полный глоссарий терминов, шпаргалка по умолчанию для основателей, стратегия ведения переговоров, три наиболее важных пункта
 
@@ -65,7 +65,7 @@ python ../../skills/general-counsel-advisor/scripts/contract_risk_scanner.py pat
 # 4. Send redlines + counter-proposals to outside counsel
 ```
 
-** Ожидаемый результат: ** Список приоритетных задач и памятка для внешнего консультанта; основатель не тратит 500 долларов в час на сортировку, которую может выполнить агент.
+** Ожидаемый результат:** Список приоритетных задач и памятка для внешнего консультанта; основатель не тратит впустую 500 долларов/hour при сортировке агент может это сделать.
 
 ### Воркфлоу 2: Ответ на контрольную работу (1 час) { #workflow-2-term-sheet-response-1-hour }
 ** Цель:** Составьте список терминов и определите 3 главных приоритета на переговорах.
@@ -91,7 +91,7 @@ python ../../skills/general-counsel-advisor/scripts/term_sheet_analyzer.py term_
 4. Товарный знак: словесные знаки зарегистрированы или на них подана заявка?
 5. Коммерческая тайна: контроль доступа, NDA, процедуры выезда на месте?
 
-**Ожидаемый результат:** Реестр рисков интеллектуальной собственности с красными/желтыми/зелеными пунктами, план действий с указанием владельцев и сроков.
+**Ожидаемый результат:** Реестр рисков ИС с красным/yellow/green пункты, план действий с указанием владельцев и сроков.
 
 ### Воркфлоу 4: Оценка регулирующих триггеров (2 часа) { #workflow-4-regulatory-trigger-assessment-2-hours }
 **Цель:** Определить режимы регулирования, триггеры которых будут введены в действие в течение следующих 12 месяцев дорожной карты продукта.
@@ -160,8 +160,8 @@ echo "  ☐ /cs:freeze applied if irreversible (term sheet, M&A LOI, employment 
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/генеральный юрисконсульт-консультант/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Скилл: [../../skills/general-counsel-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/general-counsel-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 - Родственная команда: [`/cs:gc-review`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/gc-review/SKILL.md)
 
 ---

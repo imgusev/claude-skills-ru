@@ -7,7 +7,7 @@ argument-hint: "<inquiry>"
 
 Используйте `cs-bizops-orchestrator` агент + `business-operations-skills` скилл оркестратора для обработки этого запроса:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Протокол маршрутизации { #routing-protocol }
 

@@ -4,7 +4,7 @@ description: "Дашборд состояния портфеля и анализ
 argument-hint: "<dashboard|risk> [options]"
 ---
 
-# /проект-здравоохранение { #project-health }
+# /project-health { #project-health }
 
 Создавайте дашборды состояния портфеля и матрицы рисков для надзора за проектами.
 

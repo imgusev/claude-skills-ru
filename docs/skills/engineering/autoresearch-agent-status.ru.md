@@ -1,9 +1,9 @@
 ---
-title: "/ar:статус — Дашборд эксперимента { #arstatus--experiment-dashboard } — Агентский скилл для Codex и OpenClaw"
+title: "/ar:status — Экспериментальная Дашборд { #arstatus--experiment-dashboard } — Агентский скилл для Codex и OpenClaw"
 description: "Покажите дашборд эксперимента с результатами, активными циклами и ходом выполнения. Используйте, когда пользователь запускает /ar:status или. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /ar:статус — Дашборд эксперимента { #arstatus--experiment-dashboard }
+# /ar:status — Экспериментальная Дашборд { #arstatus--experiment-dashboard }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Инженерия — уровень POWERFUL</span>

@@ -3,7 +3,7 @@ description: "Активируйте скилл claude-coach — персона�
 argument-hint: "[use cases, e.g. 'writing, coding']"
 ---
 
-# /cs:Клод-тренер { #csclaude-coach }
+# /cs:claude-coach { #csclaude-coach }
 
 Активирует `claude-coach` скилл. С этого момента разговор приобретает:
 

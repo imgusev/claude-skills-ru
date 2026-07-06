@@ -73,8 +73,8 @@ python scripts/index_generator.py ./minha-empresa
 ## Комо комесар (фасад - это АО "сер асионадо") { #como-começar-faça-isto-ao-ser-acionado }
 
 1. Пример: 1. Я подтверждаю, что вы проводите расследование по фактам, а не связываете их в порядке.
-2. Пергунте о **номе ду бандл** (номе да эмпреса/паста райз).
-3. Ехал верхом `scaffold_bundle.py` пара слов об эскелето (о монте в качестве руководства по приготовлению пасты).
+2. Пергунте о **номе ду бандл** (номе да эмпреса/pasta райз).
+3. Ехал верхом `scaffold_bundle.py` пара слов об эскелето (или о том, как приготовить пасту вручную).
 4. **Начало в ФАЗЕ 0** (дескоберта) — так называемое пергунтское дело. **Парэ и агуардэ** в качестве ответных мер.
 5. Фаза када: подтвердить → эскрева → ехал `okf_linter` + `index_generator` → мостре о "максимальном пассо сугеридо".
 
@@ -82,7 +82,7 @@ python scripts/index_generator.py ./minha-empresa
 
 - [`references/okf_conformance.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/okf_conformance.md) — спецификация OKF v0.1, настройки комплектации, frontmatter, arquivos reservados (com fontes)
 - [`references/type_vocabulary.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/type_vocabulary.md) — словарь де `type` порционная паста с начинкой + номенклатура
-- [`references/phase_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/phase_playbook.md) — в 12 фазах: объективо, пергунтас (3-5/блоко) и аркивос герадос
+- [`references/phase_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/arquiteto-de-empresa/references/phase_playbook.md) — в 12 фазах: объективо, пергунтас (3-5/bloco) и аркивос герадос
 
 ## Активы { #assets }
 

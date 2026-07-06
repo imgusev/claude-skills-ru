@@ -32,7 +32,7 @@ description: "/cs: воркфлоу-сборка <описание задачи>
 5. Требуется ли для какого-либо шага возврат структурированных данных (вердикт, список, оценки)?
 6. Примерно на какую глубину / сколько токенов?
 
-## Шаг 2 — Если пользователь говорит расплывчато, делайте выводы и предлагайте (не цикл на вопросах) { #step-2--if-the-user-is-vague-infer-and-propose-dont-loop-on-questions }
+## Шаг 2 — Если пользователь расплывчат, сделайте вывод и предложите (не цикл вопросов) { #step-2--if-the-user-is-vague-infer-and-propose-dont-loop-on-questions }
 
 ```bash
 python ../skills/workflow-builder/scripts/workflow_intake.py --task "<their request>" \
@@ -72,7 +72,7 @@ export CLAUDE_CODE_WORKFLOWS=1   # the feature is off by default
 3. В оркестраторе нет API файловой системы / узла — эта работа выполняется внутри `agent()`.
 4. `parallel()` принимает удары (`() => agent(...)`); значение по умолчанию равно `pipeline()` если только для сцены не требуется весь предыдущий набор.
 5. Защищайте каждый разомкнутый цикл счетчиком или `budget.remaining()`.
-6. `results.filter(Boolean)` перед использованием параллельного вывода/пайплайна.
+6. `results.filter(Boolean)` перед использованием параллельного/pipeline вывод.
 
 ## Выходной формат { #output-format }
 

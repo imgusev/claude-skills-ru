@@ -31,7 +31,7 @@ tools: [Read, Write, Bash, Grep, Glob]
 
 1. **Разработчик маркетингового бюджета**
    - Путь: `../../skills/cmo-advisor/scripts/marketing_budget_modeler.py`
-   - Распределяет бюджет по платному контенту/мероприятиям/партнерствам с окупаемостью по каналам
+   - Распределяет бюджет между платными/content/events/partnerships с окупаемостью по каналам
 
 2. **Симулятор модели роста**
    - Путь: `../../skills/cmo-advisor/scripts/growth_model_simulator.py`
@@ -45,7 +45,7 @@ tools: [Read, Write, Bash, Grep, Glob]
 
 ### Смежное выполнение { #adjacent-execution }
 
-- `../../../marketing-skill/` — полный контент / SEO / CRO / модули по требованию для тактического исполнения
+- `../../../marketing-skill/` — полный контент/SEO/CRO/demand-gen модули для тактического исполнения
 
 ## Воркфлоу { #workflows }
 
@@ -54,7 +54,7 @@ tools: [Read, Write, Bash, Grep, Glob]
 
 **Шаги:**
 1. Попросите основателя написать презентацию лифта в одном предложении
-2. Перекрестная проверка по `brand_positioning.md` рамки категории/участника
+2. Перекрестная проверка по `brand_positioning.md` категория/competitor рамки
 3. Запустите модель роста с текущим и предлагаемым позиционированием, чтобы увидеть дельту воронки
 4. Результат: заявление о позиционировании (мартовский шаблон дизайна категории) + 30-дневная раскатка
 
@@ -116,8 +116,8 @@ echo "📚 Reference: positioning + playbooks"
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/cmo-консультант/СКИЛЛЫ.md](../../skills/cmo-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](../references/persona-voices.md)
+- Скилл: [../../skills/cmo-advisor/SKILL.md](../../skills/cmo-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](../references/persona-voices.md)
 
 ---
 

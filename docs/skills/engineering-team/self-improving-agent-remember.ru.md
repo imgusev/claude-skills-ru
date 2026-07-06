@@ -1,9 +1,9 @@
 ---
-title: "/si:запомнить — Явно сохранять знания { #siremember--save-knowledge-explicitly } — Агентский скилл и плагин Codex"
+title: "/si:remember — Сохранять знания явно { #siremember--save-knowledge-explicitly } — Агентский скилл и плагин Codex"
 description: "Явно сохраняйте важные знания в автоматической памяти с отметкой времени и контекстом. Используйте, когда обнаружение слишком важно, чтобы полагаться. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /si:запомнить — Явно сохранять знания { #siremember--save-knowledge-explicitly }
+# /si:remember — Сохранять знания явно { #siremember--save-knowledge-explicitly }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Инженерия — базовый уровень</span>
@@ -31,8 +31,8 @@ description: "Явно сохраняйте важные знания в авт�
 
 | Ситуация | Пример |
 |-----------|---------|
-| С трудом завоеванное понимание отладки | "Ошибки CORS в /api/upload вызваны CDN, а не серверной частью" |
-| Соглашение о проекте, не входящее в CLAUDE.md | "Мы используем экспорт баррелей в src/компоненты/" |
+| С трудом завоеванное понимание отладки | "Ошибки CORS на /api/upload вызваны CDN, а не серверной частью" |
+| Соглашение о проекте, не входящее в CLAUDE.md | "Мы используем экспорт баррелей в src/components/" |
 | Подвох, связанный с конкретным инструментом | "Шутка нуждается `--forceExit` флаг, или он зависает при тестировании базы данных" |
 | Архитектурное решение | "Мы выбрали Drizzle вместо Prisma для типобезопасного SQL" |
 | Предпочтения, которым ты хочешь научить Клода | "Не добавляйте комментарии, объясняющие очевидный код" |
@@ -75,7 +75,7 @@ grep -ni "<keywords>" "$MEMORY_DIR/MEMORY.md" 2>/dev/null
 
 ### Шаг 4: Предложите продвижение по службе { #step-4-suggest-promotion }
 
-Если знание звучит как правило (императив, всегда/никогда, условность):
+Если знание звучит как правило (императивное, всегда/never, конвенция):
 
 ```
 💡 This sounds like it could be a CLAUDE.md rule rather than a memory entry.
@@ -93,7 +93,7 @@ grep -ni "<keywords>" "$MEMORY_DIR/MEMORY.md" 2>/dev/null
   Claude will see this at the start of every session in this project.
 ```
 
-## Что не следует использовать /si:запомните для { #what-not-to-use-siremember-for }
+## Что не следует использовать /si:remember для { #what-not-to-use-siremember-for }
 
 - ** Временный контекст**: Используйте память сеанса или просто расскажите Клоду в разговоре
 - **Принудительные правила**: Используйте `/si:promote` чтобы написать непосредственно в CLAUDE.md

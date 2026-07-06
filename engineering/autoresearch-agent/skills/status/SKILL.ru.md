@@ -4,7 +4,7 @@ description: "Покажите дашборд эксперимента с рез
 command: /ar:status
 ---
 
-# /ar:статус — Дашборд эксперимента { #arstatus--experiment-dashboard }
+# /ar:status — Экспериментальная Дашборд { #arstatus--experiment-dashboard }
 
 Отображать результаты экспериментов, активные циклы и прогресс во всех экспериментах.
 

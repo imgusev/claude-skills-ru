@@ -151,7 +151,7 @@ gws helpers morning-briefing --json | python3 ../../engineering-team/google-work
 
 ## Связанные агенты { #related-agents }
 
-- [cs-инжиниринг-ведущий](cs-engineering-lead.md) — Координация инженерной команды
+- [cs-инжиниринг-ведущий специалист](cs-engineering-lead.md) — Координация инженерной команды
 - [cs-старший инженер](../engineering/cs-senior-engineer.md) — Архитектура и CI/CD
 
 ## Ссылки { #references }

@@ -52,7 +52,7 @@ compatible_tools: [claude-code, codex-cli, cursor, antigravity, opencode, gemini
 - Не реорганизовывайте то, что не сломано.
 - Соответствуйте существующему стилю, даже если вы бы сделали это по-другому.
 - Если вы заметили несвязанный мертвый код, упомяните об этом — не удаляйте его.
-- Удалите импорт /переменные/функции, которые ВАШИ изменения сделали неиспользуемыми.
+- Удалить импорт/variables/functions что ВАШИ изменения остались неиспользованными.
 - Не удаляйте ранее существовавший мертвый код, если вас об этом не попросят.
 
 ** Тест:** Каждая измененная строка должна быть связана непосредственно с запросом пользователя.
@@ -101,7 +101,7 @@ compatible_tools: [claude-code, codex-cli, cursor, antigravity, opencode, gemini
 ## Ссылки { #references }
 
 - `references/karpathy-principles.md` — цитаты из источника, более глубокий контекст, когда следует ослабить каждый принцип
-- `references/anti-patterns.md` — более 10 примеров до / после на Python, TypeScript и shell
+- `references/anti-patterns.md` — 10+ до/after примеры на Python, TypeScript и shell
 - `references/enforcement-patterns.md` — как подключать крючки, интеграция CI, внедрение в команду
 
 ## Когда нужно расслабиться { #when-to-relax }

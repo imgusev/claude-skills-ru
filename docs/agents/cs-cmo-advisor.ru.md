@@ -34,7 +34,7 @@ description: "Narrative-первый консультант CMO по опред�
 
 1. **Разработчик маркетингового бюджета**
    - Путь: [`scripts/marketing_budget_modeler.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/scripts/marketing_budget_modeler.py)
-   - Распределяет бюджет по платному контенту/мероприятиям/партнерствам с окупаемостью по каналам
+   - Распределяет бюджет между платными/content/events/partnerships с окупаемостью по каналам
 
 2. **Симулятор модели роста**
    - Путь: [`scripts/growth_model_simulator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/scripts/growth_model_simulator.py)
@@ -48,7 +48,7 @@ description: "Narrative-первый консультант CMO по опред�
 
 ### Смежное выполнение { #adjacent-execution }
 
-- [`marketing-skill`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill) — полный контент / SEO / CRO / модули по требованию для тактического исполнения
+- [`marketing-skill`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill) — полный контент/SEO/CRO/demand-gen модули для тактического исполнения
 
 ## Воркфлоу { #workflows }
 
@@ -57,7 +57,7 @@ description: "Narrative-первый консультант CMO по опред�
 
 **Шаги:**
 1. Попросите основателя написать презентацию лифта в одном предложении
-2. Перекрестная проверка по `brand_positioning.md` рамки категории/участника
+2. Перекрестная проверка по `brand_positioning.md` категория/competitor рамки
 3. Запустите модель роста с текущим и предлагаемым позиционированием, чтобы увидеть дельту воронки
 4. Результат: заявление о позиционировании (мартовский шаблон дизайна категории) + 30-дневная раскатка
 
@@ -119,8 +119,8 @@ echo "📚 Reference: positioning + playbooks"
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/cmo-консультант/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Скилл: [../../skills/cmo-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cmo-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 
 ---
 

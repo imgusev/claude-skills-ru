@@ -18,7 +18,7 @@ description: "Анализирует работоспособность пайп
 
 Анализ пайплайна, отслеживание точности прогнозов и измерение эффективности GTM для отделов по доходам SaaS.
 
-> **Выходные форматы:** Поддерживаются все скрипты `--format text` (удобочитаемый) и `--format json` (дашборды/интеграции).
+> **Выходные форматы:** Поддерживаются все скрипты `--format text` (удобочитаемый) и `--format json` (дашборды/integrations).
 
 ---
 
@@ -54,7 +54,7 @@ python scripts/pipeline_analyzer.py --input pipeline.json --format text
 
 **Рассчитанные ключевые показатели:**
 - **Коэффициент охвата пайплайном** -- Общее значение пайплайна/ целевая квота (работоспособно: 3-4 раза)
-- **Коэффициенты пересчета стадий** -- Коэффициенты перехода от стадии к стадии
+- **Коэффициенты пересчета этапов** -- Коэффициенты перехода от этапа к этапу
 - ** Скорость продаж** -- (Возможности x Средний размер сделки x Процент выигрышей) / Средний цикл продаж
 - **Устаревание сделок** -- Помечает сделки, среднее время цикла которых превышает 2 раза на каждом этапе
 - **Риск концентрации** - Предупреждает, когда >40% пайплайна приходится на одну сделку
@@ -128,7 +128,7 @@ python scripts/forecast_accuracy_tracker.py forecast_data.json --format text
 
 ### 3. Калькулятор эффективности GTM { #3-gtm-efficiency-calculator }
 
-Рассчитывает основные показатели эффективности SaaS GTM с использованием отраслевого бенчмаркинга, рейтингов и рекомендаций по улучшению.
+Вычисляет основные показатели эффективности SaaS GTM с использованием отраслевого бенчмаркинга, рейтингов и рекомендаций по улучшению.
 
 ** Входные данные:** JSON-файл с показателями доходов, затрат и клиентов
 ** Выходные данные:** Магическое число, LTV: CAC, окупаемость CAC, Кратность записи, Правило 40, NDR с рейтингами
@@ -277,7 +277,7 @@ python scripts/gtm_efficiency_calculator.py gtm_data.json --format text
 
 | Шаблон | Вариант использования |
 |----------|----------|
-| [Шаблон для ревью пайплайна](https://github.com/imgusev/claude-skills-ru/tree/main/business-growth/skills/revenue-operations/assets/pipeline_review_template.md) | Еженедельная/ежемесячная документация по проверке пайплайна |
+| [Шаблон для ревью пайплайна](https://github.com/imgusev/claude-skills-ru/tree/main/business-growth/skills/revenue-operations/assets/pipeline_review_template.md) | Еженедельно/monthly документация по проверке пайплайна |
 | [Шаблон прогнозного отчета](https://github.com/imgusev/claude-skills-ru/tree/main/business-growth/skills/revenue-operations/assets/forecast_report_template.md) | Отчетность о точности прогнозов и анализ тенденций |
 | [Шаблон дашборда GTM](https://github.com/imgusev/claude-skills-ru/tree/main/business-growth/skills/revenue-operations/assets/gtm_dashboard_template.md) | Дашборд эффективности GTM для ревью руководства |
 | [Образец данных пайплайна](https://github.com/imgusev/claude-skills-ru/tree/main/business-growth/skills/revenue-operations/assets/sample_pipeline_data.json) | Пример ввода для pipeline_analyzer.py |

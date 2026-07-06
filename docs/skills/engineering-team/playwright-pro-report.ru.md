@@ -1,6 +1,6 @@
 ---
 title: "Интеллектуальный отчет о тестировании { #smart-test-reporting } — Агентский скилл и плагин Codex"
-description: "Generate test report. Use when user says 'test report', 'results summary', 'test status', 'show results', 'test dashboard', or 'how did tests go'. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
+description: ">-. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
 # Интеллектуальный отчет о тестировании { #smart-test-reporting }
@@ -43,7 +43,7 @@ npx playwright test --reporter=json 2> /dev/null
 ```
 
 Выдержка:
-- Общее количество тестов, пройденных, неудачных, пропущенных, шелушащихся
+- Всего тестов, пройдено, не пройдено, пропущено, шелушащееся
 - Продолжительность каждого теста и общее количество
 - Имена неудачных тестов с сообщениями об ошибках
 - Слоеные тесты (пройдены при повторной попытке)
@@ -128,7 +128,7 @@ echo "HTML report available at: playwright-report/index.html"
 
 ## Выход { #output }
 
-- Сводка с подсчетом пройденных/неудачных/пропущенных/отслаивающихся этапов
+- Резюме с пропуском/fail/skip/flaky подсчитывает
 - Сведения о неудачном тестировании с сообщениями об ошибках
 - Сообщить о подтверждении назначения
 - Сравнение тенденций (при наличии исторических данных)

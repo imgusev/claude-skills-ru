@@ -105,10 +105,10 @@ python3 scripts/sample_size_calculator.py --baseline 0.05 --mde 0.20 --daily-tra
 
 | Базовый уровень | Подъем на 10% | Подъем на 20% | Подъем на 50% |
 |----------|----------|----------|----------|
-| 1% | 163k/вариант | 43k/вариант | 7,7к/вариант |
-| 3% | 53k/вариант | 14k/вариант | 2,5к/вариант |
-| 5% | 31k/вариант | 8,2к/вариант | 1,5к/вариант |
-| 10% | 15 тыс./вариант | 3,8к/вариант | 683/вариант |
+| 1% | 163 тыс./variant | 43k/variant | 7,7к/variant |
+| 3% | 53к/variant | 14k/variant | 2,5к/variant |
+| 5% | 31 тыс./variant | 8,2к/variant | 1,5к/variant |
+| 10% | 15 тысяч/variant | 3,8к/variant | 683/variant |
 
 **Перепроверьте калькуляторы** (следует согласиться со сценарием в пределах округления):
 - [Эван Миллер](https://www.evanmiller.org/ab-testing/sample-size.html)
@@ -127,7 +127,7 @@ python3 scripts/sample_size_calculator.py --baseline 0.05 --mde 0.20 --daily-tra
 
 ### Вторичные показатели { #secondary-metrics }
 - Поддержка первичной интерпретации показателей
-- Объясните, почему/как это изменение сработало
+- Объясните, почему/how изменение сработало
 
 ### Показатели защитного барьера { #guardrail-metrics }
 - Вещи, которые не должны стать хуже
@@ -168,7 +168,7 @@ python3 scripts/sample_size_calculator.py --baseline 0.05 --mde 0.20 --daily-tra
 
 **Соображения:**
 - Согласованность: Пользователи видят один и тот же вариант при возврате
-- Сбалансированное воздействие в зависимости от времени суток/недели
+- Сбалансированная экспозиция в зависимости от времени суток/week
 
 ---
 
@@ -248,7 +248,7 @@ python3 scripts/sample_size_calculator.py --baseline 0.05 --mde 0.20 --daily-tra
 - Результаты (выборка, показатели, значимость)
 - Принятие решений и усвоение уроков
 
-**Для получения информации о шаблонах**: Смотрите [ссылки/test-шаблоны.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/ab-test-setup/references/test-templates.md)
+**Для получения информации о шаблонах**: Смотрите [ссылки/test-templates.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/ab-test-setup/references/test-templates.md)
 
 ---
 

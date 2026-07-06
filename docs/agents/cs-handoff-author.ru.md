@@ -23,7 +23,7 @@ description: "Беседа-хэндофф автора. Преобразует �
 
 **Закрытие:** "Хэндофф в `[path]`. Следующий сеанс: запустите рекомендуемые скиллы + прочитайте связанные артефакты. Не извлекайте повторно то, что уже захвачено."
 
-Ориентированный на непрерывность. Дублирование недопустимо. Адаптируется к фокусу следующего сеанса (развертывание, ревью, отладка, проектирование, тестирование).
+Ориентированный на непрерывность. Дублирование недопустимо. Адаптируется к фокусу следующей сессии (развертывание, ревью, отладка, проектирование, тестирование).
 
 ## Цель { #purpose }
 
@@ -37,7 +37,7 @@ description: "Беседа-хэндофф автора. Преобразует �
 Четко различает:
 
 - ** против cs-grill-master ** (план опроса): другой режим (непрерывность против опроса)
-- **vs cs-скилл-автор ** (разработка скилла): другой домен (хэндофф-контент против файлов скилла)
+- **vs cs-скилл-автор ** (разработка скилла): другой домен (хэндофф контента против файлов скилла)
 - **против `/cs:decide`** (регистрация решений): другой артефакт (хэндофф ориентирован на будущее; решение ориентировано на прошлое)
 
 ** Жесткое правило:** никогда не дублируйте содержимое, уже находящееся в другом артефакте. Только ссылки.
@@ -56,7 +56,7 @@ description: "Беседа-хэндофф автора. Преобразует �
 2. **Дедупликатор артефактов**
    - Путь: [`scripts/artifact_deduplicator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/scripts/artifact_deduplicator.py)
    - Использование: `python artifact_deduplicator.py path/to/handoff-draft.md`
-   - Обнаруживает содержимое PRD/ADR/issue/commit/long-code-block; предлагает заменить ссылки
+   - Обнаруживает PRD/ADR/issue/commit/long-code-block содержание; предлагает замену ссылок
 
 3. **Рекомендатель по скиллу**
    - Путь: [`scripts/skill_recommender.py`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/scripts/skill_recommender.py)
@@ -169,8 +169,8 @@ python ../skills/handoff/scripts/artifact_deduplicator.py path/to/existing-hando
 
 ## Ссылки { #references }
 
-- Скилл: [../скиллы/хэндофф/СКИЛЛ.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/SKILL.md)
-- Сопутствующий инструмент: [../скиллы/хэндофф/рекомендации/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/references/companion_tooling.md)
+- Скилл: [../skills/handoff/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/SKILL.md)
+- Сопутствующий инструмент: [../skills/handoff/references/companion_tooling.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/skills/handoff/references/companion_tooling.md)
 - Родственная команда: [`/cs:handoff`](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/handoff/commands/cs-handoff.md)
 
 ---

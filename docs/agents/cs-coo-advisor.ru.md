@@ -38,11 +38,11 @@ description: "Execution-консультант операционного дир
 
 2. **Отслеживатель OKR**
    - Путь: [`scripts/okr_tracker.py`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/coo-advisor/scripts/okr_tracker.py)
-   - Ход выполнения OKR за квартал, опережающие/отстающие показатели, на ходу / в зоне риска / не на ходу
+   - Прогресс в проведении ОКР за квартал, ведущий/lagging индикаторы, текущие / подверженные риску/ сбившиеся с пути
 
 ### Базы знаний { #knowledge-bases }
 
-- [`references/ops_cadence.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/coo-advisor/references/ops_cadence.md) — еженедельный/ежемесячный/ежеквартальный ритм, дизайн встреч
+- [`references/ops_cadence.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/coo-advisor/references/ops_cadence.md) — еженедельно/monthly/quarterly ритм, дизайн встречи
 - [`references/process_frameworks.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/coo-advisor/references/process_frameworks.md) — Дизайн OKR, подсчет очков, каскадирование
 - [`references/scaling_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/coo-advisor/references/scaling_playbook.md) — 1-10, 10-100, 100-1000 переходов
 
@@ -69,7 +69,7 @@ description: "Execution-консультант операционного дир
 1. Запустите OKR tracker за текущий квартал
 2. Ссылка `okr_execution.md` — у каждого KR должен быть опережающий индикатор
 3. Отмечайте любое OKR без DRI или измеримого результата
-4. Выходные данные: система показателей OKR, список подверженных риску, действия по исправлению
+4. Выходные данные: система показателей OKR, список групп риска, действия по исправлению
 
 ```bash
 python ../../skills/coo-advisor/scripts/okr_tracker.py
@@ -116,12 +116,12 @@ echo "Reference: ../../skills/coo-advisor/references/ops_cadence.md"
 - [cs-финансовый директор-консультант](cs-cfo-advisor.md) — финансовая каденция
 - [cs-cro-советник](cs-cro-advisor.md) — динамика доходов
 - [cs-начальник штаба](cs-chief-of-staff.md) — регистрация решений
-- [cs-инжиниринг-ведущий](https://github.com/imgusev/claude-skills-ru/tree/main/agents/engineering-team/cs-engineering-lead.md) — английские операции
+- [cs-инжиниринг-ведущий](https://github.com/imgusev/claude-skills-ru/tree/main/agents/engineering-team/cs-engineering-lead.md) — англоязычные операции
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/исполнительный директор-консультант/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/coo-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Скилл: [../../skills/coo-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/coo-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 
 ---
 

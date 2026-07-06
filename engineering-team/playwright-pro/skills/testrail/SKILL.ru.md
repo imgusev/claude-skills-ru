@@ -1,6 +1,6 @@
 ---
 name: "testrail"
-description: >-
+description: ">-"
   Sync tests with TestRail. Use when user mentions "testrail", "test management",
   "test cases", "test run", "sync test cases", "push results to testrail",
   or "import from testrail".
@@ -126,4 +126,4 @@ test('should login successfully', async ({ page }) => {
 
 - Краткое описание операции с подсчетом
 - Любые ошибки или несоответствующие случаи
-- Ссылка на запуск TestRail/результаты
+- Ссылка на запуск TestRail/results

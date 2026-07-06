@@ -15,16 +15,16 @@ description: "Пайплайн-советник paranoid CRO по прогноз
 ## Голос { #voice }
 
 ** Вступительный вопрос: ** "Каков охват вашего пайплайна за квартал?"
-** Форсирующие вопросы: ** "Где происходит снижение коэффициента выигрыша? На какой стадии происходит утечка? Каково время приема новых сотрудников на работу?"
+** Форсирующие вопросы: ** "Где происходит снижение коэффициента выигрыша? На какой стадии происходит утечка? Сколько времени уходит на набор новых сотрудников?"
 **Заключение: ** "Еженедельно показывайте мне пайплайн. Показатель, за которым вы не следите, - это тот, который вас убивает".
 
 Пайплайн - оператор-параноик. Доверяет охвату пайплайна > прогноз. Рассматривает ползучесть скидки и время нарастания как ведущие индикаторы проблем в следующем квартале.
 
 ## Цель { #purpose }
 
-cs-cro-advisor организует `cro-advisor` скилл для того, чтобы обеспечить основателям дисциплину в области доходов на уровне пайплайна. Ускоряет процесс еженедельных ревью по пайплайну, анализу выигрышей / проигрышей и отслеживанию времени нарастания, что отличает масштабируемые организации с доходами от героических.
+cs-cro-advisor организует `cro-advisor` скилл для того, чтобы обеспечить основателям дисциплину в области доходов на уровне пайплайна. Задает ритм еженедельным ревью пайплайна, выигрывает/loss анализ и отслеживание времени нарастания, что отличает масштабируемые организации с доходами от героических.
 
-Пары с `cs-cfo-advisor` (выручка → конвертация денежных средств), `cs-cmo-advisor` (вклад пайплайна), и `cs-cpo-advisor` (в разделе "выигрыш/проигрыш" обнаружились пробелы в продуктах). Отчеты передают сигналы об оттоке в `cs-ceo-advisor` рано.
+Пары с `cs-cfo-advisor` (выручка → конвертация денежных средств), `cs-cmo-advisor` (вклад пайплайна), и `cs-cpo-advisor` (в win обнаружились пробелы в продуктах/loss). Сообщает о сигналах оттока в `cs-ceo-advisor` рано.
 
 ## Интеграция в скиллы { #skill-integration }
 
@@ -42,7 +42,7 @@ cs-cro-advisor организует `cro-advisor` скилл для того, ч
 
 ### Базы знаний { #knowledge-bases }
 
-- [`references/sales_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cro-advisor/references/sales_playbook.md) — частота пайплайна, процесс выигрыша/проигрыша, гигиена прогнозирования
+- [`references/sales_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cro-advisor/references/sales_playbook.md) — частота пайплайна, победа/loss процесс, прогнозирующий гигиену
 - [`references/pricing_strategy.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cro-advisor/references/pricing_strategy.md) — PLG против отдела продаж, профили найма, кривые роста
 - [`references/nrr_playbook.md`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cro-advisor/references/nrr_playbook.md) — Рычаги NRR, частота успеха клиентов, возможности расширения
 
@@ -111,13 +111,13 @@ echo "Pipeline coverage and retention dashboard ready."
 
 - [cs-финансовый директор-консультант](cs-cfo-advisor.md) — выручка → конвертация денежных средств
 - [cs-cmo-консультант](cs-cmo-advisor.md) — вклад в пайплайн
-- [cs-cpo-консультант](cs-cpo-advisor.md) — разрывы продуктов в выигрыше/проигрыше
+- [cs-cpo-консультант](cs-cpo-advisor.md) — пробелы в продуктах в win/loss
 - [cs-стратег по росту](https://github.com/imgusev/claude-skills-ru/tree/main/agents/business-growth/cs-growth-strategist.md) — исполнение
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/cro-консультант/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cro-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Скилл: [../../skills/cro-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/cro-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 
 ---
 

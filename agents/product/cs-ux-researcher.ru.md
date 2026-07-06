@@ -198,7 +198,7 @@ cat ../../product-team/skills/ux-researcher-designer/references/persona-methodol
    # Review example personas for format guidance
    cat ../../product-team/skills/ux-researcher-designer/references/example-personas.md
    ```
-   - Создавайте одностраничные карточки с персонами для командных стен /вики
+   - Создавайте одностраничные карточки-персоны для стен команды/wikis
    - Презентовать продуктовым, инженерным и дизайнерским командам
    - Сопоставьте персонажей с областями применения продукта и его функциями
    - Упоминаемые персонажи в рекламных проспектах и кратких описаниях дизайна
@@ -250,7 +250,7 @@ cat ../../product-team/skills/ux-researcher-designer/references/example-personas
    - **Осведомленность:** Как пользователи узнают о продукте
    - **Внимание:** Как пользователи оценивают и сравнивают
    - **Онбординг:** Первоначальная настройка и активация
-   - ** Регулярное использование: ** Основной воркфлоу и ежедневные взаимодействия
+   - ** Регулярное использование:** Основной воркфлоу и ежедневные взаимодействия
    - **Рост:** Расширение использования, приглашение команды, модернизация
    - **Пропаганда:** Привлечение других, предоставление обратной связи
 
@@ -313,7 +313,7 @@ python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritize
    cat ../../product-team/skills/ux-researcher-designer/references/usability-testing-frameworks.md
    ```
    - Определите цели тестирования (на какие решения это повлияет)
-   - Выберите тип теста (модерируемый/немодерируемый, удаленный/очный)
+   - Выберите тип теста (модерируемый/unmoderated, удаленный/in-person)
    - Напишите сценарии задач (реалистичные, ориентированные на достижение цели)
    - Установите критерии успеха для каждой задачи (завершение, время, ошибки).
 
@@ -365,7 +365,7 @@ python ../../product-team/skills/product-manager-toolkit/scripts/rice_prioritize
    cat ../../product-team/skills/ui-design-system/references/component-architecture.md
    ```
    - Создавайте заявки Jira для каждого выпуска
-   - Планируйте повторное тестирование на наличие критических проблем после исправления
+   - Запланируйте повторное тестирование на наличие критических проблем после исправления
 
 ** Ожидаемый результат:** Отчет о тестировании юзабилити с показателями задач, оценкой серьезности проблем, рекомендациями и планом итераций проектирования.
 
@@ -495,8 +495,8 @@ echo "See: ../../product-team/skills/ui-design-system/references/developer-hando
 - **Влияние на принятие решений:** Персонажи, упомянутые в более чем 50% решений по дизайну продукта
 
 **Влияние на удобство использования:**
-- ** Обнаружение проблем: ** Более 5 уникальных проблем с удобством использования, выявленных в ходе исследования
-- ** Частота исправлений:** >70% критических/основных проблем устранено в течение 2 спринтов
+- ** Обнаружение проблем: ** Более 5 уникальных проблем юзабилити, выявленных в ходе исследования
+- **Частота исправлений:** >70% от критической/major проблемы были решены в течение 2 спринтов
 - ** Успешность выполнения задачи: ** Средний показатель успешности выполнения задачи повышается более чем на 15% после итерации проектирования
 - ** Удовлетворенность пользователей: ** Оценка SUS улучшилась более чем на 5 баллов после редизайна, основанного на исследованиях
 
@@ -515,13 +515,13 @@ echo "See: ../../product-team/skills/ui-design-system/references/developer-hando
 
 ## Ссылки { #references }
 
-- **Основной скилл:** [../../продукт-команда/скиллы/ux-исследователь-дизайнер/СКИЛЛЫ.md](../../product-team/skills/ux-researcher-designer/SKILL.md)
-- **Анализатор интервью:** [../../команда по продукту/скиллы/инструментарий менеджера по продукту/СКИЛЛЫ.md](../../product-team/skills/product-manager-toolkit/SKILL.md)
-- **Методология определения персоны:** [../../продукт-команда/скиллы/ux-исследователь-дизайнер/ссылки/персона-методология.md](../../product-team/skills/ux-researcher-designer/references/persona-methodology.md)
-- ** Руководство по составлению карты путешествия:** [../../продукт-команда/скиллы/ux-исследователь-дизайнер/ссылки/путешествие-картографирование-guide.md](../../product-team/skills/ux-researcher-designer/references/journey-mapping-guide.md)
-- **Тестирование юзабилити:** [../../продукт-команда/скиллы/ux-исследователь-дизайнер/ссылки/юзабилити-тестирование-фреймворки.md](../../product-team/skills/ux-researcher-designer/references/usability-testing-frameworks.md)
-- **Система проектирования:** [../../команда разработчиков продукта/скиллы/система пользовательского интерфейса/СКИЛЛЫ.md](../../product-team/skills/ui-design-system/SKILL.md)
-- **Руководство по предметной области продукта:** [../../команда разработчиков продукта/CLAUDE.md](../../product-team/CLAUDE.md)
+- **Основной скилл:** [../../product-team/skills/ux-researcher-designer/SKILL.md](../../product-team/skills/ux-researcher-designer/SKILL.md)
+- **Анализатор интервью:** [../../product-team/skills/product-manager-toolkit/SKILL.md](../../product-team/skills/product-manager-toolkit/SKILL.md)
+- **Методология определения персоны:** [../../product-team/skills/ux-researcher-designer/references/persona-methodology.md](../../product-team/skills/ux-researcher-designer/references/persona-methodology.md)
+- ** Руководство по составлению карты путешествия:** [../../product-team/skills/ux-researcher-designer/references/journey-mapping-guide.md](../../product-team/skills/ux-researcher-designer/references/journey-mapping-guide.md)
+- **Тестирование юзабилити:** [../../product-team/skills/ux-researcher-designer/references/usability-testing-frameworks.md](../../product-team/skills/ux-researcher-designer/references/usability-testing-frameworks.md)
+- **Система проектирования:** [../../product-team/skills/ui-design-system/SKILL.md](../../product-team/skills/ui-design-system/SKILL.md)
+- **Руководство по предметной области продукта:** [../../product-team/CLAUDE.md](../../product-team/CLAUDE.md)
 - **Руководство по разработке агента:** [../CLAUDE.md](../CLAUDE.md)
 
 ---

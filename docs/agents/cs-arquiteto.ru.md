@@ -1,6 +1,6 @@
 ---
 title: "Аркитето де Эмпреза (cs-аркитето) { #arquiteto-de-empresa-cs-arquiteto } — ИИ-агент для Claude Code и Codex"
-description: "Аркитето де Эмпреса — начальник штаба, отвечающий за разработку и согласование нулевого пакета OKF (Open Knowledge Format): ума Арворе де аркивос .md. Агентский оркестратор для Claude Code, Codex, Gemini CLI."
+description: "Аркитето де Эмпреса — начальник штаба, отвечающий за разработку и ведение переговоров с нулевым результатом, с пакетом OKF (формат открытых знаний). Агентский оркестратор для Claude Code, Codex, Gemini CLI."
 ---
 
 # Аркитето де Эмпреза (cs-аркитето) { #arquiteto-de-empresa-cs-arquiteto }

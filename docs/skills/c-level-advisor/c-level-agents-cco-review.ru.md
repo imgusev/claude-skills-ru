@@ -1,9 +1,9 @@
 ---
-title: "/cs:cco-ревью — CCO форсирует вопросы { #cscco-review--cco-forcing-questions } — Агентский скилл для руководителей"
+title: "/cs:cco-review — Технический директор, форсирующий вопросы { #cscco-review--cco-forcing-questions } — Агентский скилл для руководителей"
 description: "/cs:cco-ревью <плана> — опрос директора по работе с клиентами, одержимого удержанием, о любом плане, который касается удержания клиентов. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:cco-ревью — CCO форсирует вопросы { #cscco-review--cco-forcing-questions }
+# /cs:cco-review — Технический директор, форсирующий вопросы { #cscco-review--cco-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>
@@ -66,7 +66,7 @@ description: "/cs:cco-ревью <плана> — опрос директора 
 
 ### 6. Входит ли CS в ваш тарифный план и чем он отличается от плана продаж? { #6-is-cs-in-your-comp-plan-and-how-is-it-different-from-sales-comp }
 **Несоосность является основным показателем неисправности CS.**
-- CS comp: 70/30 базовый/переменный типичный
+- Состав CS: база 70/30/variable типичный
 - Переменная: 50% общего удержания + 30% чистого удержания + 20% активности
 - Анти-паттерн: компилируйте CSM на NPS — они играют в это
 - Анти-паттерн: компилирующие CSM—системы такие же, как и продажи - они продают, а не обслуживают

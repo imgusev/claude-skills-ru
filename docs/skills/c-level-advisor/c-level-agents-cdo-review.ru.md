@@ -1,9 +1,9 @@
 ---
-title: "/cs:cdo-ревью — CDO форсирует вопросы { #cscdo-review--cdo-forcing-questions } — Агентский скилл для руководителей"
+title: "/cs:cdo-review — CDO форсирует вопросы { #cscdo-review--cdo-forcing-questions } — Агентский скилл для руководителей"
 description: "/cs:cdo-ревью <плана> — основанный на принятии решений опрос главного специалиста по обработке данных о любом плане, который касается данных. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:cdo-ревью — CDO форсирует вопросы { #cscdo-review--cdo-forcing-questions }
+# /cs:cdo-review — CDO форсирует вопросы { #cscdo-review--cdo-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

@@ -1,9 +1,9 @@
 ---
-title: "/hub:eval — Оценивать результаты работы агента { #hubeval--evaluate-agent-results } — Агентский скилл для Codex и OpenClaw"
+title: "/hub:eval — Оценка результатов работы агента { #hubeval--evaluate-agent-results } — Агентский скилл для Codex и OpenClaw"
 description: "Оценивайте и ранжируйте результаты агентов по показателям или LLM judge для сеанса AgentHub. Используется, когда пользователь запускает /hub:eval или. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /hub:eval — Оценивать результаты работы агента { #hubeval--evaluate-agent-results }
+# /hub:eval — Оценка результатов работы агента { #hubeval--evaluate-agent-results }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Инженерия — уровень POWERFUL</span>

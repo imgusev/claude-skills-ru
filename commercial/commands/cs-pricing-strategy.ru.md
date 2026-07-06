@@ -3,11 +3,11 @@ description: "Выбор модели ценообразования (подпи
 argument-hint: "<pricing context: industry, deal size, customer count, value drivers>"
 ---
 
-# /cs:ценообразование-стратегия — Модель ценообразования + WTP + упаковка { #cspricing-strategy--pricing-model--wtp--packaging }
+# /cs:pricing-strategy — Ценовая модель + WTP + упаковка { #cspricing-strategy--pricing-model--wtp--packaging }
 
 Запустите `pricing-strategist` скилл на основе этого ввода:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Воркфлоу с тремя инструментами { #three-tool-workflow }
 

@@ -4,7 +4,7 @@ description: "Создайте матрицы конкурентного ана�
 argument-hint: "<analyze> [options]"
 ---
 
-# /конкурентная матрица { #competitive-matrix }
+# /competitive-matrix { #competitive-matrix }
 
 Создавайте конкурентные матрицы с использованием взвешенных оценок, анализа пробелов и информации о позиционировании на рынке.
 

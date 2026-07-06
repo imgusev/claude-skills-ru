@@ -3,11 +3,11 @@ description: "Ревью Frontend engineering — отвечает на 7 фор
 argument-hint: "<problem or surface to review>"
 ---
 
-# /cs:frontend-ревью — ревью по разработке интерфейсов { #csfrontend-review--frontend-engineering-review }
+# /cs:frontend-review — Ревью по разработке интерфейса { #csfrontend-review--frontend-engineering-review }
 
 Используйте `cs-frontend-engineer` агент (использует `context: fork`) для обработки этого запроса:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Библиотека принудительных вопросов { #forcing-question-library }
 

@@ -167,8 +167,8 @@ python ../../skills/chief-customer-officer-advisor/scripts/cs_coverage_calculato
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/руководитель отдела по работе с клиентами-консультант/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
+- Скилл: [../../skills/chief-customer-officer-advisor/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/chief-customer-officer-advisor/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/references/persona-voices.md)
 - Родственная команда: [`/cs:cco-review`](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/skills/cco-review/SKILL.md)
 
 ---

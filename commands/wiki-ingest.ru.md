@@ -4,7 +4,7 @@ description: "Загрузите исходный файл из raw/ в LLM Wiki
 ---
 <!-- canonical copy: engineering/llm-wiki/commands/wiki-ingest.md — keep in sync (root copy uses repo-root-relative script paths) -->
 
-# /вики-проглатывание { #wiki-ingest }
+# /wiki-ingest { #wiki-ingest }
 
 Добавьте новый источник в LLM Wiki. Это наиболее часто используемая команда.
 
@@ -33,7 +33,7 @@ description: "Загрузите исходный файл из raw/ в LLM Wiki
 
 ## Саб-агент { #sub-agent }
 
-Эта команда отправляет `wiki-ingestor` саб-агент для тяжелой работы. Видишь `agents/wiki-ingestor.md`.
+Эта команда отправляет `wiki-ingestor` саб-агент по тяжелой работе. Видишь `agents/wiki-ingestor.md`.
 
 ## Сценарии { #scripts }
 

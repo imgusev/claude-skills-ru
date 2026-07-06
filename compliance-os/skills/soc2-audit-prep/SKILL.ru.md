@@ -3,7 +3,7 @@ name: "soc2-audit-prep"
 description: "/cs: soc2-аудит-подготовка <область применения> — SOC 2 Готовность II типа 6 - принудительный допрос. Сосредоточенный период наблюдения. Используйте перед началом наблюдения II типа, контрольной точкой в середине периода или перед полевыми испытаниями, готовность к 10 месяцам."
 ---
 
-# /cs:soc2-аудит-подготовка — SOC 2 Тип II Форсирующие вопросы { #cssoc2-audit-prep--soc-2-type-ii-forcing-questions }
+# /cs:soc2-audit-prep — SOC 2 Тип II Форсирующие вопросы { #cssoc2-audit-prep--soc-2-type-ii-forcing-questions }
 
 **Команда:** `/cs:soc2-audit-prep <scope>`
 

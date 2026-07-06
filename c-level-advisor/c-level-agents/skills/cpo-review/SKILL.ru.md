@@ -3,7 +3,7 @@ name: "cpo-review"
 description: "/cs: cpo-ревью <план> — управляемый JTBD опрос о дорожной карте продукта, сигнале PMF и фокусе портфолио. Используйте при составлении дорожной карты квартала, принятии решения об отключении функции или заявке на PMF без кривой удержания."
 ---
 
-# /cs:cpo-ревью — CPO форсирует вопросы { #cscpo-review--cpo-forcing-questions }
+# /cs:cpo-review — CPO форсирует вопросы { #cscpo-review--cpo-forcing-questions }
 
 **Команда:** `/cs:cpo-review <plan>`
 

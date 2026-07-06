@@ -1,9 +1,9 @@
 ---
-title: "/cs:soc2-аудит-подготовка — SOC 2 Тип II Форсирующие вопросы { #cssoc2-audit-prep--soc-2-type-ii-forcing-questions } — Плагин и агентский скилл для Claude Code"
+title: "/cs:soc2-audit-prep — SOC 2 Тип II Форсирующие вопросы { #cssoc2-audit-prep--soc-2-type-ii-forcing-questions } — Плагин и агентский скилл для Claude Code"
 description: "/cs: soc2-аудит-подготовка <область применения> — SOC 2 Готовность II типа 6 - принудительный допрос. Сосредоточенный период наблюдения. Используйте. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:soc2-аудит-подготовка — SOC 2 Тип II Форсирующие вопросы { #cssoc2-audit-prep--soc-2-type-ii-forcing-questions }
+# /cs:soc2-audit-prep — SOC 2 Тип II Форсирующие вопросы { #cssoc2-audit-prep--soc-2-type-ii-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-shield-lock-outline: Compliance OS</span>

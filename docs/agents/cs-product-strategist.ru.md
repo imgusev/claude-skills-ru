@@ -38,7 +38,7 @@ description: "Агент по продуктовой стратегии для �
    - ** Цель:** Генерировать каскадные OKR от целей компании до ключевых результатов на уровне команды с отображением инициатив
    - **Путь:** [`scripts/okr_cascade_generator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/scripts/okr_cascade_generator.py)
    - **Использование:** `python ../../product-team/skills/product-strategist/scripts/okr_cascade_generator.py growth`
-   - ** Особенности: ** Многоуровневый каскад (компания > продукт > команда), отображение инициатив, фреймворк для подсчета очков, отслеживание частоты вращения
+   - ** Особенности: ** Многоуровневый каскад (компания > продукт > команда), отображение инициатив, фреймворк подсчета очков, отслеживание частоты вращения
    - ** Варианты использования:** Ежеквартальное планирование, стратегическое согласование, постановка целей, годовое планирование
 
 2. **Составитель конкурентной матрицы**
@@ -79,7 +79,7 @@ description: "Агент по продуктовой стратегии для �
 
 5. **Шаблоны анализа**
    - **Местоположение:** [`references/analysis-templates.md`](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/competitive-teardown/references/analysis-templates.md)
-   - ** Содержание:** SWOT, Пять сил Портера, карты позиционирования, боевые карты, анализ побед/поражений
+   - ** Содержание: ** SWOT, Пять сил Портера, карты позиционирования, боевые карты, победа/loss анализ
    - ** Пример использования:** Структурированный конкурентный анализ, стимулирование продаж
 
 ### Шаблоны { #templates }
@@ -125,7 +125,7 @@ description: "Агент по продуктовой стратегии для �
    - Непосредственно поддерживает цели на уровне компании
    - Достижимо в течение квартала с натяжкой
 
-5. ** Установите ключевые результаты** - 3-4 измеримых показателя KR для каждой цели:
+5. **Установите ключевые результаты** - 3-4 измеримых показателя KR для каждой цели:
    - Конкретный, поддающийся измерению, с исходным уровнем и целью
    - Сочетание опережающих и запаздывающих показателей
    - Достижение цели в 70% (если вы постоянно достигаете 100%, это недостаточно амбициозно)
@@ -138,7 +138,7 @@ description: "Агент по продуктовой стратегии для �
 
 7. ** Согласование с стейкхолдерами** - Представление и повторение:
    - Ревью с инженерными руководителями на предмет осуществимости
-   - Согласование с отделом маркетинга/продаж для координации GTM
+   - Согласовывать с маркетингом/sales для координации GTM
    - Получите одобрение руководства в отношении целей и KRs
 
 8. **Документируйте и запускайте** - Используйте шаблон OKR:
@@ -185,7 +185,7 @@ cat ../../product-team/skills/product-strategist/assets/okr_template.md
    ```
    - Открытые источники: G2, Capterra, страницы с ценами, списки изменений
    - Рыночные отчеты: Gartner, Forrester, брифинги аналитиков
-   - Информация о клиентах: интервью о выигрышах/проигрышах, причины оттока
+   - Информация о клиентах: Выигрывайте/loss интервью, причины оттока
 
 3. ** Оценивайте конкурентов** - Применяйте стандартизированную рубрику:
    ```bash
@@ -456,9 +456,9 @@ python ../../product-team/skills/product-strategist/scripts/okr_cascade_generato
 
 **Эффективность OKR:**
 - ** Уровень успеваемости:** Средний балл OKR 0,6-0,7 (амбициозный, но достижимый)
-- **Каскадное качество:** Все ключевые результаты поддаются измерению с помощью базового уровня и целевого показателя
+- **Каскадное качество:** Все ключевые результаты поддаются измерению с помощью исходного уровня и целевого показателя
 - **Влияние инициативы:** >70% завершенных инициатив переносят связанные с ними KR
-- ** Квартальный ритм:** Планирование ОКР завершено до начала квартала
+- ** Квартальный ритм:** Планирование OKR завершено до начала квартала
 
 **Влияние на бизнес:**
 - **Выравнивание выручки:** Продуктовая стратегия напрямую привязана к целям роста выручки
@@ -476,11 +476,11 @@ python ../../product-team/skills/product-strategist/scripts/okr_cascade_generato
 
 ## Ссылки { #references }
 
-- **Основной скилл:** [../../продукт-команда/скиллы/продукт-стратег/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/SKILL.md)
-- **Соревновательный скилл по разборке:** [../../продукт-команда/скиллы/конкурентная борьба/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/competitive-teardown/SKILL.md)
-- **Фреймворк OKR:** [../../команда по продукту/скиллы/стратег по продукту/ссылки/okr_framework.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/references/okr_framework.md)
-- **Типы стратегий:** [../../продукт-команда/скиллы/продукт-стратег/ссылки/strategy_types.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/references/strategy_types.md)
-- **Руководство по предметной области продукта:** [../../команда разработчиков продукта/CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/CLAUDE.md)
+- **Основной скилл:** [../../product-team/skills/product-strategist/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/SKILL.md)
+- **Соревновательный скилл по разборке:** [../../product-team/skills/competitive-teardown/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/competitive-teardown/SKILL.md)
+- **Фреймворк OKR:** [../../product-team/skills/product-strategist/references/okr_framework.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/references/okr_framework.md)
+- **Типы стратегий:** [../../product-team/skills/product-strategist/references/strategy_types.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/skills/product-strategist/references/strategy_types.md)
+- **Руководство по предметной области продукта:** [../../product-team/CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/product-team/CLAUDE.md)
 - **Руководство по разработке агента:** [../CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/agents/CLAUDE.md)
 
 ---

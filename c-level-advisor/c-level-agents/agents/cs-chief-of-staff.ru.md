@@ -106,7 +106,7 @@ echo "Decision logged to ~/.claude/decisions/raw/$(date +%Y-%m-%d)-$RANDOM.md"
 | безопасность, угроза, нарушение, соответствие требованиям, аудит | cs-ciso-советник |
 | архитектура, масштабирование, технический долг | cs-технический директор-консультант |
 | стратегия, видение, правление, сбор средств, слияния и поглощения | cs-генеральный директор-советник |
-| затронуто более 2 ролей | /cs:зал заседаний |
+| затронуто более 2 ролей | /cs:boardroom |
 
 ## Показатели успеха { #success-metrics }
 
@@ -124,9 +124,9 @@ echo "Decision logged to ~/.claude/decisions/raw/$(date +%Y-%m-%d)-$RANDOM.md"
 
 ## Ссылки { #references }
 
-- Скилл: [../../скиллы/начальник штаба/СКИЛЛЫ.md](../../skills/chief-of-staff/SKILL.md)
-- Спецификация голоса: [../ссылки/персона-voices.md](../references/persona-voices.md)
-- Регистратор решений: [../../скиллы/регистратор решений/СКИЛЛЫ.md](../../skills/decision-logger/SKILL.md)
+- Скилл: [../../skills/chief-of-staff/SKILL.md](../../skills/chief-of-staff/SKILL.md)
+- Спецификация голоса: [../references/persona-voices.md](../references/persona-voices.md)
+- Регистратор решений: [../../skills/decision-logger/SKILL.md](../../skills/decision-logger/SKILL.md)
 
 ---
 

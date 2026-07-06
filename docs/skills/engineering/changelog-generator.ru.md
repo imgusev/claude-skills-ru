@@ -106,7 +106,7 @@ cat commits.txt | python3 scripts/commit_linter.py --format json
 Кардинальные изменения:
 
 - `type(scope)!: summary`
-- Нижний колонтитул/основная часть включает в себя `BREAKING CHANGE:`
+- Нижний колонтитул/body включает в себя `BREAKING CHANGE:`
 
 Отображение SemVer:
 
@@ -129,7 +129,7 @@ cat commits.txt | python3 scripts/commit_linter.py --format json
 1. Смешивание сообщений о фиксации слияния с анализом фиксации освобождения
 2. Использование расплывчатых сводок о фиксации, которые не могут стать примечаниями к выпуску
 3. Отсутствие руководства по миграции для внесения критических изменений
-4. Рассмотрение изменений в документации / рутинной работе как функций, ориентированных на пользователя
+4. Лечащие врачи/chore изменения в качестве функций, ориентированных на пользователя
 5. Перезапись исторических разделов журнала изменений вместо добавления
 
 ## Лучшие практики { #best-practices }
@@ -143,12 +143,12 @@ cat commits.txt | python3 scripts/commit_linter.py --format json
 
 ## Серьезность исправлений и соглашения об уровне обслуживания { #hotfix-severity--slas }
 
-Когда выпуск идет не так, как надо, классифицируйте, прежде чем действовать (полные процедуры в [ссылки/исправление-procedures.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md)):
+Когда выпуск идет не так, как надо, классифицируйте, прежде чем действовать (полные процедуры в [ссылки/hotfix-procedures.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md)):
 
-| Суровость | Определение | Соглашение об уровне обслуживания | Одобрение |
+| Серьезность | Определение | Соглашение об уровне обслуживания | Одобрение |
 |---|---|---|---|
 | P0 — Критический | Сбой в работе, потеря данных, эксплуатируемая уязвимость | Исправлено деплою ≤ 2 часа; аварийное деплою обходит обычные гейты | Ведущий инженер + менеджер по вызову |
-| P1 — Высокий | Основная функция нарушена, значительное влияние на пользователя | Исправление, деплою в течение ≤ 24 часов; ускоренный ревью | Ведущий инженер + менеджер по продукции |
+| P1 — Высокий | Основная функция нарушена, значительное влияние на пользователя | Исправление, которое было деплою в течение ≤ 24 часов; ускоренный ревью | Ведущий инженер + менеджер по продукции |
 | P2 — Средний | Незначительные проблемы, ограниченное воздействие | Следующий цикл выпуска | Стандартный PR-ревью |
 
 Ветка исправлений берется из последнего стабильного тега, содержит только минимальное исправление и получает свою собственную запись в журнале изменений с исправлением исправлений с помощью приведенного выше воркфлоу.
@@ -165,14 +165,14 @@ cat commits.txt | python3 scripts/commit_linter.py --format json
 | Инцидент в сфере безопасности | Эксплуатируемая уязвимость |
 | Повреждение данных | Нарушена целостность базы данных |
 
-Предпочтительная функция - отключение флага при откате кода; откат базы данных выполняется только для неразрушающих миграций (предпочтительны миграции только вперед). Видишь [ссылки/исправление-procedures.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md).
+Предпочтительная функция - отключение флага при откате кода; откат базы данных выполняется только для неразрушающих миграций (предпочтительны миграции только вперед). Видишь [ссылки/hotfix-procedures.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md).
 
 ## Ссылки { #references }
 
-- [список литературы/ci-integration.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/ci-integration.md)
-- [ссылки/список изменений-форматирование-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/changelog-formatting-guide.md)
-- [список литературы/monorepo-strategy.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/monorepo-strategy.md)
-- [ссылки/исправление-procedures.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md)
+- [ссылки/ci-integration.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/ci-integration.md)
+- [ссылки/changelog-formatting-guide.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/changelog-formatting-guide.md)
+- [ссылки/monorepo-strategy.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/monorepo-strategy.md)
+- [ссылки/hotfix-procedures.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/references/hotfix-procedures.md)
 - [README.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/changelog-generator/README.md)
 
 ## Управление выпуском { #release-governance }

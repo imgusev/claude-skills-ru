@@ -51,7 +51,7 @@ description: "Внедрение системы управления искус�
 2. **Составитель реестра рисков искусственного интеллекта**
    - Путь: [`scripts/ai_risk_register_builder.py`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/iso42001-specialist/scripts/ai_risk_register_builder.py)
    - Использование: `python ai_risk_register_builder.py risks.json`
-   - Результаты: структурированный реестр с указанием степени серьезности (матрица 5x5), контрольное отображение в приложении A, вариант лечения по стандарту ISO 23894 (изменить/поделиться/сохранить/избежать), вердикт об остаточном риске
+   - Возвращает: структурированный регистр со степенью серьезности (матрица 5x5), контрольное отображение приложения A, вариант обработки по стандарту ISO 23894 (изменить/share/retain/avoid), вердикт об остаточном риске
 
 3. **Планировщик целевого аудита**
    - Путь: [`scripts/aims_audit_scheduler.py`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/iso42001-specialist/scripts/aims_audit_scheduler.py)
@@ -62,7 +62,7 @@ description: "Внедрение системы управления искус�
 
 - [`references/iso42001_clauses.md`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/iso42001-specialist/references/iso42001_clauses.md) — Пункты 4-10 пошагового руководства с доказательствами аудита + распространенные пробелы + повторное использование ISO 27001/13485
 - [`references/aims_controls_annex_a.md`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/iso42001-specialist/references/aims_controls_annex_a.md) — 38 Каталог средств контроля приложения A (A.2-A.10) с руководством по внедрению + доказательства аудита + степень серьезности сбоя.
-- [`references/aims_implementation_guide.md`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/iso42001-specialist/references/aims_implementation_guide.md) — 3-летняя модель зрелости + шаблоны повторного использования ISO 27001/13485 + критерии затрат/усилий + распространенные подводные камни
+- [`references/aims_implementation_guide.md`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/iso42001-specialist/references/aims_implementation_guide.md) — модель с 3-летним сроком погашения + шаблоны повторного использования ISO 27001/13485 + стоимость/effort контрольные показатели + распространенные подводные камни
 - [`references/cross_framework_mapping_ai.md`](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/iso42001-specialist/references/cross_framework_mapping_ai.md) — 42001 ↔ Закон ЕС об ИИ ↔ NIST AI RMF ↔ 23894 ↔ 38507 ↔ 27001 пешеходный переход
 
 ## Воркфлоу { #workflows }
@@ -110,7 +110,7 @@ python aims_audit_scheduler.py audit_scope.json
 
 - **0 критических пробелов** перед сертификационным аудитом 1-го этапа
 - **≤ 1 крупный разрыв** на этапе 1
-- **100% высоких/критических рисков** в реестре, связанных с контрольным лечением ≥ 1 в приложении А
+- **100% высокого/critical риски** в реестре, связанные с контрольным режимом ≥ 1 Приложения А
 - **охват аудитом на 3 года ** переходящий статус подтверждается каждый год
 - **0 нарушений независимости при проведении самостоятельного аудита** в плане 9.2
 
@@ -120,11 +120,11 @@ python aims_audit_scheduler.py audit_scope.json
 - [cs-ai-act-соответствие требованиям](cs-ai-act-compliance.md) — Статья Закона ЕС об искусственном интеллекте - цитируемое соответствие
 - [cs-caio-советник](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-caio-advisor.md) — Исполнительная стратегия искусственного интеллекта
 - [cs-ciso-советник](https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/c-level-agents/agents/cs-ciso-advisor.md) — Кибербезопасность руководителей (стратегия ISO 27001 / SOC 2)
-- [cs-контроль качества-нормативный](https://github.com/imgusev/claude-skills-ru/tree/main/agents/ra-qm-team/cs-quality-regulatory.md) — Оркестратор системы менеджмента качества медицинского оборудования / регулирования
+- [cs-качество-нормативное регулирование](https://github.com/imgusev/claude-skills-ru/tree/main/agents/ra-qm-team/cs-quality-regulatory.md) — Оркестратор системы менеджмента качества медицинского оборудования / регулирования
 
 ## Ссылки { #references }
 
-- Скилл: [../../ra-qm-команда/скиллы/iso42001-специалист/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/iso42001-specialist/SKILL.md)
+- Скилл: [../../ra-qm-team/skills/iso42001-specialist/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/iso42001-specialist/SKILL.md)
 - Родственная команда: [`/cs:aims-audit`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/aims-audit/SKILL.md)
 
 ---

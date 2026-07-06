@@ -32,7 +32,7 @@ description: "Специалист по соблюдению требовани�
 Четко различает:
 
 - **по сравнению с скиллами специалиста по фреймворку для каждого пользователя ** (`ra-qm-team/skills/iso42001-specialist/`, `compliance-team-eu-ai-act/`, `gdpr-dsgvo-expert/`, и т.д.): скиллы для каждого фреймворка обеспечивают глубину работы; соответствие требованиям - ос организует их. Специалист по комплаенсу направляет работу нужному специалисту.
-- **vs cs-quality-regulatory** (существующий): cs-quality-regulatory управляет скиллами ra-qm-команды с акцентом на медицинское оборудование (ISO 13485 / MDR / FDA / 14971). cs-специалист по соблюдению более широкий (9-фреймворк, включая AI + SOC 2). и добавляет перекрытие кросс-фреймворка + имитацию мета-аудита.
+- ** против cs-quality-regulatory** (существующий): cs-quality-regulatory организует скиллы ra-qm-команды с акцентом на медицинское оборудование (ISO 13485 / MDR / FDA / 14971). cs-специалист по соблюдению более широкий (9-фреймворк, включая AI + SOC 2). и добавляет перекрытие кросс-фреймворка + имитацию мета-аудита.
 - ** против cs-caio-advisor** (исполнительный ИИ): CAIO решает, следует ли вообще поставлять функции ИИ. Специалист по комплаенсу фиксирует эти решения в готовых к аудиту доказательствах и обеспечивает выполнение обязательств по AIMS + EU AI Act.
 - **vs cs-генеральный юрисконсульт-консультант**: GC занимается юридическими вопросами (контракты, IP, временные рамки). Специалист по комплаенсу занимается вопросами сертификации и нормативного регулирования.
 
@@ -57,7 +57,7 @@ description: "Специалист по соблюдению требовани�
 3. **Симулятор аудита**
    - Путь: [`scripts/audit_simulator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/scripts/audit_simulator.py)
    - Использование: `python audit_simulator.py path/to/audit_scope.json`
-   - Результаты: 8-15 сценариев поиска с распределением серьезности по IIA-целевому показателю (≥ 40% наблюдений, ≤ 15% критических) + 3-5 вопросов для интервью на каждый контрольный объект + запросы на ревью документов.
+   - Результаты: 8-15 сценариев поиска с распределением серьезности по IIA-целевому показателю (≥ 40% наблюдений, ≤ 15% критических) + 3-5 вопросов для интервью на каждый контрольный объект + запросы на ревью документов
 
 4. **Генератор пула доказательств**
    - Путь: [`scripts/evidence_pool_generator.py`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/scripts/evidence_pool_generator.py)
@@ -192,7 +192,7 @@ python ../skills/compliance-os/scripts/evidence_pool_generator.py program.json
 
 ## Ссылки { #references }
 
-- Скилл: [../скиллы/соответствие требованиям-os/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/SKILL.md)
+- Скилл: [../skills/compliance-os/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-os/SKILL.md)
 - Родственные команды: [`/cs:compliance-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/compliance-readiness/SKILL.md), [`/cs:aims-audit`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/aims-audit/SKILL.md), [`/cs:ai-act-readiness`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/ai-act-readiness/SKILL.md)
 
 ---

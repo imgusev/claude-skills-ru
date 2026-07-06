@@ -4,7 +4,7 @@ description: "Запустите ревью по 4-м принципам Karpath
 ---
 <!-- canonical copy: engineering/karpathy-coder/commands/karpathy-check.md — keep in sync (root copy uses repo-root-relative script paths) -->
 
-# /Карпатия-проверка { #karpathy-check }
+# /karpathy-check { #karpathy-check }
 
 Ревью ваши поэтапные изменения (или последнюю фиксацию) в соответствии с 4 принципами кодирования Karpathy.
 

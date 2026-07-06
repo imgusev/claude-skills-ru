@@ -1,6 +1,6 @@
 ---
 name: ship-gate
-description: >
+description: ">"
   Pre-production audit that scans a codebase for security, database,
   deployment, code quality, AI/LLM, dependency, frontend, and observability
   issues. Intercepts deploy commands and blocks until critical items pass.
@@ -15,8 +15,8 @@ metadata:
 
 # Корабельные гейты { #ship-gate }
 
-Предварительный аудит, который сканирует кодовую базу и сообщает о прохождении / сбое / руководстве
-по 8 категориям, прежде чем что-либо будет отправлено.
+Предварительный аудит, который сканирует кодовую базу и передает отчеты/fail/manual
+по 8 категориям, прежде чем что-либо отправится.
 
 ## Поведение перехвата { #intercept-behavior }
 

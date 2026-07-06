@@ -1,9 +1,9 @@
 ---
-title: "/cs:выполнить — 90-дневный план выполнения { #csexecute--90-day-execution-plan } — Агентский скилл для руководителей"
+title: "/cs:execute — 90-дневный план выполнения { #csexecute--90-day-execution-plan } — Агентский скилл для руководителей"
 description: "/cs:выполнить <решение> — Сгенерировать 90-дневный план выполнения с еженедельными контрольными точками, DRY и частотой регистрации на основе. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:выполнить — 90-дневный план выполнения { #csexecute--90-day-execution-plan }
+# /cs:execute — 90-дневный план выполнения { #csexecute--90-day-execution-plan }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

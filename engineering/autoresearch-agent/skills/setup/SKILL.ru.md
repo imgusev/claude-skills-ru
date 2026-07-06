@@ -4,7 +4,7 @@ description: "Настройте новый эксперимент с автом
 command: /ar:setup
 ---
 
-# /ar:настройка — Создать новый эксперимент { #arsetup--create-new-experiment }
+# /ar:setup — Создайте новый эксперимент { #arsetup--create-new-experiment }
 
 Настройте новый эксперимент с автоматическим поиском со всеми необходимыми настройками.
 
@@ -63,7 +63,7 @@ python {skill_path}/scripts/setup_experiment.py --list-evaluators
 | `benchmark_speed` | `p50_ms` (ниже) | Время выполнения функции/API |
 | `benchmark_size` | `size_bytes` (ниже) | Размер файла, пакета, изображения Docker |
 | `test_pass_rate` | `pass_rate` (выше) | Процент прохождения набора тестов |
-| `build_speed` | `build_seconds` (ниже) | Время сборки/компиляции/Docker build time |
+| `build_speed` | `build_seconds` (ниже) | Строить/compile/Время сборки Docker |
 | `memory_usage` | `peak_mb` (ниже) | Максимальный объем памяти во время выполнения |
 | `llm_judge_content` | `ctr_score` (выше) | Заголовки, заглавия, описания |
 | `llm_judge_prompt` | `quality_score` (выше) | Системные промпты, инструкции агента |

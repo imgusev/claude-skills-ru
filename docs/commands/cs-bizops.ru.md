@@ -13,7 +13,7 @@ description: "Маршрутизатор бизнес-операций верх�
 
 Используйте `cs-bizops-orchestrator` агент + `business-operations-skills` скилл оркестратора для обработки этого запроса:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Протокол маршрутизации { #routing-protocol }
 

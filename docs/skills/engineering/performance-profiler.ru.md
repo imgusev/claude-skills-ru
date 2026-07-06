@@ -33,7 +33,7 @@ description: "Систематическое профилирование про
 - **Анализ пакетов** — webpack-bundle-analyzer, Next.js анализатор пакетов
 - ** Оптимизация базы данных ** — ПОЯСНИТЕЛЬНЫЙ АНАЛИЗ, медленный журнал запросов, обнаружение N+1
 - **Нагрузочное тестирование** — сценарии k6, артиллерийские сценарии, схемы наращивания
-- **До/после измерения** — установление базовой линии, профиля, оптимизация, проверка
+- **До того, как/after измерение** — установление базовой линии, профилирование, оптимизация, проверка
 
 ---
 
@@ -76,10 +76,10 @@ python3 scripts/performance_profiler.py /path/to/project --large-file-threshold-
 ---
 
 ## Node.js Профилирование { #nodejs-profiling }
-→ Подробности смотрите в разделе Ссылки/профилирование-recipes.md
+→ Смотрите ссылки/profiling-recipes.md для получения подробной информации
 
 ## Ссылки { #references }
 
-- [ссылки/профилирование-recipes.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/performance-profiler/references/profiling-recipes.md) — Команды профилирования Node.js/Python/Go, генерация flamegraph, моментальные снимки кучи
-- [ссылки/оптимизация-плейбук.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/performance-profiler/references/optimization-playbook.md) — шаблон измерения до/после, чек-лист быстрой оптимизации (DB/Node/bundle/API), распространенные ошибки, лучшие практики
+- [ссылки/profiling-recipes.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/performance-profiler/references/profiling-recipes.md) — Команды профилирования Node.js/Python/Go, генерация flamegraph, моментальные снимки кучи
+- [ссылки/optimization-playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/performance-profiler/references/optimization-playbook.md) — до того, как/after шаблон измерения, чек-лист для быстрой оптимизации (DB/Node)./bundle/API), распространенные подводные камни, лучшие практики
 

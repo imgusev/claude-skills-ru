@@ -138,8 +138,8 @@ python audit_schedule_optimizer.py audit_scope.json
 
 ## Ссылки { #references }
 
-- Скилл: [../../ra-qm-команда/скиллы/qms-аудит-эксперт/СКИЛЛЫ.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/SKILL.md)
-- Плейбук: [../../ra-qm-команда/скиллы/qms-аудит-эксперт/ссылки/iso13485_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md)
+- Скилл: [../../ra-qm-team/skills/qms-audit-expert/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/SKILL.md)
+- Плейбук: [../../ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md](https://github.com/imgusev/claude-skills-ru/tree/main/ra-qm-team/skills/qms-audit-expert/references/iso13485_audit_playbook.md)
 - Родственная команда: [`/cs:iso13485-audit-prep`](https://github.com/imgusev/claude-skills-ru/tree/main/compliance-os/skills/iso13485-audit-prep/SKILL.md)
 
 ---

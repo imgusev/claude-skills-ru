@@ -1,6 +1,6 @@
 ---
 name: "migrate"
-description: >-
+description: ">-"
   Migrate from Cypress or Selenium to Playwright. Use when user mentions
   "cypress", "selenium", "migrate tests", "convert tests", "switch to
   playwright", "move from cypress", or "replace selenium".
@@ -132,4 +132,4 @@ npx playwright test <converted-file> --reporter=list
 - Сводка по преобразованию: файлы преобразованы, все тесты перенесены
 - Любые тесты, которые не удалось преобразовать автоматически (требуется ручное вмешательство)
 - Обновленная конфигурация CI
-- Сравнение результатов тестового запуска до/после
+- До того, как/after сравнение результатов тестового запуска

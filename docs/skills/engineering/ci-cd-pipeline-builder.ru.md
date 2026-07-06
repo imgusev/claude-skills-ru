@@ -26,7 +26,7 @@ description: "Генерируйте прагматичные пайплайны
 
 ## Основные возможности { #core-capabilities }
 
-- Определение языка/среды выполнения/инструментария из файлов репозитория
+- Определение языка/runtime/tooling из файлов репозитория
 - Рекомендуемые этапы КИ (`lint`, `test`, `build`, `deploy`)
 - Генерировать действия GitHub или стартовые пайплайны GitLab CI
 - Включите кэширование и матричную стратегию, основанную на обнаруженном стеке
@@ -72,15 +72,15 @@ python3 scripts/pipeline_generator.py --repo . --platform gitlab --output .gitla
 
 1. Подтвердите наличие команд в проекте (`test`, `lint`, `build`).
 2. Запустите сгенерированный пайплайн локально, где это возможно.
-3. Убедитесь, что необходимые секреты/переменные env задокументированы.
-4. Сохраняйте гейт заданий на деплою с помощью защищенных филиалов/сред.
+3. Обеспечьте необходимые секреты/env переменные задокументированы.
+4. Сохраняйте гейт заданий по деплою с помощью защищенных филиалов/environments.
 
 ### 4. Безопасно добавляйте этапы развертывания { #4-add-deployment-stages-safely }
 
 - Начните только с CI (`lint/test/build`).
 - Добавьте промежуточное депло с явным контекстом среды.
-- Добавьте производственное депло с ручным гейтом/утверждением.
-- Сохраняйте команды раскатки/отката назад явными и доступными для проверки.
+- Добавить производственное депло с ручным гейтом/approval.
+- Продолжайте раскатку/rollback команды явные и доступные для проверки.
 
 ## Интерфейсы сценариев { #script-interfaces }
 
@@ -93,8 +93,8 @@ python3 scripts/pipeline_generator.py --repo . --platform gitlab --output .gitla
 
 ## Ссылки { #references }
 
-- [ссылки/пайплайн-дизайн-примечания.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/pipeline-design-notes.md) — распространенные подводные камни, лучшие практики, эвристики обнаружения, стратегия генерации, заметки о решениях платформы, чек-лист проверки перед слиянием и рекомендации по масштабированию
-- [ссылки/github-actions-шаблоны.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/github-actions-templates.md)
-- [ссылки/gitlab-ci-шаблоны.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/gitlab-ci-templates.md)
-- [ссылки/развертывание-гейты.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/deployment-gates.md)
+- [ссылки/pipeline-design-notes.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/pipeline-design-notes.md) — распространенные ошибки, лучшие практики, эвристики обнаружения, стратегия генерации, заметки о решениях платформы, чек-лист проверки перед слиянием и рекомендации по масштабированию
+- [ссылки/github-actions-templates.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/github-actions-templates.md)
+- [ссылки/gitlab-ci-templates.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/gitlab-ci-templates.md)
+- [ссылки/deployment-gates.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/references/deployment-gates.md)
 - [README.md](https://github.com/imgusev/claude-skills-ru/tree/main/engineering/skills/ci-cd-pipeline-builder/README.md)

@@ -4,7 +4,7 @@ description: "Операции с интерфейсом Google Workspace CLI: �
 argument-hint: "<setup|audit|recipe|analyze> [options]"
 ---
 
-# /google-рабочее пространство { #google-workspace }
+# /google-workspace { #google-workspace }
 
 Администрирование CLI Google Workspace с помощью `gws` CLI. Запускайте диагностику установки, аудит безопасности, просматривайте и выполняйте рецепты, а также анализируйте выходные данные команд.
 

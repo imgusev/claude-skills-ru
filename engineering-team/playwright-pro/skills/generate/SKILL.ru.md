@@ -1,6 +1,6 @@
 ---
 name: "generate"
-description: >-
+description: ">-"
   Generate Playwright tests. Use when user says "write tests", "generate tests",
   "add tests for", "test this component", "e2e test", "create test for",
   "test this page", or "test this feature".
@@ -45,12 +45,12 @@ description: >-
 
 | Если тестируете... | Загрузите шаблон из |
 |---|---|
-| Поток входа в систему/авторизации | `../pw/templates/auth/login.md` |
+| Войти в систему/auth поток | `../pw/templates/auth/login.md` |
 | Грубые операции | `templates/crud/` |
-| Оформление заказа/оплата | `templates/checkout/` |
-| Пользовательский интерфейс поиска/фильтрации | `templates/search/` |
+| Оформление заказа/payment | `templates/checkout/` |
+| Поиск/filter Пользовательский интерфейс | `templates/search/` |
 | Отправка формы | `templates/forms/` |
-| Дашборд/данные | `templates/dashboard/` |
+| Дашборд/data | `templates/dashboard/` |
 | Страница настроек | `templates/settings/` |
 | Поток онбординга | `templates/onboarding/` |
 | Конечные точки API | `templates/api/` |
@@ -104,7 +104,7 @@ expect(text).toBe('Success');
 
 **Всегда включайте:**
 - Описательные названия тестов, объясняющие поведение
-- Тесты на ошибки / пограничные случаи наряду с happy path
+- Ошибка/edge тематические тесты наряду со счастливым путем
 - Правильный `await` на каждый звонок драматурга
 - `baseURL`-относительная навигация (`page.goto('/')` не `page.goto('http://...')`)
 

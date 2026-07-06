@@ -1,6 +1,6 @@
 ---
 name: "browserstack"
-description: >-
+description: ">-"
   Run tests on BrowserStack. Use when user mentions "browserstack",
   "cross-browser", "cloud testing", "browser matrix", "test on safari",
   "test on firefox", or "browser compatibility".
@@ -99,7 +99,7 @@ export default defineConfig({
 ```
 
 Шаги:
-1. Проверьте, установлены ли учетные данные
+1. Убедитесь, что учетные данные установлены
 2. Запускайте тесты с проектами BrowserStack:
    ```bash
    BROWSERSTACK_USERNAME=$BROWSERSTACK_USERNAME \
@@ -119,7 +119,7 @@ export default defineConfig({
 1. Вызов `browserstack_get_builds` Инструмент MCP
 2. Получите сеансы последней сборки
 3. Для каждого сеанса:
-   - Статус (пройден/сбой)
+   - Статус (пропуск/fail)
    - Браузер и операционная система
    - Продолжительность
    - URL-АДРЕС видео
@@ -157,12 +157,12 @@ export default defineConfig({
 | `browserstack_get_builds` | Список последних сборок |
 | `browserstack_get_sessions` | Получать сеансы в сборке |
 | `browserstack_get_session` | Получить подробную информацию о сеансе (видео, журналы) |
-| `browserstack_update_session` | Отметьте прохождение/неудачу |
-| `browserstack_get_logs` | Получать текстовые/сетевые журналы |
+| `browserstack_update_session` | Отметьте проход/fail |
+| `browserstack_get_logs` | Получить текст/network журналы |
 
 ## Выход { #output }
 
 - Таблица результатов кроссбраузерного тестирования
-- Статус прохождения/сбоя для каждого браузера
-- Ссылки на дашборд BrowserStack для получения видео/скриншотов
+- Проход для каждого браузера/fail статус
+- Ссылки на дашборд BrowserStack для просмотра видео/screenshots
 - Выделены любые сбои, связанные с конкретным браузером

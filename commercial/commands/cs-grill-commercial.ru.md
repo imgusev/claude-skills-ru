@@ -3,11 +3,11 @@ description: "Гриль в стиле Мэтта Покока с привязк
 argument-hint: "<plan, deal, pricing question, or fuzzy commercial problem>"
 ---
 
-# /cs:гриль-коммерческий — Коммерческий гриль в соответствии с каноном ценообразования SaaS { #csgrill-commercial--commercial-grill-against-the-saas-pricing-canon }
+# /cs:grill-commercial — Коммерческий гриль против канона ценообразования SaaS { #csgrill-commercial--commercial-grill-against-the-saas-pricing-canon }
 
 Нанесите крем Мэтта Покока `grill-with-docs` дисциплина в соответствии с этим коммерческим планом / проблемой:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Пять правил (сохранено от Мэтта Покока, Массачусетский технологический институт) { #five-rules-preserved-from-matt-pocock-mit }
 

@@ -1,9 +1,9 @@
 ---
-title: "/si:статус — Дашборд работоспособности памяти { #sistatus--memory-health-dashboard } — Агентский скилл и плагин Codex"
+title: "/si:status — Дашборд работоспособности памяти { #sistatus--memory-health-dashboard } — Агентский скилл и плагин Codex"
 description: "Дашборд работоспособности памяти, показывающий количество строк, файлы тем, емкость, устаревшие записи и рекомендации. Используется, когда. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /si:статус — Дашборд работоспособности памяти { #sistatus--memory-health-dashboard }
+# /si:status — Дашборд работоспособности памяти { #sistatus--memory-health-dashboard }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-code-braces: Инженерия — базовый уровень</span>

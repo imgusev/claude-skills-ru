@@ -1,9 +1,9 @@
 ---
-title: "/cs: режим основателя — Автоматический маршрутизатор { #csfounder-mode--the-auto-router } — Агентский скилл для руководителей"
+title: "/cs:founder-mode — Автоматический маршрутизатор { #csfounder-mode--the-auto-router } — Агентский скилл для руководителей"
 description: "/cs:режим основателя <вопрос> — автоматически перенаправляет любой вопрос основателя нужному консультанту C-роли или в /cs:зал заседаний для. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs: режим основателя — Автоматический маршрутизатор { #csfounder-mode--the-auto-router }
+# /cs:founder-mode — Автоматический маршрутизатор { #csfounder-mode--the-auto-router }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

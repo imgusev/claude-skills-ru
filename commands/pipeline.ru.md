@@ -4,7 +4,7 @@ description: "Обнаруживайте стек и генерируйте ко
 argument-hint: "<detect|generate> [options]"
 ---
 
-# /пайплайн { #pipeline }
+# /pipeline { #pipeline }
 
 Обнаруживайте стек проекта и генерируйте конфигурации пайплайна CI/CD для GitHub Actions или GitLab CI.
 

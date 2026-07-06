@@ -32,7 +32,7 @@ description: "Производитель маркетингового конте
 cat .claude/product-marketing-context.md 2>/dev/null
 ```
 
-Если он существует, то содержит описание бренда, целевую аудиторию, целевые ключевые слова и примеры написания — используйте то, что есть, и спрашивайте только о том, чего не хватает (тема / ракурс, целевое ключевое слово, длина, цель). Если он не существует, рекомендуем запустить `marketing-context` сначала скилл, затем соберите недостающие данные за один выстрел.
+Если он существует, то содержит описание бренда, целевую аудиторию, целевые ключевые слова и примеры написания — используйте то, что есть, и спрашивайте только о том, чего не хватает (тема/angle, целевое ключевое слово, длина, цель). Если он не существует, рекомендуем запустить `marketing-context` сначала скилл, затем соберите недостающие данные за один выстрел.
 
 ## Интеграция в скиллы { #skill-integration }
 
@@ -44,7 +44,7 @@ cat .claude/product-marketing-context.md 2>/dev/null
    - **Путь:** [`scripts/content_scorer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/scripts/content_scorer.py)
    - **Использование:** `python3 ../../marketing-skill/skills/content-production/scripts/content_scorer.py draft.md "primary keyword" --json` (нет аргументов = встроенная демонстрация)
    - **Пороговое значение:** целевой балл **70+** (гейт читабельности скилла)
-2. ** SEO-оптимизатор ** — размещение ключевых слов, аудит заголовка/H1/мета с исправлениями
+2. **SEO-оптимизатор** — размещение ключевых слов, заголовок/H1/meta аудит с исправлениями
    - **Путь:** [`scripts/seo_optimizer.py`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/scripts/seo_optimizer.py)
    - **Использование:** `python3 ../../marketing-skill/skills/content-production/scripts/seo_optimizer.py draft.md --keyword "primary keyword" --secondary "phrase one,phrase two"`
 3. ** Фирменный голосовой анализатор ** — маркеры тона, статистика ритма предложений, отпечаток словарного запаса
@@ -58,7 +58,7 @@ cat .claude/product-marketing-context.md 2>/dev/null
 
 ### Базы знаний { #knowledge-bases }
 
-- [`references/content-brief-guide.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/references/content-brief-guide.md) — написание кратких отчетов, которые дают лучшие черновики
+- [`references/content-brief-guide.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/references/content-brief-guide.md) — написание резюме, из которого получаются лучшие черновики
 - [`references/optimization-checklist.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/references/optimization-checklist.md) — полный чек-лист для предварительной публикации за гейтами
 - [`references/content-templates.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/references/content-templates.md) — шаблоны структуры длинной формы
 - [`references/ai-citation-readiness.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/references/ai-citation-readiness.md) — Проверка готовности AEO-смежных устройств (в паре с cs-aeo)
@@ -76,10 +76,10 @@ cat .claude/product-marketing-context.md 2>/dev/null
 **Шаги:**
 1. **Контекст** — читать `.claude/product-marketing-context.md`; соберите тему, основное ключевое слово, аудиторию, цель, продолжительность.
 2. ** Исследование и краткое изложение (режим 1)** — сопоставьте материалы с самым высоким рейтингом и цель поиска; заполните [`templates/content-brief-template.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/templates/content-brief-template.md) следующий [`references/content-brief-guide.md`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/references/content-brief-guide.md).
-3. ** Черновик (режим 2)** — набросайте структуру H2, затем напишите вступление /основную часть / заключение в соответствии с брифом.
+3. ** Черновик (режим 2)** — набросайте каркас H2, затем напишите вступление/body/conclusion согласно краткому изложению.
 4. **SEO-пропуск** — `python3 ../../marketing-skill/skills/content-production/scripts/seo_optimizer.py draft.md --keyword "primary keyword" --secondary "secondary,phrases"`; исправьте то, что он помечает.
 5. **Пропуск для удобства чтения** — `python3 ../../marketing-skill/skills/content-production/scripts/content_scorer.py draft.md "primary keyword" --json`; пересматривать до тех пор, пока состав не станет ≥ 70.
-6. **Проверка** — `python3 ../../marketing-skill/skills/content-production/scripts/content_quality_gates.py draft.md --json` необходимо сообщить ** о прохождении всех гейтов** (читаемость ≥ 70, исходные утверждения, отсутствие клише во вступлении, ключевое слово 3-5 раз, количество слов в пределах 10% от целевого). Неисправный гейт отправляет черновик обратно на шаг 4/5.
+6. **Проверка** — `python3 ../../marketing-skill/skills/content-production/scripts/content_quality_gates.py draft.md --json` необходимо сообщить ** о прохождении всех гейтов** (читаемость ≥ 70, исходные утверждения, без клише во вступлении, ключевое слово 3-5 раз, количество слов в пределах 10% от целевого). Неисправный гейт отправляет черновик обратно на шаг 4/5.
 
 ** Ожидаемый результат: ** готовый к публикации черновик + заполненный бриф + отчет о прохождении гейта.
 
@@ -90,10 +90,10 @@ cat .claude/product-marketing-context.md 2>/dev/null
 **Шаги:**
 1. **Загрузите профиль бренда** — раздел "Голос бренда" в `.claude/product-marketing-context.md`.
 2. **Анализировать** — `python3 ../../marketing-skill/skills/content-production/scripts/brand_voice_analyzer.py draft.md --format json`; сравните тональные маркеры и статистику ритма предложений с профилем.
-3. ** Перепишите дрейфующие разделы ** — внесите исправления на уровне предложений ("Абзац 3 содержит в среднем 32 слова / предложение — разделите второе предложение"), а не расплывчатые советы.
+3. ** Переписать дрейфующие разделы ** — внести исправления на уровне предложений ("Абзац 3 содержит в среднем 32 слова/sentence — разделите второе предложение"), а не расплывчатый совет.
 4. **Проверка** — повторный запуск `brand_voice_analyzer.py` и убедитесь, что маркеры теперь соответствуют профилю, затем запустите `content_scorer.py draft.md --json` и подтвердите состав ≥ 70.
 
-** Ожидаемый результат:** аннотированный черновик с внесенными исправлениями голоса + сравнение анализатора до/после.
+** Ожидаемый результат:** аннотированный черновик с исправлениями голоса, примененными ранее/after сравнение анализаторов.
 
 ### Воркфлоу 3: SEO для библиотеки контента + проверка качества { #workflow-3-content-library-seo--quality-sweep }
 
@@ -101,7 +101,7 @@ cat .claude/product-marketing-context.md 2>/dev/null
 
 **Шаги:**
 1. **Собирать** — `ls content/*.md` (или Grep для ключевых слов front-matter, чтобы сопоставить каждый фрагмент с его целевым ключевым словом).
-2. ** Оцените каждую фигуру ** — цикл: `for f in content/*.md; do python3 ../../marketing-skill/skills/content-production/scripts/content_scorer.py "$f" --json; done`
+2. ** Оцените каждый фрагмент ** — цикл: `for f in content/*.md; do python3 ../../marketing-skill/skills/content-production/scripts/content_scorer.py "$f" --json; done`
 3. ** Гейт каждой детали** — `python3 ../../marketing-skill/skills/content-production/scripts/content_quality_gates.py "$f" --json`; собирать вышедшие из строя гейты для каждого файла.
 4. ** Расставить приоритеты ** — ранжировать по (неудачные гейты desc, оценка asc); отмечать каннибализацию ключевых слов, когда две части нацелены на одно и то же ключевое слово.
 5. **Проверка** — после исправления повторите шаги 2-3 для отредактированных файлов; аудит закрывается только тогда, когда каждый исправленный файл набирает ≥ 70 баллов и проходит все гейты.
@@ -112,7 +112,7 @@ cat .claude/product-marketing-context.md 2>/dev/null
 
 - "Что мы должны написать?" / тематические группы / календарь → [`skills/content-strategy`](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-strategy) (с дороги этого агента).
 - Черновик "звучит как искусственный интеллект" → запустить `content-humanizer` скилл перед прохождением оптимизации.
-- Оптимизация для цитирования в чате/недоумении → передать [cs-aeo](cs-aeo.md).
+- Оптимизация для цитирования в ChatGPT/Perplexity → передать в [cs-aeo](cs-aeo.md).
 - Копия целевой страницы или CTA → `copywriting` скилл, а не производство в долгосрочной перспективе.
 
 ## Показатели успеха { #success-metrics }
@@ -130,9 +130,9 @@ cat .claude/product-marketing-context.md 2>/dev/null
 
 ## Ссылки { #references }
 
-- **Документация по скиллам:** [../../маркетинг-скилл/скиллы/контент-продакшн/СКИЛЛ.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/SKILL.md)
-- **Планирующий родство с братом:** [../../маркетинг-скилл/скиллы/контент-стратегия/СКИЛЛ.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-strategy/SKILL.md)
-- **Руководство по маркетинговому домену:** [../../маркетинг-скилл/CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/CLAUDE.md)
+- **Документация по скиллам:** [../../marketing-skill/skills/content-production/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-production/SKILL.md)
+- **Планирующий родство с братом:** [../../marketing-skill/skills/content-strategy/SKILL.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/content-strategy/SKILL.md)
+- **Руководство по маркетинговому домену:** [../../marketing-skill/CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/CLAUDE.md)
 - **Руководство по разработке агента:** [../CLAUDE.md](https://github.com/imgusev/claude-skills-ru/tree/main/agents/CLAUDE.md)
 
 ---

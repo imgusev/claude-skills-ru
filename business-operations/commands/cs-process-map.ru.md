@@ -3,17 +3,17 @@ description: "Составьте карту внутреннего бизнес-
 argument-hint: "<process description or path to process JSON>"
 ---
 
-# /cs:карта процесса — отображение процесса в стиле BPMN + обнаружение узких мест { #csprocess-map--bpmn-style-process-mapping--bottleneck-detection }
+# /cs:process-map — Отображение процессов в стиле BPMN + обнаружение узких мест { #csprocess-map--bpmn-style-process-mapping--bottleneck-detection }
 
 Запустите `process-mapper` скилл на основе этого ввода:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Воркфлоу с тремя инструментами { #three-tool-workflow }
 
 1. **`process_documenter.py`** — Задокументируйте процесс в виде диаграммы полосы движения в формате ASCII в формате BPMN. Ввод: список этапов (имя, владелец, тип{value-add/wait/rework}, продолжительность P50 + P90). Вывод: диаграмма Markdown + нормализованный JSON.
 
-2. **`bottleneck_detector.py`** — Выявление узких мест. Триггеры: стадия P50 > 2× среднее значение этапов добавления ценности, ИЛИ % состояния ожидания > 40% от общего числа, ИЛИ % доработки > 15%. Настраиваемый с помощью `--profile {saas,services,manufacturing,healthcare}`.
+2. **`bottleneck_detector.py`** — Выявление узких мест. Триггеры: этап P50 > 2× среднее значение этапов добавления ценности, ИЛИ % состояния ожидания > 40% от общего числа, ИЛИ % доработки > 15%. Настраиваемый с помощью `--profile {saas,services,manufacturing,healthcare}`.
 
 3. **`cycle_time_analyzer.py`** — Вычислите общее время цикла (P50, P90), коэффициент добавленной стоимости (VA%), пропускную способность по закону Литтла. Вердикт: VA% > 25% ЗДОРОВЫЙ / 10-25% ТИПИЧНЫЙ / <10% С БОЛЬШИМ КОЛИЧЕСТВОМ ОТХОДОВ.
 

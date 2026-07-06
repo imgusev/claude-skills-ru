@@ -3,7 +3,7 @@ name: "cs-grill-me"
 description: "/cs: grill-me <путь к плану> — Начните безжалостный допрос плана или замысла. Обходит дерево решений по одной ветви за раз. По одному вопросу за ход с рекомендуемым ответом. Исследует кодовую базу, прежде чем задавать вопрос."
 ---
 
-# /cs: допрос по плану grill-me — Безжалостный план допроса { #csgrill-me--relentless-plan-interrogation }
+# /cs:grill-me — Безжалостный план допроса { #csgrill-me--relentless-plan-interrogation }
 
 **Команда:** `/cs:grill-me <path-to-plan>`
 

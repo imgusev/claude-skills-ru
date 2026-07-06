@@ -1,9 +1,9 @@
 ---
-title: "/cs:cpo-ревью — CPO форсирует вопросы { #cscpo-review--cpo-forcing-questions } — Агентский скилл для руководителей"
+title: "/cs:cpo-review — CPO форсирует вопросы { #cscpo-review--cpo-forcing-questions } — Агентский скилл для руководителей"
 description: "/cs: cpo-ревью <план> — управляемый JTBD опрос о дорожной карте продукта, сигнале PMF и фокусе портфолио. Используйте при составлении дорожной карты. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:cpo-ревью — CPO форсирует вопросы { #cscpo-review--cpo-forcing-questions }
+# /cs:cpo-review — CPO форсирует вопросы { #cscpo-review--cpo-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

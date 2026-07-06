@@ -1,9 +1,9 @@
 ---
-title: "/cs:cmo-ревью — CMO форсирует вопросы { #cscmo-review--cmo-forcing-questions } — Агентский скилл для руководителей"
+title: "/cs:cmo-review — Директор по маркетингу форсирует вопросы { #cscmo-review--cmo-forcing-questions } — Агентский скилл для руководителей"
 description: "/cs:cmo- ревью <план> — Повествование - первый опрос о позиционировании, ICP, размещении сообщений и сочетании каналов. Используйте при запуске. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:cmo-ревью — CMO форсирует вопросы { #cscmo-review--cmo-forcing-questions }
+# /cs:cmo-review — Директор по маркетингу форсирует вопросы { #cscmo-review--cmo-forcing-questions }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

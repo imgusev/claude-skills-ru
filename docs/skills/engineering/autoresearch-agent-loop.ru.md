@@ -1,9 +1,9 @@
 ---
-title: "/ar:цикл — цикл автономного эксперимента { #arloop--autonomous-experiment-loop } — Агентский скилл для Codex и OpenClaw"
+title: "/ar:loop — Цикл автономного эксперимента { #arloop--autonomous-experiment-loop } — Агентский скилл для Codex и OpenClaw"
 description: "Запустите автономный цикл эксперимента с выбранным пользователем интервалом (10 минут, 1 час, ежедневно, еженедельно, ежемесячно). Использует. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /ar:цикл — цикл автономного эксперимента { #arloop--autonomous-experiment-loop }
+# /ar:loop — Цикл автономного эксперимента { #arloop--autonomous-experiment-loop }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-rocket-launch: Инженерия — уровень POWERFUL</span>

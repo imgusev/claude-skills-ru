@@ -1,9 +1,9 @@
 ---
-title: "/cs:зал заседаний — Многоцелевое обсуждение в зале заседаний { #csboardroom--multi-role-boardroom-deliberation } — Агентский скилл для руководителей"
+title: "/cs:boardroom — Многоцелевое обсуждение в зале заседаний { #csboardroom--multi-role-boardroom-deliberation } — Агентский скилл для руководителей"
 description: "/cs: зал заседаний <краткое описание> — 6-фазное многоцелевое обсуждение в C-suite с выделением фазы 2, предварительным просмотром критики и. Агентский скилл для Claude Code, Codex CLI, Gemini CLI, OpenClaw."
 ---
 
-# /cs:зал заседаний — Многоцелевое обсуждение в зале заседаний { #csboardroom--multi-role-boardroom-deliberation }
+# /cs:boardroom — Многоцелевое обсуждение в зале заседаний { #csboardroom--multi-role-boardroom-deliberation }
 
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-level консультирование</span>

@@ -3,11 +3,11 @@ description: "Смоделируйте численность персонала
 argument-hint: "<team + demand intake or path to capacity JSON>"
 ---
 
-# /cs: мощность-план — операции определение мощности + риск использования + последовательность найма { #cscapacity-plan--ops-capacity-sizing--utilization-risk--hiring-sequence }
+# /cs:capacity-plan — Определение производственных мощностей + риск утилизации + последовательность найма { #cscapacity-plan--ops-capacity-sizing--utilization-risk--hiring-sequence }
 
 Запустите `capacity-planner` скилл на основе этого ввода:
 
-**$АРГУМЕНТЫ**
+**$ARGUMENTS**
 
 ## Воркфлоу с тремя инструментами { #three-tool-workflow }
 
@@ -25,5 +25,5 @@ argument-hint: "<team + demand intake or path to capacity JSON>"
 
 - `c-level-advisor/vpe-advisor` — в частности, инженерная пропускная способность. Планировщик мощностей предназначен для оперативных групп, не являющихся англичанами.
 - `c-level-advisor/chro-advisor` — стратегическое кадровое планирование. Планировщик мощностей - это тактический расчет размеров.
-- `business-operations/skills/process-mapper` (брат или сестра) — находит узкое место. Планировщик производственных мощностей формирует команду вокруг себя.
+- `business-operations/skills/process-mapper` (брат или сестра) — находит узкое место. Планировщик производственных мощностей формирует команду вокруг него.
 - `project-management/*` — отслеживание доставки. Планировщик мощностей - это предварительное определение размера.
