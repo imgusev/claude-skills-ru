@@ -603,7 +603,7 @@ find ~/.gemini/antigravity/skills -name "SKILL.md" | wc -l
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     python scripts/sync-hermes-skills.py --verbose
     ```
 
@@ -804,7 +804,7 @@ Vibe поддерживает обе размещенные модели Mistral
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/vibe-install.sh
     ```
 

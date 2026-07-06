@@ -285,7 +285,7 @@ prompts         support-tone         15     6   82/100       +46.4%        done
 ### Однострочник (любой инструмент) { #one-liner-any-tool }
 ```bash
 git clone https://github.com/imgusev/claude-skills-ru.git
-cp -r claude-skills/engineering/autoresearch-agent ~/.claude/skills/
+cp -r claude-skills-ru/engineering/autoresearch-agent ~/.claude/skills/
 ```
 
 ### Установка с несколькими инструментами { #multi-tool-install }

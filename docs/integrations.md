@@ -603,7 +603,7 @@ If you don't have Hermes Agent installed yet, set it up first:
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     python scripts/sync-hermes-skills.py --verbose
     ```
 
@@ -804,7 +804,7 @@ Vibe supports both Mistral's hosted models (via `MISTRAL_API_KEY`) and self-host
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/vibe-install.sh
     ```
 

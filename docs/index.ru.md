@@ -374,14 +374,14 @@ skill-name/
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills && ./scripts/gemini-install.sh
+    cd claude-skills-ru && ./scripts/gemini-install.sh
     ```
 
 === "Hermes Agent"
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     python scripts/sync-hermes-skills.py --verbose
     # Skills appear in /skills and /<skill-name> automatically
     ```
@@ -390,7 +390,7 @@ skill-name/
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/vibe-install.sh
     # Skills install to ~/.vibe/skills/claude-skills/; same SKILL.md standard
     ```
@@ -399,7 +399,7 @@ skill-name/
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/convert.sh --tool cursor    # or windsurf, aider
     ./scripts/install.sh --tool cursor --target /path/to/project
     ```

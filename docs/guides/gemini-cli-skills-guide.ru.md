@@ -94,11 +94,11 @@ python scripts/setup_experiment.py \
 
 ```bash
 # Project-level (scoped to one repo)
-cp -r claude-skills/.gemini/skills/ ./.gemini/skills/
+cp -r claude-skills-ru/.gemini/skills/ ./.gemini/skills/
 
 # User-level (available in all projects)
 mkdir -p ~/.gemini/skills/
-cp -r claude-skills/.gemini/skills/* ~/.gemini/skills/
+cp -r claude-skills-ru/.gemini/skills/* ~/.gemini/skills/
 ```
 
 ---

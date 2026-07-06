@@ -258,7 +258,7 @@ python3 scripts/format_summary.py --template article --output json
 ### Однострочник (любой инструмент) { #one-liner-any-tool }
 ```bash
 git clone https://github.com/imgusev/claude-skills-ru.git
-cp -r claude-skills/product-team/research-summarizer ~/.claude/skills/
+cp -r claude-skills-ru/product-team/research-summarizer ~/.claude/skills/
 ```
 
 ### Мультиинструментальная установка (запускается из корневого репозитория claude-скиллы) { #multi-tool-install-run-from-the-claude-skills-repo-root }

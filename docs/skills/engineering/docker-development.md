@@ -348,7 +348,7 @@ Flag these without being asked:
 ### One-liner (any tool)
 ```bash
 git clone https://github.com/imgusev/claude-skills-ru.git
-cp -r claude-skills/engineering/docker-development ~/.claude/skills/
+cp -r claude-skills-ru/engineering/docker-development ~/.claude/skills/
 ```
 
 ### Multi-tool install

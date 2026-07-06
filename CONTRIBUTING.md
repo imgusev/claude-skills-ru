@@ -11,8 +11,8 @@ Thank you for your interest in contributing! This repository is the largest open
 **All PRs must target the `dev` branch.** PRs targeting `main` will be closed automatically.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-skills.git
-cd claude-skills
+git clone https://github.com/YOUR_USERNAME/claude-skills-ru.git
+cd claude-skills-ru
 git remote add upstream https://github.com/alirezarezvani/claude-skills.git
 git fetch upstream dev
 git checkout -b feature/my-skill upstream/dev

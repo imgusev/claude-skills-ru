@@ -67,7 +67,7 @@ description: "Как установить 345 скилл агента и 78 пл
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     python scripts/sync-hermes-skills.py --verbose
     ```
 
@@ -87,7 +87,7 @@ description: "Как установить 345 скилл агента и 78 пл
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/vibe-install.sh
     ```
 
@@ -106,7 +106,7 @@ description: "Как установить 345 скилл агента и 78 пл
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/convert.sh --tool cursor
     ./scripts/install.sh --tool cursor --target /path/to/project
     ```
@@ -115,7 +115,7 @@ description: "Как установить 345 скилл агента и 78 пл
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/convert.sh --tool aider
     ./scripts/install.sh --tool aider --target /path/to/project
     ```
@@ -124,7 +124,7 @@ description: "Как установить 345 скилл агента и 78 пл
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/convert.sh --tool windsurf
     ./scripts/install.sh --tool windsurf --target /path/to/project
     ```
@@ -133,7 +133,7 @@ description: "Как установить 345 скилл агента и 78 пл
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/convert.sh --tool kilocode
     ./scripts/install.sh --tool kilocode --target /path/to/project
     ```
@@ -142,7 +142,7 @@ description: "Как установить 345 скилл агента и 78 пл
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/convert.sh --tool opencode
     ./scripts/install.sh --tool opencode --target /path/to/project
     ```
@@ -151,7 +151,7 @@ description: "Как установить 345 скилл агента и 78 пл
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/convert.sh --tool augment
     ./scripts/install.sh --tool augment --target /path/to/project
     ```
@@ -160,7 +160,7 @@ description: "Как установить 345 скилл агента и 78 пл
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/convert.sh --tool antigravity
     ./scripts/install.sh --tool antigravity
     ```

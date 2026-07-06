@@ -66,7 +66,7 @@ description: "78 installable agent plugins for Claude Code, Codex CLI, Gemini CL
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ./scripts/codex-install.sh
     ```
 
@@ -74,7 +74,7 @@ description: "78 installable agent plugins for Claude Code, Codex CLI, Gemini CL
 
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     python3 scripts/sync-gemini-skills.py --verbose
     ```
 

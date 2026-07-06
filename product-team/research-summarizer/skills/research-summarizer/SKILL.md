@@ -253,7 +253,7 @@ Flag these without being asked:
 ### One-liner (any tool)
 ```bash
 git clone https://github.com/imgusev/claude-skills-ru.git
-cp -r claude-skills/product-team/research-summarizer ~/.claude/skills/
+cp -r claude-skills-ru/product-team/research-summarizer ~/.claude/skills/
 ```
 
 ### Multi-tool install (run from the claude-skills repo root)

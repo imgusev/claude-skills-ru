@@ -84,10 +84,10 @@ codex exec --full-auto "Use autoresearch-agent to optimize src/api/search.py for
 
 ```bash
 # Project-level (only this repo)
-cp -r claude-skills/.codex/skills/ ./.codex/skills/
+cp -r claude-skills-ru/.codex/skills/ ./.codex/skills/
 
 # Global (available everywhere)
-cp -r claude-skills/.codex/skills/ ~/.codex/skills/
+cp -r claude-skills-ru/.codex/skills/ ~/.codex/skills/
 ```
 
 ---

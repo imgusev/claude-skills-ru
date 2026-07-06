@@ -94,11 +94,11 @@ See the [Gemini CLI extensions docs](https://geminicli.com/docs/cli/skills/) for
 
 ```bash
 # Project-level (scoped to one repo)
-cp -r claude-skills/.gemini/skills/ ./.gemini/skills/
+cp -r claude-skills-ru/.gemini/skills/ ./.gemini/skills/
 
 # User-level (available in all projects)
 mkdir -p ~/.gemini/skills/
-cp -r claude-skills/.gemini/skills/* ~/.gemini/skills/
+cp -r claude-skills-ru/.gemini/skills/* ~/.gemini/skills/
 ```
 
 ---

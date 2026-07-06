@@ -8,7 +8,7 @@ description: "42 marketing agent skills and plugins for Claude Code, Codex, Gemi
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-bullhorn-outline: Marketing</span>
 <span class="meta-badge">:material-identifier: `marketing-skill`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/alirezarezvani/claude-skills/tree/main/marketing-skill/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/marketing-skill/skills/marketing-skills/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

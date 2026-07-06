@@ -8,7 +8,7 @@ description: "10 C-level advisory agent skills and plugins for Claude Code, Code
 <div class="page-meta" markdown>
 <span class="meta-badge">:material-account-tie: C-Level Advisory</span>
 <span class="meta-badge">:material-identifier: `c-level-advisor`</span>
-<span class="meta-badge">:material-github: <a href="https://github.com/alirezarezvani/claude-skills/tree/main/c-level-advisor/SKILL.md">Source</a></span>
+<span class="meta-badge">:material-github: <a href="https://github.com/imgusev/claude-skills-ru/tree/main/c-level-advisor/skills/c-level-skills/SKILL.md">Source</a></span>
 </div>
 
 <div class="install-banner" markdown>

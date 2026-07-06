@@ -78,7 +78,7 @@ clawhub install imgusev/claude-skills-ru
 
 # Or manual installation
 git clone https://github.com/imgusev/claude-skills-ru.git
-cp -r claude-skills/engineering-team ~/.openclaw/skills/
+cp -r claude-skills-ru/engineering-team ~/.openclaw/skills/
 ```
 
 Skills load via YAML frontmatter triggers. See [OpenClaw Installation](#openclaw-installation) for details.
@@ -693,7 +693,7 @@ Gemini CLI users can install skills using the setup script below. This repositor
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ```
 
 2.  **Run the Gemini setup script:**
@@ -752,7 +752,7 @@ Vibe discovers skills from three paths (per the [official docs](https://docs.mis
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/imgusev/claude-skills-ru.git
-    cd claude-skills
+    cd claude-skills-ru
     ```
 
 2.  **Run the Vibe setup script:**

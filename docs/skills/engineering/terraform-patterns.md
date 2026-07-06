@@ -722,7 +722,7 @@ inputs = {
 ### One-liner (any tool)
 ```bash
 git clone https://github.com/imgusev/claude-skills-ru.git
-cp -r claude-skills/engineering/terraform-patterns ~/.claude/skills/
+cp -r claude-skills-ru/engineering/terraform-patterns ~/.claude/skills/
 ```
 
 ### Multi-tool install
