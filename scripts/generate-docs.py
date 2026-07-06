@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 """Generate MkDocs documentation pages from SKILL.md files, agents, and commands.
 
-Bilingual (en/ru) for skill and domain-index pages: every page is always
-emitted in English from SKILL.md; it is additionally emitted in Russian
-(suffix .ru.md) if a SKILL.ru.md sibling already exists next to the source
-(created by scripts/translate.py). Agents and commands stay English-only —
-out of scope for this iteration (see ARCHITECTURE.md §2.3).
+Bilingual (en/ru) for skill, domain-index, agent, and command pages: every
+page is always emitted in English from its source `<name>.md`; it is
+additionally emitted in Russian (suffix `.ru.md`) if a `<name>.ru.md`
+sibling already exists next to that source (created by
+scripts/translate.py). Until a given agent/command is translated,
+mkdocs-static-i18n's `fallback_to_default: true` serves the English page
+under the `/ru/` URL for it — same mechanism already used for
+not-yet-translated skills (ARCH-4, closed — see _meta/docs/ARCHITECTURE.md;
+was English-only per §2.3 through iteration 3).
 """
 
 import argparse
@@ -339,6 +343,230 @@ DOMAIN_SEO_CONTEXT: dict[str, dict[str, str]] = {
     },
 }
 
+# Agent domain folders (agents/<key>/) don't always match skill domain
+# keys (agents/ is its own subtree, separate from the SKILL.md domain
+# tree) — this reuses DOMAIN_NAMES above (single source of truth for
+# en/ru domain labels) for the 10 domains agent pages have always shown,
+# rather than duplicating a parallel translation. Anything outside this
+# set (e.g. business-operations/commercial agents nested under a skill
+# domain) falls back to a prettified key in agent_domain_label(), en-only
+# — identical to the pre-i18n behavior, just no longer hand-duplicated
+# per render call site.
+AGENT_DOMAIN_LABELS: dict[str, dict[str, str]] = {
+    "business-growth": DOMAIN_NAMES["business-growth"],
+    "c-level": DOMAIN_NAMES["c-level-advisor"],
+    "engineering-team": DOMAIN_NAMES["engineering-team"],
+    "engineering": DOMAIN_NAMES["engineering"],
+    "finance": DOMAIN_NAMES["finance"],
+    "marketing": DOMAIN_NAMES["marketing-skill"],
+    "product": DOMAIN_NAMES["product-team"],
+    "project-management": DOMAIN_NAMES["project-management"],
+    "ra-qm-team": DOMAIN_NAMES["ra-qm-team"],
+    "markdown-html": DOMAIN_NAMES["markdown-html"],
+}
+
+AGENT_DOMAIN_ICONS: dict[str, str] = {
+    "business-growth": ":material-trending-up:",
+    "c-level": ":material-account-tie:",
+    "engineering-team": ":material-code-braces:",
+    "engineering": ":material-rocket-launch:",
+    "finance": ":material-calculator-variant:",
+    "marketing": ":material-bullhorn-outline:",
+    "product": ":material-lightbulb-outline:",
+    "project-management": ":material-clipboard-check-outline:",
+    "ra-qm-team": ":material-shield-check-outline:",
+    "markdown-html": ":material-language-html5:",
+}
+
+# <skill-domain>/agents/*.md or <skill-domain>/<plugin>/agents/*.md
+# (Pass 2 of find_agent_files) map to one of the AGENT_DOMAIN_LABELS/
+# AGENT_DOMAIN_ICONS keys above via this table.
+SKILL_TO_AGENT_DOMAIN = {
+    "c-level-advisor": "c-level",
+    "engineering": "engineering",
+    "engineering-team": "engineering-team",
+    "marketing-skill": "marketing",
+    "product-team": "product",
+    "project-management": "project-management",
+    "ra-qm-team": "ra-qm-team",
+    "business-growth": "business-growth",
+    "finance": "finance",
+    "business-operations": "business-operations",
+    "commercial": "commercial",
+    "research-ops": "research-ops",
+    "compliance-os": "compliance-os",
+    "markdown-html": "markdown-html",
+}
+
+
+def agent_domain_label(domain_key, lang):
+    """Return the (en/ru) display label for an agent-domain key.
+
+    Falls back to a prettified key (identical string in both languages)
+    for domains outside AGENT_DOMAIN_LABELS — matches the pre-existing
+    fallback behavior, which was always en-only/untranslated for those.
+    """
+    names = AGENT_DOMAIN_LABELS.get(domain_key)
+    return names[lang] if names else prettify(domain_key)
+
+
+def agent_domain_icon(domain_key):
+    return AGENT_DOMAIN_ICONS.get(domain_key, ":material-account:")
+
+
+def find_agent_files():
+    """Walk the repo and find all agent doc `<name>.md` files.
+
+    Two discovery passes, same patterns main() used to walk inline before
+    this was factored out (kept here so scripts/translate.py can reuse it
+    via the same `_load_generate_docs()` dynamic-import trick already used
+    for find_skill_files() — see tooling/translate.py):
+
+      1. Top-level agents/<domain>/<name>.md
+      2. Plugin-internal agents/ folders bundled inside a skill domain —
+         <domain>/agents/<name>.md (v2.8.0 pattern) or
+         <domain>/<plugin>/agents/<name>.md (legacy pattern: c-level-agents,
+         agenthub, self-improving-agent, etc.)
+
+    Returns a list of dicts: name, path, rel_path (repo-root-relative),
+    domain_key (an AGENT_DOMAIN_LABELS/AGENT_DOMAIN_ICONS key, or — when
+    unmapped — the raw domain/skill-domain folder name; see
+    agent_domain_label()/agent_domain_icon()). `agents/CLAUDE.md` (a
+    dev doc, not a page) is excluded structurally (it's a file, not a
+    domain folder, so the isdir() check below already skips it) — the
+    explicit filename check is defense in depth if a per-domain CLAUDE.md
+    ever appears.
+    """
+    agents_dir = os.path.join(REPO_ROOT, "agents")
+    entries = []
+    seen_slugs = set()
+
+    if os.path.isdir(agents_dir):
+        for domain_folder in sorted(os.listdir(agents_dir)):
+            domain_path = os.path.join(agents_dir, domain_folder)
+            if not os.path.isdir(domain_path):
+                continue
+            for agent_file in sorted(os.listdir(domain_path)):
+                if not agent_file.endswith(".md") or agent_file == "CLAUDE.md":
+                    continue
+                agent_name = agent_file.replace(".md", "")
+                agent_path = os.path.join(domain_path, agent_file)
+                entries.append(
+                    {
+                        "name": agent_name,
+                        "path": agent_path,
+                        "rel_path": os.path.relpath(agent_path, REPO_ROOT).replace(os.sep, "/"),
+                        "domain_key": domain_folder,
+                    }
+                )
+                seen_slugs.add(slugify(agent_name))
+
+    for skill_domain in DOMAINS:
+        skill_domain_path = os.path.join(REPO_ROOT, skill_domain)
+        if not os.path.isdir(skill_domain_path):
+            continue
+        candidate_dirs = []
+        domain_agents = os.path.join(skill_domain_path, "agents")
+        if os.path.isdir(domain_agents):
+            candidate_dirs.append(domain_agents)
+        for plugin_name in sorted(os.listdir(skill_domain_path)):
+            plugin_agents_dir = os.path.join(skill_domain_path, plugin_name, "agents")
+            if os.path.isdir(plugin_agents_dir):
+                candidate_dirs.append(plugin_agents_dir)
+        agent_domain_key = SKILL_TO_AGENT_DOMAIN.get(skill_domain, skill_domain)
+        for plugin_agents_dir in candidate_dirs:
+            for agent_file in sorted(os.listdir(plugin_agents_dir)):
+                if not agent_file.endswith(".md") or agent_file == "CLAUDE.md":
+                    continue
+                agent_name = agent_file.replace(".md", "")
+                slug = slugify(agent_name)
+                if slug in seen_slugs:
+                    continue
+                agent_path = os.path.join(plugin_agents_dir, agent_file)
+                entries.append(
+                    {
+                        "name": agent_name,
+                        "path": agent_path,
+                        "rel_path": os.path.relpath(agent_path, REPO_ROOT).replace(os.sep, "/"),
+                        "domain_key": agent_domain_key,
+                    }
+                )
+                seen_slugs.add(slug)
+
+    return entries
+
+
+def find_command_files():
+    """Walk the repo and find all slash-command `<name>.md` files.
+
+    Two discovery passes (see find_agent_files() docstring for why this
+    was factored out of main()):
+
+      1. Top-level commands/<name>.md
+      2. Domain-level and skill-internal commands/ folders —
+         <domain>/commands/<name>.md (v2.8.0 pattern) or
+         <domain>/<skill>/commands/<name>.md (v2.7.0 pattern: productivity,
+         research, marketing top-level)
+
+    Returns a list of dicts: name, path, rel_path (repo-root-relative).
+    `CLAUDE.md` is excluded explicitly (no per-domain one exists today,
+    but commands/ has no isdir() structural guard against it the way
+    agents/ does, so the filename check does the real work here).
+    """
+    commands_dir = os.path.join(REPO_ROOT, "commands")
+    entries = []
+    seen_slugs = set()
+
+    if os.path.isdir(commands_dir):
+        for cmd_file in sorted(os.listdir(commands_dir)):
+            if not cmd_file.endswith(".md") or cmd_file == "CLAUDE.md":
+                continue
+            cmd_name = cmd_file.replace(".md", "")
+            cmd_path = os.path.join(commands_dir, cmd_file)
+            entries.append(
+                {
+                    "name": cmd_name,
+                    "path": cmd_path,
+                    "rel_path": os.path.relpath(cmd_path, REPO_ROOT).replace(os.sep, "/"),
+                }
+            )
+            seen_slugs.add(slugify(cmd_name))
+
+    extra_cmd_dirs = []
+    for skill_domain in DOMAINS:
+        skill_domain_path = os.path.join(REPO_ROOT, skill_domain)
+        if not os.path.isdir(skill_domain_path):
+            continue
+        domain_cmds = os.path.join(skill_domain_path, "commands")
+        if os.path.isdir(domain_cmds):
+            extra_cmd_dirs.append(domain_cmds)
+        for entry in sorted(os.listdir(skill_domain_path)):
+            if entry in {"skills", "agents", "commands", ".claude-plugin", ".codex-plugin"}:
+                continue
+            skill_cmds = os.path.join(skill_domain_path, entry, "commands")
+            if os.path.isdir(skill_cmds):
+                extra_cmd_dirs.append(skill_cmds)
+
+    for cmd_dir in extra_cmd_dirs:
+        for cmd_file in sorted(os.listdir(cmd_dir)):
+            if not cmd_file.endswith(".md") or cmd_file == "CLAUDE.md":
+                continue
+            cmd_name = cmd_file.replace(".md", "")
+            slug = slugify(cmd_name)
+            if slug in seen_slugs:
+                continue
+            cmd_path = os.path.join(cmd_dir, cmd_file)
+            entries.append(
+                {
+                    "name": cmd_name,
+                    "path": cmd_path,
+                    "rel_path": os.path.relpath(cmd_path, REPO_ROOT).replace(os.sep, "/"),
+                }
+            )
+            seen_slugs.add(slug)
+
+    return entries
+
 
 def prettify(name):
     """Convert kebab-case to Title Case."""
@@ -466,6 +694,24 @@ def skill_source_path(skill, lang):
     if lang == "en":
         return skill["path"]
     ru_path = os.path.join(os.path.dirname(skill["path"]), "SKILL.ru.md")
+    return ru_path if os.path.isfile(ru_path) else None
+
+
+def flat_lang_source_path(md_path, lang):
+    """Return the source path to render for a flat-named doc (agent or
+    command `<name>.md`, unlike SKILL.md they don't share one filename per
+    folder) in `lang`.
+
+    lang="en" always returns md_path unchanged. lang="ru" returns the
+    sibling "<name>.ru.md" next to it if a translation already exists,
+    else None — caller must not emit a `.ru.md` page for it;
+    mkdocs-static-i18n's fallback_to_default serves the English page at
+    that URL instead (same contract as skill_source_path above).
+    """
+    if lang == "en":
+        return md_path
+    stem, ext = os.path.splitext(md_path)
+    ru_path = f"{stem}.ru{ext}"
     return ru_path if os.path.isfile(ru_path) else None
 
 
@@ -688,6 +934,161 @@ def _write_skill_pages(skill, domain_key, out_slug):
     return written
 
 
+def render_agent_page(agent, lang):
+    """Render one agent doc page (see find_agent_files()) in `lang`.
+
+    Returns None if lang="ru" and no "<name>.ru.md" sibling exists yet
+    next to the agent's source — caller must not emit a page for it;
+    mkdocs-static-i18n's fallback_to_default serves the English page at
+    that URL instead (same contract as skill pages/generate_skill_page).
+    """
+    src_path = flat_lang_source_path(agent["path"], lang)
+    if src_path is None:
+        return None
+
+    title = extract_title(src_path) or prettify(agent["name"])
+    title = re.sub(r"[*_`]", "", title)
+    # If H1 is a raw slug (cs-foo-bar), prettify it
+    if re.match(r"^cs-[a-z-]+$", title):
+        title = prettify(title.removeprefix("cs-"))
+
+    with open(src_path, encoding="utf-8") as f:
+        content = f.read()
+
+    content_clean = strip_content(content)
+    content_clean = rewrite_relative_links(content_clean, agent["rel_path"])
+
+    ui = {key: values[lang] for key, values in UI_STRINGS.items()}
+    domain_label = agent_domain_label(agent["domain_key"], lang)
+    domain_icon = agent_domain_icon(agent["domain_key"])
+    seo_suffix = "AI Coding Agent & Codex Skill" if lang == "en" else "ИИ-агент для Claude Code и Codex"
+    agent_seo_title = f"{title} — {seo_suffix}"
+    agent_fm_desc = extract_description_from_frontmatter(src_path)
+    if agent_fm_desc:
+        agent_clean = agent_fm_desc.strip("'\"").replace('"', "'")
+        if len(agent_clean) > 150:
+            agent_clean = agent_clean[:150].rsplit(" ", 1)[0].rstrip(".,;:—-")
+        orchestrator_for = "Agent-native orchestrator for" if lang == "en" else "Агентский оркестратор для"
+        agent_desc = f"{agent_clean}. {orchestrator_for} Claude Code, Codex, Gemini CLI."
+    else:
+        native_for = "agent-native AI orchestrator for" if lang == "en" else "агентский ИИ-оркестратор для"
+        works_with = "Works with" if lang == "en" else "Работает с"
+        agent_desc = f"{title} — {native_for} {domain_label}. {works_with} Claude Code, Codex CLI, Gemini CLI, and OpenClaw."
+
+    return f'''---
+title: "{agent_seo_title}"
+description: "{agent_desc}"
+---
+
+# {title}
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-robot: {ui["agent_badge"]}</span>
+<span class="meta-badge">{domain_icon} {domain_label}</span>
+<span class="meta-badge">:material-github: <a href="{GITHUB_BASE}/{agent["rel_path"]}">{ui["source"]}</a></span>
+</div>
+
+{content_clean}'''
+
+
+def _write_agent_pages(agent, agents_docs_dir):
+    """Render and write an agent page in every language with content.
+
+    Returns the number of pages written (1 while untranslated, 2 once a
+    "<name>.ru.md" sibling exists next to the source).
+    """
+    slug = slugify(agent["name"])
+    written = 0
+    for lang in LANGS:
+        page = render_agent_page(agent, lang)
+        if page is None:
+            continue
+        suffix = ".md" if lang == "en" else f".{lang}.md"
+        out_path = os.path.join(agents_docs_dir, f"{slug}{suffix}")
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(page)
+        written += 1
+    return written
+
+
+def render_command_page(cmd, lang):
+    """Render one slash-command doc page (see find_command_files()) in
+    `lang`. Returns None if lang="ru" and no "<name>.ru.md" sibling
+    exists yet (see render_agent_page for the same fallback contract).
+    """
+    src_path = flat_lang_source_path(cmd["path"], lang)
+    if src_path is None:
+        return None
+
+    title = extract_title(src_path) or prettify(cmd["name"])
+    title = re.sub(r"[*_`]", "", title)
+
+    with open(src_path, encoding="utf-8") as f:
+        content = f.read()
+
+    content_clean = strip_content(content)
+    content_clean = rewrite_relative_links(content_clean, cmd["rel_path"])
+
+    ui = {key: values[lang] for key, values in UI_STRINGS.items()}
+    cmd_fm_desc = extract_description_from_frontmatter(src_path)
+    if cmd_fm_desc:
+        cmd_clean = cmd_fm_desc.strip("'\"").replace('"', "'")
+        if len(cmd_clean) > 150:
+            cmd_clean = cmd_clean[:150].rsplit(" ", 1)[0].rstrip(".,;:—-")
+        slash_for = "Slash command for" if lang == "en" else "Слэш-команда для"
+        cmd_desc = f"{cmd_clean}. {slash_for} Claude Code, Codex CLI, Gemini CLI."
+    elif lang == "en":
+        cmd_desc = (
+            f"/{cmd['name']} — slash command for Claude Code, Codex CLI, and Gemini CLI. "
+            "Run directly in your AI coding agent."
+        )
+    else:
+        cmd_desc = (
+            f"/{cmd['name']} — слэш-команда для Claude Code, Codex CLI и Gemini CLI. "
+            "Запускается прямо в вашем ИИ-агенте для разработки."
+        )
+
+    seo_title = (
+        f"/{cmd['name']} — Slash Command for AI Coding Agents"
+        if lang == "en"
+        else f"/{cmd['name']} — слэш-команда для ИИ-агентов разработки"
+    )
+
+    return f'''---
+title: "{seo_title}"
+description: "{cmd_desc}"
+---
+
+# /{cmd["name"]}
+
+<div class="page-meta" markdown>
+<span class="meta-badge">:material-console: {ui["slash_command_badge"]}</span>
+<span class="meta-badge">:material-github: <a href="{GITHUB_BASE}/{cmd["rel_path"]}">{ui["source"]}</a></span>
+</div>
+
+{content_clean}'''
+
+
+def _write_command_pages(cmd, commands_docs_dir):
+    """Render and write a command page in every language with content.
+
+    Returns the number of pages written (1 while untranslated, 2 once a
+    "<name>.ru.md" sibling exists next to the source).
+    """
+    slug = slugify(cmd["name"])
+    written = 0
+    for lang in LANGS:
+        page = render_command_page(cmd, lang)
+        if page is None:
+            continue
+        suffix = ".md" if lang == "en" else f".{lang}.md"
+        out_path = os.path.join(commands_docs_dir, f"{slug}{suffix}")
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(page)
+        written += 1
+    return written
+
+
 def main():
     skills_by_domain = find_skill_files()
 
@@ -753,173 +1154,25 @@ def main():
             with open(index_path, "w", encoding="utf-8") as f:
                 f.write(index_content)
 
-    # Generate agent pages
-    agents_dir = os.path.join(REPO_ROOT, "agents")
+    # Generate agent pages (bilingual: en always, plus ru once a
+    # "<name>.ru.md" sibling exists next to the source — see
+    # find_agent_files()/render_agent_page()/_write_agent_pages()).
     agents_docs_dir = os.path.join(DOCS_DIR, "agents")
     os.makedirs(agents_docs_dir, exist_ok=True)
     agent_count = 0
     agent_entries = []
 
-    # Agent domain mapping for display
-    AGENT_DOMAINS = {
-        "business-growth": ("Business & Growth", ":material-trending-up:"),
-        "c-level": ("C-Level Advisory", ":material-account-tie:"),
-        "engineering-team": ("Engineering - Core", ":material-code-braces:"),
-        "engineering": ("Engineering - POWERFUL", ":material-rocket-launch:"),
-        "finance": ("Finance", ":material-calculator-variant:"),
-        "marketing": ("Marketing", ":material-bullhorn-outline:"),
-        "product": ("Product", ":material-lightbulb-outline:"),
-        "project-management": ("Project Management", ":material-clipboard-check-outline:"),
-        "ra-qm-team": ("Regulatory & Quality", ":material-shield-check-outline:"),
-        "markdown-html": ("Markdown to HTML", ":material-language-html5:"),
-    }
-
-    if os.path.isdir(agents_dir):
-        for domain_folder in sorted(os.listdir(agents_dir)):
-            domain_path = os.path.join(agents_dir, domain_folder)
-            if not os.path.isdir(domain_path):
-                continue
-            domain_info = AGENT_DOMAINS.get(domain_folder, (prettify(domain_folder), ":material-account:"))
-            domain_label, domain_icon = domain_info
-            for agent_file in sorted(os.listdir(domain_path)):
-                if not agent_file.endswith(".md"):
-                    continue
-                agent_name = agent_file.replace(".md", "")
-                agent_path = os.path.join(domain_path, agent_file)
-                rel = os.path.relpath(agent_path, REPO_ROOT).replace(os.sep, "/")
-                title = extract_title(agent_path) or prettify(agent_name)
-                title = re.sub(r"[*_`]", "", title)
-                # If H1 is a raw slug (cs-foo-bar), prettify it
-                if re.match(r"^cs-[a-z-]+$", title):
-                    title = prettify(title.removeprefix("cs-"))
-
-                with open(agent_path, encoding="utf-8") as f:
-                    content = f.read()
-
-                content_clean = strip_content(content)
-                content_clean = rewrite_relative_links(content_clean, rel)
-
-                agent_seo_title = f"{title} — AI Coding Agent & Codex Skill"
-                agent_fm_desc = extract_description_from_frontmatter(agent_path)
-                if agent_fm_desc:
-                    agent_clean = agent_fm_desc.strip("'\"").replace('"', "'")
-                    if len(agent_clean) > 150:
-                        agent_clean = agent_clean[:150].rsplit(" ", 1)[0].rstrip(".,;:—-")
-                    agent_desc = f"{agent_clean}. Agent-native orchestrator for Claude Code, Codex, Gemini CLI."
-                else:
-                    agent_desc = f"{title} — agent-native AI orchestrator for {domain_label}. Works with Claude Code, Codex CLI, Gemini CLI, and OpenClaw."
-
-                page = f'''---
-title: "{agent_seo_title}"
-description: "{agent_desc}"
----
-
-# {title}
-
-<div class="page-meta" markdown>
-<span class="meta-badge">:material-robot: {UI_STRINGS["agent_badge"]["en"]}</span>
-<span class="meta-badge">{domain_icon} {domain_label}</span>
-<span class="meta-badge">:material-github: <a href="{GITHUB_BASE}/{rel}">{UI_STRINGS["source"]["en"]}</a></span>
-</div>
-
-{content_clean}'''
-                slug = slugify(agent_name)
-                out_path = os.path.join(agents_docs_dir, f"{slug}.md")
-                with open(out_path, "w", encoding="utf-8") as f:
-                    f.write(page)
-                agent_count += 1
-                agent_entries.append((title, slug, domain_label, domain_icon))
-
-    # Pass 2: walk plugin-internal agents/ folders.
-    # Plugins like c-level-agents, executive-mentor, agenthub, llm-wiki,
-    # self-improving-agent bundle agents alongside their skills at
-    # <domain>/<plugin>/agents/*.md. These weren't previously discovered;
-    # nav entries in mkdocs.yml that point to them would 404.
-    SKILL_TO_AGENT_DOMAIN = {
-        "c-level-advisor": "c-level",
-        "engineering": "engineering",
-        "engineering-team": "engineering-team",
-        "marketing-skill": "marketing",
-        "product-team": "product",
-        "project-management": "project-management",
-        "ra-qm-team": "ra-qm-team",
-        "business-growth": "business-growth",
-        "finance": "finance",
-        "business-operations": "business-operations",
-        "commercial": "commercial",
-        "research-ops": "research-ops",
-        "compliance-os": "compliance-os",
-        "markdown-html": "markdown-html",
-    }
-    seen_slugs = {entry[1] for entry in agent_entries}
-    for skill_domain in DOMAINS:
-        skill_domain_path = os.path.join(REPO_ROOT, skill_domain)
-        if not os.path.isdir(skill_domain_path):
-            continue
-        # Pass 2a: <domain>/agents/<agent>.md (v2.8.0 pattern — business-operations, commercial)
-        domain_agents = os.path.join(skill_domain_path, "agents")
-        candidate_dirs = []
-        if os.path.isdir(domain_agents):
-            candidate_dirs.append(domain_agents)
-        # Pass 2b: <domain>/<plugin>/agents/<agent>.md (legacy pattern — c-level-agents, agenthub, etc.)
-        for plugin_name in sorted(os.listdir(skill_domain_path)):
-            plugin_agents_dir = os.path.join(skill_domain_path, plugin_name, "agents")
-            if os.path.isdir(plugin_agents_dir):
-                candidate_dirs.append(plugin_agents_dir)
-        for plugin_agents_dir in candidate_dirs:
-            agent_domain_key = SKILL_TO_AGENT_DOMAIN.get(skill_domain, skill_domain)
-            domain_info = AGENT_DOMAINS.get(agent_domain_key, (prettify(agent_domain_key), ":material-account:"))
-            domain_label, domain_icon = domain_info
-            for agent_file in sorted(os.listdir(plugin_agents_dir)):
-                if not agent_file.endswith(".md"):
-                    continue
-                agent_name = agent_file.replace(".md", "")
-                slug = slugify(agent_name)
-                if slug in seen_slugs:
-                    continue
-                agent_path = os.path.join(plugin_agents_dir, agent_file)
-                rel = os.path.relpath(agent_path, REPO_ROOT).replace(os.sep, "/")
-                title = extract_title(agent_path) or prettify(agent_name)
-                title = re.sub(r"[*_`]", "", title)
-                if re.match(r"^cs-[a-z-]+$", title):
-                    title = prettify(title.removeprefix("cs-"))
-
-                with open(agent_path, encoding="utf-8") as f:
-                    content = f.read()
-
-                content_clean = strip_content(content)
-                content_clean = rewrite_relative_links(content_clean, rel)
-
-                agent_seo_title = f"{title} — AI Coding Agent & Codex Skill"
-                agent_fm_desc = extract_description_from_frontmatter(agent_path)
-                if agent_fm_desc:
-                    agent_clean = agent_fm_desc.strip("'\"").replace('"', "'")
-                    if len(agent_clean) > 150:
-                        agent_clean = agent_clean[:150].rsplit(" ", 1)[0].rstrip(".,;:—-")
-                    agent_desc = f"{agent_clean}. Agent-native orchestrator for Claude Code, Codex, Gemini CLI."
-                else:
-                    agent_desc = f"{title} — agent-native AI orchestrator for {domain_label}. Works with Claude Code, Codex CLI, Gemini CLI, and OpenClaw."
-
-                page = f'''---
-title: "{agent_seo_title}"
-description: "{agent_desc}"
----
-
-# {title}
-
-<div class="page-meta" markdown>
-<span class="meta-badge">:material-robot: {UI_STRINGS["agent_badge"]["en"]}</span>
-<span class="meta-badge">{domain_icon} {domain_label}</span>
-<span class="meta-badge">:material-github: <a href="{GITHUB_BASE}/{rel}">{UI_STRINGS["source"]["en"]}</a></span>
-</div>
-
-{content_clean}'''
-                out_path = os.path.join(agents_docs_dir, f"{slug}.md")
-                with open(out_path, "w", encoding="utf-8") as f:
-                    f.write(page)
-                agent_count += 1
-                agent_entries.append((title, slug, domain_label, domain_icon))
-                seen_slugs.add(slug)
+    for agent in find_agent_files():
+        _write_agent_pages(agent, agents_docs_dir)
+        agent_count += 1
+        slug = slugify(agent["name"])
+        title = extract_title(agent["path"]) or prettify(agent["name"])
+        title = re.sub(r"[*_`]", "", title)
+        if re.match(r"^cs-[a-z-]+$", title):
+            title = prettify(title.removeprefix("cs-"))
+        domain_label = agent_domain_label(agent["domain_key"], "en")
+        domain_icon = agent_domain_icon(agent["domain_key"])
+        agent_entries.append((title, slug, domain_label, domain_icon))
 
     # Generate agents index
     if agent_entries:
@@ -953,129 +1206,22 @@ description: "{agent_count} agent-native orchestrators for Claude Code, Codex CL
         with open(os.path.join(agents_docs_dir, "index.md"), "w", encoding="utf-8") as f:
             f.write(idx)
 
-    # Generate command pages
-    commands_dir = os.path.join(REPO_ROOT, "commands")
+    # Generate command pages (bilingual: en always, plus ru once a
+    # "<name>.ru.md" sibling exists next to the source — see
+    # find_command_files()/render_command_page()/_write_command_pages()).
     commands_docs_dir = os.path.join(DOCS_DIR, "commands")
     os.makedirs(commands_docs_dir, exist_ok=True)
     cmd_count = 0
     cmd_entries = []
 
-    if os.path.isdir(commands_dir):
-        for cmd_file in sorted(os.listdir(commands_dir)):
-            if not cmd_file.endswith(".md") or cmd_file == "CLAUDE.md":
-                continue
-            cmd_name = cmd_file.replace(".md", "")
-            cmd_path = os.path.join(commands_dir, cmd_file)
-            rel = os.path.relpath(cmd_path, REPO_ROOT).replace(os.sep, "/")
-            title = extract_title(cmd_path) or prettify(cmd_name)
-            title = re.sub(r"[*_`]", "", title)
-
-            with open(cmd_path, encoding="utf-8") as f:
-                content = f.read()
-
-            content_clean = strip_content(content)
-            content_clean = rewrite_relative_links(content_clean, rel)
-
-            cmd_fm_desc = extract_description_from_frontmatter(cmd_path)
-            if cmd_fm_desc:
-                cmd_clean = cmd_fm_desc.strip("'\"").replace('"', "'")
-                if len(cmd_clean) > 150:
-                    cmd_clean = cmd_clean[:150].rsplit(" ", 1)[0].rstrip(".,;:—-")
-                cmd_desc = f"{cmd_clean}. Slash command for Claude Code, Codex CLI, Gemini CLI."
-            else:
-                cmd_desc = f"/{cmd_name} — slash command for Claude Code, Codex CLI, and Gemini CLI. Run directly in your AI coding agent."
-
-            page = f'''---
-title: "/{cmd_name} — Slash Command for AI Coding Agents"
-description: "{cmd_desc}"
----
-
-# /{cmd_name}
-
-<div class="page-meta" markdown>
-<span class="meta-badge">:material-console: {UI_STRINGS["slash_command_badge"]["en"]}</span>
-<span class="meta-badge">:material-github: <a href="{GITHUB_BASE}/{rel}">{UI_STRINGS["source"]["en"]}</a></span>
-</div>
-
-{content_clean}'''
-            slug = slugify(cmd_name)
-            out_path = os.path.join(commands_docs_dir, f"{slug}.md")
-            with open(out_path, "w", encoding="utf-8") as f:
-                f.write(page)
-            cmd_count += 1
-            desc = extract_subtitle(cmd_path) or title
-            cmd_entries.append((cmd_name, slug, title, desc))
-
-    # Pass 2: domain-level and skill-internal commands/ folders.
-    # Patterns:
-    #   <domain>/commands/<cmd>.md         — v2.8.0 (business-operations, commercial)
-    #   <domain>/<skill>/commands/<cmd>.md — v2.7.0 (productivity, research, marketing top-level)
-    seen_cmd_slugs = {entry[1] for entry in cmd_entries}
-    extra_cmd_dirs = []
-    for skill_domain in DOMAINS:
-        skill_domain_path = os.path.join(REPO_ROOT, skill_domain)
-        if not os.path.isdir(skill_domain_path):
-            continue
-        # v2.8.0 pattern: <domain>/commands/
-        domain_cmds = os.path.join(skill_domain_path, "commands")
-        if os.path.isdir(domain_cmds):
-            extra_cmd_dirs.append(domain_cmds)
-        # v2.7.0 pattern: <domain>/<skill>/commands/
-        for entry in sorted(os.listdir(skill_domain_path)):
-            if entry in {"skills", "agents", "commands", ".claude-plugin", ".codex-plugin"}:
-                continue
-            skill_cmds = os.path.join(skill_domain_path, entry, "commands")
-            if os.path.isdir(skill_cmds):
-                extra_cmd_dirs.append(skill_cmds)
-
-    for cmd_dir in extra_cmd_dirs:
-        for cmd_file in sorted(os.listdir(cmd_dir)):
-            if not cmd_file.endswith(".md") or cmd_file == "CLAUDE.md":
-                continue
-            cmd_name = cmd_file.replace(".md", "")
-            slug = slugify(cmd_name)
-            if slug in seen_cmd_slugs:
-                continue
-            cmd_path = os.path.join(cmd_dir, cmd_file)
-            rel = os.path.relpath(cmd_path, REPO_ROOT).replace(os.sep, "/")
-            title = extract_title(cmd_path) or prettify(cmd_name)
-            title = re.sub(r"[*_`]", "", title)
-
-            with open(cmd_path, encoding="utf-8") as f:
-                content = f.read()
-
-            content_clean = strip_content(content)
-            content_clean = rewrite_relative_links(content_clean, rel)
-
-            cmd_fm_desc = extract_description_from_frontmatter(cmd_path)
-            if cmd_fm_desc:
-                cmd_clean = cmd_fm_desc.strip("'\"").replace('"', "'")
-                if len(cmd_clean) > 150:
-                    cmd_clean = cmd_clean[:150].rsplit(" ", 1)[0].rstrip(".,;:—-")
-                cmd_desc = f"{cmd_clean}. Slash command for Claude Code, Codex CLI, Gemini CLI."
-            else:
-                cmd_desc = f"/{cmd_name} — slash command for Claude Code, Codex CLI, and Gemini CLI. Run directly in your AI coding agent."
-
-            page = f'''---
-title: "/{cmd_name} — Slash Command for AI Coding Agents"
-description: "{cmd_desc}"
----
-
-# /{cmd_name}
-
-<div class="page-meta" markdown>
-<span class="meta-badge">:material-console: {UI_STRINGS["slash_command_badge"]["en"]}</span>
-<span class="meta-badge">:material-github: <a href="{GITHUB_BASE}/{rel}">{UI_STRINGS["source"]["en"]}</a></span>
-</div>
-
-{content_clean}'''
-            out_path = os.path.join(commands_docs_dir, f"{slug}.md")
-            with open(out_path, "w", encoding="utf-8") as f:
-                f.write(page)
-            cmd_count += 1
-            seen_cmd_slugs.add(slug)
-            desc = extract_subtitle(cmd_path) or title
-            cmd_entries.append((cmd_name, slug, title, desc))
+    for cmd in find_command_files():
+        _write_command_pages(cmd, commands_docs_dir)
+        cmd_count += 1
+        slug = slugify(cmd["name"])
+        title = extract_title(cmd["path"]) or prettify(cmd["name"])
+        title = re.sub(r"[*_`]", "", title)
+        desc = extract_subtitle(cmd["path"]) or title
+        cmd_entries.append((cmd["name"], slug, title, desc))
 
     # Generate commands index
     if cmd_entries:
