@@ -133,9 +133,26 @@
 
 .md-tabs__link {
   font-weight: 500;
-  font-size: 0.8rem;
+  /* Base Material size is 0.7rem; RU tab labels run ~30-40% longer than
+     their EN source strings (e.g. "Мульти-инструменты" vs "Integrations"),
+     so this is tightened below the default rather than the 0.8rem it used
+     to be — that increase was actively working against RU fitting the
+     tab bar (site issue: "не влезают русские пункты в меню"). */
+  font-size: 0.66rem;
+  letter-spacing: -0.01em;
   opacity: 0.7;
   transition: opacity 0.15s ease;
+}
+
+/* Material pads each tab item 0.6rem per side by default; RU labels need
+   the room back more than the padding is worth at typical laptop widths
+   (1280-1366px), so it's trimmed — the tab bar itself is still natively
+   horizontally scrollable (Material's own overflow:auto) as a fallback
+   on narrower viewports, this just raises the width where scrolling
+   starts becoming necessary. */
+.md-tabs__item {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
 }
 
 [data-md-color-scheme="default"] .md-tabs__link {
@@ -153,6 +170,29 @@
 
 .md-tabs__link--active {
   font-weight: 700;
+}
+
+/* Scroll affordance: Material hides the tab-bar scrollbar entirely
+   (scrollbar-width: none), so on viewports still too narrow for every RU
+   tab, there was no visual cue more tabs exist off-screen. A soft edge
+   fade signals "more content this way" without altering layout/markup or
+   touching the light/dark palette variables (uses the tabs' own
+   background-color so it works in both schemes). */
+.md-tabs__list {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
 }
 
 /* ===========================================
