@@ -105,7 +105,7 @@ python scripts/blast_radius_calculator.py \
 python scripts/experiment_postmortem.py --plan experiment.json --result-log results.txt
 ```
 
-Выводит Markdown с: кратким изложением, гипотезой (была ли она подтверждена / опровергнута?), тем, что мы узнали, что нас удивило, последующими действиями с владельцами и ссылкой на следующий эксперимент.
+Выводит Markdown с: резюме, гипотеза (подтвердилась ли она/refuted?), что мы узнали, что нас удивило, последующие действия с владельцами и ссылка на следующий эксперимент.
 
 ## 7 типов атак (таксономия) { #the-7-attack-types-taxonomy }
 
@@ -138,7 +138,7 @@ python scripts/experiment_postmortem.py --plan experiment.json --result-log resu
 - стек только для k8s + OSS → Chaos Mesh или Litmus (у Litmus большая библиотека экспериментов)
 - Мульти-облако + OSS → Набор инструментов Chaos
 - AWS-тяжелые + простые потребности → AWS FIS
-- Предприятие + аудит/соответствие требованиям → Gremlin
+- Предприятие + аудит/compliance → Гремлин
 
 Видишь `references/tooling_landscape.md` для поиска компромиссов.
 
